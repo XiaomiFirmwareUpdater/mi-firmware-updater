@@ -309,7 +309,7 @@ echo File Name= $HM5Plus && echo Url= $romsite"/"$miuidate"/"$HM5Plus
 fi
 
 # Downloading
-wget -qq --progress=bar https://github.com/yshtemp/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
+wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
 echo "Working on aqua_china"
 wget -qq --progress=bar $romsite"/"$miuidate"/"$MI4s && ./$extract $MI4s && rm $MI4s
 echo "Working on cappu_china"
