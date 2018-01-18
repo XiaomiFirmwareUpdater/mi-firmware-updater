@@ -412,5 +412,5 @@ echo "Working on vince_china"
 wget -qq --progress=bar $romsite"/"$miuidate"/"$HM5Plus && ./$extract $HM5Plus && rm $HM5Plus
 
 #Uploading
-curl -T "{$(echo *.zip | tr ' ' ',')}" ftp://uploads.androidfilehost.com//xiaomi-firmware-updates/$miuidate/ --user $afhuser:$afhpass
-curl -T "{$(echo *.zip | tr ' ' ',')}" ftp://basketbuild.com//xiaomi-firmware-updates/$miuidate/ --user $basketbuilduser:$basketbuildpass
+curl -T "{$(echo *.zip | tr ' ' ',')}" ftp://uploads.androidfilehost.com//mifirmware/$miuidate/ --user $afhuser:$afhpass
+curl -T "{$(echo *.zip | tr ' ' ',')}" ftp://basketbuild.com//mifirmware/$miuidate/ --user $basketbuilduser:$basketbuildpass
