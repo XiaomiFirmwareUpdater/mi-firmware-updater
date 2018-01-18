@@ -8,5 +8,5 @@ jobs:
       - run:
          name: install packages
          command: sudo apt-get install -y pv sshpass
-      - run: chmod 775 script
+      - run: chmod 775 script.sh
       - run: ./script.sh
