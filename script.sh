@@ -20,5 +20,5 @@ wget -qq --progress=bar $romsite"/"$miuidate"/"$MI4s && ./$extract $MI4s && rm $
 
 
 #Uploading
-wput "{$(echo *.zip | tr ' ' ',')}" ftp://$afhuser:$afhpass@uploads.androidfilehost.com//mifirmware/$miuidate/
-wput "{$(echo *.zip | tr ' ' ',')}" ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuidate/
+wput fw_$MI4s.zip ftp://$afhuser:$afhpass@uploads.androidfilehost.com//mifirmware/$miuidate/
+wput fw_$MI4s.zip ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuidate/
