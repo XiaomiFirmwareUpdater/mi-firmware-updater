@@ -10,301 +10,301 @@ export miuidate=8.1.4
 echo "aqua: China"
 aqua_china=$(curl -s http://en.miui.com/download-300.html | grep $romsite"/"$miuidate"/"miui_MI4s_$miuidate_)
 if [ "$aqua_china" != "" ] ; then
-export MI4s=$(echo $aqua_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI4s=$(echo $aqua_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI4s && echo Url= $romsite"/"$miuidate"/"$MI4s
 fi
 echo "cappu: China"
 cappu_china=$(curl -s http://en.miui.com/download-325.html | grep $romsite"/"$miuidate"/"miui_MIPAD3_$miuidate_)
 if [ "$cappu_china" != "" ] ; then
-export MIPAD3=$(echo $cappu_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIPAD3=$(echo $cappu_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIPAD3 && echo Url= $romsite"/"$miuidate"/"$MIPAD3
 fi
 echo "capricorn: Global"
 capricorn_global=$(curl -s http://en.miui.com/download-314.html | grep $romsite"/"$miuidate"/"miui_MI5SGlobal_$miuidate_)
 if [ "$capricorn_global" != "" ] ; then
-export MI5SGlobal=$(echo $capricorn_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI5SGlobal=$(echo $capricorn_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI5SGlobal && echo Url= $romsite"/"$miuidate"/"$MI5SGlobal
 fi
 echo "capricorn: China"
 capricorn_china=$(curl -s http://en.miui.com/download-314.html#456 | grep $romsite"/"$miuidate"/"miui_MI5S_$miuidate_)
 if [ "$capricorn_china" != "" ] ; then
-export MI5S=$(echo $capricorn_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI5S=$(echo $capricorn_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI5S && echo Url= $romsite"/"$miuidate"/"$MI5S
 fi
 echo "chiron: Global"
 chiron_global=$(curl -s http://en.miui.com/download-334.html | grep $romsite"/"$miuidate"/"miui_MIMIX2Global_$miuidate_)
 if [ "$chiron_global" != "" ] ; then
-export MIMIX2Global=$(echo $chiron_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMIX2Global=$(echo $chiron_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMIX2Global && echo Url= $romsite"/"$miuidate"/"$MIMIX2Global
 fi
 echo "chiron: China"
 chiron_china=$(curl -s http://en.miui.com/download-334.html#492 | grep $romsite"/"$miuidate"/"miui_MIMIX2_$miuidate_)
 if [ "$chiron_china" != "" ] ; then
-export MIMIX2=$(echo $chiron_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMIX2=$(echo $chiron_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMIX2 && echo Url= $romsite"/"$miuidate"/"$MIMIX2
 fi
 echo "gemini: Global"
 gemini_global=$(curl -s http://en.miui.com/download-299.html | grep $romsite"/"$miuidate"/"miui_MI5Global_$miuidate_)
 if [ "$gemini_global" != "" ] ; then
-export MI5Global=$(echo $gemini_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI5Global=$(echo $gemini_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI5Global && echo Url= $romsite"/"$miuidate"/"$MI5Global
 fi
 echo "gemini: China"
 gemini_china=$(curl -s http://en.miui.com/download-299.html#435 | grep $romsite"/"$miuidate"/"miui_MI5_$miuidate_)
 if [ "$gemini_china" != "" ] ; then
-export MI5=$(echo $gemini_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI5=$(echo $gemini_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI5 && echo Url= $romsite"/"$miuidate"/"$MI5
 fi
 echo "helium: Global"
 helium_global=$(curl -s http://en.miui.com/download-302.html#446 | grep $romsite"/"$miuidate"/"miui_MIMAX652Global_$miuidate_)
 if [ "$helium_global" != "" ] ; then
-export MIMAX652Global=$(echo $helium_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMAX652Global=$(echo $helium_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMAX652Global && echo Url= $romsite"/"$miuidate"/"$MIMAX652Global
 fi
 echo "helium: China"
 helium_china=$(curl -s http://en.miui.com/download-302.html#458 | grep $romsite"/"$miuidate"/"miui_MIMAX652_$miuidate_)
 if [ "$helium_china" != "" ] ; then
-export MIMAX652=$(echo $helium_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMAX652=$(echo $helium_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMAX652 && echo Url= $romsite"/"$miuidate"/"$MIMAX652
 fi
 echo "hydrogen: Global"
 hydrogen_global=$(curl -s http://en.miui.com/download-302.html#450 | grep $romsite"/"$miuidate"/"miui_MIMAXGlobal_$miuidate_)
 if [ "$hydrogen_global" != "" ] ; then
-export MIMAXGlobal=$(echo $hydrogen_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMAXGlobal=$(echo $hydrogen_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMAXGlobal && echo Url= $romsite"/"$miuidate"/"$MIMAXGlobal
 fi
 echo "hydrogen: China"
 hydrogen_china=$(curl -s http://en.miui.com/download-302.html#445 | grep $romsite"/"$miuidate"/"miui_MIMAX_$miuidate_)
 if [ "$hydrogen_china" != "" ] ; then
-export MIMAX=$(echo $hydrogen_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMAX=$(echo $hydrogen_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMAX && echo Url= $romsite"/"$miuidate"/"$MIMAX
 fi
 echo "ido: Global"
 ido_global=$(curl -s http://en.miui.com/download-298.html | grep $romsite"/"$miuidate"/"miui_HM3Global_$miuidate_)
 if [ "$ido_global" != "" ] ; then
-export HM3Global=$(echo $ido_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM3Global=$(echo $ido_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM3Global && echo Url= $romsite"/"$miuidate"/"$HM3Global
 fi
 echo "ido: China"
 ido_china=$(curl -s http://en.miui.com/download-298.html#433 | grep $romsite"/"$miuidate"/"miui_HM3_$miuidate_)
 if [ "$ido_china" != "" ] ; then
-export HM3=$(echo $ido_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM3=$(echo $ido_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM3 && echo Url= $romsite"/"$miuidate"/"$HM3
 fi
 echo "jason: China"
 jason_china=$(curl -s http://en.miui.com/download-336.html#495 | grep $romsite"/"$miuidate"/"miui_MINote3_$miuidate_)
 if [ "$jason_china" != "" ] ; then
-export MINote3=$(echo $jason_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MINote3=$(echo $jason_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MINote3 && echo Url= $romsite"/"$miuidate"/"$MINote3
 fi
 echo "kenzo: Global"
 kenzo_global=$(curl -s http://en.miui.com/download-301.html | grep $romsite"/"$miuidate"/"miui_HMNote3ProGlobal_$miuidate_)
 if [ "$kenzo_global" != "" ] ; then
-export HMNote3ProGlobal=$(echo $kenzo_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote3ProGlobal=$(echo $kenzo_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote3ProGlobal && echo Url= $romsite"/"$miuidate"/"$HMNote3ProGlobal
 fi
 echo "kenzo: China"
 kenzo_china=$(curl -s http://en.miui.com/download-301.html#439 | grep $romsite"/"$miuidate"/"miui_HMNote3Pro_$miuidate_)
 if [ "$kenzo_china" != "" ] ; then
-export HMNote3Pro=$(echo $kenzo_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote3Pro=$(echo $kenzo_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote3Pro && echo Url= $romsite"/"$miuidate"/"$HMNote3Pro
 fi
 echo "kate: Global"
 kate_global=$(curl -s http://en.miui.com/download-301.html#449 | grep $romsite"/"$miuidate"/"miui_HMNote3ProtwGlobal_$miuidate_)
 if [ "$kate_global" != "" ] ; then
-export HMNote3ProtwGlobal=$(echo $kate_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote3ProtwGlobal=$(echo $kate_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote3ProtwGlobal && echo Url= $romsite"/"$miuidate"/"$HMNote3ProtwGlobal
 fi
 echo "land: Global"
 land_global=$(curl -s http://en.miui.com/download-303.html | grep $romsite"/"$miuidate"/"miui_HM3SGlobal_$miuidate_)
 if [ "$land_global" != "" ] ; then
-export HM3SGlobal=$(echo $land_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM3SGlobal=$(echo $land_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM3SGlobal && echo Url= $romsite"/"$miuidate"/"$HM3SGlobal
 fi
 echo "land: China"
 land_china=$(curl -s http://en.miui.com/download-303.html#447 | grep $romsite"/"$miuidate"/"miui_HM3S_$miuidate_)
 if [ "$land_china" != "" ] ; then
-export HM3S=$(echo $land_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM3S=$(echo $land_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM3S && echo Url= $romsite"/"$miuidate"/"$HM3S
 fi
 echo "libra: China"
 libra_china=$(curl -s http://en.miui.com/download-293.html | grep $romsite"/"$miuidate"/"miui_MI4c_$miuidate_)
 if [ "$libra_china" != "" ] ; then
-export MI4c=$(echo $libra_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI4c=$(echo $libra_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI4c && echo Url= $romsite"/"$miuidate"/"$MI4c
 fi
 echo "lithium: Global"
 lithium_global=$(curl -s http://en.miui.com/download-317.html | grep $romsite"/"$miuidate"/"miui_MIMIXGlobal_$miuidate_)
 if [ "$lithium_global" != "" ] ; then
-export MIMIXGlobal=$(echo $lithium_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMIXGlobal=$(echo $lithium_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMIXGlobal && echo Url= $romsite"/"$miuidate"/"$MIMIXGlobal
 fi
 echo "lithium: China"
 lithium_china=$(curl -s http://en.miui.com/download-317.html#460 | grep $romsite"/"$miuidate"/"miui_MIMIX_$miuidate_)
 if [ "$lithium_china" != "" ] ; then
-export MIMIX=$(echo $lithium_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMIX=$(echo $lithium_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMIX && echo Url= $romsite"/"$miuidate"/"$MIMIX
 fi
 echo "markw: China"
 markw_china=$(curl -s http://en.miui.com/download-320.html#466 | grep $romsite"/"$miuidate"/"miui_HM4Pro_$miuidate_)
 if [ "$markw_china" != "" ] ; then
-export HM4Pro=$(echo $markw_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM4Pro=$(echo $markw_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM4Pro && echo Url= $romsite"/"$miuidate"/"$HM4Pro
 fi
 echo "mido: Global"
 mido_global=$(curl -s http://en.miui.com/download-309.html#468 | grep $romsite"/"$miuidate"/"miui_HMNote4XGlobal_$miuidate_)
 if [ "$mido_global" != "" ] ; then
-export HMNote4XGlobal=$(echo $mido_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote4XGlobal=$(echo $mido_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote4XGlobal && echo Url= $romsite"/"$miuidate"/"$HMNote4XGlobal
 fi
 echo "mido: China"
 mido_china=$(curl -s http://en.miui.com/download-321.html#469 | grep $romsite"/"$miuidate"/"miui_HMNote4X_$miuidate_)
 if [ "$mido_china" != "" ] ; then
-export HMNote4X=$(echo $mido_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote4X=$(echo $mido_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote4X && echo Url= $romsite"/"$miuidate"/"$HMNote4X
 fi
 echo "natrium: Global"
 natrium_global=$(curl -s http://en.miui.com/download-315.html | grep $romsite"/"$miuidate"/"miui_MI5SPlusGlobal_$miuidate_)
 if [ "$natrium_global" != "" ] ; then
-export MI5SPlusGlobal=$(echo $natrium_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI5SPlusGlobal=$(echo $natrium_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI5SPlusGlobal && echo Url= $romsite"/"$miuidate"/"$MI5SPlusGlobal
 fi
 echo "natrium: China"
 natrium_china=$(curl -s http://en.miui.com/download-315.html#457 | grep $romsite"/"$miuidate"/"miui_MI5SPlus_$miuidate_)
 if [ "$natrium_china" != "" ] ; then
-export MI5SPlus=$(echo $natrium_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI5SPlus=$(echo $natrium_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI5SPlus && echo Url= $romsite"/"$miuidate"/"$MI5SPlus
 fi
 echo "nikel: Global"
 nikel_global=$(curl -s http://en.miui.com/download-309.html | grep $romsite"/"$miuidate"/"miui_HMNote4Global_$miuidate_)
 if [ "$nikel_global" != "" ] ; then
-export HMNote4Global=$(echo $nikel_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote4Global=$(echo $nikel_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote4Global && echo Url= $romsite"/"$miuidate"/"$HMNote4Global
 fi
 echo "nikel: China"
 nikel_china=$(curl -s http://en.miui.com/download-309.html#454 | grep $romsite"/"$miuidate"/"miui_HMNote4_$miuidate_)
 if [ "$nikel_china" != "" ] ; then
-export HMNote4=$(echo $nikel_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote4=$(echo $nikel_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote4 && echo Url= $romsite"/"$miuidate"/"$HMNote4
 fi
 echo "omega: China"
 omega_china=$(curl -s http://en.miui.com/download-304.html | grep $romsite"/"$miuidate"/"miui_HMPro_$miuidate_)
 if [ "$omega_china" != "" ] ; then
-export HMPro=$(echo $omega_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMPro=$(echo $omega_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMPro && echo Url= $romsite"/"$miuidate"/"$HMPro
 fi
 echo "oxygen: Global"
 oxygen_global=$(curl -s http://en.miui.com/download-328.html | grep $romsite"/"$miuidate"/"miui_MIMAX2Global_$miuidate_)
 if [ "$oxygen_global" != "" ] ; then
-export MIMAX2Global=$(echo $oxygen_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMAX2Global=$(echo $oxygen_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMAX2Global && echo Url= $romsite"/"$miuidate"/"$MIMAX2Global
 fi
 echo "oxygen: China"
 oxygen_china=$(curl -s http://en.miui.com/download-328.html#482 | grep $romsite"/"$miuidate"/"miui_MIMAX2_$miuidate_)
 if [ "$oxygen_china" != "" ] ; then
-export MIMAX2=$(echo $oxygen_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MIMAX2=$(echo $oxygen_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MIMAX2 && echo Url= $romsite"/"$miuidate"/"$MIMAX2
 fi
 echo "prada: China"
 prada_china=$(curl -s http://en.miui.com/download-318.html#461 | grep $romsite"/"$miuidate"/"miui_HM4_$miuidate_)
 if [ "$prada_china" != "" ] ; then
-export HM4=$(echo $prada_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM4=$(echo $prada_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM4 && echo Url= $romsite"/"$miuidate"/"$HM4
 fi
 echo "riva: China"
 riva_china=$(curl -s http://en.miui.com/download-338.html#499 | grep $romsite"/"$miuidate"/"miui_HM5A_$miuidate_)
 if [ "$riva_china" != "" ] ; then
-export HM5A=$(echo $riva_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM5A=$(echo $riva_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM5A && echo Url= $romsite"/"$miuidate"/"$HM5A
 fi
 echo "rolex: Global"
 rolex_global=$(curl -s http://en.miui.com/download-319.html | grep $romsite"/"$miuidate"/"miui_HM4AGlobal_$miuidate_)
 if [ "$rolex_global" != "" ] ; then
-export HM4AGlobal=$(echo $rolex_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM4AGlobal=$(echo $rolex_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM4AGlobal && echo Url= $romsite"/"$miuidate"/"$HM4AGlobal
 fi
 echo "rolex: China"
 rolex_china=$(curl -s http://en.miui.com/download-319.html#462 | grep $romsite"/"$miuidate"/"miui_HM4A_$miuidate_)
 if [ "$rolex_china" != "" ] ; then
-export HM4A=$(echo $rolex_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM4A=$(echo $rolex_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM4A && echo Url= $romsite"/"$miuidate"/"$HM4A
 fi
 echo "rosy: China"
 rosy_china=$(curl -s http://en.miui.com/download-340.html#505 | grep $romsite"/"$miuidate"/"miui_HM5_$miuidate_)
 if [ "$rosy_china" != "" ] ; then
-export HM5=$(echo $rosy_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM5=$(echo $rosy_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM5 && echo Url= $romsite"/"$miuidate"/"$HM5
 fi
 echo "sagit: Global"
 sagit_global=$(curl -s http://en.miui.com/download-326.html | grep $romsite"/"$miuidate"/"miui_MI6Global_$miuidate_)
 if [ "$sagit_global" != "" ] ; then
-export MI6Global=$(echo $sagit_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI6Global=$(echo $sagit_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI6Global && echo Url= $romsite"/"$miuidate"/"$MI6Global
 fi
 echo "sagit: China"
 sagit_china=$(curl -s http://en.miui.com/download-326.html#481 | grep $romsite"/"$miuidate"/"miui_MI6_$miuidate_)
 if [ "$sagit_china" != "" ] ; then
-export MI6=$(echo $sagit_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI6=$(echo $sagit_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI6 && echo Url= $romsite"/"$miuidate"/"$MI6
 fi
 echo "santoni: Global"
 santoni_global=$(curl -s http://en.miui.com/download-323.html | grep $romsite"/"$miuidate"/"miui_HM4XGlobal_$miuidate_)
 if [ "$santoni_global" != "" ] ; then
-export HM4XGlobal=$(echo $santoni_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM4XGlobal=$(echo $santoni_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM4XGlobal && echo Url= $romsite"/"$miuidate"/"$HM4XGlobal
 fi
 echo "santoni: China"
 santoni_china=$(curl -s http://en.miui.com/download-323.html#476 | grep $romsite"/"$miuidate"/"miui_HM4X_$miuidate_)
 if [ "$santoni_china" != "" ] ; then
-export HM4X=$(echo $santoni_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM4X=$(echo $santoni_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM4X && echo Url= $romsite"/"$miuidate"/"$HM4X
 fi
 echo "scorpio: Global"
 scorpio_global=$(curl -s http://en.miui.com/download-316.html | grep $romsite"/"$miuidate"/"miui_MINote2Global_$miuidate_)
 if [ "$scorpio_global" != "" ] ; then
-export MINote2Global=$(echo $scorpio_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MINote2Global=$(echo $scorpio_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MINote2Global && echo Url= $romsite"/"$miuidate"/"$MINote2Global
 fi
 echo "scorpio: China"
 scorpio_china=$(curl -s http://en.miui.com/download-316.html#459 | grep $romsite"/"$miuidate"/"miui_MINote2_$miuidate_)
 if [ "$scorpio_china" != "" ] ; then
-export MINote2=$(echo $scorpio_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MINote2=$(echo $scorpio_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MINote2 && echo Url= $romsite"/"$miuidate"/"$MINote2
 fi
 echo "tiffany: China"
 tiffany_china=$(curl -s http://en.miui.com/download-329.html | grep $romsite"/"$miuidate"/"miui_MI5X_$miuidate_)
 if [ "$tiffany_china" != "" ] ; then
-export MI5X=$(echo $tiffany_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export MI5X=$(echo $tiffany_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $MI5X && echo Url= $romsite"/"$miuidate"/"$MI5X
 fi
 echo "ugg: Global"
 ugg_global=$(curl -s http://en.miui.com/download-332.html | grep $romsite"/"$miuidate"/"miui_HMNote5AGlobal_$miuidate_)
 if [ "$ugg_global" != "" ] ; then
-export HMNote5AGlobal=$(echo $ugg_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote5AGlobal=$(echo $ugg_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote5AGlobal && echo Url= $romsite"/"$miuidate"/"$HMNote5AGlobal
 fi
 echo "ugg: China"
 ugg_china=$(curl -s http://en.miui.com/download-332.html#488 | grep $romsite"/"$miuidate"/"miui_HMNote5A_$miuidate_)
 if [ "$ugg_china" != "" ] ; then
-export HMNote5A=$(echo $ugg_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote5A=$(echo $ugg_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote5A && echo Url= $romsite"/"$miuidate"/"$HMNote5A
 fi
 echo "ugglite: Global"
 ugglite_global=$(curl -s http://en.miui.com/download-332.html#487 | grep $romsite"/"$miuidate"/"miui_HMNote5ALITEGlobal_$miuidate_)
 if [ "$ugglite_global" != "" ] ; then
-export HMNote5ALITEGlobal=$(echo $ugglite_global | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote5ALITEGlobal=$(echo $ugglite_global | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote5ALITEGlobal && echo Url= $romsite"/"$miuidate"/"$HMNote5ALITEGlobal
 fi
 echo "ugglite: China"
 ugglite_china=$(curl -s http://en.miui.com/download-332.html#489 | grep $romsite"/"$miuidate"/"miui_HMNote5ALITE_$miuidate_)
 if [ "$ugglite_china" != "" ] ; then
-export HMNote5ALITE=$(echo $ugglite_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HMNote5ALITE=$(echo $ugglite_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HMNote5ALITE && echo Url= $romsite"/"$miuidate"/"$HMNote5ALITE
 fi
 echo "vince: China"
 vince_china=$(curl -s http://en.miui.com/download-340.html | grep $romsite"/"$miuidate"/"miui_HM5Plus_$miuidate_)
 if [ "$vince_china" != "" ] ; then
-export HM5Plus=$(echo $vince_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
+export HM5Plus=$(echo $vince_china | cut -d "/" -f 10 | cut -d '"' -f 1 | tee )
 echo File Name= $HM5Plus && echo Url= $romsite"/"$miuidate"/"$HM5Plus
 fi
 
