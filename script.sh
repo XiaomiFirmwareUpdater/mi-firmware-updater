@@ -4,8 +4,7 @@ export romsite="http://bigota.d.miui.com"
 transfer="https://transfer.sh"
 extract="create_flashable_firmware.sh"
 upload='curl --upload-file'
-export miuidate=$(curl -s http://en.miui.com/forum.php | grep http://en.miui.com/download.html | cut -d ">" -f 3 | cut -d '<' -f 1 | tee) && echo "Latest miui update is $miuidate"
-
+export miuidate=8.1.18
 # Fetch Updates
 echo "aqua: China"
 aqua_china=$(curl -s http://en.miui.com/download-300.html | grep $romsite"/"$miuidate"/"miui_MI4s_$miuidate_)
