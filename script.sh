@@ -19,5 +19,5 @@ echo "Working on aqua_china"
 wget -qq --progress=bar $romsite"/"$miuidate"/"$MI4s && ./$extract $MI4s && rm $MI4s
 
 #Uploading
-curl -T "{$(echo *.zip | tr ' ' ',')}" ftp://uploads.androidfilehost.com//mifirmware/$miuidate/ --user $afhuser:$afhpass
-curl -T "{$(echo *.zip | tr ' ' ',')}" ftp://basketbuild.com//mifirmware/$miuidate/ --user $basketbuilduser:$basketbuildpass
+wput *zip ftp://$afhuser:$afhpass@uploads.androidfilehost.com//mifirmware/$miuidate/
+wput *zip ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuidate/
