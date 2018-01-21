@@ -10,11 +10,3 @@ jobs:
          command: sudo apt-get install -y pv sshpass
       - run: chmod 775 script.sh
       - run: ./script.sh
-workflows:
-   version: 2
-   weekly:
-     triggers:
-       - schedule:
-           cron: "0 5 * * 5"
-     jobs:
-       - build
