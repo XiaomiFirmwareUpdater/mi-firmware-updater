@@ -6,7 +6,23 @@ jobs:
     steps:
       - checkout
       - run:
-         name: install packages
-         command: sudo apt-get install -y pv sshpass
+         name: Install packages
+         command: sudo apt-get install -y pv wput
       - run: chmod 775 script.sh
       - run: ./script.sh
+
+workflows:
+  version: 2
+  commit-workflow:
+    jobs:
+      - build 
+  weekly:
+    triggers:
+      - schedule:
+          cron: "0 12 * * 5"
+          filters:
+            branches:
+              only: master
+
+    jobs:
+      - build
