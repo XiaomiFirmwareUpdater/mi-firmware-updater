@@ -22,7 +22,7 @@ workflows:
           cron: "0 12 * * 5"
           filters:
             branches:
-              only: master
+              only: weekly
 
     jobs:
       - build
