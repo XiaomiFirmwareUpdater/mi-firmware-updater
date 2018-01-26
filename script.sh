@@ -426,5 +426,5 @@ echo "Working on virgo_china"
 wget -qq --progress=bar $virgo_china && ./$extract $MINote && rm $MINote
 
 #Uploading
-wput *zip ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Stable/$miuiver/
-wput *zip ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Stable/$miuiver/
+wput *zip ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Stable/$miuiver/
+wput *zip ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Stable/$miuiver/
