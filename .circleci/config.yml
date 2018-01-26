@@ -19,10 +19,10 @@ workflows:
   weekly:
     triggers:
       - schedule:
-          cron: "0 12 * * 5"
+          cron: "0 0 * * */14"
           filters:
             branches:
-              only: master
+              only: stable
 
     jobs:
       - build
