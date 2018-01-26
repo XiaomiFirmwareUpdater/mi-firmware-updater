@@ -1,10 +1,9 @@
 #!/bin/bash
 # Export Variables
 export romsite="http://bigota.d.miui.com"
-transfer="https://transfer.sh"
 extract="create_flashable_firmware.sh"
-upload='curl --upload-file'
 export miuidate=$(curl -s http://en.miui.com/forum.php | grep http://en.miui.com/download.html | cut -d ">" -f 3 | cut -d '<' -f 1 | tee) && echo "Latest miui update is $miuidate"
+
 # Fetch Updates
 echo "aqua: China"
 aqua_china=$(curl -s http://en.miui.com/download-300.html | grep $romsite"/"$miuidate"/"miui_MI4s_$miuidate_)
@@ -411,5 +410,5 @@ echo "Working on vince_china"
 wget -qq --progress=bar $romsite"/"$miuidate"/"$HM5Plus && ./$extract $HM5Plus && rm $HM5Plus
 
 #Uploading
-wput *zip ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuidate/
-wput *zip ftp://$afhuser:$afhpass@uploads.androidfilehost.com//mifirmware/$miuidate/
+wput *zip ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/
+wput *zip ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/
