@@ -27,5 +27,5 @@ echo "Working on capricorn_china"
 wget -qq --progress=bar $romsite"/"$miuidate"/"$MI5S && ./$extract $MI5S && rm $MI5S
 
 #Uploading
-wput "{$(echo *.zip | tr ' ' ',')}" ftp://$afhuser:$afhpass@uploads.androidfilehost.com//mifirmware/$miuidate/
-wput "{$(echo *.zip | tr ' ' ',')}" ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuidate/
+for file in *.zip; do wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//mifirmware/$miuidate/ ; done
+for file in *.zip; do wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuidate/ ; done
