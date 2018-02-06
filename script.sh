@@ -14,7 +14,7 @@ curl -s http://en.miui.com/download-$id.html | grep miui_$name$miuiver | cut -d 
 done <devices
 cat data | grep -E "(http|https)://[a-zA-Z0-9./?=-]*" > links
 echo Downloading:
-wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_f$
+wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
 roms=$(cat links)
 for link in $(echo $roms); do
 wget -qq --progress=bar $link
