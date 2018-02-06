@@ -300,7 +300,7 @@ export HMNote5ALITE=$(echo $ugglite_china | cut -d "/" -f 5 | cut -d '"' -f 1 | 
 echo File Name= $HMNote5ALITE && echo Url= $romsite"/"$miuidate"/"$HMNote5ALITE
 fi
 echo "vince: China"
-vince_china=$(curl -s http://en.miui.com/download-340.html | grep $romsite"/"$miuidate"/"miui_HM5Plus_$miuidate_)
+vince_china=$(curl -s http://en.miui.com/download-340.html#504 | grep $romsite"/"$miuidate"/"miui_HM5Plus_$miuidate_)
 if [ "$vince_china" != "" ] ; then
 export HM5Plus=$(echo $vince_china | cut -d "/" -f 5 | cut -d '"' -f 1 | tee )
 echo File Name= $HM5Plus && echo Url= $romsite"/"$miuidate"/"$HM5Plus
