@@ -16,10 +16,10 @@ workflows:
   commit-workflow:
     jobs:
       - build 
-  fortnight:
+  stable:
     triggers:
       - schedule:
-          cron: "0 0 * * */14"
+          cron: "0 0 */15 * *"
           filters:
             branches:
               only: stable
