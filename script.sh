@@ -21,5 +21,5 @@ wget -qq --progress=bar $link
 file=$(echo $link | cut -d "/" -f5 | cut -d '"' -f1)
 ./create_flashable_firmware.sh $file
 rm $file; done
-for file in *.zip; do wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//mifirmware/$miuiver/ ; done
-for file in *.zip; do wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuiver/ ; done
+for file in *.zip; do path=$(echo $file | cut -d _ -f3) ; wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//mifirmware/$miuiver/$path/ ; done
+for file in *.zip; do path=$(echo $file | cut -d _ -f3) ; wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuiver/$path/ ; done
