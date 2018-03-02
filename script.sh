@@ -19,7 +19,7 @@ roms=$(cat links)
 for link in $(echo $roms); do
 wget -qq --progress=bar $link
 file=$(echo $link | cut -d "/" -f5 | cut -d '"' -f1)
-./create_flashable_firmware.sh $file
+./create_flashable_firmware.sh $file ; done
 mkdir out ; mkdir out/Global ; mkdir out/China
 for zip in `find -name "*Global*"`; do mv $zip out/Global; done
 for zip in *.zip; do mv $zip out/China; done
