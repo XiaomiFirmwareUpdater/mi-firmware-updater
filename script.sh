@@ -13,16 +13,16 @@ curl -s http://en.miui.com/download-$id.html | grep miui_$name$miuiver | cut -d 
 } >> data
 done <devices
 cat data | grep -E "(http|https)://[a-zA-Z0-9./?=-]*" > links
-echo Downloading:
+echo Working:
 wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
 roms=$(cat links)
 for link in $(echo $roms); do
-wget -qq --progress=bar $link
+echo Downloading $link; wget -qq --progress=bar $link
 file=$(echo $link | cut -d "/" -f5 | cut -d '"' -f1)
 ./create_flashable_firmware.sh $file
-rm $file ; done
-mkdir out ; mkdir out/Global ; mkdir out/China
-for zip in `find -name "*Global*"`; do mv $zip out/Global; done
-for zip in *.zip; do mv $zip out/China; done
-for file in out/Global/*.zip; do product=$(echo $file | cut -d _ -f3) ; wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuiver/Global/$product/ ; done
-for file in out/China/*.zip; do product=$(echo $file | cut -d _ -f3) ; wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuiver/China/$product/ ; done
+rm $file; done
+mkdir Global; mkdir China
+for zip in `find -name "*Global*"`; do mv $zip Global/; done
+for zip in *.zip; do mv $zip China/; done
+cd Global; for file in *.zip; do product=$(echo $file | cut -d _ -f3) ; wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuiver/Global/$product/ ; done
+cd ../China; for file in *.zip; do product=$(echo $file | cut -d _ -f3) ; wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//mifirmware/$miuiver/China/$product/ ; done
