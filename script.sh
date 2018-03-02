@@ -27,4 +27,4 @@ echo Uploading:
 cd Global; for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/Global/$product/ ; done
 for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/Global/$product/ ; done
 cd ../China; for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/China/$product/ ; done
-for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/China/$product/ ; done
+for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/China/$product/ ; done
