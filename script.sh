@@ -19,7 +19,7 @@ done <devices
 cat data | grep -E "(http|https)://[a-zA-Z0-9./?=-]*" > links
 mkdir -p changelog/$miuidate/
 echo Starting:
-wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
+wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/next/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
 roms=$(cat links | cut -d "/" -f5 | cut -d '"' -f1)
 for link in $(echo $roms); do
 echo Downloading $link; wget -qq --progress=bar $site$link
@@ -35,5 +35,7 @@ for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$af
 cd ../China; for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/China/$product/ ; done
 for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/China/$product/ ; done
 echo Pushing:
+git config --global user.email "$gitmail" ; git config --global user.name "$gituser"
 git add miuiversion changelog/ ; git commit -m "$miuidate"
 git git remote set-url origin https://$gituser:$gitpass@github.com/xiaomi-firmware-updater/mi-firmware-updater.git ; git push origin testing
+
