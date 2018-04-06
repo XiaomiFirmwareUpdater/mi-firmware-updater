@@ -25,6 +25,7 @@ for link in $(echo $roms); do
 echo Downloading $link; wget -qq --progress=bar $site$link
 ./create_flashable_firmware.sh $link
 rm $link; done
+md5sum *.zip > changelog/$miuidate/$miuidate.md5
 echo Moving Files:
 mkdir Global; mkdir China
 for zip in `find -name "*Global*"`; do mv $zip Global/; done
