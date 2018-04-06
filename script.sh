@@ -1,10 +1,10 @@
 #!/bin/bash
 echo Exporting variables:
 miuidate=$(curl -s http://en.miui.com/forum.php | grep http://en.miui.com/download.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*') && echo "Latest miui update is $miuidate"
-if [ "$miuidate" == "$(< miuiversion)" ]; then
+if [ "$miuidate" == "$(< miuiversion | head -n1)" ]; then
 echo "No new updates!" ; exit
 else
-echo $miuidate > miuiversion
+echo $miuidate >> miuiversion
 fi
 site=http://bigota.d.miui.com/$miuidate/
 echo Fetching updates:
