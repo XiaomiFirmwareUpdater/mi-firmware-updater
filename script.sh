@@ -19,6 +19,7 @@ for link in $(echo $roms); do
 echo Downloading $link; wget -qq --progress=bar $site$link
 ./create_flashable_firmware.sh $link
 rm $link; done
+find . -type f -size 0b -delete
 echo Moving Files:
 mkdir Global; mkdir China
 for zip in `find -name "*Global*"`; do mv $zip Global/; done
