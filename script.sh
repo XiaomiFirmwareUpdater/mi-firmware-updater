@@ -4,7 +4,7 @@ miuidate=$(curl -s http://en.miui.com/forum.php | grep http://en.miui.com/downlo
 if [ "$miuidate" == "$(< miuiversion | head -n1)" ]; then
 echo "No new updates!" ; exit
 else
-echo $miuidate >> miuiversion
+sed -i "1i $miuidate" miuiversion
 fi
 site=http://bigota.d.miui.com/$miuidate/
 echo Fetching updates:
@@ -26,6 +26,7 @@ echo Downloading $link; wget -qq --progress=bar $site$link
 ./create_flashable_firmware.sh $link
 rm $link; done
 md5sum *.zip > changelog/$miuidate/$miuidate.md5
+find . -type f -size 0b -delete
 echo Moving Files:
 mkdir Global; mkdir China
 for zip in `find -name "*Global*"`; do mv $zip Global/; done
