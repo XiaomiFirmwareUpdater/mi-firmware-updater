@@ -6,6 +6,6 @@ jobs:
       - checkout
       - run:
          name: install packages
-         command: sudo apt-get install -y pv wput
+         command: sudo apt-get update ; sudo apt-get install -y pv wput
       - run: chmod 775 script.sh
       - run: ./script.sh
