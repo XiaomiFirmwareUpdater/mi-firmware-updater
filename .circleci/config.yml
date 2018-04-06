@@ -2,7 +2,6 @@ version: 2
 jobs:
   build:
     machine: true
-      - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run:
