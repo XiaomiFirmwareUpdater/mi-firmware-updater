@@ -30,12 +30,12 @@ mkdir Global; mkdir China
 for zip in `find -name "*Global*"`; do mv $zip Global/; done
 for zip in *.zip; do mv $zip China/; done
 echo Uploading:
-cd Global; for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/Global/$product/ ; done
-for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/Global/$product/ ; done
-cd ../China; for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/China/$product/ ; done
-for file in *.zip; do product=$(echo $file | cut -d _ -f3); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/China/$product/ ; done
+cd Global; for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/Global/$product/ ; done
+for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/Global/$product/ ; done
+cd ../China; for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/China/$product/ ; done
+for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/China/$product/ ; done
 echo Pushing:
-git config --global user.email "$gitmail" ; git config --global user.name "$gituser"
+cd .. ; git config --global user.email "$gitmail" ; git config --global user.name "$gituser"
 git add miuiversion changelog/ ; git commit -m "$miuidate"
-git git remote set-url origin https://$gituser:$gitpass@github.com/xiaomi-firmware-updater/mi-firmware-updater.git ; git push origin testing
+git git remote set-url origin https://$gituser:$GIT_OAUTH_TOKEN_XFU@github.com/xiaomi-firmware-updater/mi-firmware-updater.git ; git push origin testing
 
