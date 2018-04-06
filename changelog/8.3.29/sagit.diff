@@ -1,0 +1,11 @@
+18c18
+< wlan: WLAN.HL.1.0.c5-00133-QCAHLSWMTPLZ-1
+---
+> wlan: WLAN.HL.1.0.c5-00133-QCAHLSWMTPLZ-1    
+22,23c22,23
+< Time_Stamp: 2018-03-16 18:58:16
+< Version: 1.0
+---
+> Time_Stamp: 2018-03-28 22:20:14    
+> Version: 1.0
+\ No newline at end of file
