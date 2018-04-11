@@ -1,13 +1,12 @@
 version: 2
 jobs:
   build:
-    docker:
-      - image: circleci/ruby:2.4.1
+    machine: true
     steps:
       - checkout
       - run:
-         name: Install packages
-         command: sudo apt-get install -y pv wput
+         name: install packages
+         command: sudo apt-get update -qq ; sudo apt-get install -y -qq wput
       - run: chmod 775 script.sh
       - run: ./script.sh
 

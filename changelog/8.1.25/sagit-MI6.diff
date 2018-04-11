@@ -1,0 +1,24 @@
+3c3
+< apps: LA.UM.5.7.r1-10500-8x98.0-1
+---
+> apps: LA.UM.5.7.r1-11500-8x98.0-1
+6c6
+< common: MSM8998.LA.1.1.c5-00021-STD.PROD-1
+---
+> common: MSM8998.LA.1.1.c5-00026-STD.PROD-1
+9c9
+< modem: MPSS.AT.2.0.c4.6-00146-8998_GEN_PACK-1
+---
+> modem: MPSS.AT.2.0.c4.6-00168-8998_GEN_PACK-1
+12c12
+< spss: SPSS.A1.1.0-00026-M8998AAAAANAZS-1
+---
+> spss: SPSS.A1.1.0-00027-M8998AAAAANAZS-1
+20c20
+< Meta_Build_ID: MSM8998.LA.1.1.c5-00021-STD.PROD-1
+---
+> Meta_Build_ID: MSM8998.LA.1.1.c5-00026-STD.PROD-1
+22c22
+< Time_Stamp: 2018-01-12 22:21:40    
+---
+> Time_Stamp: 2018-01-23 22:25:08    
