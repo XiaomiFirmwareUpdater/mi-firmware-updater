@@ -19,7 +19,7 @@ done <devices
 cat data | grep -E "(http|https)://[a-zA-Z0-9./?=-]*" > links
 mkdir -p changelog/$miuidate/
 echo Starting:
-wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/next/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
+wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
 roms=$(cat links | cut -d "/" -f5 | cut -d '"' -f1)
 for link in $(echo $roms); do
 echo Downloading $link; wget -qq --progress=bar $site$link
