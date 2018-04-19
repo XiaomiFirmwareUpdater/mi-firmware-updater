@@ -36,4 +36,4 @@ for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$af
 echo Pushing:
 git config --global user.email "$gitmail" ; git config --global user.name "$gituser"
 git add miuiversion changelog/ ; git commit -m "$miuidate"
-git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/xiaomi-firmware-updater/$repo.git $branch
+git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git $branch
