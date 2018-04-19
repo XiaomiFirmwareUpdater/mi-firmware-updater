@@ -24,6 +24,12 @@ elif [[ $sp = *"helium_g"* ]]; then
 curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n4 | tail -n1 >> data
 elif [[ $sp = *"helium_c"* ]]; then
 curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n8 | tail -n1 >> data
+elif [[ $sp = *"kate"* ]]; then
+curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n6 | tail -n1 >> data
+elif [[ $sp = *"kenzo_g"* ]]; then
+curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n2 | tail -n1 >> data
+elif [[ $sp = *"kenzo_c"* ]]; then
+curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n4 | tail -n1 >> data
 else
 curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | tail -n1 >> data
 fi
