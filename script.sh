@@ -11,11 +11,19 @@ echo Fetching updates:
 cat device | while read device; do
 id=$(echo $device | cut -d , -f1)
 name=$(echo $device | cut -d , -f2)
-china=$(echo $device | cut -d , -f3)
+sp=$(echo $device | cut -d , -f3)
 if [[ $name = *"Global"* ]]; then
 curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n2 | tail -n1 >> data
-elif [[ $china = *"China"* ]]; then
+elif [[ $sp = *"China"* ]]; then
 curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | tail -n1 >> data
+elif [[ $sp = *"hydrogen_g"* ]]; then
+curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n2 | tail -n1 >> data
+elif [[ $sp = *"hydrogen_c"* ]]; then
+curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n6 | tail -n1 >> data
+elif [[ $sp = *"helium_g"* ]]; then
+curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n4 | tail -n1 >> data
+elif [[ $sp = *"helium_c"* ]]; then
+curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n8 | tail -n1 >> data
 else
 curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | tail -n1 >> data
 fi
