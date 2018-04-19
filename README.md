@@ -11,7 +11,7 @@ A Script that automatically generate Xiaomi firmware flashable zip files every m
 Firmware is extracted from miui official ROMs, both Global and China. Auto updated every Friday.
 
 ### Supported Devices:
-[Go here](https://github.com/xiaomi-firmware-updater/mi-firmware-updater/blob/weekly/Supported.md)
+[Go here](https://github.com/xiaomi-firmware-updater/mi-firmware-updater/blob/weekly/supported.md)
 
 ### XDA Support Thread:
 [Go here](https://forum.xda-developers.com/android/software-hacking/devices-xiaomi-firmware-updater-t3741446)
