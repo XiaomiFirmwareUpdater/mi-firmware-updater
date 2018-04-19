@@ -24,7 +24,7 @@ function check() {
 if [ "$sp" = "" ]; then
   if [[ $name = *"Global"* ]]; then
   curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n2 | tail -n1 >> data
-  elif [[ $sp = *"China"* ]]; then
+  elif [[ $name = *"China"* ]]; then
   curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | tail -n1 >> data
   else
   curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | tail -n1 >> data
