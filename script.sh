@@ -44,6 +44,8 @@ else
   curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n2 | tail -n1 >> data
   elif [[ $sp = *"kenzo_c"* ]]; then
   curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n4 | tail -n1 >> data
+  elif [[ $sp = *"mido"* ]]; then
+  curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n4 | tail -n1 >> data
   fi
 fi
 }
