@@ -1,7 +1,8 @@
 #!/bin/bash
 echo Exporting variables:
 miuidate=$(curl -s http://en.miui.com/forum.php | grep http://en.miui.com/download.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*') && echo "Latest miui update is $miuidate"
-if [ "$miuidate" == "$(< miuiversion | head -n1)" ]; then
+miuiversion=$(cat miuiversion | head -n1)
+if [ "$miuidate" == "$miuiversion" ]; then
 echo "No new updates!" ; exit
 else
 sed -i "1i $miuidate" miuiversion
@@ -33,6 +34,6 @@ echo Uploading Files:
 for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$basketbuilduser:$basketbuildpass@basketbuild.com//Xiaomi-Firmware/Developer/$miuidate/$product/ ; done
 for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/$product/ ; done
 echo Pushing:
-cd .. ; git config --global user.email "$gitmail" ; git config --global user.name "$gituser"
+git config --global user.email "$gitmail" ; git config --global user.name "$gituser"
 git add miuiversion changelog/ ; git commit -m "$miuidate"
 git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/xiaomi-firmware-updater/$repo.git $branch
