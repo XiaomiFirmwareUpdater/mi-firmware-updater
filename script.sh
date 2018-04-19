@@ -54,6 +54,10 @@ else
   curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n4 | tail -n1 >> data
   elif [[ $sp = *"ugglite_c"* ]]; then
   curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n8 | tail -n1 >> data
+  elif [[ $sp = *"vince_g"* ]]; then
+  curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n2 | tail -n1 >> data
+  elif [[ $sp = *"vince_c"* ]]; then
+  curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | cut -d '"' -f6 | head -n7 | tail -n1 >> data
   fi
 fi
 }
