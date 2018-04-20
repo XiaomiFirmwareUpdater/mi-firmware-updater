@@ -12,14 +12,15 @@
 | 301 | HMNote3ProGlobal | Xiaomi Redmi Note 3 Pro Global | kenzo |
 | 301 | HMNote3ProtwGlobal | Xiaomi Redmi Note 3 Special Edition Global | kate |
 | 302 | MIMAX | Xiaomi Mi Max | hydrogen |
+| 302 | MIMAXGlobal | Xiaomi Mi Max Global | hydrogen |
 | 302 | MIMAX652 | Xiaomi Mi Max Prime | helium |
 | 302 | MIMAX652Global | Xiaomi Mi Max Prime Global | helium |
-| 302 | MIMAXGlobal | Xiaomi Mi Max Global | hydrogen |
 | 303 | HM3S | Xiaomi Redmi 3S/Prime/3X | land |
 | 303 | HM3SGlobal | Xiaomi Redmi 3S/Prime/3X Global | land |
 | 304 | HMPro | Xiaomi Redmi Pro | omega |
 | 309 | HMNote4 | Xiaomi Redmi Note 4 MTK | nikel |
 | 309 | HMNote4Global | Xiaomi Redmi Note 4 MTK Global | nikel |
+| 321 | HMNote4X | Xiaomi Redmi Note 4X | mido |
 | 309 | HMNote4XGlobal | Xiaomi Redmi Note 4 Global | mido |
 | 314 | MI5S | Xiaomi Mi 5s | capricorn |
 | 314 | MI5SGlobal | Xiaomi Mi 5s Global | capricorn |
@@ -33,7 +34,6 @@
 | 319 | HM4A | Xiaomi Redmi 4A | rolex |
 | 319 | HM4AGlobal | Xiaomi Redmi 4A Global | rolex |
 | 320 | HM4Pro | Xiaomi Redmi 4 Prime | markw |
-| 321 | HMNote4X | Xiaomi Redmi Note 4X | mido |
 | 323 | HM4X | Xiaomi Redmi 4X | santoni |
 | 323 | HM4XGlobal | Xiaomi Redmi 4X Global | santoni |
 | 325 | MIPAD3 | Xiaomi Mi Pad 3 | cappu |
