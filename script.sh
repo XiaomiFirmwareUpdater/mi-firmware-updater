@@ -1,7 +1,37 @@
 #!/bin/bash
+function getmiuidate() { 
+y=$(date '+%y' | cut -c2); month=$(date '+%m');
+tmpday=$(date '+%u')
+if [ $tmpday  == 4 ] ; then
+day=$(date '+%d');
+else
+day=$(date -dlast-thursday '+%d');
+fi
+checkmonth=$(echo $month | cut -c1);
+if [ $checkmonth  == 0 ] ; then
+m=$(echo $month | cut -c2)
+else
+m=$month
+fi
+checkday=$(echo $day | cut -c1);
+if [ $checkday  == 0 ] ; then
+d=$(echo $day | cut -c2)
+else
+d=$day
+fi
+today=$(echo $y.$m.$d)
+}
+
 function datecheck() {
 echo Exporting variables:
-miuidate=$(curl -s http://en.miui.com/forum.php | grep http://en.miui.com/download.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*') && echo "Latest miui update is $miuidate"
+checker0=$(curl -s http://en.miui.com/forum.php | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today)
+checker1=$(curl -s http://www.miui.com/download-330.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today)
+checker2=$(curl -s http://www.miui.com/download-337.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today)
+if [ "$today" == "$checker0" ] || [ "$today" == "$checker1" ] || [ "$today" == "$checker2" ]; then
+miuidate=$today && echo "Latest miui update is $miuidate"
+else
+echo "Can't find updates!" ; exit
+fi
 miuiversion=$(cat miuiversion | head -n1)
 if [ "$miuidate" == "$miuiversion" ]; then
 echo "No new updates!" ; exit
@@ -64,7 +94,8 @@ fi
 
 function download_extract() {
 wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
-cat data | while read link; do
+cat data | grep '$miuidate' >> links
+cat links | while read link; do
 zip=$(echo $link | cut -d "/" -f5 | cut -d '"' -f1)
 echo Downloading $zip
 wget -qq --progress=bar $link
@@ -88,6 +119,7 @@ git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.
 }
 
 # Start
+getmiuidate
 datecheck
 fetch
 mkdir -p changelog/$miuidate/
