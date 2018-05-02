@@ -35,3 +35,4 @@ getmiuiversion
 fetch
 mkdir -p changelog/$miuidate/
 download_extract
+upload
