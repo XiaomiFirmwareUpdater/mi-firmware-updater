@@ -53,4 +53,6 @@
 | 340 | HM5Global | Xiaomi Redmi 5 Global | rosy | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_rosy/releases/latest) |
 | 340 | HM5Plus | Xiaomi Redmi 5 Plus | vince | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_vince/releases/latest) |
 | 340 | HM5PlusGlobal | Xiaomi Redmi 5 Plus Global | vince | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_vince/releases/latest) |
-| 341 | WHYREDGlobal | Xiaomi Note 5 Pro | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
+| 342 | HMNote5 | Xiaomi Note 5 | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
+| 342 | WHYREDGlobal | Xiaomi Note 5 Pro | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
+| 343 | MIMIX2S | Xiaomi Mi MIX 2S | polaris | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_polaris/releases/latest) |
