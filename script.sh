@@ -23,7 +23,7 @@ miuidate=$(echo $y.$m.$d)
 }
 
 function datecheck() {
-checker=$(curl -s http://en.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today | head -n1)
+checker=$(curl -s http://en.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $miuidate | head -n1)
 if [ "$miuidate" == "$checker" ]; then
 echo "Latest miui update is $miuidate"
 else
