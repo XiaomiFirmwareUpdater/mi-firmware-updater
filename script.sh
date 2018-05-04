@@ -23,11 +23,8 @@ today=$(echo $y.$m.$d)
 }
 
 function datecheck() {
-echo Exporting variables:
-checker0=$(curl -s http://en.miui.com/forum.php | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today)
-checker1=$(curl -s http://www.miui.com/download-330.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today)
-checker2=$(curl -s http://www.miui.com/download-337.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today)
-if [ "$today" == "$checker0" ] || [ "$today" == "$checker1" ] || [ "$today" == "$checker2" ]; then
+checker=$(curl -s http://www.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today)
+if [ "$today" == "$checker" ]; then
 miuidate=$today && echo "Latest miui update is $miuidate"
 else
 echo "Can't find updates!" ; exit
@@ -45,6 +42,7 @@ echo Fetching updates:
 cat device | while read device; do
 id=$(echo $device | cut -d , -f1)
 name=$(echo $device | cut -d , -f2)
+datecheck
 curl -s http://en.miui.com/download-$id.html | grep 'margin-top: 0' | grep miui_$name$miuidate | cut -d '"' -f6 >> data
 done
 }
@@ -77,7 +75,6 @@ git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.
 
 # Start
 getmiuidate
-datecheck
 fetch
 mkdir -p changelog/$miuidate/
 download_extract
