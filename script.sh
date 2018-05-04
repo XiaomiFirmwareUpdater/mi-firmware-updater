@@ -19,13 +19,13 @@ d=$(echo $day | cut -c2)
 else
 d=$day
 fi
-today=$(echo $y.$m.$d)
+miuidate=$(echo $y.$m.$d)
 }
 
 function datecheck() {
-checker=$(curl -s http://en.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today)
-if [ "$today" == "$checker" ]; then
-miuidate=$today && echo "Latest miui update is $miuidate"
+checker=$(curl -s http://en.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $today | head -n1)
+if [ "$miuidate" == "$checker" ]; then
+echo "Latest miui update is $miuidate"
 else
 echo "Can't find updates!" ; exit
 fi
