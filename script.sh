@@ -25,13 +25,13 @@ miuidate=$(echo $y.$m.$d)
 function datecheck() {
 checker=$(curl -s http://en.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $miuidate | head -n1)
 if [ "$miuidate" == "$checker" ]; then
-echo "Latest miui update is $miuidate"
+echo "Latest miui update is $miuidate" ;
 else
-echo "Can't find updates!" ; exit 1 && set -e
+echo "Can't find updates!" ; exit 1
 fi
 miuiversion=$(cat miuiversion | head -n1)
 if [ "$miuidate" == "$miuiversion" ]; then
-echo "No new updates!" ; exit 1 && set -e
+echo "No new updates!" ; exit 1
 else
 sed -i "1i $miuidate" miuiversion
 fi
