@@ -27,11 +27,11 @@ checker=$(curl -s http://en.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]
 if [ "$miuidate" == "$checker" ]; then
 echo "Latest miui update is $miuidate"
 else
-echo "Can't find updates!" ; exit 1
+echo "Can't find updates!" ; exit 1 && set -e
 fi
 miuiversion=$(cat miuiversion | head -n1)
 if [ "$miuidate" == "$miuiversion" ]; then
-echo "No new updates!" ; exit 1
+echo "No new updates!" ; exit 1 && set -e
 else
 sed -i "1i $miuidate" miuiversion
 fi
