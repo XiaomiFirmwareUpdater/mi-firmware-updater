@@ -80,6 +80,7 @@ git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.
 # Start
 getmiuidate
 fetch
+rc=$?; if [[ $rc != 0 ]]; then exit $rc; fi
 mkdir -p changelog/$miuidate/
 download_extract
 upload
