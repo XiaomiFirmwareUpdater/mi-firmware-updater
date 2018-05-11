@@ -61,9 +61,12 @@ find . -type f -size 0k -delete
 
 function upload() {
 mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking no" >> ~/.ssh/config
-mv ~/.bashrc bashrc
+sshpass -p $sfpass ssh -t yshalsager@shell.sourceforge.net create << EOF
+mkdir -p /home/frs/project/xiaomi-firmware-updater/Developer/$miuidate/$product/
+exit
+EOF
 echo Uploading Files:
-for file in *.zip; do product=$(echo $file | cut -d _ -f2); sshpass -p $sfpass rsync -avpHrz --rsync-path="mkdir -p /home/frs/project/xiaomi-firmware-updater/Developer/$miuidate/$product/" -e ssh $file yshalsager@web.sourceforge.net:/home/frs/project/xiaomi-firmware-updater/Developer/$miuidate/$product/ ; done
+for file in *.zip; do product=$(echo $file | cut -d _ -f2); sshpass -p $sfpass rsync -avP -e ssh $file yshalsager@web.sourceforge.net:/home/frs/project/xiaomi-firmware-updater/Developer/$miuidate/$product/ ; done
 for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/$product/ ; done
 }
 
