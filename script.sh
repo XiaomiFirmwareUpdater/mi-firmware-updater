@@ -23,7 +23,7 @@ miuidate=$(echo $y.$m.$d)
 }
 
 function brake() {
-rc=$?; if [[ $rc != 0 ]]; then exit $rc; fi
+if [ "$latest" == "true" ] || [ "$noupdates" == "true" ]; then set -e; fi
 }
 
 function datecheck() {
@@ -32,11 +32,13 @@ if [ "$miuidate" == "$checker" ]; then
 echo "Latest miui update is $miuidate" ; set +e
 else
 echo "Can't find updates!" ; exit 1
+export noupdates=true
 brake
 fi
 miuiversion=$(cat miuiversion | head -n1)
 if [ "$miuidate" == "$miuiversion" ]; then
 echo "No new updates!" ; exit 1
+export latest=true
 brake
 else
 sed -i "1i $miuidate" miuiversion ; set +e
