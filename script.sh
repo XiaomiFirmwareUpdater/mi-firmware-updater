@@ -22,18 +22,22 @@ fi
 miuidate=$(echo $y.$m.$d)
 }
 
+function brake() {
+rc=$?; if [[ $rc != 0 ]]; then exit $rc; fi
+}
+
 function datecheck() {
 checker=$(curl -s http://en.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $miuidate | head -n1)
 if [ "$miuidate" == "$checker" ]; then
 echo "Latest miui update is $miuidate" ; set +e
 else
 echo "Can't find updates!" ; exit 1
-rc=$?; if [[ $rc != 0 ]]; then exit $rc; fi
+brake
 fi
 miuiversion=$(cat miuiversion | head -n1)
 if [ "$miuidate" == "$miuiversion" ]; then
 echo "No new updates!" ; exit 1
-rc=$?; if [[ $rc != 0 ]]; then exit $rc; fi
+brake
 else
 sed -i "1i $miuidate" miuiversion ; set +e
 fi
@@ -50,6 +54,7 @@ done
 }
 
 function download_extract() {
+brake
 wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
 cat data | while read link; do
 zip=$(echo $link | cut -d "/" -f5 | cut -d '"' -f1)
@@ -62,6 +67,7 @@ find . -type f -size 0k -delete
 }
 
 function upload() {
+brake
 mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking no" >> ~/.ssh/config
 sshpass -p $sfpass ssh -t yshalsager@shell.sourceforge.net create << EOF
 exit
@@ -73,6 +79,7 @@ for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$af
 }
 
 function push() {
+brake
 echo Pushing:
 git config --global user.email "$gitmail" ; git config --global user.name "$gituser"
 git add miuiversion changelog/ ; git commit -m "$miuidate"
