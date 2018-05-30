@@ -28,7 +28,6 @@ echo Fetching updates:
 cat device | while read device; do
 id=$(echo $device | cut -d , -f1)
 name=$(echo $device | cut -d , -f2)
-
 checker=$(curl -s http://en.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $miuidate | head -n1)
 if [ "$miuidate" == "$checker" ]; then
 echo "Latest miui update is $miuidate" ; set +e
@@ -64,7 +63,6 @@ mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecki
 sshpass -p $sfpass ssh -t yshalsager@shell.sourceforge.net create && mkdir -p /home/frs/project/xiaomi-firmware-updater/Developer/$miuidate << EOF
 exit
 EOF
-sshpass -p $sfpass ssh yshalsager@shell.sourceforge.net 'mkdir -p /home/frs/project/xiaomi-firmware-updater/Developer/$miuidate/$product/'
 echo Uploading Files:
 for file in *.zip; do product=$(echo $file | cut -d _ -f2); sshpass -p $sfpass rsync -avP -e ssh $file yshalsager@web.sourceforge.net:/home/frs/project/xiaomi-firmware-updater/Developer/$miuidate/$product/ ; done
 for file in *.zip; do product=$(echo $file | cut -d _ -f2); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$miuidate/$product/ ; done
