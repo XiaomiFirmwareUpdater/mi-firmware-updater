@@ -56,3 +56,5 @@
 | 342 | HMNote5 | Xiaomi Note 5 | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
 | 342 | WHYREDGlobal | Xiaomi Note 5 Pro | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
 | 343 | MIMIX2S | Xiaomi Mi MIX 2S | polaris | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_polaris/releases/latest) |
+| 344 | MI6X | Xiaomi Mi 6x | wayne | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_wayne/releases/latest) |
+| 345 | HMS2 | Xiaomi Redmi S2 | ysl | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ysl/releases/latest) |
