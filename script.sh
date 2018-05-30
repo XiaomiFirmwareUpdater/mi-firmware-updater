@@ -61,7 +61,7 @@ find . -type f -size 0k -delete
 
 brake
 mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking no" >> ~/.ssh/config
-sshpass -p $sfpass ssh -t yshalsager@shell.sourceforge.net create << EOF
+sshpass -p $sfpass ssh -t yshalsager@shell.sourceforge.net create && mkdir -p /home/frs/project/xiaomi-firmware-updater/Developer/$miuidate << EOF
 exit
 EOF
 sshpass -p $sfpass ssh yshalsager@shell.sourceforge.net 'mkdir -p /home/frs/project/xiaomi-firmware-updater/Developer/$miuidate/$product/'
