@@ -26,7 +26,7 @@ done ; brake
 
 wget -qq --progress=bar https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
 cat data | while read link; do
-zip=$(echo $url | cut -d / -f5)
+zip=$(echo $link | cut -d / -f5)
 echo Downloading $zip
 wget -qq --progress=bar $link
 ./create_flashable_firmware.sh $zip
