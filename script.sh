@@ -12,14 +12,6 @@ id=$(echo $device | cut -d , -f4)
 url=`./getversion.sh $codename $mibranch $android`
 miuidate=$(echo $url | cut -d / -f4)
 
-checker=$(curl -s http://en.miui.com/download-$id.html | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | grep $miuidate | head -n1)
-if [ "$miuidate" == "$checker" ]; then
-echo "Latest miui update is $miuidate" ; set +e
-else
-echo "Can't find updates!" ; exit 1
-export noupdates=true
-brake
-fi
 miuiversion=$(cat miuiversion | head -n1)
 if [ "$miuidate" == "$miuiversion" ]; then
 echo "No new updates!" ; exit 1
@@ -31,7 +23,7 @@ fi
 echo $url >> data
 done ; brake
 
-wget -qq --progress=bar https://github.com/xiaomi-firmware-updater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
+wget -qq --progress=bar https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
 cat data | while read link; do
 zip=$(echo $url | cut -d / -f5)
 echo Downloading $zip
