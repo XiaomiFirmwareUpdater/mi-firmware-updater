@@ -20,8 +20,8 @@ brake
 else
 sed -i "1i $miuidate" miuiversion ; set +e
 fi
-sed -i 's/param error//g' ./miuiversion && sed -i '/^\s*$/d' ./miuiversion
 echo $url >> data
+sed -i 's/param error//g' ./miuiversion ./data && sed -i '/^\s*$/d' ./miuiversion ./data
 done ; brake
 
 wget -qq --progress=bar https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
