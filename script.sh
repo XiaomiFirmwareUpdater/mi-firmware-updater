@@ -20,6 +20,7 @@ brake
 else
 sed -i "1i $miuidate" miuiversion ; set +e
 fi
+sed -i 's/param error//g' ./miuiversion && sed -i '/^\s*$/d' ./miuiversion
 echo $url >> data
 done ; brake
 
