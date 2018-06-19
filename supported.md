@@ -52,9 +52,15 @@
 | 340 | HM5 | Xiaomi Redmi 5 | rosy | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_rosy/releases/latest) |
 | 340 | HM5Global | Xiaomi Redmi 5 Global | rosy | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_rosy/releases/latest) |
 | 340 | HM5Plus | Xiaomi Redmi 5 Plus | vince | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_vince/releases/latest) |
-| 340 | HM5PlusGlobal | Xiaomi Redmi 5 Plus Global | vince | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_vince/releases/latest) |
+| 340 | HM5PlusGlobal | Xiaomi Redmi 5 Plus Global / Note 5 | vince | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_vince/releases/latest) |
 | 342 | HMNote5 | Xiaomi Note 5 | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
 | 342 | WHYREDGlobal | Xiaomi Note 5 Pro | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
 | 343 | MIMIX2S | Xiaomi Mi MIX 2S | polaris | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_polaris/releases/latest) |
-| 344 | MI6X | Xiaomi Mi 6x | wayne | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_wayne/releases/latest) |
+| 343 | MIMIX2SGlobal | Xiaomi Mi MIX 2S Global | polaris | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_polaris/releases/latest) |
+| 344 | MI6X | Xiaomi Mi 6X | wayne | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_wayne/releases/latest) |
 | 345 | HMS2 | Xiaomi Redmi S2 | ysl | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ysl/releases/latest) |
+| 345 | HMS2Global | Xiaomi Redmi S2 Global | ysl | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ysl/releases/latest) |
+| 346 | DIPPER | Xiaomi Mi 8 | dipper | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_dipper/releases/latest) |
+| 346 | DIPPERGlobal | Xiaomi Mi 8 Global | dipper | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_dipper/releases/latest) |
+| 347 | MI8SE | Xiaomi Mi 8 SE | sirius | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sirius/releases/latest) |
+| 347 | MI8SEGlobal | Xiaomi Mi 8 SE Global | sirius | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sirius/releases/latest) |
