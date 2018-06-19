@@ -6,10 +6,9 @@ if [ "$latest" == "true" ] || [ "$noupdates" == "true" ]; then set -e; fi
 echo Fetching updates:
 cat device | while read device; do
 codename=$(echo $device | cut -d , -f1)
-mibranch=$(echo $device | cut -d , -f2)
 android=$(echo $device | cut -d , -f3)
 id=$(echo $device | cut -d , -f4)
-url=`./getversion.sh $codename $mibranch $android`
+url=`./getversion.sh $codename X $android`
 miuidate=$(echo $url | cut -d / -f4)
 
 miuiversion=$(cat miuiversion | head -n1)
