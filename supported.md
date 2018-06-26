@@ -1,7 +1,5 @@
 | ID | MIUI Name | Device Name | Codename | Downloads |
 | --- | --- | --- | --- | --- |
-| 261 | HM2XWC | Xiaomi Redmi 2 | wt88047 | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_wt88047/releases/latest) |
-| 261 | HM2XWCPro | Xiaomi Redmi 2 Prime | wt88047\_pro | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_wt88047_pro/releases/latest) |
 | 293 | MI4c | Xiaomi Mi 4c | libra | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_libra/releases/latest) |
 | 298 | HM3 | Xiaomi Redmi 3 | ido | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ido/releases/latest) |
 | 298 | HM3Global | Xiaomi Redmi 3 Global | ido | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ido/releases/latest) |
