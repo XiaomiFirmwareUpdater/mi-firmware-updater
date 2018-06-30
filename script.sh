@@ -2,6 +2,10 @@
 function brake() {
 if [ "$latest" == "true" ] || [ "$noupdates" == "true" ]; then set -e; fi
 }
+echo Getting latest verison:
+tmpdevice=`cat device | cut -d , -f1 | head -n1`
+tmpandroid=`cat device | cut -d , -f2 | head -n1`
+miuidate=`./getversion.sh $tmpdevice X $tmpandroid | grep -o '[0-9]*[.][0-9]*[.][0-9]*' | head -n1`
 
 echo Fetching updates:
 cat device | while read device; do
@@ -9,7 +13,6 @@ codename=$(echo $device | cut -d , -f1)
 android=$(echo $device | cut -d , -f2)
 id=$(echo $device | cut -d , -f3)
 url=`./getversion.sh $codename X $android`
-miuidate=$(echo $url | cut -d / -f4)
 
 miuiversion=$(cat miuiversion | head -n1)
 if [ "$miuidate" == "$miuiversion" ]; then
@@ -34,6 +37,11 @@ md5sum *.zip > changelog/$miuidate/$miuidate.md5
 find . -type f -size 0k -delete
 brake
 mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking no" >> ~/.ssh/config
+sshpass -p $sfpass sftp yshalsager,xiaomi-firmware-updater@web.sourceforge.net << EOF
+cd /home/frs/project/xiaomi-firmware-updater/Developer/
+mkdir $miuidate
+quit
+EOF
 
 echo Uploading Files:
 for file in *.zip; do product=$(echo $file | cut -d _ -f2); version=$(echo $file | cut -d _ -f5); sshpass -p $sfpass rsync -avP -e ssh $file yshalsager@web.sourceforge.net:/home/frs/project/xiaomi-firmware-updater/Developer/$version/$product/ ; done
