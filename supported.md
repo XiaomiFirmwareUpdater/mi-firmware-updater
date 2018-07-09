@@ -62,3 +62,7 @@
 | 346 | DIPPERGlobal | Xiaomi Mi 8 Global | dipper | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_dipper/releases/latest) |
 | 347 | MI8SE | Xiaomi Mi 8 SE | sirius | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sirius/releases/latest) |
 | 347 | MI8SEGlobal | Xiaomi Mi 8 SE Global | sirius | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sirius/releases/latest) |
+| --- | HM6Pro | Xiaomi Redmi 6 Pro | sakura | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sakura/releases/latest) |
+| --- | HM6ProGlobal | Xiaomi Redmi 6 Pro Global | sakura | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sakura/releases/latest) |
+| --- | MIPAD4 | Xiaomi Mi Pad 4 | clover | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_clover/releases/latest) |
+| --- | URSA | Xiaomi Mi 8 Explorer Edition | ursa | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ursa/releases/latest) |
