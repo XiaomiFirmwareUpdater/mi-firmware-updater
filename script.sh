@@ -74,6 +74,8 @@ git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.
 
 #Telegram
 wget -q https://github.com/fabianonline/telegram.sh/raw/master/telegram && chmod +x telegram
+if [ -s dl_links ]
+then
 for file in *.zip; do
 	codename=$(echo $file | cut -d _ -f2)
 	model=$(echo $file | cut -d _ -f4)
@@ -89,6 +91,9 @@ for file in *.zip; do
 	[Sourceforge](https://sourceforge.net/projects/xiaomi-firmware-updater/files/Stable/V9/) - [Github](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_$codename/releases/latest)
 	@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
 done
+else
+    echo "Nothing found!"
+fi
 
 #Cleanup
 rm raw_out compare changes updates dl_links 2> /dev/null
