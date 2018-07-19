@@ -76,7 +76,9 @@ for file in *.zip; do product=$(echo $file | cut -d _ -f2); version=$(echo $file
 echo Pushing:
 git config --global user.email "$gitmail" ; git config --global user.name "$gituser"
 git add miuiversion changelog/ ; git commit -m "Sync: $(date +%d.%m.%Y)"
-git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
+export GIT_TAG=$TRAVIS_BRANCH-$(date +%d.%m.%Y); zips=$(ls *.zip | cut -d _ -f3 | sort -u | tr '\n' ' ')
+git tag $GIT_TAG -a -m "Sync: $(date +%d.%m.%Y), contains firmware from $zips ROMs"
+git push -q --follow-tags https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
 
 #Telegram
 wget -q https://github.com/fabianonline/telegram.sh/raw/master/telegram && chmod +x telegram
