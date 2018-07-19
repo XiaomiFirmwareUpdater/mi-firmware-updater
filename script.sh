@@ -77,7 +77,7 @@ echo Pushing:
 git config --global user.email "$gitmail" ; git config --global user.name "$gituser"
 git add miuiversion changelog/ ; git commit -m "Sync: $(date +%d.%m.%Y)"
 export GIT_TAG=$TRAVIS_BRANCH-$(date +%d.%m.%Y)
-git tag $GIT_TAG -a -m "Sync: $(date +%d.%m.%Y), upload firmware from $(cat changes) MIUI ROM"
+git tag $GIT_TAG -a -m "Sync: $(date +%d.%m.%Y), upload firmware from $(cat updates) MIUI ROM"
 git push -q --follow-tags https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
 
 #Telegram
