@@ -90,7 +90,7 @@ for file in *.zip; do
 	*Codename*: $codename
 	*Version*: $version
 	*Android*: $android
-	*Filename*: $file
+	Filename: *$file*
 	*Filesize*: $size
 	*MD5*: $md5
 	*Download Links*:
