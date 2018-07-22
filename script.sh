@@ -100,7 +100,7 @@ for file in *.zip; do
 	*Filesize*: $size
 	*MD5*: $md5
 	*Download Links*:
-	[Sourceforge](https://sourceforge.net/projects/xiaomi-firmware-updater/files/Developer/$version/) - [Github](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_$codename/releases/latest)
+	[Sourceforge](https://sourceforge.net/projects/xiaomi-firmware-updater/files/Developer/$version/) - [Github](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_$codename/releases/tag/$GIT_TAG)
 	@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
 done
 else
