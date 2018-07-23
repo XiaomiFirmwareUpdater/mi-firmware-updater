@@ -60,6 +60,21 @@ mkdir -p changelog/$ver/
 ./create_flashable_firmware.sh $zip
 rm $zip; done
 
+#Diff
+for file in *.zip; do version=$(echo $file | cut -d _ -f5)
+if [[ $file =~ ^[a-z]*_[a-z]*_[a-z]*_[A-Z0-9]*_V[0-9]*.[0-9]*.[0-9]*.[0-9]*.[A-Z][A-Z][A-Z]MI[A-Z][A-Z]_[a-z0-9]*_[0-9]*.[0-9]*.[a-z]*$ ]]; then
+    echo "Generating diff from global rom zip"
+    oldversion=$(ls changelog/ | sort | grep MI | head -n2 | tail -n1)
+elif [[ $file =~ ^[a-z]*_[a-z]*_[a-z]*_[A-Z0-9]*_V[0-9]*.[0-9]*.[0-9]*.[0-9]*.[A-Z][A-Z][A-Z]CN[A-Z][A-Z]_[a-z0-9]*_[0-9]*.[0-9]*.[a-z]*$ ]]; then
+    echo "Generating diff from chinese rom zip"
+    oldversion=$(ls changelog/ | sort | grep CN | head -n2 | tail -n1)
+else
+    echo "Generating diff from weekly rom zip"
+    oldversion=$(ls changelog/ | sort | head -n2 | tail -n1)
+fi
+diff changelog/$oldversion/*.log changelog/$version/*.log > changelog/$version/$oldversion-$version.diff
+done
+
 #Upload
 echo Uploading Files:
 mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking no" >> ~/.ssh/config
