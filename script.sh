@@ -96,7 +96,7 @@ git tag $GIT_TAG -a -m "Sync: $(date +%d.%m.%Y), upload firmware from $(cat upda
 git push -q --follow-tags https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
 
 #Telegram
-wget -q https://github.com/fabianonline/telegram.sh/raw/master/telegram && chmod +x telegram
+wget -q https://github.com/yshalsager/telegram.sh/raw/master/telegram && chmod +x telegram
 if [ -s dl_links ]
 then
 for file in *.zip; do 
