@@ -7,6 +7,9 @@ else
     echo "DB not found!"
 fi
 
+#Download
+curl -H "PRIVATE-TOKEN: $GITLAB_OAUTH_TOKEN_VE" 'https://gitlab.com/api/v4/projects/7746867/repository/files/getversion.sh/raw?ref=master' -o getversion.sh && chmod +x getversion.sh
+
 #Fetch
 echo Fetching updates:
 cat device | while read device; do
