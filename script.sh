@@ -52,6 +52,8 @@ else
 fi
 
 #Start
+if [ -s dl_links ]
+then
 wget -qq --progress=bar https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
 cat dl_links | while read link; do
 dl=$(echo $link | cut -d = -f2)
@@ -94,8 +96,6 @@ git push -q --follow-tags https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmware
 
 #Telegram
 wget -q https://github.com/yshalsager/telegram.sh/raw/master/telegram && chmod +x telegram
-if [ -s dl_links ]
-then
 for file in *.zip; do
 	codename=$(echo $file | cut -d _ -f2)
 	model=$(echo $file | cut -d _ -f4)
@@ -118,7 +118,7 @@ for file in *.zip; do
 	@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
 done
 else
-    echo "Nothing found!"
+    echo "Nothing found!" && exit 0
 fi
 
 #Cleanup
