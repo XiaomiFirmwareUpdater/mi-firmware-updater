@@ -88,7 +88,7 @@ for file in *.zip; do product=$(echo $file | cut -d _ -f2); version=$(echo $file
 
 #Push
 echo Pushing:
-git add miuiversion changelog/ ; git commit --author="$gituser <$gitmail>" -m "Sync: $(date +%d.%m.%Y)"
+git add miuiversion changelog/ ; git -c "user.name=$gituser" -c "user.email=$gitmail" commit -m "Sync: $(date +%d.%m.%Y)"
 export GIT_TAG=$TRAVIS_BRANCH-$(date +%d.%m.%Y)
 git tag $GIT_TAG -a -m "Sync: $(date +%d.%m.%Y), upload firmware from $(cat updates | tr '\n' '&') MIUI ROM"
 git push -q --follow-tags https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
@@ -103,7 +103,7 @@ for file in *.zip; do
 	size=$(du -h $file | awk '{print $1}')
 	md5=$(md5sum $file | awk '{print $1}')
 	changelog=$(ls changelog/$version/*.diff)
-	./telegram -t $bottoken -c @XiaomiFirmwareUpdater -M "New stable fimware update available!
+	./telegram -t $bottoken -c @XiaomiFirmwareUpdater -M "New stable firmware update available!
 	*Device*: $model
 	*Codename*: $codename
 	*Version*: $version
