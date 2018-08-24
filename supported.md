@@ -62,7 +62,9 @@
 | 346 | DIPPERGlobal | Xiaomi Mi 8 Global | dipper | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_dipper/releases/latest) |
 | 347 | MI8SE | Xiaomi Mi 8 SE | sirius | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sirius/releases/latest) |
 | 347 | MI8SEGlobal | Xiaomi Mi 8 SE Global | sirius | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sirius/releases/latest) |
-| --- | HM6Pro | Xiaomi Redmi 6 Pro | sakura | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sakura/releases/latest) |
-| --- | HM6ProGlobal | Xiaomi Redmi 6 Pro Global | sakura | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sakura/releases/latest) |
-| --- | MIPAD4 | Xiaomi Mi Pad 4 | clover | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_clover/releases/latest) |
+| 351 | HM6Pro | Xiaomi Redmi 6 Pro | sakura | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sakura/releases/latest) |
+| 351 | HM6ProGlobal | Xiaomi Redmi 6 Pro Global | sakura | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sakura/releases/latest) |
+| 349 | MIPAD4 | Xiaomi Mi Pad 4 | clover | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_clover/releases/latest) |
 | --- | URSA | Xiaomi Mi 8 Explorer Edition | ursa | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ursa/releases/latest) |
+| 352 | MIMAX3 | Xiaomi Mi Max 3 | nitrogen | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_nitrogen/releases/latest) |
+| 352 | MIMAX3Global | Xiaomi Mi Max 3 Global | nitrogen | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_nitrogen/releases/latest) |
