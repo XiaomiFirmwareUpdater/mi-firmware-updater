@@ -96,9 +96,9 @@ for file in *.zip; do product=$(echo $file | cut -d _ -f2); version=$(echo $file
 echo Pushing:
 git add miuiversion changelog/ ; git -c "user.name=$gituser" -c "user.email=$gitmail" commit -m "Sync: $(date +%d.%m.%Y)"
 export GIT_TAG=$branch-$(date +%d.%m.%Y)
-git tag $GIT_TAG -a -m "Sync: $(date +%d.%m.%Y), upload firmware from $(cat updates | tr '\n' '&') MIUI ROM"
-git push -q --follow-tags https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
-for file in *.zip; do name=$(echo $file); github-release upload --user XiaomiFirmwareUpdater --repo $repo --tag $GIT_TAG --name "$name" --file $name; done
+github-release release -u XiaomiFirmwareUpdater -r $repo -t $GIT_TAG -n "$GIT_TAG" -d "Sync: $(date +%d.%m.%Y), upload firmware from $(cat updates | tr '\n' '&') MIUI ROM"
+git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
+for file in *.zip; do name=$(echo $file); github-release upload -u XiaomiFirmwareUpdater -r $repo -t $GIT_TAG -n "$name" -f $name; done
 
 #Telegram
 wget -q https://github.com/yshalsager/telegram.sh/raw/master/telegram && chmod +x telegram
