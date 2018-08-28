@@ -98,6 +98,7 @@ git add miuiversion changelog/ ; git -c "user.name=$gituser" -c "user.email=$git
 export GIT_TAG=$branch-$(date +%d.%m.%Y)
 git tag $GIT_TAG -a -m "Sync: $(date +%d.%m.%Y), upload firmware from $(cat updates | tr '\n' '&') MIUI ROM"
 git push -q --follow-tags https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
+for file in *.zip; do name=$(echo $file); github-release upload --user XiaomiFirmwareUpdater --repo $repo --tag $GIT_TAG --name "$name" --file $name; done
 
 #Telegram
 wget -q https://github.com/yshalsager/telegram.sh/raw/master/telegram && chmod +x telegram
