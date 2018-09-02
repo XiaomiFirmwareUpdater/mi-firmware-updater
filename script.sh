@@ -60,7 +60,7 @@ dl=$(echo $link | cut -d = -f2)
 zip=$(echo $dl | cut -d / -f5)
 ver=$(echo $zip | cut -d _ -f3)
 echo Downloading $zip
-wget -qq --progress=bar $dl
+aria2c -x16 -q $dl
 mkdir -p changelog/$ver/
 ./create_flashable_firmware.sh $zip
 rm $zip; done
