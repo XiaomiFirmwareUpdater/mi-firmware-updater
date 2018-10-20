@@ -51,6 +51,18 @@ else
     echo "No new updates!"
 fi
 
+#Check if this is a rolled out update
+cat updates | while read update; do
+git grep -q "$update" $(git rev-list --all) -- miuiversion
+if [[ $? == 0 ]]
+then
+    echo "$update" - "This update is already uploaded, no need to work again!"; old=$update
+    sed -i "/$old/d" ./dl_links
+else
+    echo "$update" - "Seems this is a new update."
+fi
+done
+
 #Start
 if [ -s dl_links ]
 then
