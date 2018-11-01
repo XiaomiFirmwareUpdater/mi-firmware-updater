@@ -52,19 +52,21 @@
 | 340 | HM5Plus | Xiaomi Redmi 5 Plus | vince | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_vince/releases/latest) |
 | 340 | HM5PlusGlobal | Xiaomi Redmi 5 Plus Global / Note 5 | vince | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_vince/releases/latest) |
 | 342 | HMNote5 | Xiaomi Note 5 | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
-| 342 | WHYREDGlobal | Xiaomi Note 5 Pro | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
+| 342 | HMNote5Global | Xiaomi Note 5 Pro | whyred | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_whyred/releases/latest) |
 | 343 | MIMIX2S | Xiaomi Mi MIX 2S | polaris | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_polaris/releases/latest) |
 | 343 | MIMIX2SGlobal | Xiaomi Mi MIX 2S Global | polaris | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_polaris/releases/latest) |
 | 344 | MI6X | Xiaomi Mi 6X | wayne | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_wayne/releases/latest) |
 | 345 | HMS2 | Xiaomi Redmi S2 | ysl | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ysl/releases/latest) |
 | 345 | HMS2Global | Xiaomi Redmi S2 Global | ysl | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ysl/releases/latest) |
-| 346 | DIPPER | Xiaomi Mi 8 | dipper | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_dipper/releases/latest) |
-| 346 | DIPPERGlobal | Xiaomi Mi 8 Global | dipper | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_dipper/releases/latest) |
+| 345 | MI8Explorer | Xiaomi Mi 8 Explorer Edition | ursa | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ursa/releases/latest) |
+| 345 | MI8UD | Xiaomi Mi 8 Pro | equuleus | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_equuleus/releases/latest) |
+| 346 | MI8 | Xiaomi Mi 8 | dipper | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_dipper/releases/latest) |
+| 346 | MI8Global | Xiaomi Mi 8 Global | dipper | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_dipper/releases/latest) |
 | 347 | MI8SE | Xiaomi Mi 8 SE | sirius | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sirius/releases/latest) |
-| 347 | MI8SEGlobal | Xiaomi Mi 8 SE Global | sirius | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sirius/releases/latest) |
 | 351 | HM6Pro | Xiaomi Redmi 6 Pro | sakura | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sakura/releases/latest) |
-| 351 | HM6ProGlobal | Xiaomi Redmi 6 Pro Global | sakura | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sakura/releases/latest) |
+| 351 | HM6ProGlobal | Xiaomi Redmi 6 Pro India | sakura_india | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_sakura/releases/latest) |
 | 349 | MIPAD4 | Xiaomi Mi Pad 4 | clover | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_clover/releases/latest) |
-| --- | URSA | Xiaomi Mi 8 Explorer Edition | ursa | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_ursa/releases/latest) |
 | 352 | MIMAX3 | Xiaomi Mi Max 3 | nitrogen | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_nitrogen/releases/latest) |
 | 352 | MIMAX3Global | Xiaomi Mi Max 3 Global | nitrogen | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_nitrogen/releases/latest) |
+| 353 | MI8Lite | Xiaomi Mi 8 Lite | platina | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_platina/releases/latest) |
+| 355 | POCOF1Global | Xiaomi Poco F1 | beryllium | [Here](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_beryllium/releases/latest) |
