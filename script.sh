@@ -77,6 +77,7 @@ mkdir -p changelog/$ver/
 ./create_flashable_firmware.sh $zip
 rm $zip; done
 
+: '
 #Diff
 for file in *.zip; do version=$(echo $file | cut -d _ -f5)
 if [[ $file =~ ^[a-z]*_[a-z]*_[a-z]*_[A-Z0-9]*_V[0-9]*.[0-9]*.[0-9]*.[0-9]*.[A-Z][A-Z][A-Z]MI[A-Z][A-Z]_[a-z0-9]*_[0-9]*.[0-9]*.[a-z]*$ ]]; then
@@ -91,6 +92,7 @@ else
 fi
 diff changelog/$oldversion/*.log changelog/$version/*.log > changelog/$version/$oldversion-$version.diff
 done
+'
 
 #Upload
 mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking no" >> ~/.ssh/config
@@ -115,7 +117,7 @@ for file in *.zip; do
 	android=$(echo $file | cut -d _ -f7 | cut -d . -f1,2)
 	size=$(du -h $file | awk '{print $1}')
 	md5=$(md5sum $file | awk '{print $1}')
-	changelog=$(ls changelog/$version/*.diff)
+	#changelog=$(ls changelog/$version/*.diff)
 	./telegram -t $bottoken -c @XiaomiFirmwareUpdater -M "New stable firmware update available!
 	*Device*: $model
 	*Codename*: $codename
@@ -126,7 +128,6 @@ for file in *.zip; do
 	*MD5*: $md5
 	*Download Links*:
 	[Sourceforge](https://sourceforge.net/projects/xiaomi-firmware-updater/files/Stable/V9/) - [Github](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_$codename/releases/tag/$GIT_TAG)
-	*Changelog*: [Here](https://github.com/XiaomiFirmwareUpdater/$repo/blob/$branch/$changelog)
 	@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
 done
 else
