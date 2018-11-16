@@ -77,6 +77,7 @@ mkdir -p changelog/$ver/
 ./create_flashable_firmware.sh $zip
 rm $zip; done
 
+: '
 #Diff
 for file in *.zip; do version=$(echo $file | cut -d _ -f5)
 if [[ $file =~ ^[a-z]*_[a-z]*_[a-z]*_[A-Z0-9]*_V[0-9]*.[0-9]*.[0-9]*.[0-9]*.[A-Z][A-Z][A-Z]MI[A-Z][A-Z]_[a-z0-9]*_[0-9]*.[0-9]*.[a-z]*$ ]]; then
@@ -91,6 +92,7 @@ else
 fi
 diff changelog/$oldversion/*.log changelog/$version/*.log > changelog/$version/$oldversion-$version.diff
 done
+'
 
 #Upload
 echo Uploading Files:
