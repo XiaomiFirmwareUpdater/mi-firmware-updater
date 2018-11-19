@@ -109,7 +109,7 @@ git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.
 for file in *.zip; do name=$(echo $file); github-release upload -u XiaomiFirmwareUpdater -r $repo -t $GIT_TAG -n "$name" -f $name; done
 
 #Telegram
-wget -q https://github.com/yshalsager/telegram.sh/raw/master/telegram && chmod +x telegram
+wget -q https://github.com/fabianonline/telegram.sh/raw/master/telegram && chmod +x telegram
 for file in *.zip; do
 	codename=$(echo $file | cut -d _ -f2)
 	model=$(echo $file | cut -d _ -f4)
@@ -118,7 +118,7 @@ for file in *.zip; do
 	size=$(du -h $file | awk '{print $1}')
 	md5=$(md5sum $file | awk '{print $1}')
 	#changelog=$(ls changelog/$version/*.diff)
-	./telegram -t $bottoken -c @XiaomiFirmwareUpdater -M "New stable firmware update available!
+	./telegram -t $bottoken -c @XiaomiFirmwareUpdater -D -M "New stable firmware update available!
 	*Device*: $model
 	*Codename*: $codename
 	*Version*: $version
