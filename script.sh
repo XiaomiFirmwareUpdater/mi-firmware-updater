@@ -115,7 +115,7 @@ git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.
 for file in *.zip; do name=$(echo $file); github-release upload -u XiaomiFirmwareUpdater -r $repo -t $GIT_TAG -n "$name" -f $name; done
 
 #Telegram
-wget -q https://github.com/fabianonline/telegram.sh/raw/master/telegram && chmod +x telegram
+wget -q https://github.com/yshalsager/telegram.py/raw/master/telegram.py
 for file in *.zip; do 
 	codename=$(echo $file | cut -d _ -f2)
 	model=$(echo $file | cut -d _ -f4)
@@ -123,7 +123,7 @@ for file in *.zip; do
 	android=$(echo $file | cut -d _ -f7 | cut -d . -f1,2)
 	size=$(du -h $file | awk '{print $1}')
 	md5=$(md5sum $file | awk '{print $1}')
-	./telegram -t $bottoken -c @XiaomiFirmwareUpdater -D -M "New weekly fimware update available!
+	python telegram.py -t $bottoken -c @XiaomiFirmwareUpdater -M "New weekly fimware update available!
 	*Device*: $model
 	*Codename*: $codename
 	*Version*: $version
