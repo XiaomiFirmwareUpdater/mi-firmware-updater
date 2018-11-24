@@ -66,7 +66,7 @@ done
 #Start
 if [ -s dl_links ]
 then
-wget -qq --progress=bar https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator/raw/master/create_flashable_firmware.sh && chmod +x create_flashable_firmware.sh
+wget -q https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator/raw/py/create_flashable_firmware.py
 cat dl_links | while read link; do
 dl=$(echo $link | cut -d = -f2)
 zip=$(echo $dl | cut -d / -f5)
@@ -74,7 +74,7 @@ ver=$(echo $zip | cut -d _ -f3)
 echo Downloading $zip
 aria2c -x16 -q $dl
 mkdir -p changelog/$ver/
-./create_flashable_firmware.sh $zip
+python3 create_flashable_firmware.py -F $zip
 rm $zip; done
 
 : '
