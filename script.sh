@@ -118,7 +118,7 @@ for file in *.zip; do
 	size=$(du -h $file | awk '{print $1}')
 	md5=$(md5sum $file | awk '{print $1}')
 	#changelog=$(ls changelog/$version/*.diff)
-	python telegram.py -t $bottoken -c @XiaomiFirmwareUpdater -D -M "New stable firmware update available!
+	python telegram.py -t $bottoken -c @XiaomiFirmwareUpdater -M "New stable firmware update available!
 	*Device*: $model
 	*Codename*: $codename
 	*Version*: $version
