@@ -114,6 +114,7 @@ for file in *.zip; do
 	codename=$(echo $file | cut -d _ -f2)
 	model=$(echo $file | cut -d _ -f4)
 	version=$(echo $file | cut -d _ -f5)
+	bigversion=$(echo $file | cut -d _ -f5 | cut -d . -f1)
 	android=$(echo $file | cut -d _ -f7 | cut -d . -f1,2)
 	size=$(du -h $file | awk '{print $1}')
 	md5=$(md5sum $file | awk '{print $1}')
@@ -127,7 +128,7 @@ for file in *.zip; do
 	*Filesize*: $size
 	*MD5*: $md5
 	*Download Links*:
-	[Sourceforge](https://sourceforge.net/projects/xiaomi-firmware-updater/files/Stable/V9/) - [Github](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_$codename/releases/tag/$GIT_TAG)
+	[Sourceforge](https://sourceforge.net/projects/xiaomi-firmware-updater/files/Stable/$bigversion/) - [Github](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_$codename/releases/tag/$GIT_TAG)
 	@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
 done
 else
