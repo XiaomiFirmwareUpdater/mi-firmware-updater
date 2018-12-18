@@ -92,7 +92,6 @@ else
 fi
 diff changelog/$oldversion/*.log changelog/$version/*.log > changelog/$version/$oldversion-$version.diff
 done
-'
 
 #Upload
 echo Uploading Files:
@@ -104,7 +103,11 @@ mkdir $version
 quit
 EOF
 sshpass -p $sfpass rsync -avP -e ssh $file yshalsager@web.sourceforge.net:/home/frs/project/xiaomi-firmware-updater/Developer/$version/$product/ ; done
-for file in *.zip; do product=$(echo $file | cut -d _ -f2); version=$(echo $file | cut -d _ -f5); wput $file ftp://$afhuser:$afhpass@uploads.androidfilehost.com//Xiaomi-Firmware/Developer/$version/$product/ ; done
+'
+for file in *.zip; do product=$(echo $file | cut -d _ -f2); version=$(echo $file | cut -d _ -f5);
+rclone copy -v sf:/home/frs/project/xiaomi-firmware-updater/Developer/$version/$product/
+rclone copy -v osdn:/storage/groups/x/xi/xiaomifirmwareupdater/Developer/$version/$product/
+done
 
 #Push
 echo Pushing:
@@ -131,8 +134,7 @@ for file in *.zip; do
 	Filename: *$file*
 	*Filesize*: $size
 	*MD5*: $md5
-	*Download Links*:
-	[Sourceforge](https://sourceforge.net/projects/xiaomi-firmware-updater/files/Developer/$version/) - [Github](https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_$codename/releases/tag/$GIT_TAG)
+	*Download Links*: [Here](https://xiaomifirmwareupdater.github.io/#weekly#$codename)
 	@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
 done
 else
