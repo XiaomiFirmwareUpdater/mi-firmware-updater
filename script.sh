@@ -98,8 +98,8 @@ done
 #mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking no" >> ~/.ssh/config
 echo Uploading Files:
 for file in *.zip; do product=$(echo $file | cut -d _ -f2); version=$(echo $file | cut -d _ -f5 | cut -d . -f1); 
-rclone copy -v sf:/home/frs/project/xiaomi-firmware-updater/Stable/$version/$product/
-rclone copy -v osdn:/storage/groups/x/xi/xiaomifirmwareupdater/Stable/$version/$product/
+rclone copy -v $file sf:/home/frs/project/xiaomi-firmware-updater/Stable/$version/$product/
+rclone copy -v $file osdn:/storage/groups/x/xi/xiaomifirmwareupdater/Stable/$version/$product/
 done
 
 #Push
