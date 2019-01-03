@@ -66,7 +66,7 @@ done
 #Start
 if [ -s dl_links ]
 then
-wget -q https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator/raw/py/create_flashable_firmware.py
+wget -q https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/raw/py/create_flashable_firmware.py
 cat dl_links | while read link; do
 dl=$(echo $link | cut -d = -f2)
 zip=$(echo $dl | cut -d / -f5)
@@ -113,7 +113,7 @@ echo Pushing:
 git add miuiversion changelog/ ; git -c "user.name=$gituser" -c "user.email=$gitmail" commit -m "Sync: $(date +%d.%m.%Y)"
 export GIT_TAG=$branch-$(date +%d.%m.%Y)
 github-release release -u XiaomiFirmwareUpdater -r $repo -t $GIT_TAG -n "$GIT_TAG" -d "Sync: $(date +%d.%m.%Y), upload firmware from $(cat updates | tr '\n' '&') MIUI ROM"
-git push -q https://$GIT_OAUTH_TOKEN_XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
+git push -q https://$XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
 for file in *.zip; do name=$(echo $file); github-release upload -u XiaomiFirmwareUpdater -r $repo -t $GIT_TAG -n "$name" -f $name; done
 
 #Telegram
