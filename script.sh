@@ -116,25 +116,20 @@ github-release release -u XiaomiFirmwareUpdater -r $repo -t $GIT_TAG -n "$GIT_TA
 git push -q https://$XFU@github.com/XiaomiFirmwareUpdater/$repo.git HEAD:$branch
 for file in *.zip; do name=$(echo $file); github-release upload -u XiaomiFirmwareUpdater -r $repo -t $GIT_TAG -n "$name" -f $name; done
 
-#Telegram
-wget -q https://github.com/yshalsager/telegram.py/raw/master/telegram.py
-for file in *.zip; do 
-	codename=$(echo $file | cut -d _ -f2)
+#log
+for file in *.zip; do
 	model=$(echo $file | cut -d _ -f4)
+	codename=$(echo $file | cut -d _ -f2)
 	version=$(echo $file | cut -d _ -f5)
 	android=$(echo $file | cut -d _ -f7 | cut -d . -f1,2)
 	size=$(du -h $file | awk '{print $1}')
 	md5=$(md5sum $file | awk '{print $1}')
-	python telegram.py -t $bottoken -c @XiaomiFirmwareUpdater -M "New weekly fimware update available!
-	*Device*: $model
-	*Codename*: $codename
-	*Version*: $version
-	*Android*: $android
-	Filename: *$file*
-	*Filesize*: $size
-	*MD5*: $md5
-	*Download Links*: [Here](https://xiaomifirmwareupdater.github.io/#weekly#$codename)
-	@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
+	if [[ $version == *"_V"* ]]; then
+		branch="stable"
+	else
+		branch="weekly"
+	fi
+	echo "$branch|$model|$codename|$version|$android|$file|$size|$md5" >> ../log
 done
 else
     echo "Nothing found!" && exit 0
