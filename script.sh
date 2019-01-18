@@ -112,24 +112,18 @@ for file in *.zip; do name=$(echo $file); github-release upload -u XiaomiFirmwar
 #Telegram
 wget -q https://github.com/yshalsager/telegram.py/raw/master/telegram.py
 for file in *.zip; do
-	codename=$(echo $file | cut -d _ -f2)
 	model=$(echo $file | cut -d _ -f4)
+	codename=$(echo $file | cut -d _ -f2)
 	version=$(echo $file | cut -d _ -f5)
-	bigversion=$(echo $file | cut -d _ -f5 | cut -d . -f1)
 	android=$(echo $file | cut -d _ -f7 | cut -d . -f1,2)
 	size=$(du -h $file | awk '{print $1}')
 	md5=$(md5sum $file | awk '{print $1}')
-	#changelog=$(ls changelog/$version/*.diff)
-	python telegram.py -t $bottoken -c @XiaomiFirmwareUpdater -M "New stable firmware update available!
-	*Device*: $model
-	*Codename*: $codename
-	*Version*: $version
-	*Android*: $android
-	Filename: *$file*
-	*Filesize*: $size
-	*MD5*: $md5
-  	*Download Links*: [Here](https://xiaomifirmwareupdater.github.io/#stable#$codename) 
-	@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
+	if [[ $version == *"_V"* ]]; then
+		branch="stable"
+	else
+		branch="weekly"
+	fi
+	echo "$branch|$model|$codename|$version|$android|$file|$size|$md5" >> ../log
 done
 else
     echo "Nothing found!" && exit 0
