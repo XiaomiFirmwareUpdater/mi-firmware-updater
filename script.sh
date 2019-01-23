@@ -124,11 +124,7 @@ for file in *.zip; do
 	android=$(echo $file | cut -d _ -f7 | cut -d . -f1,2)
 	size=$(du -h $file | awk '{print $1}')
 	md5=$(md5sum $file | awk '{print $1}')
-	if [[ $version == *"_V"* ]]; then
-		branch="stable"
-	else
-		branch="weekly"
-	fi
+	branch="weekly"
 	echo "$branch|$model|$codename|$version|$android|$file|$size|$md5" >> ../log
 done
 else
