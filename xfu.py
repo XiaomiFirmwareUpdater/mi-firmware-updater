@@ -24,31 +24,42 @@ def md5_check(zip_file):
 
 
 def set_version(file):
-    if v == 'stable':
-        version = 'V' + str(file).split("_")[4].split(".")[0]
+    if "_V" in str(file):
+        version = str(file).split("_")[4].split(".")[0]
     else:
         version = str(file).split("_")[4]
     return version
 
 
-def upload_fw(file, version, codename, today, v):
+def set_folder(file):
+    if "_V" in str(file):
+        f = 'Stable'
+    else:
+        f = 'Developer'
+    return f
+
+
+def upload_fw(file, version, codename, today):
     print("uploading: " + file)
+    f = set_folder(file)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/'
-                     + v.capitalize() + '/' + version + '/' + codename + '/', '-v'])
+                     + f + '/' + version + '/' + codename + '/', '-v'])
     gh_release_create("XiaomiFirmwareUpdater/firmware_xiaomi_" + codename, "{0}-{1}".format(v, today),
                       publish=True, name="{0}-{1}".format(v, today), asset_pattern="fw_" + codename + "_*")
 
 
-def upload_non_arb(file, version, codename, v):
+def upload_non_arb(file, version, codename):
     print("uploading: " + file)
+    f = set_folder(file)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/non-arb/'
-                     + v.capitalize() + '/' + version + '/' + codename + '/', '-v'])
+                     + f + '/' + version + '/' + codename + '/', '-v'])
 
 
-def upload_fw_less(file, version, codename, v):
+def upload_fw_less(file, version, codename):
     print("uploading: " + file)
+    f = set_folder(file)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/firmware-less/'
-                     + v.capitalize() + '/' + version + '/' + codename + '/', '-v'])
+                     + f + '/' + version + '/' + codename + '/', '-v'])
 
 
 def log_new(file, branch):
@@ -107,7 +118,7 @@ weekly_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 
 
 arb_devices = ['nitrogen', 'nitrogen_global', 'sakura', 'sakura_india_global', 'wayne', 'whyred', 'whyred_global']
 
-open('log', 'a').close()
+open('log', 'w').close()
 
 stable_all = json.loads(get(
     "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/" +
@@ -171,32 +182,31 @@ for v in versions:
         else:
             subprocess.call(['python3', 'create_flashable_firmware.py', '-F', file])
         remove(file)
-    # upload to OSDN/GitHub
-    today = str(date.today().strftime('%d.%m.%Y'))
-    for file in glob("fw_*.zip"):
-        codename = str(file).split("_")[1]
-        version = set_version(file)
-        upload_fw(file, version, codename, today, v)
-    for file in glob("fw-non-arb_*.zip"):
-        codename = str(file).split("_")[1]
-        version = set_version(file)
-        upload_non_arb(file, version, codename, v)
-    for file in glob("fw-less_*.zip"):
-        codename = str(file).split("_")[1]
-        version = set_version(file)
-        upload_fw_less(file, version, codename, v)
-
-# log the made files
-s = [f for f in glob("fw*.zip") if "_V" in f]
-for file in s:
-    branch = 'stable'
-    log_new(file, branch)
-w = [f for f in glob("fw*.zip") if "_V" not in f]
-for file in w:
-    branch = 'weekly'
-    log_new(file, branch)
-for file in glob("*.zip"):
-    remove(file)
+        # upload to OSDN/GitHub
+        today = str(date.today().strftime('%d.%m.%Y'))
+        for file in glob("fw_*.zip"):
+            codename = str(file).split("_")[1]
+            version = set_version(file)
+            upload_fw(file, version, codename, today)
+        for file in glob("fw-non-arb_*.zip"):
+            codename = str(file).split("_")[1]
+            version = set_version(file)
+            upload_non_arb(file, version, codename)
+        for file in glob("fw-less_*.zip"):
+            codename = str(file).split("_")[1]
+            version = set_version(file)
+            upload_fw_less(file, version, codename)
+        # log the made files
+        s = [f for f in glob("fw*.zip") if "_V" in f]
+        for file in s:
+            branch = 'stable'
+            log_new(file, branch)
+        w = [f for f in glob("fw*.zip") if "_V" not in f]
+        for file in w:
+            branch = 'weekly'
+            log_new(file, branch)
+        for file in glob("*.zip"):
+            remove(file)
 
 # push to github
 now = str(datetime.today()).split('.')[0]
@@ -243,7 +253,7 @@ if stat('log').st_size != 0:
                     .format(branch, version, codename)
             telegram_message = "New {0} {1} update available!: \n*Device:* {2} \n*Codename:* `{3}` \n" \
                                "*Version:* `{4}` \n*Android:* {5} \nFilename: `{6}` \nFilesize: {7} \n" \
-                               "*MD5:* `{8}`*Download:* [Here]({9})" \
+                               "*MD5:* `{8}`*Download:* [Here]({9})\n@XiaomiFirmwareUpdater | @MIUIUpdatesTracker" \
                 .format(branch, t, device, codename, version, android, name, zip_size, md5, link)
             params = (
                 ('chat_id', telegram_chat),
@@ -258,4 +268,3 @@ if stat('log').st_size != 0:
                 print("{0}: Telegram Message sent".format(device))
             else:
                 print("Telegram Error")
-
