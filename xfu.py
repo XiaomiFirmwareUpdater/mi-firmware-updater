@@ -98,7 +98,7 @@ Downloader(
 stable_devices = ['aqua', 'beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'chiron', 'chiron_global',
                   'clover', 'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'gemini', 'gemini_global',
                   'helium', 'helium_global', 'hydrogen', 'hydrogen_global', 'ido_xhdpi', 'ido_xhdpi_global', 'jason',
-                  'jason_global', 'kate_global', 'kenzo', 'kenzo_global', 'land', 'land_global', 'libra', 'lithium',
+                  'jason_global', 'kate_global', 'kenzo', 'kenzo_global', 'land', 'land_global', 'lavender', 'libra', 'lithium',
                   'lithium_global', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen', 'nitrogen_global',
                   'oxygen', 'oxygen_global', 'perseus', 'platina', 'platina_global', 'polaris', 'polaris_global',
                   'prada', 'riva', 'riva_global', 'rolex', 'rolex_global', 'rosy', 'rosy_global', 'sagit',
