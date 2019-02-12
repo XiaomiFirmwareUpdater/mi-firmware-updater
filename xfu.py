@@ -157,13 +157,13 @@ for v in versions:
     for line in diff:
         if line.startswith('+'):
             changes.append(str(line).strip().replace("}", "") + '\n')
-    new = ''.join(changes[1:-1]).replace("+", "")
+    new = ''.join(changes[1:]).replace("+", "")
     print(v + " changes:\n" + new)
     with open(v + '_changes', 'w') as o:
         o.write(new)
     # get links
     links = {}
-    for i in changes[1:-1]:
+    for i in changes[1:]:
         for info in devices_all:
             if str(info["filename"]).split('_')[1] + '_' + str(info["filename"]).split('_')[2] == str(i).split('"')[3]:
                 links.update({str(i).split('"')[1]: info["download"]})
