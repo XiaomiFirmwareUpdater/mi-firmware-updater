@@ -100,7 +100,7 @@ stable_devices = ['aqua', 'beryllium_global', 'cappu', 'capricorn', 'capricorn_g
                   'helium', 'helium_global', 'hydrogen', 'hydrogen_global', 'ido_xhdpi', 'ido_xhdpi_global', 'jason',
                   'jason_global', 'kate_global', 'kenzo', 'kenzo_global', 'land', 'land_global', 'lavender', 'libra', 'lithium',
                   'lithium_global', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen', 'nitrogen_global',
-                  'oxygen', 'oxygen_global', 'perseus', 'platina', 'platina_global', 'polaris', 'polaris_global',
+                  'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global', 'polaris', 'polaris_global',
                   'prada', 'riva', 'riva_global', 'rolex', 'rolex_global', 'rosy', 'rosy_global', 'sagit',
                   'sagit_global', 'sakura', 'sakura_india_global', 'santoni', 'santoni_global', 'scorpio',
                   'scorpio_global', 'sirius', 'tiffany', 'tulip_global', 'ursa', 'ugg', 'ugg_global', 'ugglite',
