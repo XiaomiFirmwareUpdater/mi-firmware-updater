@@ -108,7 +108,7 @@ stable_devices = ['aqua', 'beryllium_global', 'cappu', 'capricorn', 'capricorn_g
 
 weekly_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'chiron', 'chiron_global', 'clover',
                   'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'helium', 'helium_global', 'hydrogen',
-                  'hydrogen_global', 'jason', 'jason_global', 'kate_global', 'land', 'land_global', 'lithium',
+                  'hydrogen_global', 'jason', 'jason_global', 'kate_global', 'land', 'land_global', 'lavender', 'lithium',
                   'lithium_global', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen', 'nitrogen_global',
                   'oxygen', 'oxygen_global', 'perseus', 'platina', 'platina_global', 'polaris', 'polaris_global',
                   'prada', 'riva', 'riva_global', 'rolex', 'rolex_global', 'rosy', 'rosy_global', 'sagit',
