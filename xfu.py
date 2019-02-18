@@ -7,7 +7,7 @@ from glob import glob
 from hashlib import md5
 from os import remove, system, environ, path, getcwd, chdir, rename, stat
 
-from github_release import gh_release_create
+from github_release import gh_release_create, gh_asset_upload
 from hurry.filesize import size, alternative
 from pyDownload import Downloader
 from requests import get, post
@@ -45,8 +45,9 @@ def upload_fw(file, version, codename, today):
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/'
                      + f + '/' + version + '/' + codename + '/', '-v'])
     gh_release_create("XiaomiFirmwareUpdater/firmware_xiaomi_" + codename, "{0}-{1}".format(v, today),
-                      publish=True, name="{0}-{1}".format(v, today), asset_pattern="fw_" + codename + "_*")
-
+                      publish=True, name="{0}-{1}".format(v, today))
+    gh_asset_upload("XiaomiFirmwareUpdater/firmware_xiaomi_" + codename, "{0}-{1}".format(v, today),
+                    "fw_" + codename + "_*")
 
 def upload_non_arb(file, version, codename):
     print("uploading: " + file)
