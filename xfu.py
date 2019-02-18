@@ -41,6 +41,7 @@ def set_folder(file):
 
 def upload_fw(file, version, codename, today):
     print("uploading: " + file)
+    codename = codename.split('-')[0]
     f = set_folder(file)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/'
                      + f + '/' + version + '/' + codename + '/', '-v'])
@@ -51,6 +52,7 @@ def upload_fw(file, version, codename, today):
 
 def upload_non_arb(file, version, codename):
     print("uploading: " + file)
+    codename = codename.split('-')[0]
     f = set_folder(file)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/non-arb/'
                      + f + '/' + version + '/' + codename + '/', '-v'])
@@ -58,6 +60,7 @@ def upload_non_arb(file, version, codename):
 
 def upload_fw_less(file, version, codename):
     print("uploading: " + file)
+    codename = codename.split('-')[0]
     f = set_folder(file)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/firmware-less/'
                      + f + '/' + version + '/' + codename + '/', '-v'])
