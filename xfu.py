@@ -99,10 +99,10 @@ Downloader(
     url="https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/raw/py/" +
         "create_flashable_firmware.py")
 
-stable_devices = ['aqua', 'beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'chiron', 'chiron_global',
-                  'clover', 'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'gemini', 'gemini_global',
-                  'helium', 'helium_global', 'hydrogen', 'hydrogen_global', 'ido_xhdpi', 'ido_xhdpi_global', 'jason',
-                  'jason_global', 'kate_global', 'kenzo', 'kenzo_global', 'land', 'land_global', 'lavender', 'libra', 'lithium',
+stable_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'chiron', 'chiron_global',
+                  'clover', 'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'grus',
+                  'helium', 'helium_global', 'hydrogen', 'hydrogen_global', 'jason',
+                  'jason_global', 'kate_global', 'land', 'land_global', 'lavender', 'lithium',
                   'lithium_global', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen', 'nitrogen_global',
                   'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global', 'polaris', 'polaris_global',
                   'prada', 'riva', 'riva_global', 'rolex', 'rolex_global', 'rosy', 'rosy_global', 'sagit',
