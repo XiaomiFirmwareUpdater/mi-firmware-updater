@@ -99,7 +99,7 @@ Downloader(
     url="https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/raw/py/" +
         "create_flashable_firmware.py")
 
-stable_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'chiron', 'chiron_global',
+stable_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'cepheus_eea_global', 'chiron', 'chiron_global',
                   'clover', 'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'grus',
                   'helium', 'helium_global', 'hydrogen', 'hydrogen_global', 'jason',
                   'jason_global', 'kate_global', 'land', 'land_global', 'lavender', 'lithium',
