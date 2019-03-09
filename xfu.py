@@ -148,7 +148,10 @@ for v in versions:
     for i in devices_all:
         codename = str(i["codename"])
         if codename in devices:
-            branch.update({codename: str(i["filename"]).split('_')[1] + '_' + str(i["filename"]).split('_')[2]})
+            try:
+                branch.update({codename: str(i["filename"]).split('_')[1] + '_' + str(i["filename"]).split('_')[2]})
+            except IndexError:
+                continue
     with open(v + '.json', 'w') as o:
         json.dump(branch, o, indent=1)
 
@@ -169,8 +172,11 @@ for v in versions:
     links = {}
     for i in changes[1:]:
         for info in devices_all:
-            if str(info["filename"]).split('_')[1] + '_' + str(info["filename"]).split('_')[2] == str(i).split('"')[3]:
-                links.update({str(i).split('"')[1]: info["download"]})
+            try:
+                if str(info["filename"]).split('_')[1] + '_' + str(info["filename"]).split('_')[2] == str(i).split('"')[3]:
+                    links.update({str(i).split('"')[1]: info["download"]})
+            except IndexError:
+                continue
     # download and generate fw
     for codename, url in links.items():
         file = url.split('/')[-1]
