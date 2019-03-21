@@ -57,15 +57,6 @@ def upload_non_arb(file, version, codename):
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/non-arb/'
                      + f + '/' + version + '/' + codename + '/', '-v'])
 
-
-def upload_fw_less(file, version, codename):
-    print("uploading: " + file)
-    codename = codename.split('-')[0]
-    f = set_folder(file)
-    subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/firmware-less/'
-                     + f + '/' + version + '/' + codename + '/', '-v'])
-
-
 def log_new(file, branch):
     with open('log', 'a') as log:
         codename = str(file).split("_")[1]
@@ -81,8 +72,6 @@ def log_new(file, branch):
             var = 'firmware'
         elif str(file).split("_")[0] == 'fw-non-arb':
             var = 'non-arb firmware'
-        elif str(file).split("_")[0] == 'fw-less':
-            var = 'firmware-less'
         try:
             log.write(var + '|' + branch + '|' + model + '|' + codename + '|' + version + '|'
                       + android + '|' + file + '|' + zip_size + '|' + md5 + '\n')
@@ -188,7 +177,6 @@ for v in versions:
         if codename in arb_devices:
             subprocess.call(['python3', 'create_flashable_firmware.py', '-F', file])
             subprocess.call(['python3', 'create_flashable_firmware.py', '-N', file])
-            subprocess.call(['python3', 'create_flashable_firmware.py', '-L', file])
         else:
             subprocess.call(['python3', 'create_flashable_firmware.py', '-F', file])
         remove(file)
@@ -202,10 +190,6 @@ for v in versions:
             codename = str(file).split("_")[1]
             version = set_version(file)
             upload_non_arb(file, version, codename)
-        for file in glob("fw-less_*.zip"):
-            codename = str(file).split("_")[1]
-            version = set_version(file)
-            upload_fw_less(file, version, codename)
         # log the made files
         s = [f for f in glob("fw*.zip") if "_V" in f]
         for file in s:
@@ -257,9 +241,6 @@ if stat('log').st_size != 0:
                 link = 'https://xiaomifirmwareupdater.com/#{0}#{1}'.format(branch, codename)
             elif t == 'non-arb firmware':
                 link = 'https://osdn.net/projects/xiaomifirmwareupdater/storage/non-arb/{0}/{1}/{2}/' \
-                    .format(branch, version, codename)
-            elif t == 'firmware-less':
-                link = 'https://osdn.net/projects/xiaomifirmwareupdater/storage/firmware-less/{0}/{1}/{2}/' \
                     .format(branch, version, codename)
             telegram_message = "New {0} {1} update available!: \n*Device:* {2} \n*Codename:* `{3}` \n" \
                                "*Version:* `{4}` \n*Android:* {5} \nFilename: `{6}` \nFilesize: {7} \n" \
