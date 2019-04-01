@@ -91,15 +91,15 @@ Downloader(
 stable_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'cepheus_eea_global', 'chiron', 'chiron_global',
                   'clover', 'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'grus',
                   'helium', 'helium_global', 'hydrogen', 'hydrogen_global', 'jason',
-                  'jason_global', 'kate_global', 'land', 'land_global', 'lavender', 'lithium',
+                  'jason_global', 'kate_global', 'land', 'land_global', 'lavender', 'lavender_in_global', 'lithium',
                   'lithium_global', 'markw', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen', 'nitrogen_global',
-                  'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global', 'polaris', 'polaris_global',
+                  'onclite', 'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global', 'polaris', 'polaris_global',
                   'prada', 'riva', 'riva_global', 'rolex', 'rolex_global', 'rosy', 'rosy_global', 'sagit',
                   'sagit_global', 'sakura', 'sakura_india_global', 'santoni', 'santoni_global', 'scorpio',
                   'scorpio_global', 'sirius', 'tiffany', 'tulip_global', 'ursa', 'ugg', 'ugg_global', 'ugglite',
-                  'ugglite_global', 'vince', 'vince_global', 'wayne', 'whyred', 'whyred_global', 'ysl', 'ysl_global']
+                  'ugglite_global', 'violet', 'violet_in_global', 'vince', 'vince_global', 'wayne', 'whyred', 'whyred_global', 'ysl', 'ysl_global']
 
-weekly_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'chiron', 'chiron_global', 'clover',
+weekly_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'cepheus_global', 'chiron', 'chiron_global', 'clover',
                   'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'helium', 'helium_global', 'hydrogen',
                   'hydrogen_global', 'jason', 'jason_global', 'kate_global', 'land', 'land_global', 'lavender', 'lithium',
                   'lithium_global', 'markw', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen', 'nitrogen_global',
