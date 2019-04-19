@@ -7,7 +7,7 @@ from glob import glob
 from hashlib import md5
 from os import remove, system, environ, path, getcwd, chdir, rename, stat
 
-from github_release import gh_release_create, gh_asset_upload
+from github3 import GitHub, exceptions
 from hurry.filesize import size, alternative
 from pyDownload import Downloader
 from requests import get, post
@@ -45,10 +45,21 @@ def upload_fw(file, version, codename, today):
     f = set_folder(file)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/'
                      + f + '/' + version + '/' + codename + '/', '-v'])
-    gh_release_create("XiaomiFirmwareUpdater/firmware_xiaomi_" + codename, "{0}-{1}".format(v, today),
-                      publish=True, name="{0}-{1}".format(v, today))
-    gh_asset_upload("XiaomiFirmwareUpdater/firmware_xiaomi_" + codename, "{0}-{1}".format(v, today),
-                    "fw_" + codename + "_*")
+    repository = gh.repository('XiaomiFirmwareUpdater', 'firmware_xiaomi_{}'.format(codename))
+    tag = '{}-{}'.format(v, today)
+    try:
+        release = repository.release_from_tag(tag)  # release exist already
+    except exceptions.NotFoundError:
+        # create new release
+        release = repository.create_release(tag, name=tag,
+                                            body='Extracted Firmware from {}'.format(file.split('_')[2:]), draft=False,
+                                            prerelease=False)
+    try:
+        asset = release.upload_asset(content_type='application/binary', name=file, asset=open(file, 'rb'))
+        print('Uploaded {} Successfully to release {}'.format(asset.name, release.name))
+    except exceptions.UnprocessableEntity:
+        print('{} is already uploaded'.format(file))
+
 
 def upload_non_arb(file, version, codename):
     print("uploading: " + file)
@@ -56,6 +67,7 @@ def upload_non_arb(file, version, codename):
     f = set_folder(file)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/non-arb/'
                      + f + '/' + version + '/' + codename + '/', '-v'])
+
 
 def log_new(file, branch):
     with open('log', 'a') as log:
@@ -80,6 +92,8 @@ def log_new(file, branch):
 
 
 GIT_OAUTH_TOKEN = environ['XFU']
+gh = GitHub(token=GIT_OAUTH_TOKEN)
+
 bottoken = environ['bottoken']
 telegram_chat = "@XiaomiFirmwareUpdater"
 work_dir = getcwd()
@@ -88,22 +102,30 @@ Downloader(
     url="https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/raw/py/" +
         "create_flashable_firmware.py")
 
-stable_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'cepheus_eea_global', 'chiron', 'chiron_global',
+stable_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'cepheus_eea_global',
+                  'chiron', 'chiron_global',
                   'clover', 'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'grus',
                   'helium', 'helium_global', 'hydrogen', 'hydrogen_global', 'jason',
                   'jason_global', 'kate_global', 'land', 'land_global', 'lavender', 'lavender_in_global', 'lithium',
-                  'lithium_global', 'markw', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen', 'nitrogen_global',
-                  'onclite', 'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global', 'polaris', 'polaris_global',
+                  'lithium_global', 'markw', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen',
+                  'nitrogen_global',
+                  'onclite', 'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global',
+                  'polaris', 'polaris_global',
                   'prada', 'riva', 'riva_global', 'rolex', 'rolex_global', 'rosy', 'rosy_global', 'sagit',
                   'sagit_global', 'sakura', 'sakura_india_global', 'santoni', 'santoni_global', 'scorpio',
                   'scorpio_global', 'sirius', 'tiffany', 'tulip_global', 'ursa', 'ugg', 'ugg_global', 'ugglite',
-                  'ugglite_global', 'violet', 'violet_in_global', 'vince', 'vince_global', 'wayne', 'whyred', 'whyred_global', 'ysl', 'ysl_global']
+                  'ugglite_global', 'violet', 'violet_in_global', 'vince', 'vince_global', 'wayne', 'whyred',
+                  'whyred_global', 'ysl', 'ysl_global']
 
-weekly_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'cepheus_global', 'chiron', 'chiron_global', 'clover',
+weekly_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'cepheus_global', 'chiron',
+                  'chiron_global', 'clover',
                   'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'helium', 'helium_global', 'hydrogen',
-                  'hydrogen_global', 'jason', 'jason_global', 'kate_global', 'land', 'land_global', 'lavender', 'lithium',
-                  'lithium_global', 'markw', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen', 'nitrogen_global',
-                  'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global', 'polaris', 'polaris_global',
+                  'hydrogen_global', 'jason', 'jason_global', 'kate_global', 'land', 'land_global', 'lavender',
+                  'lithium',
+                  'lithium_global', 'markw', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen',
+                  'nitrogen_global',
+                  'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global', 'polaris',
+                  'polaris_global',
                   'prada', 'riva', 'riva_global', 'rolex', 'rolex_global', 'rosy', 'rosy_global', 'sagit',
                   'sagit_global', 'sakura', 'sakura_india_global', 'santoni', 'santoni_global', 'scorpio',
                   'scorpio_global', 'sirius', 'tiffany', 'tulip_global', 'ursa', 'ugg', 'ugg_global', 'ugglite',
@@ -123,6 +145,8 @@ stable = {}
 weekly = {}
 
 versions = ['stable', 'weekly']
+branch = ''
+devices = ''
 for v in versions:
     if path.exists(v + '.json'):
         rename(v + '.json', v + '_old.json')
