@@ -52,7 +52,7 @@ def upload_fw(file, version, codename, today):
     except exceptions.NotFoundError:
         # create new release
         release = repository.create_release(tag, name=tag,
-                                            body='Extracted Firmware from MIUI {}'.format(file.split('_')[2]), draft=False,
+                                            body='Extracted Firmware from MIUI {}'.format(file.split('_')[4]), draft=False,
                                             prerelease=False)
     try:
         asset = release.upload_asset(content_type='application/binary', name=file, asset=open(file, 'rb'))
