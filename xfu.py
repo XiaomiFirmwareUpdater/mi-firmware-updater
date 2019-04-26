@@ -52,8 +52,8 @@ def upload_fw(file, version, codename, today):
     except exceptions.NotFoundError:
         # create new release
         release = repository.create_release(tag, name=tag,
-                                            body='Extracted Firmware from MIUI {}'.format(file.split('_')[4]), draft=False,
-                                            prerelease=False)
+                                            body='Extracted Firmware from MIUI {}'.format(file.split('_')[4]),
+                                            draft=False, prerelease=False)
     try:
         asset = release.upload_asset(content_type='application/binary', name=file, asset=open(file, 'rb'))
         print('Uploaded {} Successfully to release {}'.format(asset.name, release.name))
@@ -102,34 +102,10 @@ Downloader(
     url="https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/raw/py/" +
         "create_flashable_firmware.py")
 
-stable_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'cepheus_eea_global',
-                  'chiron', 'chiron_global',
-                  'clover', 'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'grus',
-                  'helium', 'helium_global', 'hydrogen', 'hydrogen_global', 'jason',
-                  'jason_global', 'kate_global', 'land', 'land_global', 'lavender', 'lavender_in_global', 'lithium',
-                  'lithium_global', 'markw', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen',
-                  'nitrogen_global',
-                  'onclite', 'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global',
-                  'polaris', 'polaris_global',
-                  'prada', 'riva', 'riva_global', 'rolex', 'rolex_global', 'rosy', 'rosy_global', 'sagit',
-                  'sagit_global', 'sakura', 'sakura_india_global', 'santoni', 'santoni_global', 'scorpio',
-                  'scorpio_global', 'sirius', 'tiffany', 'tulip_global', 'ursa', 'ugg', 'ugg_global', 'ugglite',
-                  'ugglite_global', 'violet', 'violet_in_global', 'vince', 'vince_global', 'wayne', 'whyred',
-                  'whyred_global', 'ysl', 'ysl_global']
-
-weekly_devices = ['beryllium_global', 'cappu', 'capricorn', 'capricorn_global', 'cepheus', 'cepheus_global', 'chiron',
-                  'chiron_global', 'clover',
-                  'dipper', 'dipper_global', 'equuleus', 'equuleus_global', 'helium', 'helium_global', 'hydrogen',
-                  'hydrogen_global', 'jason', 'jason_global', 'kate_global', 'land', 'land_global', 'lavender',
-                  'lithium',
-                  'lithium_global', 'markw', 'mido', 'mido_global', 'natrium', 'natrium_global', 'nitrogen',
-                  'nitrogen_global',
-                  'oxygen', 'oxygen_global', 'perseus', 'perseus_global', 'platina', 'platina_global', 'polaris',
-                  'polaris_global',
-                  'prada', 'riva', 'riva_global', 'rolex', 'rolex_global', 'rosy', 'rosy_global', 'sagit',
-                  'sagit_global', 'sakura', 'sakura_india_global', 'santoni', 'santoni_global', 'scorpio',
-                  'scorpio_global', 'sirius', 'tiffany', 'tulip_global', 'ursa', 'ugg', 'ugg_global', 'ugglite',
-                  'ugglite_global', 'vince', 'vince_global', 'wayne', 'whyred', 'whyred_global', 'ysl', 'ysl_global']
+with open('devices/stable_devices.json', 'r') as s:
+    stable_devices = json.load(s)
+with open('devices/weekly_devices.json', 'r') as w:
+    weekly_devices = json.load(w)
 
 arb_devices = ['nitrogen', 'nitrogen_global', 'sakura', 'sakura_india_global', 'wayne', 'whyred', 'whyred_global']
 
