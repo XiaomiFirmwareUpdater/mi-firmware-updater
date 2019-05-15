@@ -36,3 +36,6 @@ For issue reports and feature requests, report on XDA Forums thread.
 
 ### XDA Support Thread:
 [Go here](https://forum.xda-developers.com/android/software-hacking/devices-xiaomi-firmware-updater-t3741446)
+
+#### XiaomiFirmwareUpdater is Supported By:
+[![Packet](https://raw.githubusercontent.com/XiaomiFirmwareUpdater/xiaomifirmwareupdater.github.io/master/images/Packet_logo_sm.png)](https://www.packet.net)
