@@ -2,3 +2,5 @@ log
 *_old.json
 *_changes
 create_flashable_firmware.py
+*__pycache__*
+*tmp*
