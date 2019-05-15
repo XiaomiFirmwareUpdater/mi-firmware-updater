@@ -169,6 +169,21 @@ for v in versions:
     # download and generate fw
     for codename, url in links.items():
         file = url.split('/')[-1]
+        version = file.split("_")[4]
+        # check if rom is rolled-back
+        old_data = json.loads(get(
+            "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/" +
+            "xiaomifirmwareupdater.github.io/master/data/devices/" +
+            "full/{}.json".format(codename.split("_")[0])).content)
+        if 'V' in version:
+            all_versions = [i for i in old_data if i['branch'] == 'stable']
+        else:
+            all_versions = [i for i in old_data if i['branch'] == 'weekly']
+        check = [i for i in all_versions if i['versions']['miui'] == version]
+        if check:
+            print("Rolled back ROM, skipping!")
+            continue
+        # start working
         print("Starting download " + file)
         downloader = Downloader(url=url)
         if downloader.is_running:
