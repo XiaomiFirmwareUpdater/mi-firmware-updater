@@ -175,11 +175,15 @@ for v in versions:
             "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/" +
             "xiaomifirmwareupdater.github.io/master/data/devices/" +
             "full/{}.json".format(codename.split("_")[0])).content)
+        if 'MI' in file or 'Global' in file:
+            region = 'Global'
+        else:
+            region = 'China'
         if 'V' in version:
             all_versions = [i for i in old_data if i['branch'] == 'stable']
         else:
             all_versions = [i for i in old_data if i['branch'] == 'weekly']
-        check = [i for i in all_versions if i['versions']['miui'] == version]
+        check = [i for i in all_versions if i['versions']['miui'] == version and i['type'] == region]
         if check:
             print("{}: {} is rolled back ROM, skipping!".format(codename, version))
             continue
