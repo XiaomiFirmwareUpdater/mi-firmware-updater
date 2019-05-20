@@ -259,6 +259,8 @@ if stat('log').st_size != 0:
             if t == 'firmware':
                 link = 'https://xiaomifirmwareupdater.com/#{0}#{1}'.format(branch, codename)
             elif t == 'non-arb firmware':
+                if 'V' in version:
+                    version = version.split('.')[0]
                 link = 'https://osdn.net/projects/xiaomifirmwareupdater/storage/non-arb/{0}/{1}/{2}/' \
                     .format(branch, version, codename)
             telegram_message = "New {0} {1} update available!: \n*Device:* {2} \n*Codename:* `{3}` \n" \
