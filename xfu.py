@@ -24,7 +24,7 @@ def md5_check(zip_file):
 
 
 def set_version(file):
-    if "_V" in str(file):
+    if "_V1" in str(file):
         version = str(file).split("_")[4].split(".")[0]
     else:
         version = str(file).split("_")[4]
@@ -32,7 +32,7 @@ def set_version(file):
 
 
 def set_folder(file):
-    if "_V" in str(file):
+    if "_V1" in str(file):
         f = 'Stable'
     else:
         f = 'Developer'
@@ -210,11 +210,11 @@ for v in versions:
             version = set_version(file)
             upload_non_arb(file, version, codename)
         # log the made files
-        s = [f for f in glob("fw*.zip") if "_V" in f]
+        s = [f for f in glob("fw*.zip") if "_V1" in f]
         for file in s:
             branch = 'stable'
             log_new(file, branch)
-        w = [f for f in glob("fw*.zip") if "_V" not in f]
+        w = [f for f in glob("fw*.zip") if "_V1" not in f]
         for file in w:
             branch = 'weekly'
             log_new(file, branch)
