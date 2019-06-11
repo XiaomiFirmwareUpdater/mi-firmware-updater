@@ -1,4 +1,5 @@
 [
+ "andromeda",
  "beryllium_global",
  "cappu",
  "cepheus",
@@ -13,6 +14,7 @@
  "equuleus",
  "equuleus_global",
  "grus",
+ "grus_global",
  "jason",
  "jason_global",
  "lavender",
@@ -29,6 +31,8 @@
  "onc_in_global",
  "onclite",
  "onclite_global",
+ "onclite_eea_global",
+ "onclite_in_global",
  "oxygen",
  "oxygen_global",
  "perseus",
