@@ -107,7 +107,7 @@ with open('devices/stable_devices.json', 'r') as s:
 with open('devices/weekly_devices.json', 'r') as w:
     weekly_devices = json.load(w)
 
-arb_devices = ['nitrogen', 'nitrogen_global', 'sakura', 'sakura_india_global', 'wayne', 'whyred', 'whyred_global']
+arb_devices = ['nitrogen', 'nitrogen_global', 'sakura', 'sakura_india_global', 'wayne']
 
 open('log', 'w').close()
 
