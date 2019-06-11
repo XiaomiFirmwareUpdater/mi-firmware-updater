@@ -171,10 +171,14 @@ for v in versions:
         file = url.split('/')[-1]
         version = file.split("_")[2]
         # check if rom is rolled-back
-        old_data = json.loads(get(
-            "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/" +
-            "xiaomifirmwareupdater.github.io/master/data/devices/" +
-            "full/{}.json".format(codename.split("_")[0])).content)
+        try:
+            old_data = json.loads(get(
+                "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/" +
+                "xiaomifirmwareupdater.github.io/master/data/devices/" +
+                "full/{}.json".format(codename.split("_")[0])).content)
+        except json.decoder.JSONDecodeError:
+            print(f"Working on {codename} for the first time!")
+            old_data = []
         if 'MI' in file or 'Global' in file:
             region = 'Global'
         else:
