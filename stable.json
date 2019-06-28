@@ -1,6 +1,6 @@
 {
  "andromeda": "ANDROMEDA_V10.3.16.0.PEMCNXM",
- "beryllium_global": "POCOF1Global_V10.2.3.0.PEJMIXM",
+ "beryllium_global": "POCOF1Global_V10.3.5.0.PEJMIXM",
  "cappu": "MIPAD3_V10.2.1.0.NCICNXM",
  "cepheus": "CEPHEUS_V10.2.25.0.PFACNXM",
  "cepheus_eea_global": "CEPHEUSEEAGlobal_V10.2.26.0.PFAEUXM",
@@ -72,7 +72,7 @@
  "violet": "VIOLET_V10.3.5.0.PFHCNXM",
  "violet_in_global": "VIOLETINGlobal_V10.3.7.0.PFHINXM",
  "wayne": "MI6X_V10.3.3.0.PDCCNXM",
- "whyred": "HMNote5_V10.3.3.0.PEICNXM",
+ "whyred": "HMNote5_V10.3.1.0.PEICNXM",
  "whyred_global": "HMNote5Global_V10.3.1.0.PEIMIXM",
  "ysl": "HMS2_V10.3.4.0.OEFCNXM",
  "ysl_global": "HMS2Global_V10.3.1.0.OEFMIXM"
