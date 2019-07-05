@@ -1,7 +1,9 @@
 {
+ "cactus": "HM6A_9.7.4",
  "cappu": "MIPAD3_9.7.4",
  "capricorn": "MI5S_9.7.4",
  "cepheus": "CEPHEUS_9.7.4",
+ "cereus": "HM6_9.7.4",
  "chiron": "MIMIX2_9.7.4",
  "clover": "MIPAD4_9.7.4",
  "dipper": "MI8_9.7.4",
@@ -10,6 +12,7 @@
  "jason": "MINote3_9.7.4",
  "lavender": "LAVENDER_9.7.4",
  "lithium": "MIMIX_9.7.4",
+ "lotus": "MIPLAY_9.7.4",
  "mido": "HMNote4X_9.7.4",
  "natrium": "MI5SPlus_9.7.4",
  "nitrogen": "MIMAX3_9.7.4",
