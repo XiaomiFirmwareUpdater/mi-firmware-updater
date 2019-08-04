@@ -91,6 +91,23 @@ def log_new(file, branch):
             pass
 
 
+def check_region(filename):
+    """
+    :returns region of rom from filename
+    """
+    if 'EU' in filename or 'EEAGlobal' in filename:
+        region = 'Europe'
+    elif 'IN' in filename or 'INGlobal' in filename:
+        region = 'India'
+    elif 'RU' in filename or 'RUGlobal' in filename:
+        region = 'Russia'
+    elif 'MI' in filename or 'Global' in filename:
+        region = 'Global'
+    else:
+        region = 'China'
+    return region
+
+
 GIT_OAUTH_TOKEN = environ['XFU']
 gh = GitHub(token=GIT_OAUTH_TOKEN)
 
@@ -123,6 +140,7 @@ weekly = {}
 versions = ['stable', 'weekly']
 branch = ''
 devices = ''
+devices_all = None
 for v in versions:
     if path.exists(v + '.json'):
         rename(v + '.json', v + '_old.json')
@@ -179,10 +197,7 @@ for v in versions:
         except json.decoder.JSONDecodeError:
             print(f"Working on {codename} for the first time!")
             old_data = []
-        if 'MI' in file or 'Global' in file:
-            region = 'Global'
-        else:
-            region = 'China'
+        region = check_region(file)
         if 'V' in version:
             all_versions = [i for i in old_data if i['branch'] == 'stable']
         else:
@@ -234,9 +249,9 @@ system("git add stable.json weekly.json && "" \
        .format(now, GIT_OAUTH_TOKEN))
 
 # update the site
-chdir("../xiaomifirmwareupdater.github.io/xfu-node/")
-subprocess.call(['node', 'index.js'])
-system("git add ../data && "" \
+chdir("../xiaomifirmwareupdater.github.io/data_generator/")
+subprocess.call(['python3', 'generator.py'])
+system("git add ../data ../pages ../releases.xml && "" \
        ""git -c \"user.name=XiaomiFirmwareUpdater\" -c \"user.email=xiaomifirmwareupdater@gmail.com\" "
        "commit -m \"sync: {0}\" && "" \
        ""git push -q https://{1}@github.com/XiaomiFirmwareUpdater/xiaomifirmwareupdater.github.io.git master"
@@ -260,17 +275,18 @@ if stat('log').st_size != 0:
             name = info[6]
             zip_size = info[7]
             md5 = info[8]
+            region = check_region(name)
             if t == 'firmware':
-                link = 'https://xiaomifirmwareupdater.com/#{0}#{1}'.format(branch, codename)
+                link = f'https://xiaomifirmwareupdater.com/firmware/{codename}'
             elif t == 'non-arb firmware':
                 if 'V' in version:
                     version = version.split('.')[0]
                 link = 'https://osdn.net/projects/xiaomifirmwareupdater/storage/non-arb/{0}/{1}/{2}/' \
                     .format(branch, version, codename)
-            telegram_message = "New {0} {1} update available!: \n*Device:* {2} \n*Codename:* `{3}` \n" \
-                               "*Version:* `{4}` \n*Android:* {5} \nFilename: `{6}` \nFilesize: {7} \n" \
-                               "*MD5:* `{8}`*Download:* [Here]({9})\n@XiaomiFirmwareUpdater | @MIUIUpdatesTracker" \
-                .format(branch, t, device, codename, version, android, name, zip_size, md5, link)
+            telegram_message = "New {} {} update available!\n*Device:* {}\n*Codename:* `{}`\n" \
+                               "*Version:* `{}`\n*Android:* {}\n*Region:* {}\nFilename: `{}`\nFilesize: {}\n" \
+                               "*MD5:* `{}`*Download:* [Here]({})\n@XiaomiFirmwareUpdater | @MIUIUpdatesTracker" \
+                .format(branch, t, device, codename, version, android, region, name, zip_size, md5, link)
             params = (
                 ('chat_id', telegram_chat),
                 ('text', telegram_message),
