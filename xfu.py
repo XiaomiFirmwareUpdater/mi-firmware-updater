@@ -202,7 +202,7 @@ for v in versions:
             all_versions = [i for i in old_data if i['branch'] == 'stable']
         else:
             all_versions = [i for i in old_data if i['branch'] == 'weekly']
-        check = [i for i in all_versions if i['versions']['miui'] == version and i['type'] == region]
+        check = [i for i in all_versions if i['versions']['miui'] == version and i['region'] == region]
         if check:
             print("{}: {} is rolled back ROM, skipping!".format(codename, version))
             continue
