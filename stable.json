@@ -54,7 +54,7 @@
  "perseus": "MIMIX3_V10.3.2.0.PEECNXM",
  "perseus_global": "MIMIX3Global_V10.3.2.0.PEEMIXM",
  "pine": "PINE_V10.2.8.0.PCMCNXM",
- "pine_eea_global": "PINEEEAGlobal_V10.2.4.0.PCMEUXM",
+ "pine_eea_global": "PINEEEAGlobal_V10.2.5.0.PCMEUXM",
  "pine_global": "PINEGlobal_V10.2.4.0.PCMMIXM",
  "pine_in_global": "PINEINGlobal_V10.2.4.0.PCMINXM",
  "platina": "MI8Lite_V10.3.3.0.PDTCNXM",
@@ -83,7 +83,7 @@
  "ugg_global": "HMNote5AGlobal_V10.3.1.0.NDKMIXM",
  "ugglite": "HMNote5ALITE_V10.3.2.0.NDFCNXM",
  "ugglite_global": "HMNote5ALITEGlobal_V10.3.1.0.NDFMIXM",
- "ursa": "MI8Explorer_V10.3.5.0.PEHCNXM",
+ "ursa": "MI8Explorer_V10.3.6.0.PEHCNXM",
  "vela": "VELA_V10.3.2.0.PFECNXM",
  "vince": "HM5Plus_V10.3.1.0.OEGCNXM",
  "vince_global": "HM5PlusGlobal_V10.2.3.0.OEGMIXM",
@@ -92,6 +92,6 @@
  "wayne": "MI6X_V10.3.5.0.PDCCNXM",
  "whyred": "HMNote5_V10.3.4.0.PEICNXM",
  "whyred_global": "HMNote5Global_V10.3.1.0.PEIMIXM",
- "ysl": "HMS2_V10.3.4.0.OEFCNXM",
+ "ysl": "HMS2_V10.3.4.0.PEFCNXM",
  "ysl_global": "HMS2Global_V10.3.3.0.PEFMIXM"
 }
