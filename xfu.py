@@ -91,17 +91,19 @@ def log_new(file, branch):
             pass
 
 
-def check_region(filename):
+def check_region(filename: str) -> str:
     """
     :returns region of rom from filename
     """
-    if 'EU' in filename or 'EEAGlobal' in filename:
+    device = filename.split("_")[3]
+    version = filename.split("_")[4]
+    if 'EU' in version or 'EEAGlobal' in device:
         region = 'Europe'
-    elif 'IN' in filename or 'INGlobal' in filename:
+    elif 'IN' in version or 'INGlobal' in device:
         region = 'India'
-    elif 'RU' in filename or 'RUGlobal' in filename:
+    elif 'RU' in version or 'RUGlobal' in device:
         region = 'Russia'
-    elif 'MI' in filename or 'Global' in filename:
+    elif 'MI' in version or 'Global' in device:
         region = 'Global'
     else:
         region = 'China'
