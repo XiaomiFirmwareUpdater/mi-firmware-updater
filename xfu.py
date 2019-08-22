@@ -118,8 +118,8 @@ telegram_chat = "@XiaomiFirmwareUpdater"
 work_dir = getcwd()
 
 Downloader(
-    url="https://github.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/raw/py/" +
-        "create_flashable_firmware.py")
+    url="https://raw.githubusercontent.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/py/" +
+        "xiaomi_flashable_firmware_creator/create_flashable_firmware.py")
 
 with open('devices/stable_devices.json', 'r') as s:
     stable_devices = json.load(s)
