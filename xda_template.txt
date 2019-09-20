@@ -1,0 +1,12 @@
+[FONT="Comic Sans MS"][SIZE="5"][CENTER][B][COLOR="DarkOrange"]New MIUI $branch $process Release[/COLOR][/B][/CENTER][/SIZE][/FONT]
+[LIST]
+[*][B][COLOR="DarkOrange"]Version: [/COLOR][/B]$version
+[*][B][COLOR="DarkOrange"]Android: [/COLOR][/B]$android
+[*][B][COLOR="DarkOrange"]Region: [/COLOR][/B][B]$region[/B]
+[*][B][COLOR="DarkOrange"]Filename: [/COLOR][/B][I]$name[/I]
+[*][B][COLOR="DarkOrange"]Filesize: [/COLOR][/B]$zip_size
+[*][B][COLOR="DarkOrange"]MD5: [/COLOR][/B][CODE]$md5_hash[/CODE]
+[*][B][COLOR="DarkOrange"]Download: [/COLOR][/B][URL="$link"]Here[/URL]
+[/LIST]
+
+[B]Note:[/B] Older releases are available [URL="https://xiaomifirmwareupdater.com/archive/firmware/$codename"]Here[/URL]

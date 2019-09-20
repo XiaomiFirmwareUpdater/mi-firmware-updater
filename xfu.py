@@ -5,11 +5,11 @@
 import difflib
 import json
 import subprocess
-import time
 from datetime import datetime, date
 from glob import glob
 from hashlib import md5
 from os import remove, system, environ, path, getcwd, chdir, rename, stat
+from time import sleep
 
 from github3 import GitHub, exceptions
 from hurry.filesize import size, alternative
@@ -21,6 +21,8 @@ GIT = GitHub(token=GIT_OAUTH_TOKEN)
 BOT_TOKEN = environ['bottoken']
 TG_CHAT = "@XiaomiFirmwareUpdater"
 WORK_DIR = getcwd()
+XDA_API_KEY = environ['XDA_TOKEN']
+
 ARB_DEVICES = ['nitrogen', 'nitrogen_global', 'sakura', 'sakura_india_global', 'wayne']
 STABLE = {}
 WEEKLY = {}
@@ -199,7 +201,10 @@ def post_updates():
     """
     if stat('log').st_size != 0:
         return
-    # post to tg
+    with open('xda_threads.json', 'r') as json_file:
+        xda_threads = json.load(json_file)
+    with open('xda_template.txt', 'r') as template:
+        xda_template = template.read()
     with open('log', 'r') as log:
         for line in log:
             info = line.split('|')
@@ -220,9 +225,10 @@ def post_updates():
                 link = f'https://xiaomifirmwareupdater.com/firmware/{codename}'
             elif process == 'non-arb firmware':
                 if 'V' in version:
-                    version = version.split('.')[0]
+                    version_ = version.split('.')[0]
                 link = f'https://osdn.net/projects/xiaomifirmwareupdater/' \
-                       f'storage/non-arb/{branch}/{version}/{codename}/'
+                       f'storage/non-arb/{branch}/{version_}/{codename}/'
+            # post to tg
             telegram_message = f"New {branch} {process} update available!\n" \
                                f"*Device:* {device}\n" \
                                f"*Codename:* `{codename}`\n" \
@@ -247,6 +253,31 @@ def post_updates():
                 print(f"{device}: Telegram Message sent")
             else:
                 print("Telegram Error")
+            # post to XDA
+            if codename not in xda_threads.keys():
+                continue
+            try:
+                xda_post_id = get("https://api.xda-developers.com/v3/posts",
+                                  params={"threadid": xda_threads[codename]}
+                                  ).json()["results"][0]["postid"]
+            except (KeyError, IndexError):
+                continue
+            xda_post = xda_template.replace('$branch', branch)\
+                .replace('$process', process.capitalize()) \
+                .replace('$version', version).replace('$android', android)\
+                .replace('$region', region) \
+                .replace('$name', name).replace('$zip_size', zip_size)\
+                .replace('$md5_hash', md5_hash) \
+                .replace('$link', link).replace('$codename', codename)
+            data = {"postid": xda_post_id, "message": xda_post}
+            headers = {'Content-type': 'application/json', 'Authorization': 'Bearer ' + XDA_API_KEY}
+            xda_req = post('https://api.xda-developers.com/v3/posts/new',
+                           data=json.dumps(data), headers=headers)
+            if xda_req.status_code == 200:
+                print(f"{device}: XDA post created successfully")
+            else:
+                print("XDA Error")
+            sleep(15)
 
 
 def main():
@@ -271,7 +302,7 @@ def main():
             if codename in devices:
                 try:
                     branch.update({codename: str(i["filename"]).split('_')[1] +
-                                   '_' + str(i["filename"]).split('_')[2]})
+                                             '_' + str(i["filename"]).split('_')[2]})
                 except IndexError:
                     continue
         with open(variant + '.json', 'w') as output:
@@ -328,7 +359,7 @@ def main():
             print("Starting download " + file)
             downloader = Downloader(url=url)
             if downloader.is_running:
-                time.sleep(1)
+                sleep(1)
             print('File downloaded to %s' % downloader.file_name)
             if codename in ARB_DEVICES:
                 subprocess.call(['python3', 'create_flashable_firmware.py', '-F', file])
