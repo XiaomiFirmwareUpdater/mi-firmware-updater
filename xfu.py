@@ -2,7 +2,6 @@
 """Xiaomi Firmware Updater autoamtion script - By XiaomiFirmwareUpdater"""
 # pylint: disable=too-many-locals,too-many-branches,too-many-statements
 
-import difflib
 import json
 import subprocess
 from datetime import datetime, date
@@ -10,6 +9,7 @@ from glob import glob
 from hashlib import md5
 from os import remove, system, environ, path, getcwd, chdir, rename, stat
 from time import sleep
+import yaml
 
 from github3 import GitHub, exceptions
 from hurry.filesize import size, alternative
@@ -34,20 +34,47 @@ def initialize():
     Initial loading and preparing
     """
     Downloader(url="https://raw.githubusercontent.com/XiaomiFirmwareUpdater/"
-               "xiaomi-flashable-firmware-creator.py/py/" +
+                   "xiaomi-flashable-firmware-creator.py/py/" +
                "xiaomi_flashable_firmware_creator/create_flashable_firmware.py")
-    with open('devices/stable_devices.json', 'r') as stable_json:
-        stable_devices = json.load(stable_json)
-    with open('devices/weekly_devices.json', 'r') as weekly_json:
-        weekly_devices = json.load(weekly_json)
+    with open('devices/stable_devices.yml', 'r') as stable_json:
+        stable_devices = yaml.load(stable_json, Loader=yaml.CLoader)
+    with open('devices/weekly_devices.yml', 'r') as weekly_json:
+        weekly_devices = yaml.load(weekly_json, Loader=yaml.CLoader)
     open('log', 'w').close()
-    all_stable = get(
+    all_stable = yaml.load(get(
         "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/" +
-        "stable_recovery/stable_recovery.json").json()
-    all_weekly = get(
+        "stable_recovery/stable_recovery.yml").text, Loader=yaml.CLoader)
+    all_weekly = yaml.load(get(
         "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/" +
-        "weekly_recovery/weekly_recovery.json").json()
+        "weekly_recovery/weekly_recovery.yml").text, Loader=yaml.CLoader)
     return stable_devices, weekly_devices, all_stable, all_weekly
+
+
+def diff(name: str) -> list:
+    """
+    compare yaml files
+    """
+    changes = []
+    try:
+        with open(f'{name}.yml', 'r') as new, \
+                open(f'{name}_old.yml', 'r') as old_data:
+            latest = yaml.load(new, Loader=yaml.CLoader)
+            old = yaml.load(old_data, Loader=yaml.CLoader)
+            first_run = False
+    except FileNotFoundError:
+        print(f"Can't find old {name} files, skipping")
+        first_run = True
+    if first_run is False:
+        if len(latest) == len(old):
+            codenames = list(latest.keys())
+            for codename in codenames:
+                if not latest[codename] == old[codename]:
+                    changes.append({codename: latest[codename]})
+        else:
+            new_codenames = [i for i in list(latest.keys()) if i not in list(old.keys())]
+            for codename in new_codenames:
+                changes.append({codename: latest[codename]})
+    return changes
 
 
 def md5_check(zip_file):
@@ -169,7 +196,7 @@ def git_commit_push():
     git add - git commit - git push
     """
     now = str(datetime.today()).split('.')[0]
-    system("git add stable.json weekly.json && "" \
+    system("git add stable.yml weekly.yml && "" \
            ""git -c \"user.name=XiaomiFirmwareUpdater\" "
            "-c \"user.email=xiaomifirmwareupdater@gmail.com\" "
            "commit -m \"sync: {0}\" && "" \
@@ -201,8 +228,8 @@ def post_updates():
     """
     if stat('log').st_size != 0:
         return
-    with open('xda_threads.json', 'r') as json_file:
-        xda_threads = json.load(json_file)
+    with open('xda_threads.yml', 'r') as file:
+        xda_threads = yaml.load(file)
     with open('xda_template.txt', 'r') as template:
         xda_template = template.read()
     with open('log', 'r') as log:
@@ -262,11 +289,11 @@ def post_updates():
                                   ).json()["results"][0]["postid"]
             except (KeyError, IndexError):
                 continue
-            xda_post = xda_template.replace('$branch', branch)\
+            xda_post = xda_template.replace('$branch', branch) \
                 .replace('$process', process.capitalize()) \
-                .replace('$version', version).replace('$android', android)\
+                .replace('$version', version).replace('$android', android) \
                 .replace('$region', region) \
-                .replace('$name', name).replace('$zip_size', zip_size)\
+                .replace('$name', name).replace('$zip_size', zip_size) \
                 .replace('$md5_hash', md5_hash) \
                 .replace('$link', link).replace('$codename', codename)
             data = {"postid": xda_post_id, "message": xda_post}
@@ -287,8 +314,8 @@ def main():
     devices_all = None
     stable_devices, weekly_devices, all_stable, all_weekly = initialize()
     for variant in VARIANTS:
-        if path.exists(variant + '.json'):
-            rename(variant + '.json', variant + '_old.json')
+        if path.exists(variant + '.yml'):
+            rename(variant + '.yml', variant + '_old.yml')
         if variant == 'stable':
             devices_all = all_stable
             devices = stable_devices
@@ -301,48 +328,39 @@ def main():
             codename = str(i["codename"])
             if codename in devices:
                 try:
-                    branch.update({codename: str(i["filename"]).split('_')[1] +
-                                             '_' + str(i["filename"]).split('_')[2]})
+                    branch.update({codename: str(i["filename"]).split('_')[1] + '_'
+                                             + str(i["filename"]).split('_')[2]})
                 except IndexError:
                     continue
-        with open(variant + '.json', 'w') as output:
-            json.dump(branch, output, indent=1)
+        with open(variant + '.yml', 'w') as output:
+            yaml.dump(branch, output, Dumper=yaml.CDumper)
 
         # diff
-        with open(variant + '_old.json', 'r') as old, open(variant + '.json', 'r') as new:
-            diff = difflib.unified_diff(old.readlines(), new.readlines(),
-                                        fromfile=f'{variant}_old.json',
-                                        tofile=f'{variant}.json')
-        changes = []
-        for line in diff:
-            if line.startswith('+'):
-                changes.append(str(line).strip().replace("}", "") + '\n')
-        new = ''.join(changes[1:]).replace("+", "")
-        print(variant + " changes:\n" + new)
+        changes = diff(variant)
+        print(variant + " changes:\n" + str(changes))
         with open(variant + '_changes', 'w') as output:
-            output.write(new)
+            output.write(str(changes))
+        if not changes:
+            continue
+        to_update = [list(i.keys())[0] for i in changes]
         # get links
         links = {}
-        for i in changes[1:]:
-            for info in devices_all:
-                try:
-                    if str(info["filename"]).split('_')[1] + '_' + \
-                            str(info["filename"]).split('_')[2] == \
-                            str(i).split('"')[3]:
-                        links.update({str(i).split('"')[1]: info["download"]})
-                except IndexError:
-                    continue
+        for codename in to_update:
+            try:
+                links.update({codename: [i["download"] for i in devices_all
+                                         if i["codename"] == codename][0]})
+            except IndexError:
+                continue
         # download and generate fw
         for codename, url in links.items():
             file = url.split('/')[-1]
             version = file.split("_")[2]
             # check if rom is rolled-back
-            try:
-                old_data = get(
-                    "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/" +
-                    "xiaomifirmwareupdater.github.io/master/data/devices/" +
-                    f"full/{codename.split('_')[0]}.json").json()
-            except json.decoder.JSONDecodeError:
+            old_data = yaml.load(get(
+                "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/" +
+                "xiaomifirmwareupdater.github.io/master/data/devices/" +
+                f"full/{codename.split('_')[0]}.yml").text, Loader=yaml.CLoader)
+            if old_data == {404: 'Not Found'}:
                 print(f"Working on {codename} for the first time!")
                 old_data = []
             region = set_region(file)

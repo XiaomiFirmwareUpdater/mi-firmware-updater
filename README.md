@@ -32,7 +32,7 @@ For issue reports and feature requests, report on XDA Forums thread.
 [Join here](https://t.me/XiaomiFirmwareUpdater)
 
 ### Supported Devices:
-[Go here](https://xiaomifirmwareupdater.com/supported-devices/)
+[Go here](https://xiaomifirmwareupdater.com/supported/firmware/)
 
 ### XDA Support Thread:
 [Go here](https://forum.xda-developers.com/android/software-hacking/devices-xiaomi-firmware-updater-t3741446)
