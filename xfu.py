@@ -229,7 +229,7 @@ def post_updates():
     if stat('log').st_size != 0:
         return
     with open('xda_threads.yml', 'r') as file:
-        xda_threads = yaml.load(file)
+        xda_threads = yaml.load(file, Loader=yaml.CLoader)
     with open('xda_template.txt', 'r') as template:
         xda_template = template.read()
     with open('log', 'r') as log:
