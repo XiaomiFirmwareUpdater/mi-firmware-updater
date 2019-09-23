@@ -226,7 +226,7 @@ def post_updates():
     """
     Post updates to telegram and xda
     """
-    if stat('log').st_size != 0:
+    if stat('log').st_size == 0:
         return
     with open('xda_threads.yml', 'r') as file:
         xda_threads = yaml.load(file, Loader=yaml.CLoader)
@@ -264,7 +264,7 @@ def post_updates():
                                f"*Region:* {region}\n" \
                                f"Filename: `{name}`\n" \
                                f"Filesize: {zip_size}\n" \
-                               f"*MD5:* `{md5_hash}`\n" \
+                               f"*MD5:* `{md5_hash}`" \
                                f"*Download:* [Here]({link})\n" \
                                f"@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
             params = (
