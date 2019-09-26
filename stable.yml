@@ -16,6 +16,7 @@ cereus_global: HM6Global_V10.3.6.0.OCGMIXM
 chiron: MIMIX2_V10.3.1.0.ODECNXM
 chiron_global: MIMIX2Global_V10.3.5.0.ODEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
+crux: CRUX_V10.4.6.0.PFXCNXM
 davinci: DAVINCI_V10.3.15.0.PFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V10.3.12.0.PFJEUXM
 davinci_global: DAVINCIGlobal_V10.3.11.0.PFJMIXM
@@ -25,6 +26,7 @@ dipper_global: MI8Global_V10.3.4.0.PEAMIXM
 equuleus: MI8UD_V10.3.5.0.PECCNXM
 equuleus_global: MI8UDGlobal_V10.3.5.0.PECMIXM
 ginkgo: GINKGO_V10.3.2.0.PCOCNXM
+ginkgo_global: GINKGOGlobal_V10.3.2.0.PCOMIXM
 grus: GRUS_V10.3.6.0.PFBCNXM
 grus_eea_global: GRUSEEAGlobal_V10.3.4.0.PFBEUXM
 grus_global: GRUSGlobal_V10.3.3.0.PFBMIXM
@@ -68,6 +70,7 @@ raphael: RAPHAEL_V10.3.16.0.PFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V10.3.3.0.PFKEUXM
 raphael_global: RAPHAELGlobal_V10.3.2.0.PFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V10.3.5.0.PFKINXM
+raphaels: RAPHAELS_V10.4.1.0.PFKCNXM
 riva: HM5A_V10.3.2.0.OCKCNXM
 riva_global: HM5AGlobal_V10.3.2.0.OCKMIXM
 rosy: HM5_V10.3.3.0.ODACNXM
