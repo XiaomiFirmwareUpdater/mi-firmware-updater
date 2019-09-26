@@ -297,14 +297,26 @@ def post_updates():
                 .replace('$md5_hash', md5_hash) \
                 .replace('$link', link).replace('$codename', codename)
             data = {"postid": xda_post_id, "message": xda_post}
-            headers = {'Content-type': 'application/json', 'Authorization': 'Bearer ' + XDA_API_KEY}
+            headers = {
+                'origin': 'https://api.xda-developers.com',
+                'accept-encoding': 'gzip, deflate, br',
+                'accept-language': 'en-US,en;q=0.9',
+                'authorization': 'Bearer ' + XDA_API_KEY,
+                'x-requested-with': 'XMLHttpRequest',
+                'content-type': 'application/json',
+                'accept': 'application/json, text/javascript, */*; q=0.01',
+                'referer': 'https://api.xda-developers.com/explorer/',
+                'authority': 'api.xda-developers.com',
+                'sec-fetch-site': 'same-origin',
+                }
             xda_req = post('https://api.xda-developers.com/v3/posts/new',
                            data=json.dumps(data), headers=headers)
             if xda_req.status_code == 200:
                 print(f"{device}: XDA post created successfully")
+                sleep(15)
             else:
                 print("XDA Error")
-            sleep(15)
+                print(xda_req.reason)
 
 
 def main():
@@ -377,7 +389,7 @@ def main():
             print("Starting download " + file)
             downloader = Downloader(url=url)
             if downloader.is_running:
-                sleep(1)
+                sleep(2)
             print('File downloaded to %s' % downloader.file_name)
             if codename in ARB_DEVICES:
                 subprocess.call(['python3', 'create_flashable_firmware.py', '-F', file])
