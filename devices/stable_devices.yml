@@ -16,6 +16,7 @@
 - chiron
 - chiron_global
 - clover
+- crux
 - davinci
 - davinci_global
 - davinci_eea_global
@@ -25,6 +26,7 @@
 - equuleus
 - equuleus_global
 - ginkgo
+- ginkgo_global
 - grus
 - grus_global
 - grus_eea_global
@@ -68,6 +70,7 @@
 - raphael_global
 - raphael_eea_global
 - raphaelin_in_global
+- raphaels
 - riva
 - riva_global
 - rosy
