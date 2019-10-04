@@ -40,7 +40,7 @@ lavender_in_global: LAVENDERINGlobal_V10.3.7.0.PFGINXM
 lithium: MIMIX_V10.2.1.0.OAHCNFK
 lithium_global: MIMIXGlobal_V10.2.1.0.OAHMIXM
 lotus: MIPLAY_V10.3.4.0.OFICNXM
-lotus_global: MIPLAYGlobal_V10.3.3.0.OFIMIXM
+lotus_global: MIPLAYGlobal_V10.2.5.0.OFIMIXM
 mido: HMNote4X_V10.3.2.0.NCFCNXM
 mido_global: HMNote4XGlobal_V10.2.3.0.NCFMIXM
 natrium: MI5SPlus_V10.2.2.0.OBGCNXM
@@ -56,7 +56,7 @@ oxygen: MIMAX2_V10.3.1.0.NDDCNXM
 oxygen_global: MIMAX2Global_V10.3.1.0.NDDMIXM
 perseus: MIMIX3_V10.3.3.0.PEECNXM
 perseus_global: MIMIX3Global_V10.3.3.0.PEEMIXM
-pine: PINE_V10.2.10.0.PCMCNXM
+pine: PINE_V10.2.14.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V10.2.5.0.PCMEUXM
 pine_global: PINEGlobal_V10.2.5.0.PCMMIXM
 pine_in_global: PINEINGlobal_V10.2.7.0.PCMINXM
@@ -65,6 +65,7 @@ platina_global: MI8LiteGlobal_V10.3.5.0.PDTMIXM
 polaris: MIMIX2S_V10.3.5.0.PDGCNXM
 polaris_global: MIMIX2SGlobal_V10.3.6.0.PDGMIXM
 pyxis: PYXIS_V10.3.13.0.PFCCNXM
+pyxis_eea_global: PYXISEEAGlobal_V10.3.6.0.PFCEUXM
 pyxis_global: PYXISGlobal_V10.3.1.0.PFCMIXM
 raphael: RAPHAEL_V10.3.17.0.PFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V10.3.3.0.PFKEUXM
