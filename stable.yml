@@ -1,7 +1,7 @@
 andromeda: ANDROMEDA_V10.3.17.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.19.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.19.0.PEMMIXM
-begonia: BEGONIA_V10.4.8.0.PGGCNXM
+begonia: BEGONIA_V10.4.9.0.PGGCNXM
 beryllium_global: POCOF1Global_V10.3.7.0.PEJMIXM
 cactus: HM6A_V10.4.4.0.PCBCNXM
 cactus_global: HM6AGlobal_V10.3.6.0.OCBMIXM
@@ -25,7 +25,7 @@ dipper: MI8_V10.3.6.0.PEACNXM
 dipper_global: MI8Global_V10.3.5.0.PEAMIXM
 equuleus: MI8UD_V10.3.5.0.PECCNXM
 equuleus_global: MI8UDGlobal_V10.3.6.0.PECMIXM
-ginkgo: GINKGO_V10.3.5.0.PCOCNXM
+ginkgo: GINKGO_V10.3.6.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V10.3.2.0.PCOMIXM
 grus: GRUS_V10.3.6.0.PFBCNXM
 grus_eea_global: GRUSEEAGlobal_V10.3.9.0.PFBEUXM
