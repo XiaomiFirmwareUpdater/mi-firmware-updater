@@ -2,6 +2,7 @@ andromeda: ANDROMEDA_V10.3.17.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.19.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.19.0.PEMMIXM
 begonia: BEGONIA_V10.4.9.0.PGGCNXM
+begonia_global: BEGONIAGlobal_V10.4.1.0.PGGMIXM
 beryllium_global: POCOF1Global_V10.3.7.0.PEJMIXM
 cactus: HM6A_V10.4.4.0.PCBCNXM
 cactus_global: HM6AGlobal_V10.3.6.0.OCBMIXM
