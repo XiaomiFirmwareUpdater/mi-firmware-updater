@@ -28,6 +28,7 @@ equuleus: MI8UD_V10.3.5.0.PECCNXM
 equuleus_global: MI8UDGlobal_V10.3.6.0.PECMIXM
 ginkgo: GINKGO_V10.3.6.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V10.3.2.0.PCOMIXM
+ginkgo_in_global: GINKGOINGlobal_V10.3.1.0.PCOINXM
 grus: GRUS_V10.3.6.0.PFBCNXM
 grus_eea_global: GRUSEEAGlobal_V10.3.9.0.PFBEUXM
 grus_global: GRUSGlobal_V10.3.4.0.PFBMIXM
