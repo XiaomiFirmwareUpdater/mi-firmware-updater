@@ -70,7 +70,7 @@ pyxis: PYXIS_V10.3.13.0.PFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V10.3.6.0.PFCEUXM
 pyxis_global: PYXISGlobal_V10.3.1.0.PFCMIXM
 raphael: RAPHAEL_V10.3.17.0.PFKCNXM
-raphael_eea_global: RAPHAELEEAGlobal_V10.3.3.0.PFKEUXM
+raphael_eea_global: RAPHAELEEAGlobal_V10.3.4.0.PFKEUXM
 raphael_global: RAPHAELGlobal_V10.3.2.0.PFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V10.3.5.0.PFKINXM
 raphaels: RAPHAELS_V10.4.1.0.PFKCNXM
