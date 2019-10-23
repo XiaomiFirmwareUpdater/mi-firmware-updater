@@ -21,9 +21,9 @@ chiron_global: MIMIX2Global_V10.3.5.0.ODEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
 crux: CRUX_V10.4.6.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
-davinci_eea_global: DAVINCIEEAGlobal_V10.3.15.0.PFJEUXM
+davinci_eea_global: DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM
 davinci_global: DAVINCIGlobal_V10.3.11.0.PFJMIXM
-davinciin_in_global: DAVINCIININGlobal_V10.3.8.0.PFJINXM
+davinciin_in_global: DAVINCIININGlobal_V11.0.2.0.PFJINXM
 dipper: MI8_V11.0.3.0.PEACNXM
 dipper_global: MI8Global_V10.3.5.0.PEAMIXM
 equuleus: MI8UD_V11.0.2.0.PECCNXM
@@ -52,9 +52,9 @@ natrium_global: MI5SPlusGlobal_V10.2.4.0.OBGMIXM
 nitrogen: MIMAX3_V11.0.2.0.PEDCNXM
 nitrogen_global: MIMAX3Global_V10.3.5.0.PEDMIXM
 olive: OLIVE_V10.3.6.0.PCNCNXM
-olive_in_global: OLIVEINGlobal_V10.3.1.0.PCNINXM
+olive_in_global: OLIVEINGlobal_V10.3.3.0.PCNINXM
 olivelite: OLIVELITE_V10.3.4.0.PCPCNXM
-olivelite_in_global: OLIVELITEINGlobal_V10.3.1.0.PCPINXM
+olivelite_in_global: OLIVELITEINGlobal_V10.3.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V10.3.6.0.PFFINXM
 onclite: ONCLITE_V11.0.1.0.PFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V10.3.4.0.PFLEUXM
@@ -65,7 +65,7 @@ oxygen_global: MIMAX2Global_V10.3.1.0.NDDMIXM
 perseus: MIMIX3_V11.0.3.0.PEECNXM
 perseus_global: MIMIX3Global_V10.3.3.0.PEEMIXM
 pine: PINE_V10.2.14.0.PCMCNXM
-pine_eea_global: PINEEEAGlobal_V10.2.5.0.PCMEUXM
+pine_eea_global: PINEEEAGlobal_V11.0.2.0.PCMEUXM
 pine_global: PINEGlobal_V10.2.5.0.PCMMIXM
 pine_in_global: PINEINGlobal_V10.2.10.0.PCMINXM
 platina: MI8Lite_V11.0.2.0.PDTCNXM
@@ -93,7 +93,7 @@ santoni_global: HM4XGlobal_V10.3.1.0.NAMMIXM
 scorpio: MINote2_V10.2.1.0.OADCNFK
 scorpio_global: MINote2Global_V10.2.1.0.OADMIXM
 sirius: MI8SE_V11.0.3.0.PEBCNXM
-tiffany: MI5X_V10.3.1.0.ODBCNXM
+tiffany: MI5X_V10.3.2.0.ODBCNXM
 tulip_global: HMNote6ProGlobal_V10.3.6.0.PEKMIXM
 ugg: HMNote5A_V10.3.2.0.NDKCNXM
 ugg_global: HMNote5AGlobal_V10.3.1.0.NDKMIXM
@@ -101,7 +101,7 @@ ugglite: HMNote5ALITE_V10.3.2.0.NDFCNXM
 ugglite_global: HMNote5ALITEGlobal_V10.3.1.0.NDFMIXM
 ursa: MI8Explorer_V11.0.2.0.PEHCNXM
 vela: VELA_V10.3.8.0.PFECNXM
-vince: HM5Plus_V10.3.1.0.OEGCNXM
+vince: HM5Plus_V10.3.2.0.OEGCNXM
 vince_global: HM5PlusGlobal_V10.2.3.0.OEGMIXM
 violet: VIOLET_V11.0.3.0.PFHCNXM
 violet_in_global: VIOLETINGlobal_V10.3.13.0.PFHINXM
