@@ -16,7 +16,7 @@ cepheus_eea_global: CEPHEUSEEAGlobal_V10.2.30.0.PFAEUXM
 cepheus_global: CEPHEUSGlobal_V10.2.14.0.PFAMIXM
 cereus: HM6_V10.4.3.0.PCGCNXM
 cereus_global: HM6Global_V10.4.4.0.PCGMIXM
-chiron: MIMIX2_V10.3.1.0.ODECNXM
+chiron: MIMIX2_V11.0.2.0.PDECNXM
 chiron_global: MIMIX2Global_V10.3.5.0.ODEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
 crux: CRUX_V10.4.6.0.PFXCNXM
@@ -84,7 +84,7 @@ riva: HM5A_V10.3.2.0.OCKCNXM
 riva_global: HM5AGlobal_V10.3.2.0.OCKMIXM
 rosy: HM5_V10.3.3.0.ODACNXM
 rosy_global: HM5Global_V10.3.2.0.ODAMIXM
-sagit: MI6_V10.3.1.0.OCACNXM
+sagit: MI6_V11.0.2.0.PCACNXM
 sagit_global: MI6Global_V10.3.4.0.OCAMIXM
 sakura: HM6Pro_V10.3.4.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V10.3.8.0.PDMMIXM
