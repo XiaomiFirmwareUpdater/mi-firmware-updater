@@ -11,7 +11,7 @@ cactus_global: HM6AGlobal_V10.4.4.0.PCBMIXM
 cappu: MIPAD3_V10.2.1.0.NCICNXM
 capricorn: MI5S_V10.2.2.0.OAGCNXM
 capricorn_global: MI5SGlobal_V10.2.3.0.OAGMIXM
-cepheus: CEPHEUS_V11.0.2.0.QFACNXM
+cepheus: CEPHEUS_V10.2.35.0.PFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V10.2.30.0.PFAEUXM
 cepheus_global: CEPHEUSGlobal_V10.2.14.0.PFAMIXM
 cereus: HM6_V10.4.3.0.PCGCNXM
@@ -19,7 +19,7 @@ cereus_global: HM6Global_V10.4.4.0.PCGMIXM
 chiron: MIMIX2_V10.3.1.0.ODECNXM
 chiron_global: MIMIX2Global_V10.3.5.0.ODEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-crux: CRUX_V11.0.2.0.PFXCNXM
+crux: CRUX_V10.4.6.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM
 davinci_global: DAVINCIGlobal_V10.3.11.0.PFJMIXM
@@ -52,7 +52,7 @@ natrium_global: MI5SPlusGlobal_V10.2.4.0.OBGMIXM
 nitrogen: MIMAX3_V11.0.2.0.PEDCNXM
 nitrogen_global: MIMAX3Global_V10.3.5.0.PEDMIXM
 olive: OLIVE_V10.3.6.0.PCNCNXM
-olive_in_global: OLIVEINGlobal_V10.3.1.0.PCNINXM
+olive_in_global: OLIVEINGlobal_V10.3.3.0.PCNINXM
 olivelite: OLIVELITE_V10.3.4.0.PCPCNXM
 olivelite_in_global: OLIVELITEINGlobal_V10.3.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V10.3.6.0.PFFINXM
@@ -73,8 +73,8 @@ platina_global: MI8LiteGlobal_V10.3.5.0.PDTMIXM
 polaris: MIMIX2S_V11.0.2.0.PDGCNXM
 polaris_global: MIMIX2SGlobal_V10.3.6.0.PDGMIXM
 pyxis: PYXIS_V11.3.1.0.PFCCNXM
-pyxis_eea_global: PYXISEEAGlobal_V10.3.6.0.PFCEUXM
-pyxis_global: PYXISGlobal_V10.3.1.0.PFCMIXM
+pyxis_eea_global: PYXISEEAGlobal_V11.3.2.0.PFCEUXM
+pyxis_global: PYXISGlobal_V11.3.2.0.PFCMIXM
 raphael: RAPHAEL_V10.3.17.0.PFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V10.3.4.0.PFKEUXM
 raphael_global: RAPHAELGlobal_V10.3.2.0.PFKMIXM
@@ -100,7 +100,7 @@ ugg_global: HMNote5AGlobal_V10.3.1.0.NDKMIXM
 ugglite: HMNote5ALITE_V10.3.2.0.NDFCNXM
 ugglite_global: HMNote5ALITEGlobal_V10.3.1.0.NDFMIXM
 ursa: MI8Explorer_V11.0.2.0.PEHCNXM
-vela: VELA_V10.3.8.0.PFECNXM
+vela: VELA_V11.3.1.0.PFECNXM
 vince: HM5Plus_V10.3.2.0.OEGCNXM
 vince_global: HM5PlusGlobal_V10.2.3.0.OEGMIXM
 violet: VIOLET_V11.0.3.0.PFHCNXM
