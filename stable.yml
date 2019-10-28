@@ -11,7 +11,7 @@ cactus_global: HM6AGlobal_V10.4.4.0.PCBMIXM
 cappu: MIPAD3_V10.2.1.0.NCICNXM
 capricorn: MI5S_V10.2.2.0.OAGCNXM
 capricorn_global: MI5SGlobal_V10.2.3.0.OAGMIXM
-cepheus: CEPHEUS_V10.2.35.0.PFACNXM
+cepheus: CEPHEUS_V11.0.2.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V10.2.30.0.PFAEUXM
 cepheus_global: CEPHEUSGlobal_V10.2.14.0.PFAMIXM
 cereus: HM6_V10.4.3.0.PCGCNXM
@@ -21,9 +21,9 @@ chiron_global: MIMIX2Global_V10.3.5.0.ODEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
 crux: CRUX_V11.0.2.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
-davinci_eea_global: DAVINCIEEAGlobal_V10.3.15.0.PFJEUXM
+davinci_eea_global: DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM
 davinci_global: DAVINCIGlobal_V10.3.11.0.PFJMIXM
-davinciin_in_global: DAVINCIININGlobal_V10.3.8.0.PFJINXM
+davinciin_in_global: DAVINCIININGlobal_V11.0.2.0.PFJINXM
 dipper: MI8_V11.0.3.0.PEACNXM
 dipper_global: MI8Global_V10.3.5.0.PEAMIXM
 equuleus: MI8UD_V11.0.2.0.PECCNXM
@@ -57,7 +57,7 @@ olivelite: OLIVELITE_V10.3.4.0.PCPCNXM
 olivelite_in_global: OLIVELITEINGlobal_V10.3.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V10.3.6.0.PFFINXM
 onclite: ONCLITE_V11.0.1.0.PFLCNXM
-onclite_eea_global: ONCLITEEEAGlobal_V11.0.3.0.PFLEUXM
+onclite_eea_global: ONCLITEEEAGlobal_V10.3.4.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V10.3.4.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V10.3.6.0.PFLINXM
 oxygen: MIMAX2_V10.3.1.0.NDDCNXM
