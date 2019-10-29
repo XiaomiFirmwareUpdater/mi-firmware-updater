@@ -11,7 +11,7 @@ cactus_global: HM6AGlobal_V10.4.4.0.PCBMIXM
 cappu: MIPAD3_V10.2.1.0.NCICNXM
 capricorn: MI5S_V10.2.2.0.OAGCNXM
 capricorn_global: MI5SGlobal_V10.2.3.0.OAGMIXM
-cepheus: CEPHEUS_V10.2.35.0.PFACNXM
+cepheus: CEPHEUS_V11.0.2.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V10.2.30.0.PFAEUXM
 cepheus_global: CEPHEUSGlobal_V10.2.14.0.PFAMIXM
 cereus: HM6_V10.4.3.0.PCGCNXM
@@ -19,7 +19,7 @@ cereus_global: HM6Global_V10.4.4.0.PCGMIXM
 chiron: MIMIX2_V10.3.1.0.ODECNXM
 chiron_global: MIMIX2Global_V10.3.5.0.ODEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-crux: CRUX_V10.4.6.0.PFXCNXM
+crux: CRUX_V11.0.2.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM
 davinci_global: DAVINCIGlobal_V10.3.11.0.PFJMIXM
@@ -75,7 +75,7 @@ polaris_global: MIMIX2SGlobal_V10.3.6.0.PDGMIXM
 pyxis: PYXIS_V10.3.13.0.PFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.3.2.0.PFCEUXM
 pyxis_global: PYXISGlobal_V11.3.2.0.PFCMIXM
-raphael: RAPHAEL_V10.3.17.0.PFKCNXM
+raphael: RAPHAEL_V11.0.2.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V10.3.4.0.PFKEUXM
 raphael_global: RAPHAELGlobal_V10.3.2.0.PFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V10.3.5.0.PFKINXM
@@ -108,5 +108,5 @@ violet_in_global: VIOLETINGlobal_V10.3.13.0.PFHINXM
 wayne: MI6X_V10.3.6.0.PDCCNXM
 whyred: HMNote5_V10.3.5.0.PEICNXM
 whyred_global: HMNote5Global_V10.3.2.0.PEIMIXM
-ysl: HMS2_V10.3.4.0.PEFCNXM
+ysl: HMS2_V11.0.1.0.PEFCNXM
 ysl_global: HMS2Global_V10.3.3.0.PEFMIXM
