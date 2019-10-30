@@ -16,7 +16,7 @@ cepheus_eea_global: CEPHEUSEEAGlobal_V10.2.30.0.PFAEUXM
 cepheus_global: CEPHEUSGlobal_V10.2.14.0.PFAMIXM
 cereus: HM6_V10.4.3.0.PCGCNXM
 cereus_global: HM6Global_V10.4.4.0.PCGMIXM
-chiron: MIMIX2_V10.3.1.0.ODECNXM
+chiron: MIMIX2_V11.0.2.0.PDECNXM
 chiron_global: MIMIX2Global_V10.3.5.0.ODEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
 crux: CRUX_V11.0.2.0.PFXCNXM
@@ -37,7 +37,7 @@ grus_global: GRUSGlobal_V10.3.4.0.PFBMIXM
 jason: MINote3_V10.4.2.0.PCHCNXM
 jason_global: MINote3Global_V10.4.2.0.PCHMIXM
 laurus: LAURUS_V10.2.13.0.PFMCNXM
-lavender: LAVENDER_V10.3.4.0.PFGCNXM
+lavender: LAVENDER_V11.0.3.0.PFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V10.3.6.0.PFGEUXM
 lavender_global: LAVENDERGlobal_V10.3.10.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V10.3.7.0.PFGINXM
@@ -55,9 +55,9 @@ olive: OLIVE_V10.3.6.0.PCNCNXM
 olive_in_global: OLIVEINGlobal_V10.3.3.0.PCNINXM
 olivelite: OLIVELITE_V10.3.4.0.PCPCNXM
 olivelite_in_global: OLIVELITEINGlobal_V10.3.3.0.PCPINXM
-onc_in_global: ONCINGlobal_V10.3.6.0.PFFINXM
+onc_in_global: ONCINGlobal_V11.0.3.0.PFFINXM
 onclite: ONCLITE_V11.0.1.0.PFLCNXM
-onclite_eea_global: ONCLITEEEAGlobal_V10.3.4.0.PFLEUXM
+onclite_eea_global: ONCLITEEEAGlobal_V11.0.3.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V10.3.4.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V10.3.6.0.PFLINXM
 oxygen: MIMAX2_V10.3.1.0.NDDCNXM
