@@ -3,7 +3,7 @@ andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.20.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.19.0.PEMMIXM
 begonia: BEGONIA_V10.4.11.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V10.4.5.0.PGGEUXM
-begonia_global: BEGONIAGlobal_V10.4.1.0.PGGMIXM
+begonia_global: BEGONIAGlobal_V10.4.2.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V10.4.4.0.PGGINXM
 beryllium_global: POCOF1Global_V10.3.8.0.PEJMIXM
 cactus: HM6A_V10.4.4.0.PCBCNXM
@@ -38,9 +38,9 @@ jason: MINote3_V10.4.2.0.PCHCNXM
 jason_global: MINote3Global_V11.0.3.0.PCHMIXM
 laurus: LAURUS_V10.2.13.0.PFMCNXM
 lavender: LAVENDER_V11.0.3.0.PFGCNXM
-lavender_eea_global: LAVENDEREEAGlobal_V10.3.6.0.PFGEUXM
+lavender_eea_global: LAVENDEREEAGlobal_V11.0.3.0.PFGEUXM
 lavender_global: LAVENDERGlobal_V10.3.10.0.PFGMIXM
-lavender_in_global: LAVENDERINGlobal_V11.0.5.0.PFGINXM
+lavender_in_global: LAVENDERINGlobal_V10.3.7.0.PFGINXM
 lithium: MIMIX_V10.2.1.0.OAHCNFK
 lithium_global: MIMIXGlobal_V10.2.1.0.OAHMIXM
 lotus: MIPLAY_V10.3.4.0.OFICNXM
@@ -65,7 +65,7 @@ oxygen_global: MIMAX2Global_V10.3.1.0.NDDMIXM
 perseus: MIMIX3_V11.0.3.0.PEECNXM
 perseus_global: MIMIX3Global_V10.3.3.0.PEEMIXM
 pine: PINE_V10.2.14.0.PCMCNXM
-pine_eea_global: PINEEEAGlobal_V10.2.5.0.PCMEUXM
+pine_eea_global: PINEEEAGlobal_V11.0.6.0.PCMEUXM
 pine_global: PINEGlobal_V10.2.5.0.PCMMIXM
 pine_in_global: PINEINGlobal_V10.2.10.0.PCMINXM
 platina: MI8Lite_V11.0.2.0.PDTCNXM
@@ -86,7 +86,7 @@ rosy: HM5_V10.3.3.0.ODACNXM
 rosy_global: HM5Global_V10.3.2.0.ODAMIXM
 sagit: MI6_V11.0.2.0.PCACNXM
 sagit_global: MI6Global_V10.3.4.0.OCAMIXM
-sakura: HM6Pro_V10.3.4.0.PDICNXM
+sakura: HM6Pro_V11.0.3.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V10.3.8.0.PDMMIXM
 santoni: HM4X_V10.3.1.0.NAMCNXM
 santoni_global: HM4XGlobal_V10.3.1.0.NAMMIXM
@@ -95,9 +95,9 @@ scorpio_global: MINote2Global_V10.2.1.0.OADMIXM
 sirius: MI8SE_V11.0.3.0.PEBCNXM
 tiffany: MI5X_V10.3.2.0.ODBCNXM
 tulip_global: HMNote6ProGlobal_V10.3.6.0.PEKMIXM
-ugg: HMNote5A_V10.3.2.0.NDKCNXM
+ugg: HMNote5A_V11.0.1.0.NDKCNXM
 ugg_global: HMNote5AGlobal_V10.3.1.0.NDKMIXM
-ugglite: HMNote5ALITE_V10.3.2.0.NDFCNXM
+ugglite: HMNote5ALITE_V11.0.2.0.NDFCNXM
 ugglite_global: HMNote5ALITEGlobal_V10.3.1.0.NDFMIXM
 ursa: MI8Explorer_V11.0.2.0.PEHCNXM
 vela: VELA_V11.3.1.0.PFECNXM
