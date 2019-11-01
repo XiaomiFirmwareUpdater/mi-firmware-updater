@@ -5,7 +5,7 @@ begonia: BEGONIA_V10.4.11.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V10.4.5.0.PGGEUXM
 begonia_global: BEGONIAGlobal_V10.4.2.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V10.4.4.0.PGGINXM
-beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
+beryllium_global: POCOF1Global_V10.3.8.0.PEJMIXM
 cactus: HM6A_V10.4.4.0.PCBCNXM
 cactus_global: HM6AGlobal_V10.4.4.0.PCBMIXM
 cappu: MIPAD3_V10.2.1.0.NCICNXM
@@ -39,7 +39,7 @@ jason_global: MINote3Global_V11.0.3.0.PCHMIXM
 laurus: LAURUS_V10.2.13.0.PFMCNXM
 lavender: LAVENDER_V11.0.3.0.PFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V10.3.6.0.PFGEUXM
-lavender_global: LAVENDERGlobal_V11.0.3.0.PFGMIXM
+lavender_global: LAVENDERGlobal_V10.3.10.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V10.3.7.0.PFGINXM
 lithium: MIMIX_V10.2.1.0.OAHCNFK
 lithium_global: MIMIXGlobal_V10.2.1.0.OAHMIXM
@@ -63,7 +63,7 @@ onclite_in_global: ONCLITEINGlobal_V10.3.6.0.PFLINXM
 oxygen: MIMAX2_V10.3.1.0.NDDCNXM
 oxygen_global: MIMAX2Global_V10.3.1.0.NDDMIXM
 perseus: MIMIX3_V11.0.3.0.PEECNXM
-perseus_global: MIMIX3Global_V11.0.4.0.PEEMIXM
+perseus_global: MIMIX3Global_V10.3.3.0.PEEMIXM
 pine: PINE_V10.2.14.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.6.0.PCMEUXM
 pine_global: PINEGlobal_V10.2.5.0.PCMMIXM
