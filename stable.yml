@@ -52,8 +52,12 @@ natrium_global: MI5SPlusGlobal_V10.2.4.0.OBGMIXM
 nitrogen: MIMAX3_V11.0.2.0.PEDCNXM
 nitrogen_global: MIMAX3Global_V10.3.5.0.PEDMIXM
 olive: OLIVE_V10.3.6.0.PCNCNXM
+olive_eea_global: OLIVEEEAGlobal_V10.3.2.0.PCNEUXM
+olive_global: OLIVEGlobal_V10.3.4.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V10.3.3.0.PCNINXM
 olivelite: OLIVELITE_V10.3.4.0.PCPCNXM
+olivelite_eea_global: OLIVELITEEEAGlobal_V10.3.3.0.PCPEUXM
+olivelite_global: OLIVELITEGlobal_V10.3.3.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V10.3.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V10.3.6.0.PFFINXM
 onclite: ONCLITE_V11.0.1.0.PFLCNXM
