@@ -1,7 +1,7 @@
 andromeda: ANDROMEDA_V10.3.17.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.21.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.19.0.PEMMIXM
-begonia: BEGONIA_V10.4.11.0.PGGCNXM
+begonia: BEGONIA_V11.0.1.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V10.4.5.0.PGGEUXM
 begonia_global: BEGONIAGlobal_V10.4.2.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V10.4.3.0.PGGINXM
@@ -22,7 +22,7 @@ clover: MIPAD4_V10.3.2.0.ODJCNXM
 crux: CRUX_V11.0.2.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM
-davinci_global: DAVINCIGlobal_V11.0.1.0.PFJMIXM
+davinci_global: DAVINCIGlobal_V10.3.11.0.PFJMIXM
 davinciin_in_global: DAVINCIININGlobal_V11.0.2.0.PFJINXM
 dipper: MI8_V11.0.4.0.PEACNXM
 dipper_global: MI8Global_V11.0.6.0.PEAMIXM
@@ -93,15 +93,15 @@ santoni_global: HM4XGlobal_V10.3.1.0.NAMMIXM
 scorpio: MINote2_V10.2.1.0.OADCNFK
 scorpio_global: MINote2Global_V10.2.1.0.OADMIXM
 sirius: MI8SE_V11.0.3.0.PEBCNXM
-tiffany: MI5X_V10.3.2.0.ODBCNXM
+tiffany: MI5X_V11.0.2.0.ODBCNXM
 tulip_global: HMNote6ProGlobal_V10.3.6.0.PEKMIXM
-ugg: HMNote5A_V10.3.2.0.NDKCNXM
+ugg: HMNote5A_V11.0.1.0.NDKCNXM
 ugg_global: HMNote5AGlobal_V11.0.2.0.NDKMIXM
 ugglite: HMNote5ALITE_V11.0.2.0.NDFCNXM
 ugglite_global: HMNote5ALITEGlobal_V11.0.3.0.NDFMIXM
 ursa: MI8Explorer_V11.0.3.0.PEHCNXM
 vela: VELA_V11.3.1.0.PFECNXM
-vince: HM5Plus_V10.3.2.0.OEGCNXM
+vince: HM5Plus_V11.0.2.0.OEGCNXM
 vince_global: HM5PlusGlobal_V10.2.3.0.OEGMIXM
 violet: VIOLET_V11.0.4.0.PFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.5.0.PFHINXM
