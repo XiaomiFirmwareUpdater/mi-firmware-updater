@@ -70,7 +70,7 @@ perseus: MIMIX3_V11.0.4.0.PEECNXM
 perseus_global: MIMIX3Global_V10.3.3.0.PEEMIXM
 pine: PINE_V11.0.1.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.6.0.PCMEUXM
-pine_global: PINEGlobal_V11.0.4.0.PCMMIXM
+pine_global: PINEGlobal_V10.2.5.0.PCMMIXM
 pine_in_global: PINEINGlobal_V10.2.10.0.PCMINXM
 platina: MI8Lite_V11.0.2.0.PDTCNXM
 platina_global: MI8LiteGlobal_V10.3.5.0.PDTMIXM
@@ -81,7 +81,7 @@ pyxis_eea_global: PYXISEEAGlobal_V11.3.2.0.PFCEUXM
 pyxis_global: PYXISGlobal_V10.3.1.0.PFCMIXM
 raphael: RAPHAEL_V11.0.2.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.3.0.QFKEUXM
-raphael_global: RAPHAELGlobal_V10.3.3.0.PFKMIXM
+raphael_global: RAPHAELGlobal_V10.3.2.0.PFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V10.3.5.0.PFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
 riva: HM5A_V10.3.2.0.OCKCNXM
