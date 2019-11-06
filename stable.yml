@@ -24,7 +24,7 @@ davinci: DAVINCI_V11.0.3.0.PFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM
 davinci_global: DAVINCIGlobal_V10.3.11.0.PFJMIXM
 davinciin_in_global: DAVINCIININGlobal_V11.0.2.0.PFJINXM
-dipper: MI8_V11.0.4.0.PEACNXM
+dipper: MI8_V11.0.3.0.PEACNXM
 dipper_global: MI8Global_V11.0.6.0.PEAMIXM
 equuleus: MI8UD_V11.0.3.0.PECCNXM
 equuleus_global: MI8UDGlobal_V11.0.5.0.PECMIXM
@@ -43,8 +43,8 @@ lavender_global: LAVENDERGlobal_V10.3.10.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V10.3.7.0.PFGINXM
 lithium: MIMIX_V10.2.1.0.OAHCNFK
 lithium_global: MIMIXGlobal_V10.2.1.0.OAHMIXM
-lotus: MIPLAY_V10.3.4.0.OFICNXM
-lotus_global: MIPLAYGlobal_V10.2.5.0.OFIMIXM
+lotus: MIPLAY_V11.0.2.0.OFICNXM
+lotus_global: MIPLAYGlobal_V11.0.1.0.OFIMIXM
 mido: HMNote4X_V10.3.2.0.NCFCNXM
 mido_global: HMNote4XGlobal_V10.2.3.0.NCFMIXM
 natrium: MI5SPlus_V10.2.2.0.OBGCNXM
@@ -100,14 +100,14 @@ sirius: MI8SE_V11.0.3.0.PEBCNXM
 tiffany: MI5X_V11.0.2.0.ODBCNXM
 tulip_global: HMNote6ProGlobal_V10.3.6.0.PEKMIXM
 ugg: HMNote5A_V11.0.1.0.NDKCNXM
-ugg_global: HMNote5AGlobal_V11.0.2.0.NDKMIXM
+ugg_global: HMNote5AGlobal_V10.3.1.0.NDKMIXM
 ugglite: HMNote5ALITE_V11.0.2.0.NDFCNXM
-ugglite_global: HMNote5ALITEGlobal_V11.0.3.0.NDFMIXM
+ugglite_global: HMNote5ALITEGlobal_V10.3.1.0.NDFMIXM
 ursa: MI8Explorer_V11.0.3.0.PEHCNXM
 vela: VELA_V11.3.1.0.PFECNXM
 vince: HM5Plus_V11.0.2.0.OEGCNXM
 vince_global: HM5PlusGlobal_V10.2.3.0.OEGMIXM
-violet: VIOLET_V11.0.4.0.PFHCNXM
+violet: VIOLET_V11.0.3.0.PFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.5.0.PFHINXM
 wayne: MI6X_V10.3.6.0.PDCCNXM
 whyred: HMNote5_V10.3.5.0.PEICNXM
