@@ -31,7 +31,7 @@ equuleus_global: MI8UDGlobal_V11.0.5.0.PECMIXM
 ginkgo: GINKGO_V10.3.8.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V10.3.5.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V10.3.3.0.PCOINXM
-grus: GRUS_V11.0.5.0.PFBCNXM
+grus: GRUS_V11.0.3.0.PFBCNXM
 grus_eea_global: GRUSEEAGlobal_V10.3.9.0.PFBEUXM
 grus_global: GRUSGlobal_V10.3.4.0.PFBMIXM
 jason: MINote3_V10.4.2.0.PCHCNXM
@@ -43,7 +43,7 @@ lavender_global: LAVENDERGlobal_V10.3.10.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V10.3.7.0.PFGINXM
 lithium: MIMIX_V11.0.2.0.OAHCNXM
 lithium_global: MIMIXGlobal_V11.0.2.0.OAHMIXM
-lotus: MIPLAY_V11.0.2.0.OFICNXM
+lotus: MIPLAY_V10.3.4.0.OFICNXM
 lotus_global: MIPLAYGlobal_V10.2.5.0.OFIMIXM
 mido: HMNote4X_V10.3.2.0.NCFCNXM
 mido_global: HMNote4XGlobal_V10.2.3.0.NCFMIXM
