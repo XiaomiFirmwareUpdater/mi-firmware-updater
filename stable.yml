@@ -17,7 +17,7 @@ cepheus_global: CEPHEUSGlobal_V11.0.2.0.QFAMIXM
 cereus: HM6_V10.4.3.0.PCGCNXM
 cereus_global: HM6Global_V10.4.4.0.PCGMIXM
 chiron: MIMIX2_V11.0.2.0.PDECNXM
-chiron_global: MIMIX2Global_V10.3.5.0.ODEMIXM
+chiron_global: MIMIX2Global_V11.0.3.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
 crux: CRUX_V11.0.2.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
@@ -58,14 +58,14 @@ olive_in_global: OLIVEINGlobal_V10.3.3.0.PCNINXM
 olivelite: OLIVELITE_V10.3.4.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V10.3.3.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V10.3.3.0.PCPMIXM
-olivelite_in_global: OLIVELITEINGlobal_V11.0.1.0.PCPINXM
+olivelite_in_global: OLIVELITEINGlobal_V10.3.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V11.0.3.0.PFFINXM
 onclite: ONCLITE_V11.0.1.0.PFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V11.0.3.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V10.3.4.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V11.0.2.0.PFLINXM
-oxygen: MIMAX2_V10.3.1.0.NDDCNXM
-oxygen_global: MIMAX2Global_V10.3.1.0.NDDMIXM
+oxygen: MIMAX2_V11.0.2.0.NDDCNXM
+oxygen_global: MIMAX2Global_V11.0.2.0.NDDMIXM
 perseus: MIMIX3_V11.0.3.0.PEECNXM
 perseus_global: MIMIX3Global_V11.0.4.0.PEEMIXM
 pine: PINE_V11.0.1.0.PCMCNXM
@@ -92,7 +92,7 @@ sagit: MI6_V11.0.2.0.PCACNXM
 sagit_global: MI6Global_V11.0.3.0.PCAMIXM
 sakura: HM6Pro_V11.0.3.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V10.3.8.0.PDMMIXM
-santoni: HM4X_V10.3.1.0.NAMCNXM
+santoni: HM4X_V11.0.1.0.NAMCNXM
 santoni_global: HM4XGlobal_V10.3.1.0.NAMMIXM
 scorpio: MINote2_V11.0.2.0.OADCNXM
 scorpio_global: MINote2Global_V11.0.2.0.OADMIXM
