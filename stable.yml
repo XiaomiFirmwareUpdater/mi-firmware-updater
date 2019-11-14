@@ -4,7 +4,7 @@ andromeda_global: ANDROMEDAGlobal_V10.3.19.0.PEMMIXM
 begonia: BEGONIA_V11.0.1.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V10.4.5.0.PGGEUXM
 begonia_global: BEGONIAGlobal_V10.4.2.0.PGGMIXM
-begoniain_in_global: BEGONIAININGlobal_V10.4.3.0.PGGINXM
+begoniain_in_global: BEGONIAININGlobal_V10.4.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
 cactus: HM6A_V11.0.4.0.PCBCNXM
 cactus_global: HM6AGlobal_V10.4.4.0.PCBMIXM
@@ -70,7 +70,7 @@ perseus: MIMIX3_V11.0.4.0.PEECNXM
 perseus_global: MIMIX3Global_V11.0.4.0.PEEMIXM
 pine: PINE_V11.0.1.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.6.0.PCMEUXM
-pine_global: PINEGlobal_V10.2.5.0.PCMMIXM
+pine_global: PINEGlobal_V11.0.4.0.PCMMIXM
 pine_in_global: PINEINGlobal_V10.2.10.0.PCMINXM
 platina: MI8Lite_V11.0.2.0.PDTCNXM
 platina_global: MI8LiteGlobal_V11.0.5.0.PDTMIXM
@@ -91,7 +91,7 @@ rosy_global: HM5Global_V11.0.1.0.ODAMIXM
 sagit: MI6_V11.0.2.0.PCACNXM
 sagit_global: MI6Global_V11.0.3.0.PCAMIXM
 sakura: HM6Pro_V11.0.3.0.PDICNXM
-sakura_india_global: HM6ProINGlobal_V10.3.8.0.PDMMIXM
+sakura_india_global: HM6ProINGlobal_V11.0.3.0.PDMMIXM
 santoni: HM4X_V11.0.1.0.NAMCNXM
 santoni_global: HM4XGlobal_V10.3.1.0.NAMMIXM
 scorpio: MINote2_V11.0.2.0.OADCNXM
