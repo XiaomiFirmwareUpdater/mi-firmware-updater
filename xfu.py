@@ -248,6 +248,7 @@ def post_updates():
             zip_size = info[7]
             md5_hash = info[8]
             region = set_region(name)
+            version_ = ""
             if process == 'firmware':
                 link = f'https://xiaomifirmwareupdater.com/firmware/{codename}'
             elif process == 'non-arb firmware':
@@ -387,7 +388,7 @@ def main():
                 continue
             # start working
             print("Starting download " + file)
-            downloader = Downloader(url=url)
+            downloader = Downloader(url=url.replace("bigota", "hugeota"))
             if downloader.is_running:
                 sleep(2)
             print('File downloaded to %s' % downloader.file_name)
