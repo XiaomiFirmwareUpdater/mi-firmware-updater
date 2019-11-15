@@ -176,8 +176,12 @@ def set_region(filename: str) -> str:
     Sets region based on zip file name
     :returns region of rom from filename
     """
-    device = filename.split("_")[1]
-    version = filename.split("_")[2]
+    if filename.startswith("miui"):
+        device = filename.split("_")[1]
+        version = filename.split("_")[2]
+    elif filename.startswith("fw"):
+        device = filename.split("_")[3]
+        version = filename.split("_")[4]
     if 'EU' in version or 'EEAGlobal' in device:
         region = 'Europe'
     elif 'IN' in version or 'INGlobal' in device:
