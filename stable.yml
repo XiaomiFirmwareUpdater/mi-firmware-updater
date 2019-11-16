@@ -9,7 +9,7 @@ beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
 cactus: HM6A_V11.0.4.0.PCBCNXM
 cactus_global: HM6AGlobal_V10.4.4.0.PCBMIXM
 cappu: MIPAD3_V10.2.1.0.NCICNXM
-capricorn: MI5S_V11.0.2.0.OAGCNXM
+capricorn: MI5S_V10.2.2.0.OAGCNXM
 capricorn_global: MI5SGlobal_V10.2.3.0.OAGMIXM
 cepheus: CEPHEUS_V11.0.2.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V11.0.5.0.QFAEUXM
