@@ -19,7 +19,7 @@ cereus_global: HM6Global_V10.4.4.0.PCGMIXM
 chiron: MIMIX2_V11.0.2.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.3.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-crux: CRUX_V11.0.3.0.PFXCNXM
+crux: CRUX_V11.0.2.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM
 davinci_global: DAVINCIGlobal_V11.0.1.0.PFJMIXM
