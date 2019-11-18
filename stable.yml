@@ -2,8 +2,8 @@ andromeda: ANDROMEDA_V10.3.17.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.21.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.19.0.PEMMIXM
 begonia: BEGONIA_V11.0.1.0.PGGCNXM
-begonia_eea_global: BEGONIAEEAGlobal_V10.4.5.0.PGGEUXM
-begonia_global: BEGONIAGlobal_V10.4.2.0.PGGMIXM
+begonia_eea_global: BEGONIAEEAGlobal_V11.0.1.0.PGGEUXM
+begonia_global: BEGONIAGlobal_V11.0.1.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V10.4.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
 cactus: HM6A_V11.0.4.0.PCBCNXM
@@ -28,10 +28,10 @@ dipper: MI8_V11.0.4.0.PEACNXM
 dipper_global: MI8Global_V11.0.6.0.PEAMIXM
 equuleus: MI8UD_V11.0.3.0.PECCNXM
 equuleus_global: MI8UDGlobal_V11.0.5.0.PECMIXM
-ginkgo: GINKGO_V11.0.2.0.PCOCNXM
+ginkgo: GINKGO_V10.3.8.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V10.3.5.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V10.3.3.0.PCOINXM
-grus: GRUS_V11.0.3.0.PFBCNXM
+grus: GRUS_V11.0.5.0.PFBCNXM
 grus_eea_global: GRUSEEAGlobal_V10.3.9.0.PFBEUXM
 grus_global: GRUSGlobal_V10.3.4.0.PFBMIXM
 jason: MINote3_V11.0.2.0.PCHCNXM
@@ -39,8 +39,8 @@ jason_global: MINote3Global_V11.0.3.0.PCHMIXM
 laurus: LAURUS_V11.0.2.0.PFMCNXM
 lavender: LAVENDER_V11.0.3.0.PFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V10.3.6.0.PFGEUXM
-lavender_global: LAVENDERGlobal_V10.3.10.0.PFGMIXM
-lavender_in_global: LAVENDERINGlobal_V10.3.7.0.PFGINXM
+lavender_global: LAVENDERGlobal_V11.0.4.0.PFGMIXM
+lavender_in_global: LAVENDERINGlobal_V11.0.6.0.PFGINXM
 lithium: MIMIX_V11.0.2.0.OAHCNXM
 lithium_global: MIMIXGlobal_V11.0.2.0.OAHMIXM
 lotus: MIPLAY_V11.0.2.0.OFICNXM
@@ -82,7 +82,7 @@ pyxis_global: PYXISGlobal_V11.3.3.0.PFCMIXM
 raphael: RAPHAEL_V11.0.2.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.3.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V10.3.3.0.PFKMIXM
-raphaelin_in_global: RAPHAELININGlobal_V10.3.5.0.PFKINXM
+raphaelin_in_global: RAPHAELININGlobal_V11.0.1.0.QFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
 riva: HM5A_V11.0.2.0.OCKCNXM
 riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
