@@ -39,8 +39,8 @@ jason_global: MINote3Global_V11.0.3.0.PCHMIXM
 laurus: LAURUS_V11.0.2.0.PFMCNXM
 lavender: LAVENDER_V11.0.3.0.PFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V10.3.6.0.PFGEUXM
-lavender_global: LAVENDERGlobal_V11.0.4.0.PFGMIXM
-lavender_in_global: LAVENDERINGlobal_V11.0.6.0.PFGINXM
+lavender_global: LAVENDERGlobal_V10.3.10.0.PFGMIXM
+lavender_in_global: LAVENDERINGlobal_V10.3.7.0.PFGINXM
 lithium: MIMIX_V11.0.2.0.OAHCNXM
 lithium_global: MIMIXGlobal_V11.0.2.0.OAHMIXM
 lotus: MIPLAY_V11.0.2.0.OFICNXM
@@ -111,7 +111,7 @@ vince: HM5Plus_V11.0.2.0.OEGCNXM
 vince_global: HM5PlusGlobal_V10.2.3.0.OEGMIXM
 violet: VIOLET_V11.0.4.0.PFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.5.0.PFHINXM
-wayne: MI6X_V10.3.6.0.PDCCNXM
+wayne: MI6X_V11.0.2.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V10.3.2.0.PEIMIXM
 ysl: HMS2_V11.0.1.0.PEFCNXM
