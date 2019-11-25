@@ -29,7 +29,7 @@ dipper_global: MI8Global_V11.0.6.0.PEAMIXM
 equuleus: MI8UD_V11.0.3.0.PECCNXM
 equuleus_global: MI8UDGlobal_V11.0.5.0.PECMIXM
 ginkgo: GINKGO_V11.0.3.0.PCOCNXM
-ginkgo_global: GINKGOGlobal_V11.0.3.0.PCOMIXM
+ginkgo_global: GINKGOGlobal_V10.3.5.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V10.3.3.0.PCOINXM
 grus: GRUS_V11.0.5.0.PFBCNXM
 grus_eea_global: GRUSEEAGlobal_V11.0.4.0.PFBEUXM
@@ -60,7 +60,7 @@ olivelite_eea_global: OLIVELITEEEAGlobal_V10.3.3.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V10.3.3.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V11.0.3.0.PFFINXM
-onclite: ONCLITE_V11.0.2.0.PFLCNXM
+onclite: ONCLITE_V11.0.1.0.PFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V11.0.3.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V11.0.2.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V11.0.2.0.PFLINXM
@@ -111,7 +111,7 @@ vince: HM5Plus_V11.0.2.0.OEGCNXM
 vince_global: HM5PlusGlobal_V10.2.3.0.OEGMIXM
 violet: VIOLET_V11.0.4.0.PFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.5.0.PFHINXM
-wayne: MI6X_V10.3.6.0.PDCCNXM
+wayne: MI6X_V11.0.2.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
 willow_eea_global: WILLOWEEAGlobal_V10.3.5.0.PCXEUXM
