@@ -19,7 +19,7 @@ cereus_global: HM6Global_V10.4.4.0.PCGMIXM
 chiron: MIMIX2_V11.0.2.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.3.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-crux: CRUX_V11.0.3.0.PFXCNXM
+crux: CRUX_V11.0.2.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.3.0.PFJEUXM
 davinci_global: DAVINCIGlobal_V11.0.1.0.PFJMIXM
@@ -30,7 +30,7 @@ equuleus: MI8UD_V11.0.3.0.PECCNXM
 equuleus_global: MI8UDGlobal_V11.0.5.0.PECMIXM
 ginkgo: GINKGO_V11.0.3.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V11.0.3.0.PCOMIXM
-ginkgo_in_global: GINKGOINGlobal_V10.3.3.0.PCOINXM
+ginkgo_in_global: GINKGOINGlobal_V11.0.1.0.PCOINXM
 grus: GRUS_V11.0.5.0.PFBCNXM
 grus_eea_global: GRUSEEAGlobal_V11.0.4.0.PFBEUXM
 grus_global: GRUSGlobal_V11.0.4.0.PFBMIXM
@@ -50,7 +50,7 @@ mido_global: HMNote4XGlobal_V11.0.2.0.NCFMIXM
 natrium: MI5SPlus_V11.0.2.0.OBGCNXM
 natrium_global: MI5SPlusGlobal_V10.2.4.0.OBGMIXM
 nitrogen: MIMAX3_V11.0.2.0.PEDCNXM
-nitrogen_global: MIMAX3Global_V10.3.5.0.PEDMIXM
+nitrogen_global: MIMAX3Global_V11.0.6.0.PEDMIXM
 olive: OLIVE_V11.0.2.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.1.0.PCNEUXM
 olive_global: OLIVEGlobal_V10.3.4.0.PCNMIXM
@@ -58,9 +58,9 @@ olive_in_global: OLIVEINGlobal_V11.0.2.0.PCNINXM
 olivelite: OLIVELITE_V11.0.3.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V10.3.3.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V11.0.1.0.PCPMIXM
-olivelite_in_global: OLIVELITEINGlobal_V11.0.1.0.PCPINXM
+olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V11.0.3.0.PFFINXM
-onclite: ONCLITE_V11.0.1.0.PFLCNXM
+onclite: ONCLITE_V11.0.2.0.PFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V11.0.3.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V11.0.2.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V11.0.2.0.PFLINXM
@@ -90,7 +90,7 @@ rosy: HM5_V11.0.1.0.ODACNXM
 rosy_global: HM5Global_V11.0.1.0.ODAMIXM
 sagit: MI6_V11.0.2.0.PCACNXM
 sagit_global: MI6Global_V11.0.3.0.PCAMIXM
-sakura: HM6Pro_V11.0.3.0.PDICNXM
+sakura: HM6Pro_V11.0.4.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.3.0.PDMMIXM
 santoni: HM4X_V11.0.1.0.NAMCNXM
 santoni_global: HM4XGlobal_V11.0.2.0.NAMMIXM
@@ -99,7 +99,7 @@ scorpio_global: MINote2Global_V11.0.2.0.OADMIXM
 sirius: MI8SE_V11.0.3.0.PEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 tucana: TUCANA_V11.0.4.0.PFDCNXM
-tucana_eea_global: TUCANAEEAGlobal_V11.0.5.0.PFDEUXM
+tucana_eea_global: TUCANAEEAGlobal_V11.0.9.0.PFDEUXM
 tucana_global: TUCANAGlobal_V11.0.3.0.PFDMIXM
 tulip_global: HMNote6ProGlobal_V10.3.6.0.PEKMIXM
 ugg: HMNote5A_V11.0.1.0.NDKCNXM
