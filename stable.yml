@@ -3,7 +3,7 @@ andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.21.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 begonia: BEGONIA_V11.0.2.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.2.0.PGGEUXM
-begonia_global: BEGONIAGlobal_V11.0.2.0.PGGMIXM
+begonia_global: BEGONIAGlobal_V11.0.1.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V10.4.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
 cactus: HM6A_V11.0.4.0.PCBCNXM
@@ -56,7 +56,7 @@ olive_eea_global: OLIVEEEAGlobal_V11.0.1.0.PCNEUXM
 olive_global: OLIVEGlobal_V10.3.4.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.2.0.PCNINXM
 olivelite: OLIVELITE_V11.0.3.0.PCPCNXM
-olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.1.0.PCPEUXM
+olivelite_eea_global: OLIVELITEEEAGlobal_V10.3.3.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V11.0.1.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V11.0.3.0.PFFINXM
