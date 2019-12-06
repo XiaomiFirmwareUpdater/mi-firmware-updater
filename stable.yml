@@ -15,7 +15,7 @@ cepheus: CEPHEUS_V11.0.4.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V11.0.5.0.QFAEUXM
 cepheus_global: CEPHEUSGlobal_V11.0.2.0.QFAMIXM
 cereus: HM6_V11.0.3.0.PCGCNXM
-cereus_global: HM6Global_V10.4.4.0.PCGMIXM
+cereus_global: HM6Global_V11.0.1.0.PCGMIXM
 chiron: MIMIX2_V11.0.2.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.3.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
@@ -53,10 +53,10 @@ nitrogen: MIMAX3_V11.0.3.0.PEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.6.0.PEDMIXM
 olive: OLIVE_V11.0.3.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.1.0.PCNEUXM
-olive_global: OLIVEGlobal_V10.3.4.0.PCNMIXM
+olive_global: OLIVEGlobal_V11.0.1.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.2.0.PCNINXM
 olivelite: OLIVELITE_V11.0.3.0.PCPCNXM
-olivelite_eea_global: OLIVELITEEEAGlobal_V10.3.3.0.PCPEUXM
+olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.1.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V11.0.1.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V11.0.3.0.PFFINXM
@@ -107,7 +107,7 @@ ugg_global: HMNote5AGlobal_V11.0.2.0.NDKMIXM
 ugglite: HMNote5ALITE_V11.0.2.0.NDFCNXM
 ugglite_global: HMNote5ALITEGlobal_V11.0.3.0.NDFMIXM
 ursa: MI8Explorer_V11.0.3.0.PEHCNXM
-vela: VELA_V11.3.1.0.PFECNXM
+vela: VELA_V11.3.2.0.PFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V10.2.3.0.OEGMIXM
 violet: VIOLET_V11.0.4.0.PFHCNXM
