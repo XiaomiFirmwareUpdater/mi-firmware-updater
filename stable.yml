@@ -2,8 +2,8 @@ andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.21.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 begonia: BEGONIA_V11.0.2.0.PGGCNXM
-begonia_eea_global: BEGONIAEEAGlobal_V11.0.1.0.PGGEUXM
-begonia_global: BEGONIAGlobal_V11.0.1.0.PGGMIXM
+begonia_eea_global: BEGONIAEEAGlobal_V11.0.2.0.PGGEUXM
+begonia_global: BEGONIAGlobal_V11.0.2.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V10.4.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
 cactus: HM6A_V11.0.4.0.PCBCNXM
@@ -30,7 +30,7 @@ equuleus: MI8UD_V11.0.3.0.PECCNXM
 equuleus_global: MI8UDGlobal_V11.0.5.0.PECMIXM
 ginkgo: GINKGO_V11.0.3.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V11.0.3.0.PCOMIXM
-ginkgo_in_global: GINKGOINGlobal_V11.0.2.0.PCOINXM
+ginkgo_in_global: GINKGOINGlobal_V10.3.3.0.PCOINXM
 grus: GRUS_V11.0.5.0.PFBCNXM
 grus_eea_global: GRUSEEAGlobal_V11.0.4.0.PFBEUXM
 grus_global: GRUSGlobal_V11.0.4.0.PFBMIXM
@@ -78,7 +78,7 @@ polaris: MIMIX2S_V11.0.3.0.PDGCNXM
 polaris_global: MIMIX2SGlobal_V11.0.4.0.PDGMIXM
 pyxis: PYXIS_V11.3.3.0.PFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.3.4.0.PFCEUXM
-pyxis_global: PYXISGlobal_V11.3.3.0.PFCMIXM
+pyxis_global: PYXISGlobal_V11.3.4.0.PFCMIXM
 raphael: RAPHAEL_V11.0.4.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.3.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V11.0.1.0.QFKMIXM
