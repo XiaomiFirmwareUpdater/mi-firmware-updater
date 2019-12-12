@@ -12,8 +12,8 @@ cappu: MIPAD3_V10.2.1.0.NCICNXM
 capricorn: MI5S_V11.0.2.0.OAGCNXM
 capricorn_global: MI5SGlobal_V10.2.3.0.OAGMIXM
 cepheus: CEPHEUS_V11.0.4.0.QFACNXM
-cepheus_eea_global: CEPHEUSEEAGlobal_V11.0.5.0.QFAEUXM
-cepheus_global: CEPHEUSGlobal_V11.0.2.0.QFAMIXM
+cepheus_eea_global: CEPHEUSEEAGlobal_V11.0.6.0.QFAEUXM
+cepheus_global: CEPHEUSGlobal_V11.0.3.0.QFAMIXM
 cereus: HM6_V11.0.3.0.PCGCNXM
 cereus_global: HM6Global_V11.0.1.0.PCGMIXM
 chiron: MIMIX2_V11.0.2.0.PDECNXM
@@ -51,13 +51,13 @@ natrium: MI5SPlus_V11.0.2.0.OBGCNXM
 natrium_global: MI5SPlusGlobal_V10.2.4.0.OBGMIXM
 nitrogen: MIMAX3_V11.0.3.0.PEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.6.0.PEDMIXM
-olive: OLIVE_V11.0.3.0.PCNCNXM
+olive: OLIVE_V11.0.4.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.1.0.PCNEUXM
-olive_global: OLIVEGlobal_V10.3.4.0.PCNMIXM
+olive_global: OLIVEGlobal_V11.0.1.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.2.0.PCNINXM
 olivelite: OLIVELITE_V11.0.4.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.1.0.PCPEUXM
-olivelite_global: OLIVELITEGlobal_V11.0.1.0.PCPMIXM
+olivelite_global: OLIVELITEGlobal_V11.0.2.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
 onc_in_global: ONCINGlobal_V11.0.3.0.PFFINXM
 onclite: ONCLITE_V11.0.2.0.PFLCNXM
@@ -68,7 +68,8 @@ oxygen: MIMAX2_V11.0.2.0.NDDCNXM
 oxygen_global: MIMAX2Global_V11.0.2.0.NDDMIXM
 perseus: MIMIX3_V11.0.4.0.PEECNXM
 perseus_global: MIMIX3Global_V11.0.4.0.PEEMIXM
-pine: PINE_V11.0.1.0.PCMCNXM
+phoenix: PHOENIX_V11.0.5.0.QGHCNXM
+pine: PINE_V11.0.2.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.6.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.4.0.PCMMIXM
 pine_in_global: PINEINGlobal_V10.2.10.0.PCMINXM
@@ -99,7 +100,7 @@ scorpio_global: MINote2Global_V11.0.2.0.OADMIXM
 sirius: MI8SE_V11.0.3.0.PEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 tucana: TUCANA_V11.0.5.0.PFDCNXM
-tucana_eea_global: TUCANAEEAGlobal_V11.0.10.0.PFDEUXM
+tucana_eea_global: TUCANAEEAGlobal_V11.0.11.0.PFDEUXM
 tucana_global: TUCANAGlobal_V11.0.5.0.PFDMIXM
 tulip_global: HMNote6ProGlobal_V10.3.6.0.PEKMIXM
 ugg: HMNote5A_V11.0.1.0.NDKCNXM
@@ -112,7 +113,7 @@ vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
 violet: VIOLET_V11.0.4.0.PFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.5.0.PFHINXM
-wayne: MI6X_V11.0.3.0.PDCCNXM
+wayne: MI6X_V10.3.6.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
 willow_eea_global: WILLOWEEAGlobal_V10.3.5.0.PCXEUXM
