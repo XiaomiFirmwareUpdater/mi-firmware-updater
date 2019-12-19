@@ -70,7 +70,7 @@ perseus: MIMIX3_V11.0.4.0.PEECNXM
 perseus_global: MIMIX3Global_V11.0.4.0.PEEMIXM
 phoenix: PHOENIX_V11.0.5.0.QGHCNXM
 pine: PINE_V11.0.2.0.PCMCNXM
-pine_eea_global: PINEEEAGlobal_V11.0.6.0.PCMEUXM
+pine_eea_global: PINEEEAGlobal_V11.0.13.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.4.0.PCMMIXM
 pine_in_global: PINEINGlobal_V10.2.10.0.PCMINXM
 platina: MI8Lite_V11.0.2.0.PDTCNXM
@@ -100,7 +100,7 @@ scorpio_global: MINote2Global_V11.0.2.0.OADMIXM
 sirius: MI8SE_V11.0.3.0.PEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 tucana: TUCANA_V11.0.5.0.PFDCNXM
-tucana_eea_global: TUCANAEEAGlobal_V11.0.11.0.PFDEUXM
+tucana_eea_global: TUCANAEEAGlobal_V11.0.10.0.PFDEUXM
 tucana_global: TUCANAGlobal_V11.0.5.0.PFDMIXM
 tulip_global: HMNote6ProGlobal_V10.3.6.0.PEKMIXM
 ugg: HMNote5A_V11.0.1.0.NDKCNXM
