@@ -53,7 +53,7 @@ nitrogen: MIMAX3_V11.0.3.0.PEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.6.0.PEDMIXM
 olive: OLIVE_V11.0.3.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.1.0.PCNEUXM
-olive_global: OLIVEGlobal_V11.0.3.0.PCNMIXM
+olive_global: OLIVEGlobal_V11.0.1.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.2.0.PCNINXM
 olivelite: OLIVELITE_V11.0.3.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.2.0.PCPEUXM
@@ -85,7 +85,7 @@ raphael_eea_global: RAPHAELEEAGlobal_V11.0.3.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V11.0.1.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V11.0.1.0.QFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
-riva: HM5A_V11.0.6.0.OCKCNXM
+riva: HM5A_V11.0.2.0.OCKCNXM
 riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
 rosy: HM5_V11.0.4.0.ODACNXM
 rosy_global: HM5Global_V11.0.1.0.ODAMIXM
