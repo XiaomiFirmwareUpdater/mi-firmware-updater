@@ -2,7 +2,7 @@ andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.21.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 begonia: BEGONIA_V11.0.3.0.PGGCNXM
-begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.PGGEUXM
+begonia_eea_global: BEGONIAEEAGlobal_V11.0.2.0.PGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.2.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.3.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
@@ -52,8 +52,8 @@ natrium_global: MI5SPlusGlobal_V10.2.4.0.OBGMIXM
 nitrogen: MIMAX3_V11.0.3.0.PEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.6.0.PEDMIXM
 olive: OLIVE_V11.0.3.0.PCNCNXM
-olive_eea_global: OLIVEEEAGlobal_V11.0.1.0.PCNEUXM
-olive_global: OLIVEGlobal_V11.0.3.0.PCNMIXM
+olive_eea_global: OLIVEEEAGlobal_V11.0.2.0.PCNEUXM
+olive_global: OLIVEGlobal_V11.0.1.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.2.0.PCNINXM
 olivelite: OLIVELITE_V11.0.3.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.2.0.PCPEUXM
@@ -68,7 +68,7 @@ oxygen: MIMAX2_V11.0.2.0.NDDCNXM
 oxygen_global: MIMAX2Global_V11.0.2.0.NDDMIXM
 perseus: MIMIX3_V11.0.4.0.PEECNXM
 perseus_global: MIMIX3Global_V11.0.4.0.PEEMIXM
-phoenix: PHOENIX_V11.0.9.0.QGHCNXM
+phoenix: PHOENIX_V11.0.5.0.QGHCNXM
 pine: PINE_V11.0.2.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.13.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.5.0.PCMMIXM
@@ -80,7 +80,7 @@ polaris_global: MIMIX2SGlobal_V11.0.4.0.PDGMIXM
 pyxis: PYXIS_V11.3.3.0.PFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.3.5.0.PFCEUXM
 pyxis_global: PYXISGlobal_V11.3.4.0.PFCMIXM
-raphael: RAPHAEL_V11.0.4.0.QFKCNXM
+raphael: RAPHAEL_V11.0.5.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.3.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V11.0.1.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V11.0.3.0.QFKINXM
@@ -116,7 +116,7 @@ violet_in_global: VIOLETINGlobal_V11.0.5.0.PFHINXM
 wayne: MI6X_V11.0.3.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
-willow_eea_global: WILLOWEEAGlobal_V10.3.5.0.PCXEUXM
+willow_eea_global: WILLOWEEAGlobal_V11.0.2.0.PCXEUXM
 willow_global: WILLOWGlobal_V10.3.1.0.PCXMIXM
 ysl: HMS2_V11.0.1.0.PEFCNXM
 ysl_global: HMS2Global_V11.0.2.0.PEFMIXM
