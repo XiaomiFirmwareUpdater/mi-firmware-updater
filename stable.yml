@@ -72,7 +72,7 @@ phoenix: PHOENIX_V11.0.9.0.QGHCNXM
 pine: PINE_V11.0.2.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.13.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.5.0.PCMMIXM
-pine_in_global: PINEINGlobal_V11.0.2.0.PCMINXM
+pine_in_global: PINEINGlobal_V10.2.10.0.PCMINXM
 platina: MI8Lite_V11.0.4.0.PDTCNXM
 platina_global: MI8LiteGlobal_V11.0.7.0.PDTMIXM
 polaris: MIMIX2S_V11.0.3.0.PDGCNXM
