@@ -63,7 +63,7 @@ onc_in_global: ONCINGlobal_V11.0.4.0.PFFINXM
 onclite: ONCLITE_V11.0.2.0.PFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V11.0.4.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V11.0.2.0.PFLMIXM
-onclite_in_global: ONCLITEINGlobal_V11.0.2.0.PFLINXM
+onclite_in_global: ONCLITEINGlobal_V11.0.3.0.PFLINXM
 oxygen: MIMAX2_V11.0.2.0.NDDCNXM
 oxygen_global: MIMAX2Global_V11.0.2.0.NDDMIXM
 perseus: MIMIX3_V11.0.1.0.QEECNXM
@@ -72,7 +72,7 @@ phoenix: PHOENIX_V11.0.9.0.QGHCNXM
 pine: PINE_V11.0.2.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.13.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.5.0.PCMMIXM
-pine_in_global: PINEINGlobal_V10.2.10.0.PCMINXM
+pine_in_global: PINEINGlobal_V11.0.2.0.PCMINXM
 platina: MI8Lite_V11.0.4.0.PDTCNXM
 platina_global: MI8LiteGlobal_V11.0.7.0.PDTMIXM
 polaris: MIMIX2S_V11.0.3.0.PDGCNXM
@@ -117,6 +117,6 @@ wayne: MI6X_V11.0.3.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
 willow_eea_global: WILLOWEEAGlobal_V11.0.3.0.PCXEUXM
-willow_global: WILLOWGlobal_V10.3.1.0.PCXMIXM
+willow_global: WILLOWGlobal_V11.0.1.0.PCXMIXM
 ysl: HMS2_V11.0.1.0.PEFCNXM
 ysl_global: HMS2Global_V11.0.2.0.PEFMIXM
