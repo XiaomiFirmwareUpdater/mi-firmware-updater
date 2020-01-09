@@ -1,4 +1,5 @@
 """ Various helper functions"""
+from hashlib import md5
 
 
 def set_region(filename: str) -> str:
