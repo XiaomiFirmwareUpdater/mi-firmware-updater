@@ -42,10 +42,10 @@ def post_updates(names):
             codename = info[3]
             version = info[4]
             android = info[5]
-            name = info[6]
+            # zip_name = info[6]
             zip_size = info[7]
             md5_hash = info[8]
-            region = set_region(name)
+            # region = set_region(zip_name)
             version_ = ""
             if process == 'firmware':
                 link = f'{SITE}/firmware/{codename}/'
@@ -58,8 +58,9 @@ def post_updates(names):
             # post to tg
             telegram_message = f"*New {branch} {process} update available!*\n" \
                                f"_Device:_ {name} (#{codename})\n" \
+                               f"_Size:_ {zip_size}\n" \
                                f"_MD5:_ `{md5_hash}`"
-            download = InlineKeyboardButton(f"{region} {version} | {android} | {zip_size}",
+            download = InlineKeyboardButton(f"{version} | {android}",
                                             f"{link}")
             archive = InlineKeyboardButton(f"Firmware Archive",
                                            f"{SITE}/archive/firmware/{codename}/")
@@ -68,7 +69,7 @@ def post_updates(names):
             mut_channel = InlineKeyboardButton("MIUIUpdatesTracker",
                                                url="https://t.me/MIUIUpdatesTracker")
             reply_markup = InlineKeyboardMarkup(
-                [[download], [archive, xfu_channel, mut_channel]]
+                [[download, archive], [xfu_channel, mut_channel]]
             )
             UPDATER.bot.send_message(chat_id=TG_CHAT, text=telegram_message,
                                      parse_mode='Markdown', disable_web_page_preview='yes',
