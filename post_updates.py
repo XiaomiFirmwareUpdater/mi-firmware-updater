@@ -48,7 +48,7 @@ def post_updates(names):
             region = set_region(name)
             version_ = ""
             if process == 'firmware':
-                link = f'{SITE}/{codename}'
+                link = f'{SITE}/firmware/{codename}/'
             elif process == 'non-arb firmware':
                 if 'V' in version:
                     version_ = version.split('.')[0]
@@ -61,8 +61,6 @@ def post_updates(names):
                                f"_MD5:_ `{md5_hash}`"
             download = InlineKeyboardButton(f"{region} {version} | {android} | {zip_size}",
                                             f"{link}")
-            latest = InlineKeyboardButton(f"Latest Firmware",
-                                          f"{SITE}/firmware/{codename}/")
             archive = InlineKeyboardButton(f"Firmware Archive",
                                            f"{SITE}/archive/firmware/{codename}/")
             xfu_channel = InlineKeyboardButton("XiaomiFirmwareUpdater",
@@ -70,7 +68,7 @@ def post_updates(names):
             mut_channel = InlineKeyboardButton("MIUIUpdatesTracker",
                                                url="https://t.me/MIUIUpdatesTracker")
             reply_markup = InlineKeyboardMarkup(
-                [[download], [latest, archive], [xfu_channel, mut_channel]]
+                [[download], [archive, xfu_channel, mut_channel]]
             )
             UPDATER.bot.send_message(chat_id=TG_CHAT, text=telegram_message,
                                      parse_mode='Markdown', disable_web_page_preview='yes',
