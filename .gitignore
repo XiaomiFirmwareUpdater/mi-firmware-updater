@@ -1,6 +1,7 @@
 log
-*_old.json
+*_old.*
 *_changes
 create_flashable_firmware.py
 *__pycache__*
 *tmp*
+.idea

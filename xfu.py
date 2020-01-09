@@ -2,31 +2,30 @@
 """Xiaomi Firmware Updater autoamtion script - By XiaomiFirmwareUpdater"""
 # pylint: disable=too-many-locals,too-many-branches,too-many-statements
 
-import json
 import subprocess
 from datetime import datetime, date
 from glob import glob
 from hashlib import md5
-from os import remove, system, environ, path, getcwd, chdir, rename, stat
+from os import remove, system, environ, path, getcwd, chdir, rename
 from time import sleep
-import yaml
 
+import yaml
 from github3 import GitHub, exceptions
 from hurry.filesize import size, alternative
 from pyDownload import Downloader
-from requests import get, post
+from requests import get
+
+from helpers import set_region, set_version, md5_check, set_folder
+from post_updates import post_updates
 
 GIT_OAUTH_TOKEN = environ['XFU']
 GIT = GitHub(token=GIT_OAUTH_TOKEN)
-BOT_TOKEN = environ['bottoken']
-TG_CHAT = "@XiaomiFirmwareUpdater"
 WORK_DIR = getcwd()
-XDA_API_KEY = environ['XDA_TOKEN']
 
 ARB_DEVICES = ['nitrogen', 'nitrogen_global', 'sakura', 'sakura_india_global', 'wayne']
 STABLE = {}
 WEEKLY = {}
-VARIANTS = ['stable', 'weekly']
+VARIANTS = ['stable']
 
 
 def initialize():
@@ -38,16 +37,14 @@ def initialize():
                "xiaomi_flashable_firmware_creator/create_flashable_firmware.py")
     with open('devices/stable_devices.yml', 'r') as stable_json:
         stable_devices = yaml.load(stable_json, Loader=yaml.CLoader)
-    with open('devices/weekly_devices.yml', 'r') as weekly_json:
-        weekly_devices = yaml.load(weekly_json, Loader=yaml.CLoader)
     open('log', 'w').close()
     all_stable = yaml.load(get(
         "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/" +
         "stable_recovery/stable_recovery.yml").text, Loader=yaml.CLoader)
-    all_weekly = yaml.load(get(
+    names = yaml.load(get(
         "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/" +
-        "weekly_recovery/weekly_recovery.yml").text, Loader=yaml.CLoader)
-    return stable_devices, weekly_devices, all_stable, all_weekly
+        "devices/names.yml").text, Loader=yaml.CLoader)
+    return stable_devices, all_stable, names
 
 
 def diff(name: str) -> list:
@@ -75,36 +72,6 @@ def diff(name: str) -> list:
             for codename in new_codenames:
                 changes.append({codename: latest[codename]})
     return changes
-
-
-def md5_check(zip_file):
-    """
-    A function to calculate md5 of a file
-    https://www.quickprogrammingtips.com/python/how-to-calculate-md5-hash-of-a-file-in-python.html
-    """
-    md5_hash = md5()
-    with open(zip_file, "rb") as file:
-        for byte_block in iter(lambda: file.read(4096), b""):
-            md5_hash.update(byte_block)
-        return md5_hash.hexdigest()
-
-
-def set_version(file):
-    """
-    Sets miui version based on zip file name
-    """
-    if "_V1" in str(file):
-        version = str(file).split("_")[4].split(".")[0]
-    else:
-        version = str(file).split("_")[4]
-    return version
-
-
-def set_folder(file):
-    """
-    Sets upload folder based on zip file name
-    """
-    return "Stable" if "_V1" in str(file) else "Developer"
 
 
 def upload_fw(file, version, codename, today, variant):
@@ -171,36 +138,12 @@ def log_new(file, branch):
             pass
 
 
-def set_region(filename: str) -> str:
-    """
-    Sets region based on zip file name
-    :returns region of rom from filename
-    """
-    if filename.startswith("miui"):
-        device = filename.split("_")[1]
-        version = filename.split("_")[2]
-    elif filename.startswith("fw"):
-        device = filename.split("_")[3]
-        version = filename.split("_")[4]
-    if 'EU' in version or 'EEAGlobal' in device:
-        region = 'Europe'
-    elif 'IN' in version or 'INGlobal' in device:
-        region = 'India'
-    elif 'RU' in version or 'RUGlobal' in device:
-        region = 'Russia'
-    elif 'MI' in version or 'Global' in device:
-        region = 'Global'
-    else:
-        region = 'China'
-    return region
-
-
 def git_commit_push():
     """
     git add - git commit - git push
     """
     now = str(datetime.today()).split('.')[0]
-    system("git add stable.yml weekly.yml && "" \
+    system("git add stable.yml && "" \
            ""git -c \"user.name=XiaomiFirmwareUpdater\" "
            "-c \"user.email=xiaomifirmwareupdater@gmail.com\" "
            "commit -m \"sync: {0}\" && "" \
@@ -226,110 +169,12 @@ def update_site():
     chdir(WORK_DIR)
 
 
-def post_updates():
-    """
-    Post updates to telegram and xda
-    """
-    if stat('log').st_size == 0:
-        return
-    with open('xda_threads.yml', 'r') as file:
-        xda_threads = yaml.load(file, Loader=yaml.CLoader)
-    with open('xda_template.txt', 'r') as template:
-        xda_template = template.read()
-    with open('log', 'r') as log:
-        for line in log:
-            info = line.split('|')
-            process = info[0]
-            if info[1] == 'stable':
-                branch = 'Stable'
-            elif info[1] == 'weekly':
-                branch = 'Developer'
-            device = info[2]
-            codename = info[3]
-            version = info[4]
-            android = info[5]
-            name = info[6]
-            zip_size = info[7]
-            md5_hash = info[8]
-            region = set_region(name)
-            version_ = ""
-            if process == 'firmware':
-                link = f'https://xiaomifirmwareupdater.com/firmware/{codename}'
-            elif process == 'non-arb firmware':
-                if 'V' in version:
-                    version_ = version.split('.')[0]
-                link = f'https://osdn.net/projects/xiaomifirmwareupdater/' \
-                       f'storage/non-arb/{branch}/{version_}/{codename}/'
-            # post to tg
-            telegram_message = f"New {branch} {process} update available!\n" \
-                               f"*Device:* {device}\n" \
-                               f"*Codename:* `{codename}`\n" \
-                               f"*Version:* `{version}`\n" \
-                               f"*Android:* {android}\n" \
-                               f"*Region:* {region}\n" \
-                               f"Filename: `{name}`\n" \
-                               f"Filesize: {zip_size}\n" \
-                               f"*MD5:* `{md5_hash}`" \
-                               f"*Download:* [Here]({link})\n" \
-                               f"@XiaomiFirmwareUpdater | @MIUIUpdatesTracker"
-            params = (
-                ('chat_id', TG_CHAT),
-                ('text', telegram_message),
-                ('parse_mode', "Markdown"),
-                ('disable_web_page_preview', "yes")
-            )
-            telegram_url = "https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage"
-            telegram_req = post(telegram_url, params=params)
-            telegram_status = telegram_req.status_code
-            if telegram_status == 200:
-                print(f"{device}: Telegram Message sent")
-            else:
-                print("Telegram Error")
-            # post to XDA
-            if codename not in xda_threads.keys():
-                continue
-            try:
-                xda_post_id = get("https://api.xda-developers.com/v3/posts",
-                                  params={"threadid": xda_threads[codename]}
-                                  ).json()["results"][0]["postid"]
-            except (KeyError, IndexError):
-                continue
-            xda_post = xda_template.replace('$branch', branch) \
-                .replace('$process', process.capitalize()) \
-                .replace('$version', version).replace('$android', android) \
-                .replace('$region', region) \
-                .replace('$name', name).replace('$zip_size', zip_size) \
-                .replace('$md5_hash', md5_hash) \
-                .replace('$link', link).replace('$codename', codename)
-            data = {"postid": xda_post_id, "message": xda_post}
-            headers = {
-                'origin': 'https://api.xda-developers.com',
-                'accept-encoding': 'gzip, deflate, br',
-                'accept-language': 'en-US,en;q=0.9',
-                'authorization': 'Bearer ' + XDA_API_KEY,
-                'x-requested-with': 'XMLHttpRequest',
-                'content-type': 'application/json',
-                'accept': 'application/json, text/javascript, */*; q=0.01',
-                'referer': 'https://api.xda-developers.com/explorer/',
-                'authority': 'api.xda-developers.com',
-                'sec-fetch-site': 'same-origin',
-                }
-            xda_req = post('https://api.xda-developers.com/v3/posts/new',
-                           data=json.dumps(data), headers=headers)
-            if xda_req.status_code == 200:
-                print(f"{device}: XDA post created successfully")
-                sleep(15)
-            else:
-                print("XDA Error")
-                print(xda_req.reason)
-
-
 def main():
     """ XiaomiFirmwareUpdater """
     branch = ''
     devices = ''
     devices_all = None
-    stable_devices, weekly_devices, all_stable, all_weekly = initialize()
+    stable_devices, all_stable, names = initialize()
     for variant in VARIANTS:
         if path.exists(variant + '.yml'):
             rename(variant + '.yml', variant + '_old.yml')
@@ -337,10 +182,10 @@ def main():
             devices_all = all_stable
             devices = stable_devices
             branch = STABLE
-        elif variant == "weekly":
-            devices_all = all_weekly
-            devices = weekly_devices
-            branch = WEEKLY
+        # elif variant == "weekly":
+        #     devices_all = all_weekly
+        #     devices = weekly_devices
+        #     branch = WEEKLY
         for i in devices_all:
             codename = str(i["codename"])
             if codename in devices:
@@ -425,7 +270,7 @@ def main():
                 remove(file)
     git_commit_push()
     update_site()
-    post_updates()
+    post_updates(names)
 
 
 if __name__ == '__main__':
