@@ -26,7 +26,7 @@ davinci_global: DAVINCIGlobal_V11.0.1.0.PFJMIXM
 davinciin_in_global: DAVINCIININGlobal_V11.0.3.0.PFJINXM
 dipper: MI8_V11.0.4.0.PEACNXM
 dipper_global: MI8Global_V11.0.6.0.PEAMIXM
-equuleus: MI8UD_V11.0.1.0.QECCNXM
+equuleus: MI8UD_V11.0.3.0.PECCNXM
 equuleus_global: MI8UDGlobal_V11.0.5.0.PECMIXM
 ginkgo: GINKGO_V11.0.4.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V11.0.3.0.PCOMIXM
@@ -82,7 +82,7 @@ pyxis_eea_global: PYXISEEAGlobal_V11.3.5.0.PFCEUXM
 pyxis_global: PYXISGlobal_V11.3.4.0.PFCMIXM
 raphael: RAPHAEL_V11.0.5.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.4.0.QFKEUXM
-raphael_global: RAPHAELGlobal_V11.0.2.0.QFKMIXM
+raphael_global: RAPHAELGlobal_V11.0.1.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V11.0.3.0.QFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
 riva: HM5A_V11.0.6.0.OCKCNXM
