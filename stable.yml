@@ -3,11 +3,11 @@ andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.21.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 begonia: BEGONIA_V11.0.3.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.PGGEUXM
-begonia_global: BEGONIAGlobal_V11.0.2.0.PGGMIXM
+begonia_global: BEGONIAGlobal_V11.0.6.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
 cactus: HM6A_V11.0.4.0.PCBCNXM
-cactus_global: HM6AGlobal_V11.0.5.0.PCBMIXM
+cactus_global: HM6AGlobal_V10.3.8.0.OCBMIXM
 cappu: MIPAD3_V10.2.1.0.NCICNXM
 capricorn: MI5S_V11.0.2.0.OAGCNXM
 capricorn_global: MI5SGlobal_V10.2.3.0.OAGMIXM
@@ -51,11 +51,11 @@ natrium: MI5SPlus_V11.0.2.0.OBGCNXM
 natrium_global: MI5SPlusGlobal_V10.2.4.0.OBGMIXM
 nitrogen: MIMAX3_V11.0.3.0.PEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.6.0.PEDMIXM
-olive: OLIVE_V11.0.3.0.PCNCNXM
+olive: OLIVE_V11.0.7.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.2.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.3.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.4.0.PCNINXM
-olivelite: OLIVELITE_V11.0.3.0.PCPCNXM
+olivelite: OLIVELITE_V11.0.7.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.2.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V11.0.3.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.5.0.PCPINXM
@@ -74,7 +74,7 @@ pine_eea_global: PINEEEAGlobal_V11.0.13.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.5.0.PCMMIXM
 pine_in_global: PINEINGlobal_V11.0.2.0.PCMINXM
 platina: MI8Lite_V11.0.4.0.PDTCNXM
-platina_global: MI8LiteGlobal_V11.0.8.0.PDTMIXM
+platina_global: MI8LiteGlobal_V11.0.7.0.PDTMIXM
 polaris: MIMIX2S_V11.0.3.0.PDGCNXM
 polaris_global: MIMIX2SGlobal_V11.0.4.0.PDGMIXM
 pyxis: PYXIS_V11.3.3.0.PFCCNXM
