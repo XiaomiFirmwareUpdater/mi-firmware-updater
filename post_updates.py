@@ -52,6 +52,8 @@ def post_updates(names):
             elif process == 'non-arb firmware':
                 if 'V' in version:
                     version_ = version.split('.')[0]
+                else:
+                    version_ = version
                 link = f'https://osdn.net/projects/xiaomifirmwareupdater/' \
                        f'storage/non-arb/{branch}/{version_}/{codename}/'
             name = get_device_name(device, names)
