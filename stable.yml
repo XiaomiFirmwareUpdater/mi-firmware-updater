@@ -7,7 +7,7 @@ begonia_global: BEGONIAGlobal_V11.0.2.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
 cactus: HM6A_V11.0.4.0.PCBCNXM
-cactus_global: HM6AGlobal_V11.0.5.0.PCBMIXM
+cactus_global: HM6AGlobal_V10.3.8.0.OCBMIXM
 cappu: MIPAD3_V10.2.1.0.NCICNXM
 capricorn: MI5S_V11.0.2.0.OAGCNXM
 capricorn_global: MI5SGlobal_V10.2.3.0.OAGMIXM
@@ -119,5 +119,5 @@ whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
 willow_eea_global: WILLOWEEAGlobal_V11.0.3.0.PCXEUXM
 willow_global: WILLOWGlobal_V11.0.1.0.PCXMIXM
-ysl: HMS2_V11.0.2.0.PEFCNXM
+ysl: HMS2_V11.0.1.0.PEFCNXM
 ysl_global: HMS2Global_V11.0.3.0.PEFMIXM
