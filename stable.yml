@@ -5,7 +5,7 @@ begonia: BEGONIA_V11.0.3.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.PGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.2.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
-beryllium_global: POCOF1Global_V11.0.5.0.PEJMIXM
+beryllium_global: POCOF1Global_V11.0.4.0.QEJMIXM
 cactus: HM6A_V11.0.4.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.5.0.PCBMIXM
 cappu: MIPAD3_V10.2.1.0.NCICNXM
@@ -77,7 +77,7 @@ pine_in_global: PINEINGlobal_V11.0.2.0.PCMINXM
 platina: MI8Lite_V11.0.4.0.PDTCNXM
 platina_global: MI8LiteGlobal_V11.0.8.0.PDTMIXM
 polaris: MIMIX2S_V11.0.1.0.QDGCNXM
-polaris_global: MIMIX2SGlobal_V11.0.4.0.PDGMIXM
+polaris_global: MIMIX2SGlobal_V11.0.3.0.QDGMIXM
 pyxis: PYXIS_V11.3.3.0.PFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.3.5.0.PFCEUXM
 pyxis_global: PYXISGlobal_V11.3.4.0.PFCMIXM
