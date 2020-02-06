@@ -22,7 +22,7 @@ clover: MIPAD4_V10.3.2.0.ODJCNXM
 crux: CRUX_V11.0.3.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.3.0.PFJEUXM
-davinci_global: DAVINCIGlobal_V11.0.1.0.PFJMIXM
+davinci_global: DAVINCIGlobal_V11.0.4.0.QFJMIXM
 davinciin_in_global: DAVINCIININGlobal_V11.0.3.0.PFJINXM
 dipper: MI8_V11.0.4.0.PEACNXM
 dipper_global: MI8Global_V11.0.6.0.PEAMIXM
@@ -101,7 +101,7 @@ scorpio_global: MINote2Global_V11.0.2.0.OADMIXM
 sirius: MI8SE_V11.0.3.0.PEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 tucana: TUCANA_V11.0.7.0.PFDCNXM
-tucana_eea_global: TUCANAEEAGlobal_V11.0.11.0.PFDEUXM
+tucana_eea_global: TUCANAEEAGlobal_V11.0.13.0.PFDEUXM
 tucana_global: TUCANAGlobal_V11.0.7.0.PFDMIXM
 tulip_global: HMNote6ProGlobal_V11.0.2.0.PEKMIXM
 ugg: HMNote5A_V11.0.1.0.NDKCNXM
