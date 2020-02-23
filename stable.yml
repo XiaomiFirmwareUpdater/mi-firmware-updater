@@ -19,7 +19,7 @@ cereus_global: HM6Global_V11.0.2.0.PCGMIXM
 chiron: MIMIX2_V11.0.2.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.3.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-cmi: CMI_V11.0.4.0.QJACNXM
+cmi: CMI_V11.0.7.0.QJACNXM
 crux: CRUX_V11.0.3.0.PFXCNXM
 davinci: DAVINCI_V11.0.3.0.PFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.4.0.QFJEUXM
@@ -73,7 +73,7 @@ phoenix: PHOENIX_V11.0.13.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.4.0.QGHINXM
 picasso: PICASSO_V11.0.11.0.QGICNXM
 pine: PINE_V11.0.2.0.PCMCNXM
-pine_eea_global: PINEEEAGlobal_V11.0.14.0.PCMEUXM
+pine_eea_global: PINEEEAGlobal_V11.0.13.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.5.0.PCMMIXM
 pine_in_global: PINEINGlobal_V11.0.2.0.PCMINXM
 platina: MI8Lite_V11.0.4.0.PDTCNXM
@@ -110,7 +110,7 @@ ugg: HMNote5A_V11.0.1.0.NDKCNXM
 ugg_global: HMNote5AGlobal_V11.0.2.0.NDKMIXM
 ugglite: HMNote5ALITE_V11.0.2.0.NDFCNXM
 ugglite_global: HMNote5ALITEGlobal_V11.0.3.0.NDFMIXM
-umi: UMI_V11.0.7.0.QJBCNXM
+umi: UMI_V11.0.9.0.QJBCNXM
 ursa: MI8Explorer_V11.0.2.0.QEHCNXM
 vela: VELA_V11.3.2.0.PFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
