@@ -31,11 +31,11 @@ equuleus: MI8UD_V11.0.1.0.QECCNXM
 equuleus_global: MI8UDGlobal_V11.0.5.0.PECMIXM
 ginkgo: GINKGO_V11.0.5.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V11.0.6.0.PCOMIXM
-ginkgo_in_global: GINKGOINGlobal_V11.0.3.0.PCOINXM
+ginkgo_in_global: GINKGOINGlobal_V11.0.2.0.PCOINXM
 grus: GRUS_V11.0.2.0.QFBCNXM
 grus_eea_global: GRUSEEAGlobal_V11.0.6.0.PFBEUXM
 grus_global: GRUSGlobal_V11.0.6.0.PFBMIXM
-jason: MINote3_V11.0.3.0.PCHCNXM
+jason: MINote3_V11.0.4.0.PCHCNXM
 jason_global: MINote3Global_V11.0.5.0.PCHMIXM
 laurus: LAURUS_V11.0.4.0.PFMCNXM
 lavender: LAVENDER_V11.0.4.0.PFGCNXM
@@ -100,7 +100,7 @@ santoni: HM4X_V11.0.1.0.NAMCNXM
 santoni_global: HM4XGlobal_V11.0.2.0.NAMMIXM
 scorpio: MINote2_V11.0.2.0.OADCNXM
 scorpio_global: MINote2Global_V11.0.2.0.OADMIXM
-sirius: MI8SE_V11.0.2.0.QEBCNXM
+sirius: MI8SE_V11.0.3.0.PEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 tucana: TUCANA_V11.0.7.0.PFDCNXM
 tucana_eea_global: TUCANAEEAGlobal_V11.0.13.0.PFDEUXM
