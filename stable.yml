@@ -2,7 +2,7 @@ andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 begonia: BEGONIA_V11.0.3.0.PGGCNXM
-begonia_eea_global: BEGONIAEEAGlobal_V11.0.2.0.QGGEUXM
+begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.PGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.6.0.PGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.4.0.QEJMIXM
@@ -84,7 +84,7 @@ pyxis: PYXIS_V11.3.3.0.PFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.3.5.0.PFCEUXM
 pyxis_global: PYXISGlobal_V11.3.4.0.PFCMIXM
 raphael: RAPHAEL_V11.0.5.0.QFKCNXM
-raphael_eea_global: RAPHAELEEAGlobal_V11.0.5.0.QFKEUXM
+raphael_eea_global: RAPHAELEEAGlobal_V11.0.3.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V11.0.3.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V11.0.3.0.QFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
