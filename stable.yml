@@ -44,8 +44,8 @@ lavender_global: LAVENDERGlobal_V11.0.5.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.6.0.PFGINXM
 lithium: MIMIX_V11.0.2.0.OAHCNXM
 lithium_global: MIMIXGlobal_V11.0.2.0.OAHMIXM
-lotus: MIPLAY_V11.0.5.0.OFICNXM
-lotus_global: MIPLAYGlobal_V11.0.3.0.OFIMIXM
+lotus: MIPLAY_V11.0.3.0.OFICNXM
+lotus_global: MIPLAYGlobal_V11.0.2.0.OFIMIXM
 mido: HMNote4X_V11.0.2.0.NCFCNXM
 mido_global: HMNote4XGlobal_V11.0.2.0.NCFMIXM
 natrium: MI5SPlus_V11.0.2.0.OBGCNXM
@@ -86,7 +86,7 @@ pyxis_global: PYXISGlobal_V11.3.4.0.PFCMIXM
 raphael: RAPHAEL_V11.0.5.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.5.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V11.0.3.0.QFKMIXM
-raphaelin_in_global: RAPHAELININGlobal_V11.0.3.0.QFKINXM
+raphaelin_in_global: RAPHAELININGlobal_V11.0.4.0.QFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
 riva: HM5A_V11.0.6.0.OCKCNXM
 riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
@@ -103,7 +103,7 @@ scorpio_global: MINote2Global_V11.0.2.0.OADMIXM
 sirius: MI8SE_V11.0.2.0.QEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 tucana: TUCANA_V11.0.7.0.PFDCNXM
-tucana_eea_global: TUCANAEEAGlobal_V11.0.16.0.PFDEUXM
+tucana_eea_global: TUCANAEEAGlobal_V11.0.13.0.PFDEUXM
 tucana_global: TUCANAGlobal_V11.0.8.0.PFDMIXM
 tulip_global: HMNote6ProGlobal_V11.0.2.0.PEKMIXM
 ugg: HMNote5A_V11.0.1.0.NDKCNXM
@@ -115,8 +115,8 @@ ursa: MI8Explorer_V11.0.2.0.QEHCNXM
 vela: VELA_V11.0.1.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
-violet: VIOLET_V11.0.8.0.PFHCNXM
-violet_in_global: VIOLETINGlobal_V11.0.6.0.PFHINXM
+violet: VIOLET_V11.0.4.0.PFHCNXM
+violet_in_global: VIOLETINGlobal_V11.0.8.0.PFHINXM
 wayne: MI6X_V11.0.3.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
