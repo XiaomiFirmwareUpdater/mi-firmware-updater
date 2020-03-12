@@ -1,6 +1,6 @@
-requests==2.21.0
-pyDownload==0.0.1.dev4
-PyYAML==5.1.2
-hurry.filesize==0.9
+requests
+pySmartDL
+PyYAML
+hurry.filesize
 github3.py==1.3.0
-python-telegram-bot==12.0.0b1
+python-telegram-bot==12.4.2
