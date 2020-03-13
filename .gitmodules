@@ -1,0 +1,3 @@
+[submodule "xda_poster"]
+	path = xda_poster
+	url = https://github.com/yshalsager/XDA-Poster
