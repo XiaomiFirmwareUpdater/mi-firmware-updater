@@ -62,7 +62,7 @@ olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.3.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V11.0.3.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.5.0.PCQINXM
-onc_in_global: ONCINGlobal_V11.0.8.0.PFFINXM
+onc_in_global: ONCINGlobal_V11.0.4.0.PFFINXM
 onclite: ONCLITE_V11.0.3.0.PFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V11.0.4.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V11.0.3.0.PFLMIXM
@@ -77,7 +77,7 @@ picasso: PICASSO_V11.0.11.0.QGICNXM
 pine: PINE_V11.0.5.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.14.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.6.0.PCMMIXM
-pine_in_global: PINEINGlobal_V11.0.4.0.PCMINXM
+pine_in_global: PINEINGlobal_V11.0.2.0.PCMINXM
 platina: MI8Lite_V11.0.4.0.PDTCNXM
 platina_global: MI8LiteGlobal_V11.0.8.0.PDTMIXM
 polaris: MIMIX2S_V11.0.1.0.QDGCNXM
@@ -118,7 +118,7 @@ vela: VELA_V11.0.1.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
 violet: VIOLET_V11.0.8.0.PFHCNXM
-violet_in_global: VIOLETINGlobal_V11.0.8.0.PFHINXM
+violet_in_global: VIOLETINGlobal_V11.0.6.0.PFHINXM
 wayne: MI6X_V11.0.3.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
