@@ -94,7 +94,7 @@ class Message:
             .replace('$process', self.info['process'].capitalize()) \
             .replace('$version', self.info['version']).replace('$android', self.info['android']) \
             .replace('$region', self.info['region']) \
-            .replace('$name', self.info['zip_name']).replace('$zip_size', self.info['zip_size']) \
+            .replace('$zip_name', self.info['zip_name']).replace('$zip_size', self.info['zip_size']) \
             .replace('$md5_hash', self.info['md5_hash']) \
             .replace('$link', self.info['link']).replace('$codename', self.info['codename'])
 
