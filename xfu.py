@@ -7,16 +7,15 @@ from datetime import datetime, date
 from glob import glob
 from hashlib import md5
 from os import remove, system, environ, path, getcwd, chdir, rename
-from time import sleep
+from urllib.error import HTTPError
 
 import yaml
 from github3 import GitHub, exceptions
+from helpers import set_region, set_version, md5_check, set_folder
 from hurry.filesize import size, alternative
+from post_updates import post_updates
 from pySmartDL import SmartDL
 from requests import get
-
-from helpers import set_region, set_version, md5_check, set_folder
-from post_updates import post_updates
 
 GIT_OAUTH_TOKEN = environ['XFU']
 GIT = GitHub(token=GIT_OAUTH_TOKEN)
@@ -241,7 +240,14 @@ def main():
             print("Starting download " + file)
             downloader = SmartDL(url.replace("bigota", "hugeota"), WORK_DIR, progress_bar=False,
                                  timeout=25, threads=64)
-            downloader.start()
+            try:
+                downloader.start()
+            except urllib.error.HTTPError:
+                for file in glob("miui_*"):
+                    remove(file)
+                downloader = SmartDL(url, WORK_DIR, progress_bar=False,
+                                     timeout=25, threads=64)
+                downloader.start()
             if downloader.isSuccessful():
                 print(f'File downloaded to {downloader.get_dest()}')
             else:
