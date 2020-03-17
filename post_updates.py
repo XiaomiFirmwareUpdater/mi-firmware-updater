@@ -62,7 +62,7 @@ class Message:
             "zip_name": data[6],
             "zip_size": data[7],
             "md5_hash": data[8],
-            "region": set_region(data[7]),
+            "region": set_region(data[6]),
             "name": get_device_name(data[2], self.names),
             "link": link
         }
