@@ -42,7 +42,7 @@ laurus: LAURUS_V11.0.4.0.PFMCNXM
 lavender: LAVENDER_V11.0.4.0.PFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V11.0.4.0.PFGEUXM
 lavender_global: LAVENDERGlobal_V11.0.5.0.PFGMIXM
-lavender_in_global: LAVENDERINGlobal_V11.0.6.0.PFGINXM
+lavender_in_global: LAVENDERINGlobal_V11.0.9.0.PFGINXM
 lithium: MIMIX_V11.0.2.0.OAHCNXM
 lithium_global: MIMIXGlobal_V11.0.2.0.OAHMIXM
 lotus: MIPLAY_V11.0.5.0.OFICNXM
@@ -73,7 +73,7 @@ perseus: MIMIX3_V11.0.2.0.QEECNXM
 perseus_global: MIMIX3Global_V11.0.3.0.QEEMIXM
 phoenix: PHOENIX_V11.0.13.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.4.0.QGHINXM
-picasso: PICASSO_V11.0.11.0.QGICNXM
+picasso: PICASSO_V11.1.15.0.QGICNXM
 pine: PINE_V11.0.5.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.14.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.6.0.PCMMIXM
@@ -94,7 +94,7 @@ riva: HM5A_V11.0.6.0.OCKCNXM
 riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
 rosy: HM5_V11.0.4.0.ODACNXM
 rosy_global: HM5Global_V11.0.2.0.ODAMIXM
-sagit: MI6_V11.0.2.0.PCACNXM
+sagit: MI6_V11.0.5.0.PCACNXM
 sagit_global: MI6Global_V11.0.3.0.PCAMIXM
 sakura: HM6Pro_V11.0.4.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.6.0.PDMMIXM
@@ -117,7 +117,7 @@ ursa: MI8Explorer_V11.0.2.0.QEHCNXM
 vela: VELA_V11.0.1.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
-violet: VIOLET_V11.0.4.0.PFHCNXM
+violet: VIOLET_V11.0.8.0.PFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.8.0.PFHINXM
 wayne: MI6X_V11.0.3.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
