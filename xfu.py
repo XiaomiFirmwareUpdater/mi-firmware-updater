@@ -242,7 +242,7 @@ def main():
                                  timeout=25, threads=64)
             try:
                 downloader.start()
-            except urllib.error.HTTPError:
+            except HTTPError:
                 for file in glob("miui_*"):
                     remove(file)
                 downloader = SmartDL(url, WORK_DIR, progress_bar=False,
