@@ -11,7 +11,7 @@ cactus_global: HM6AGlobal_V11.0.5.0.PCBMIXM
 cappu: MIPAD3_V10.2.1.0.NCICNXM
 capricorn: MI5S_V11.0.2.0.OAGCNXM
 capricorn_global: MI5SGlobal_V10.2.3.0.OAGMIXM
-cepheus: CEPHEUS_V11.0.5.0.QFACNXM
+cepheus: CEPHEUS_V11.0.7.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V11.0.8.0.QFAEUXM
 cepheus_global: CEPHEUSGlobal_V11.0.5.0.QFAMIXM
 cereus: HM6_V11.0.3.0.PCGCNXM
@@ -97,7 +97,7 @@ rosy_global: HM5Global_V11.0.2.0.ODAMIXM
 sagit: MI6_V11.0.2.0.PCACNXM
 sagit_global: MI6Global_V11.0.3.0.PCAMIXM
 sakura: HM6Pro_V11.0.4.0.PDICNXM
-sakura_india_global: HM6ProINGlobal_V11.0.5.0.PDMMIXM
+sakura_india_global: HM6ProINGlobal_V11.0.6.0.PDMMIXM
 santoni: HM4X_V11.0.1.0.NAMCNXM
 santoni_global: HM4XGlobal_V11.0.2.0.NAMMIXM
 scorpio: MINote2_V11.0.2.0.OADCNXM
@@ -119,7 +119,7 @@ vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
 violet: VIOLET_V11.0.8.0.PFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.8.0.PFHINXM
-wayne: MI6X_V11.0.3.0.PDCCNXM
+wayne: MI6X_V11.0.5.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
 willow_eea_global: WILLOWEEAGlobal_V11.0.5.0.PCXEUXM
