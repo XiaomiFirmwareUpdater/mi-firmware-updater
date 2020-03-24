@@ -27,7 +27,7 @@ davinci: DAVINCI_V11.0.4.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.4.0.QFJEUXM
 davinci_global: DAVINCIGlobal_V11.0.4.0.QFJMIXM
 davinciin_in_global: DAVINCIININGlobal_V11.0.2.0.QFJINXM
-dipper: MI8_V11.0.4.0.PEACNXM
+dipper: MI8_V11.0.6.0.QEACNXM
 dipper_global: MI8Global_V11.0.3.0.QEAMIXM
 equuleus: MI8UD_V11.0.1.0.QECCNXM
 equuleus_global: MI8UDGlobal_V11.0.3.0.QECMIXM
@@ -36,12 +36,12 @@ ginkgo_global: GINKGOGlobal_V11.0.7.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V11.0.3.0.PCOINXM
 grus: GRUS_V11.0.2.0.QFBCNXM
 grus_eea_global: GRUSEEAGlobal_V11.0.6.0.PFBEUXM
-grus_global: GRUSGlobal_V11.0.2.0.QFBMIXM
+grus_global: GRUSGlobal_V11.0.6.0.PFBMIXM
 jason: MINote3_V11.0.4.0.PCHCNXM
 jason_global: MINote3Global_V11.0.5.0.PCHMIXM
 laurus: LAURUS_V11.0.4.0.PFMCNXM
 lavender: LAVENDER_V11.0.4.0.PFGCNXM
-lavender_eea_global: LAVENDEREEAGlobal_V11.0.7.0.PFGEUXM
+lavender_eea_global: LAVENDEREEAGlobal_V11.0.4.0.PFGEUXM
 lavender_global: LAVENDERGlobal_V11.0.5.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.9.0.PFGINXM
 lithium: MIMIX_V11.0.2.0.OAHCNXM
@@ -65,8 +65,8 @@ olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.5.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.8.0.PFFINXM
 onclite: ONCLITE_V11.0.3.0.PFLCNXM
-onclite_eea_global: ONCLITEEEAGlobal_V11.0.6.0.PFLEUXM
-onclite_global: ONCLITEGlobal_V11.0.5.0.PFLMIXM
+onclite_eea_global: ONCLITEEEAGlobal_V11.0.4.0.PFLEUXM
+onclite_global: ONCLITEGlobal_V11.0.3.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V11.0.5.0.PFLINXM
 oxygen: MIMAX2_V11.0.2.0.NDDCNXM
 oxygen_global: MIMAX2Global_V11.0.2.0.NDDMIXM
@@ -123,7 +123,7 @@ violet_in_global: VIOLETINGlobal_V11.0.8.0.PFHINXM
 wayne: MI6X_V11.0.3.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
-willow_eea_global: WILLOWEEAGlobal_V11.0.7.0.PCXEUXM
+willow_eea_global: WILLOWEEAGlobal_V11.0.6.0.PCXEUXM
 willow_global: WILLOWGlobal_V11.0.2.0.PCXMIXM
 ysl: HMS2_V11.0.3.0.PEFCNXM
 ysl_global: HMS2Global_V11.0.5.0.PEFMIXM
