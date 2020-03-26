@@ -33,7 +33,7 @@ equuleus: MI8UD_V11.0.1.0.QECCNXM
 equuleus_global: MI8UDGlobal_V11.0.3.0.QECMIXM
 ginkgo: GINKGO_V11.0.6.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V11.0.7.0.PCOMIXM
-ginkgo_in_global: GINKGOINGlobal_V11.0.4.0.PCOINXM
+ginkgo_in_global: GINKGOINGlobal_V11.0.3.0.PCOINXM
 grus: GRUS_V11.0.2.0.QFBCNXM
 grus_eea_global: GRUSEEAGlobal_V11.0.6.0.PFBEUXM
 grus_global: GRUSGlobal_V11.0.6.0.PFBMIXM
