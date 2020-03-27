@@ -3,7 +3,7 @@ andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 begonia: BEGONIA_V11.0.3.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.PGGEUXM
-begonia_global: BEGONIAGlobal_V11.0.6.0.PGGMIXM
+begonia_global: BEGONIAGlobal_V11.0.1.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.6.0.QEJMIXM
 cactus: HM6A_V11.0.4.0.PCBCNXM
@@ -46,6 +46,7 @@ lavender_global: LAVENDERGlobal_V11.0.5.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.9.0.PFGINXM
 lithium: MIMIX_V11.0.2.0.OAHCNXM
 lithium_global: MIMIXGlobal_V11.0.2.0.OAHMIXM
+lmi: LMI_V11.0.10.0.QJKCNXM
 lotus: MIPLAY_V11.0.5.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.3.0.OFIMIXM
 mido: HMNote4X_V11.0.2.0.NCFCNXM
@@ -56,7 +57,7 @@ nitrogen: MIMAX3_V11.0.3.0.PEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.1.0.QEDMIXM
 olive: OLIVE_V11.0.8.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.4.0.PCNEUXM
-olive_global: OLIVEGlobal_V11.0.7.0.PCNMIXM
+olive_global: OLIVEGlobal_V11.0.10.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.8.0.PCNINXM
 olivelite: OLIVELITE_V11.0.8.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.2.0.PCPEUXM
@@ -123,7 +124,7 @@ violet_in_global: VIOLETINGlobal_V11.0.8.0.PFHINXM
 wayne: MI6X_V11.0.3.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
-willow_eea_global: WILLOWEEAGlobal_V11.0.6.0.PCXEUXM
-willow_global: WILLOWGlobal_V11.0.3.0.PCXMIXM
+willow_eea_global: WILLOWEEAGlobal_V11.0.7.0.PCXEUXM
+willow_global: WILLOWGlobal_V11.0.2.0.PCXMIXM
 ysl: HMS2_V11.0.3.0.PEFCNXM
 ysl_global: HMS2Global_V11.0.5.0.PEFMIXM
