@@ -31,6 +31,7 @@ def initialize():
     """
     Initial loading and preparing
     """
+    remove("create_flashable_firmware.py")
     axel("https://raw.githubusercontent.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/py/xiaomi_flashable_firmware_creator/create_flashable_firmware.py")
     with open('devices/stable_devices.yml', 'r') as stable_json:
         stable_devices = yaml.load(stable_json, Loader=yaml.CLoader)
