@@ -14,7 +14,7 @@ from github3 import GitHub, exceptions
 from helpers import set_region, set_version, md5_check, set_folder
 from hurry.filesize import size, alternative
 from post_updates import post_updates
-from pySmartDL import SmartDL
+from axel import axel
 from requests import get
 
 GIT_OAUTH_TOKEN = environ['XFU']
@@ -31,11 +31,7 @@ def initialize():
     """
     Initial loading and preparing
     """
-    download = SmartDL("https://raw.githubusercontent.com/XiaomiFirmwareUpdater/"
-                       "xiaomi-flashable-firmware-creator.py/py/" +
-                       "xiaomi_flashable_firmware_creator/create_flashable_firmware.py",
-                       WORK_DIR, progress_bar=False)
-    download.start()
+    axel("https://raw.githubusercontent.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/py/xiaomi_flashable_firmware_creator/create_flashable_firmware.py")
     with open('devices/stable_devices.yml', 'r') as stable_json:
         stable_devices = yaml.load(stable_json, Loader=yaml.CLoader)
     open('log', 'w').close()
@@ -238,21 +234,7 @@ def main():
                 continue
             # start working
             print("Starting download " + file)
-            downloader = SmartDL(url.replace("bigota", "hugeota"), WORK_DIR, progress_bar=False,
-                                 timeout=25, threads=64)
-            try:
-                downloader.start()
-            except HTTPError:
-                for file in glob("miui_*"):
-                    remove(file)
-                downloader = SmartDL(url, WORK_DIR, progress_bar=False,
-                                     timeout=25, threads=64)
-                downloader.start()
-            if downloader.isSuccessful():
-                print(f'File downloaded to {downloader.get_dest()}')
-            else:
-                print(f"Downloading {url} failed!")
-                exit(1)
+            axel(url.replace("bigota", "hugeota"), WORK_DIR, num_connections=128)
             if codename in ARB_DEVICES:
                 subprocess.call(['python3', 'create_flashable_firmware.py', '-F', file])
                 subprocess.call(['python3', 'create_flashable_firmware.py', '-N', file])

@@ -1,5 +1,5 @@
 requests
-pySmartDL
+axel-wrapper
 PyYAML
 hurry.filesize
 github3.py==1.3.0
