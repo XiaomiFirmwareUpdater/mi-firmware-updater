@@ -19,7 +19,7 @@ cereus_global: HM6Global_V11.0.2.0.PCGMIXM
 chiron: MIMIX2_V11.0.5.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.6.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-cmi: CMI_V11.0.13.0.QJACNXM
+cmi: CMI_V11.0.16.0.QJACNXM
 crux: CRUX_V11.0.3.0.PFXCNXM
 curtana_global: CURTANAGlobal_V11.0.1.0.QJWMIXM
 curtana_in_global: CURTANAINGlobal_V11.0.4.0.QJWINXM
@@ -97,7 +97,7 @@ riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
 rosy: HM5_V11.0.4.0.ODACNXM
 rosy_global: HM5Global_V11.0.2.0.ODAMIXM
 sagit: MI6_V11.0.2.0.PCACNXM
-sagit_global: MI6Global_V11.0.3.0.PCAMIXM
+sagit_global: MI6Global_V11.0.6.0.PCAMIXM
 sakura: HM6Pro_V11.0.5.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.6.0.PDMMIXM
 santoni: HM4X_V11.0.1.0.NAMCNXM
@@ -114,7 +114,7 @@ ugg: HMNote5A_V11.0.1.0.NDKCNXM
 ugg_global: HMNote5AGlobal_V11.0.2.0.NDKMIXM
 ugglite: HMNote5ALITE_V11.0.2.0.NDFCNXM
 ugglite_global: HMNote5ALITEGlobal_V11.0.3.0.NDFMIXM
-umi: UMI_V11.0.15.0.QJBCNXM
+umi: UMI_V11.0.20.0.QJBCNXM
 ursa: MI8Explorer_V11.0.2.0.QEHCNXM
 vela: VELA_V11.0.1.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
