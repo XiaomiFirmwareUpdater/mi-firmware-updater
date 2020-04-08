@@ -15,7 +15,7 @@ cepheus: CEPHEUS_V11.0.5.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V11.0.8.0.QFAEUXM
 cepheus_global: CEPHEUSGlobal_V11.0.5.0.QFAMIXM
 cereus: HM6_V11.0.3.0.PCGCNXM
-cereus_global: HM6Global_V11.0.2.0.PCGMIXM
+cereus_global: HM6Global_V11.0.3.0.PCGMIXM
 chiron: MIMIX2_V11.0.5.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.6.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
@@ -62,7 +62,7 @@ olive_in_global: OLIVEINGlobal_V11.0.8.0.PCNINXM
 olivelite: OLIVELITE_V11.0.9.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.2.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V11.0.3.0.PCPMIXM
-olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
+olivelite_in_global: OLIVELITEINGlobal_V11.0.8.0.PCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.6.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.8.0.PFFINXM
 onclite: ONCLITE_V11.0.3.0.PFLCNXM
@@ -75,7 +75,7 @@ perseus: MIMIX3_V11.0.2.0.QEECNXM
 perseus_global: MIMIX3Global_V11.0.3.0.QEEMIXM
 phoenix: PHOENIX_V11.0.14.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.4.0.QGHINXM
-picasso: PICASSO_V11.1.18.0.QGICNXM
+picasso: PICASSO_V11.1.19.0.QGICNXM
 pine: PINE_V11.0.5.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.14.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.6.0.PCMMIXM
@@ -87,7 +87,7 @@ polaris_global: MIMIX2SGlobal_V11.0.4.0.QDGMIXM
 pyxis: PYXIS_V11.0.1.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.0.1.0.QFCEUXM
 pyxis_global: PYXISGlobal_V11.0.1.0.QFCMIXM
-raphael: RAPHAEL_V11.0.7.0.QFKCNXM
+raphael: RAPHAEL_V11.0.8.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.5.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V11.0.3.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V11.0.4.0.QFKINXM
@@ -114,7 +114,7 @@ ugg: HMNote5A_V11.0.1.0.NDKCNXM
 ugg_global: HMNote5AGlobal_V11.0.2.0.NDKMIXM
 ugglite: HMNote5ALITE_V11.0.2.0.NDFCNXM
 ugglite_global: HMNote5ALITEGlobal_V11.0.3.0.NDFMIXM
-umi: UMI_V11.0.15.0.QJBCNXM
+umi: UMI_V11.0.20.0.QJBCNXM
 ursa: MI8Explorer_V11.0.2.0.QEHCNXM
 vela: VELA_V11.0.1.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
