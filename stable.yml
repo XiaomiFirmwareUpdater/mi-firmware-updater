@@ -58,12 +58,12 @@ nitrogen_global: MIMAX3Global_V11.0.1.0.QEDMIXM
 olive: OLIVE_V11.0.10.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.6.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.10.0.PCNMIXM
-olive_in_global: OLIVEINGlobal_V11.0.8.0.PCNINXM
+olive_in_global: OLIVEINGlobal_V11.0.10.0.PCNINXM
 olivelite: OLIVELITE_V11.0.9.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.2.0.PCPEUXM
-olivelite_global: OLIVELITEGlobal_V11.0.3.0.PCPMIXM
-olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
-olivewood_in_global: OLIVEWOODINGlobal_V11.0.5.0.PCQINXM
+olivelite_global: OLIVELITEGlobal_V11.0.6.0.PCPMIXM
+olivelite_in_global: OLIVELITEINGlobal_V11.0.8.0.PCPINXM
+olivewood_in_global: OLIVEWOODINGlobal_V11.0.6.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.8.0.PFFINXM
 onclite: ONCLITE_V11.0.3.0.PFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V11.0.6.0.PFLEUXM
@@ -75,7 +75,7 @@ perseus: MIMIX3_V11.0.2.0.QEECNXM
 perseus_global: MIMIX3Global_V11.0.3.0.QEEMIXM
 phoenix: PHOENIX_V11.0.14.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.4.0.QGHINXM
-picasso: PICASSO_V11.1.18.0.QGICNXM
+picasso: PICASSO_V11.1.19.0.QGICNXM
 pine: PINE_V11.0.5.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.6.0.PCMMIXM
