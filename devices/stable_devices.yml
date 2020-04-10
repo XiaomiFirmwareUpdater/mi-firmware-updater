@@ -20,6 +20,7 @@
 - chiron_global
 - clover
 - cmi
+- cmi_eea_global
 - crux
 - curtana_global
 - curtana_in_global
@@ -116,6 +117,7 @@
 - ugglite
 - ugglite_global
 - umi
+- umi_eea_global
 - vela
 - violet
 - violet_in_global
