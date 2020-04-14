@@ -62,8 +62,8 @@ olive_global: OLIVEGlobal_V11.0.10.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.10.0.PCNINXM
 olivelite: OLIVELITE_V11.0.9.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.2.0.PCPEUXM
-olivelite_global: OLIVELITEGlobal_V11.0.3.0.PCPMIXM
-olivelite_in_global: OLIVELITEINGlobal_V11.0.3.0.PCPINXM
+olivelite_global: OLIVELITEGlobal_V11.0.6.0.PCPMIXM
+olivelite_in_global: OLIVELITEINGlobal_V11.0.8.0.PCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.5.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.8.0.PFFINXM
 onclite: ONCLITE_V11.0.3.0.PFLCNXM
@@ -78,8 +78,8 @@ phoenix: PHOENIX_V11.0.14.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.4.0.QGHINXM
 picasso: PICASSO_V11.1.19.0.QGICNXM
 pine: PINE_V11.0.5.0.PCMCNXM
-pine_eea_global: PINEEEAGlobal_V11.0.14.0.PCMEUXM
-pine_global: PINEGlobal_V11.0.6.0.PCMMIXM
+pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
+pine_global: PINEGlobal_V11.0.7.0.PCMMIXM
 pine_in_global: PINEINGlobal_V11.0.4.0.PCMINXM
 platina: MI8Lite_V11.0.1.0.QDTCNXM
 platina_global: MI8LiteGlobal_V11.0.1.0.QDTMIXM
@@ -109,7 +109,7 @@ sirius: MI8SE_V11.0.2.0.QEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 tucana: TUCANA_V11.0.7.0.PFDCNXM
 tucana_eea_global: TUCANAEEAGlobal_V11.0.16.0.PFDEUXM
-tucana_global: TUCANAGlobal_V11.0.8.0.PFDMIXM
+tucana_global: TUCANAGlobal_V11.0.9.0.PFDMIXM
 tulip_global: HMNote6ProGlobal_V11.0.3.0.PEKMIXM
 ugg: HMNote5A_V11.0.1.0.NDKCNXM
 ugg_global: HMNote5AGlobal_V11.0.2.0.NDKMIXM
