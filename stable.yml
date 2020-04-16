@@ -27,7 +27,7 @@ curtana_in_global: CURTANAINGlobal_V11.0.4.0.QJWINXM
 davinci: DAVINCI_V11.0.4.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.4.0.QFJEUXM
 davinci_global: DAVINCIGlobal_V11.0.4.0.QFJMIXM
-davinciin_in_global: DAVINCIININGlobal_V11.0.3.0.QFJINXM
+davinciin_in_global: DAVINCIININGlobal_V11.0.2.0.QFJINXM
 dipper: MI8_V11.0.6.0.QEACNXM
 dipper_global: MI8Global_V11.0.3.0.QEAMIXM
 equuleus: MI8UD_V11.0.2.0.QECCNXM
@@ -61,7 +61,7 @@ olive_eea_global: OLIVEEEAGlobal_V11.0.6.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.10.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.10.0.PCNINXM
 olivelite: OLIVELITE_V11.0.9.0.PCPCNXM
-olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.2.0.PCPEUXM
+olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.4.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V11.0.6.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.8.0.PCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.5.0.PCQINXM
@@ -77,9 +77,9 @@ perseus_global: MIMIX3Global_V11.0.3.0.QEEMIXM
 phoenix: PHOENIX_V11.0.14.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.4.0.QGHINXM
 picasso: PICASSO_V11.1.19.0.QGICNXM
-pine: PINE_V11.0.6.0.PCMCNXM
+pine: PINE_V11.0.5.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
-pine_global: PINEGlobal_V11.0.6.0.PCMMIXM
+pine_global: PINEGlobal_V11.0.7.0.PCMMIXM
 pine_in_global: PINEINGlobal_V11.0.4.0.PCMINXM
 platina: MI8Lite_V11.0.1.0.QDTCNXM
 platina_global: MI8LiteGlobal_V11.0.1.0.QDTMIXM
