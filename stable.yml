@@ -12,8 +12,8 @@ cappu: MIPAD3_V10.2.1.0.NCICNXM
 capricorn: MI5S_V11.0.2.0.OAGCNXM
 capricorn_global: MI5SGlobal_V10.2.3.0.OAGMIXM
 cepheus: CEPHEUS_V11.0.9.0.QFACNXM
-cepheus_eea_global: CEPHEUSEEAGlobal_V11.0.8.0.QFAEUXM
-cepheus_global: CEPHEUSGlobal_V11.0.5.0.QFAMIXM
+cepheus_eea_global: CEPHEUSEEAGlobal_V11.0.9.0.QFAEUXM
+cepheus_global: CEPHEUSGlobal_V11.0.6.0.QFAMIXM
 cereus: HM6_V11.0.4.0.PCGCNXM
 cereus_global: HM6Global_V11.0.3.0.PCGMIXM
 chiron: MIMIX2_V11.0.5.0.PDECNXM
@@ -49,7 +49,7 @@ lavender_global: LAVENDERGlobal_V11.0.5.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.9.0.PFGINXM
 lithium: MIMIX_V11.0.2.0.OAHCNXM
 lithium_global: MIMIXGlobal_V11.0.2.0.OAHMIXM
-lmi: LMI_V11.0.12.0.QJKCNXM
+lmi: LMI_V11.0.16.0.QJKCNXM
 lotus: MIPLAY_V11.0.6.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.3.0.OFIMIXM
 mido: HMNote4X_V11.0.2.0.NCFCNXM
