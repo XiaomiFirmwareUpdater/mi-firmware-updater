@@ -42,6 +42,7 @@
 - grus_eea_global
 - jason
 - jason_global
+- joyeuse_global
 - joyeuse_eea_global
 - laurus
 - lavender
@@ -110,6 +111,8 @@
 - scorpio_global
 - sirius
 - tiffany
+- toco_global
+- toco_eea_global
 - tucana
 - tucana_global
 - tucana_eea_global
