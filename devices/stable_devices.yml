@@ -54,6 +54,7 @@
 - lmi
 - lotus
 - lotus_global
+- merlin_eea_global
 - mido
 - mido_global
 - natrium
@@ -124,6 +125,7 @@
 - ugglite_global
 - umi
 - umi_eea_global
+- vangogh
 - vela
 - violet
 - violet_in_global
