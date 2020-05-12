@@ -42,7 +42,6 @@
 - grus_eea_global
 - jason
 - jason_global
-- joyeuse_global
 - joyeuse_eea_global
 - laurus
 - lavender
@@ -52,6 +51,7 @@
 - lithium
 - lithium_global
 - lmi
+- lmi_eea_global
 - lotus
 - lotus_global
 - merlin_eea_global
