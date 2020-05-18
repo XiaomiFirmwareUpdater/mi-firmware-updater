@@ -55,6 +55,7 @@
 - lotus
 - lotus_global
 - merlin_eea_global
+- merlin_global
 - mido
 - mido_global
 - natrium
@@ -125,6 +126,7 @@
 - ugglite_global
 - umi
 - umi_eea_global
+- umi_in_global
 - umi_global
 - vangogh
 - vela
