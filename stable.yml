@@ -81,13 +81,13 @@ perseus: MIMIX3_V11.0.2.0.QEECNXM
 perseus_global: MIMIX3Global_V11.0.3.0.QEEMIXM
 phoenix: PHOENIX_V11.0.15.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.7.0.QGHINXM
-picasso: PICASSO_V11.1.23.0.QGICNXM
+picasso: PICASSO_V11.1.25.0.QGICNXM
 pine: PINE_V11.0.6.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.7.0.PCMMIXM
 pine_in_global: PINEINGlobal_V11.0.5.0.PCMINXM
 platina: MI8Lite_V11.0.1.0.QDTCNXM
-platina_global: MI8LiteGlobal_V11.0.1.0.QDTMIXM
+platina_global: MI8LiteGlobal_V11.0.2.0.QDTMIXM
 polaris: MIMIX2S_V11.0.3.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V11.0.4.0.QDGMIXM
 pyxis: PYXIS_V11.0.3.0.QFCCNXM
