@@ -64,7 +64,7 @@ nitrogen_global: MIMAX3Global_V11.0.2.0.QEDMIXM
 olive: OLIVE_V11.0.10.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.6.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.10.0.PCNMIXM
-olive_in_global: OLIVEINGlobal_V11.0.10.0.PCNINXM
+olive_in_global: OLIVEINGlobal_V11.0.11.0.PCNINXM
 olivelite: OLIVELITE_V11.0.9.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.4.0.PCPEUXM
 olivelite_global: OLIVELITEGlobal_V11.0.6.0.PCPMIXM
@@ -87,7 +87,7 @@ pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.7.0.PCMMIXM
 pine_in_global: PINEINGlobal_V11.0.4.0.PCMINXM
 platina: MI8Lite_V11.0.2.0.QDTCNXM
-platina_global: MI8LiteGlobal_V11.0.2.0.QDTMIXM
+platina_global: MI8LiteGlobal_V11.0.1.0.QDTMIXM
 polaris: MIMIX2S_V11.0.3.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V11.0.4.0.QDGMIXM
 pyxis: PYXIS_V11.0.3.0.QFCCNXM
@@ -117,7 +117,7 @@ toco_global: TOCOGlobal_V11.0.1.0.QFNMIXM
 tucana: TUCANA_V11.1.2.0.QFDCNXM
 tucana_eea_global: TUCANAEEAGlobal_V11.0.16.0.PFDEUXM
 tucana_global: TUCANAGlobal_V11.1.2.0.QFDMIXM
-tulip_global: HMNote6ProGlobal_V11.0.3.0.PEKMIXM
+tulip_global: HMNote6ProGlobal_V11.0.4.0.PEKMIXM
 ugg: HMNote5A_V11.0.1.0.NDKCNXM
 ugg_global: HMNote5AGlobal_V11.0.2.0.NDKMIXM
 ugglite: HMNote5ALITE_V11.0.2.0.NDFCNXM
