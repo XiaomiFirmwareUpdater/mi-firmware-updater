@@ -2,8 +2,8 @@ andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 begonia: BEGONIA_V11.0.3.0.PGGCNXM
-begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.PGGEUXM
-begonia_global: BEGONIAGlobal_V11.0.6.0.PGGMIXM
+begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
+begonia_global: BEGONIAGlobal_V11.0.4.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.8.0.QEJMIXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
@@ -61,7 +61,7 @@ natrium: MI5SPlus_V11.0.2.0.OBGCNXM
 natrium_global: MI5SPlusGlobal_V10.2.4.0.OBGMIXM
 nitrogen: MIMAX3_V11.0.4.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.2.0.QEDMIXM
-olive: OLIVE_V11.0.10.0.PCNCNXM
+olive: OLIVE_V11.0.11.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.6.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.10.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.10.0.PCNINXM
