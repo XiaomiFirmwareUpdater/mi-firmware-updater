@@ -235,7 +235,7 @@ def main():
                 continue
             # start working
             print("Starting download " + file)
-            axel(url.replace("bigota", "hugeota"), WORK_DIR, num_connections=128)
+            axel(url.replace("bigota", "airtel.bigota"), WORK_DIR, num_connections=128)
             if codename in ARB_DEVICES:
                 subprocess.call(['python3', 'create_flashable_firmware.py', '-F', file])
                 subprocess.call(['python3', 'create_flashable_firmware.py', '-N', file])
