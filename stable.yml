@@ -3,8 +3,8 @@ andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 atom: ATOM_V11.0.2.0.QJHCNXM
 begonia: BEGONIA_V11.0.3.0.PGGCNXM
-begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.PGGEUXM
-begonia_global: BEGONIAGlobal_V11.0.6.0.PGGMIXM
+begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
+begonia_global: BEGONIAGlobal_V11.0.4.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.8.0.QEJMIXM
 bomb: BOMB_V11.0.1.0.QJLCNXM
@@ -42,7 +42,7 @@ grus_global: GRUSGlobal_V11.0.2.0.QFBMIXM
 jason: MINote3_V11.0.4.0.PCHCNXM
 jason_global: MINote3Global_V11.0.5.0.PCHMIXM
 joyeuse_eea_global: JOYEUSEEEAGlobal_V11.0.1.0.QJZEUXM
-joyeuse_global: JOYEUSEGlobal_V11.0.1.0.QJZMIXM
+joyeuse_global: JOYEUSEGlobal_V11.0.2.0.QJZMIXM
 laurus: LAURUS_V11.0.4.0.PFMCNXM
 lavender: LAVENDER_V11.0.7.0.PFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V11.0.8.0.PFGEUXM
@@ -50,13 +50,14 @@ lavender_global: LAVENDERGlobal_V11.0.6.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.9.0.PFGINXM
 lmi: LMI_V11.0.16.0.QJKCNXM
 lmi_eea_global: LMIEEAGlobal_V11.0.6.0.QJKEUXM
+lmi_global: LMIGlobal_V11.0.2.0.QJKMIXM
 lotus: MIPLAY_V11.0.6.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.3.0.OFIMIXM
 merlin: MERLIN_V11.0.3.0.QJOCNXM
 merlin_eea_global: MERLINEEAGlobal_V11.0.3.0.QJOEUXM
 nitrogen: MIMAX3_V11.0.4.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.2.0.QEDMIXM
-olive: OLIVE_V11.0.10.0.PCNCNXM
+olive: OLIVE_V11.0.11.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.6.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.10.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.11.0.PCNINXM
@@ -85,7 +86,7 @@ platina: MI8Lite_V11.0.2.0.QDTCNXM
 platina_global: MI8LiteGlobal_V11.0.1.0.QDTMIXM
 polaris: MIMIX2S_V11.0.3.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V11.0.4.0.QDGMIXM
-pyxis: PYXIS_V11.0.3.0.QFCCNXM
+pyxis: PYXIS_V11.0.4.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.0.1.0.QFCEUXM
 pyxis_global: PYXISGlobal_V11.0.1.0.QFCMIXM
 raphael: RAPHAEL_V11.0.8.0.QFKCNXM
