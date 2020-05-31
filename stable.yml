@@ -2,7 +2,7 @@ andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 atom: ATOM_V11.0.2.0.QJHCNXM
-begonia: BEGONIA_V11.0.3.0.QGGCNXM
+begonia: BEGONIA_V11.0.3.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.4.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
@@ -76,7 +76,7 @@ oxygen_global: MIMAX2Global_V11.0.2.0.NDDMIXM
 perseus: MIMIX3_V11.0.3.0.QEECNXM
 perseus_global: MIMIX3Global_V11.0.4.0.QEEMIXM
 phoenix: PHOENIX_V11.0.15.0.QGHCNXM
-phoenixin_in_global: PHOENIXININGlobal_V11.0.10.0.QGHINXM
+phoenixin_in_global: PHOENIXININGlobal_V11.0.7.0.QGHINXM
 picasso: PICASSO_V11.1.25.0.QGICNXM
 pine: PINE_V11.0.6.0.PCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
@@ -124,7 +124,7 @@ violet_in_global: VIOLETINGlobal_V11.0.9.0.PFHINXM
 wayne: MI6X_V11.0.6.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
-willow_eea_global: WILLOWEEAGlobal_V11.0.9.0.PCXEUXM
-willow_global: WILLOWGlobal_V11.0.4.0.PCXMIXM
+willow_eea_global: WILLOWEEAGlobal_V11.0.7.0.PCXEUXM
+willow_global: WILLOWGlobal_V11.0.3.0.PCXMIXM
 ysl: HMS2_V11.0.3.0.PEFCNXM
 ysl_global: HMS2Global_V11.0.5.0.PEFMIXM
