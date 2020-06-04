@@ -1,13 +1,13 @@
 andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
-atom: ATOM_V11.0.2.0.QJHCNXM
+atom: ATOM_V11.0.4.0.QJHCNXM
 begonia: BEGONIA_V11.0.3.0.PGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.4.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
 beryllium_global: POCOF1Global_V11.0.8.0.QEJMIXM
-bomb: BOMB_V11.0.1.0.QJLCNXM
+bomb: BOMB_V11.0.2.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
 cepheus: CEPHEUS_V11.0.9.0.QFACNXM
@@ -103,7 +103,7 @@ sagit: MI6_V11.0.5.0.PCACNXM
 sagit_global: MI6Global_V11.0.6.0.PCAMIXM
 sakura: HM6Pro_V11.0.5.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.7.0.PDMMIXM
-sirius: MI8SE_V11.0.2.0.QEBCNXM
+sirius: MI8SE_V11.0.3.0.QEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 toco_eea_global: TOCOEEAGlobal_V11.0.7.0.QFNEUXM
 toco_global: TOCOGlobal_V11.0.1.0.QFNMIXM
@@ -126,6 +126,6 @@ wayne: MI6X_V11.0.6.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
 willow_eea_global: WILLOWEEAGlobal_V11.0.7.0.PCXEUXM
-willow_global: WILLOWGlobal_V11.0.4.0.PCXMIXM
+willow_global: WILLOWGlobal_V11.0.3.0.PCXMIXM
 ysl: HMS2_V11.0.3.0.PEFCNXM
 ysl_global: HMS2Global_V11.0.5.0.PEFMIXM
