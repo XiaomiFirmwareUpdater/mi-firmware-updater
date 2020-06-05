@@ -59,8 +59,8 @@ merlin_global: MERLINGlobal_V11.0.4.0.QJOMIXM
 nitrogen: MIMAX3_V11.0.4.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.2.0.QEDMIXM
 olive: OLIVE_V11.0.11.0.PCNCNXM
-olive_eea_global: OLIVEEEAGlobal_V11.0.6.0.PCNEUXM
-olive_global: OLIVEGlobal_V11.0.10.0.PCNMIXM
+olive_eea_global: OLIVEEEAGlobal_V11.0.7.0.PCNEUXM
+olive_global: OLIVEGlobal_V11.0.11.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.11.0.PCNINXM
 olivelite: OLIVELITE_V11.0.9.0.PCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.4.0.PCPEUXM
@@ -79,7 +79,7 @@ perseus_global: MIMIX3Global_V11.0.4.0.QEEMIXM
 phoenix: PHOENIX_V11.0.15.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.10.0.QGHINXM
 picasso: PICASSO_V11.1.25.0.QGICNXM
-pine: PINE_V11.0.6.0.PCMCNXM
+pine: PINE_V11.0.1.0.QCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.7.0.PCMMIXM
 pine_in_global: PINEINGlobal_V11.0.5.0.PCMINXM
@@ -117,7 +117,7 @@ umi_global: UMIGlobal_V11.0.2.0.QJBMIXM
 umi_in_global: UMIINGlobal_V11.0.4.0.QJBINXM
 ursa: MI8Explorer_V11.0.3.0.QEHCNXM
 vangogh: VANGOGH_V11.0.9.0.QJVCNXM
-vela: VELA_V11.0.3.0.QFECNXM
+vela: VELA_V11.0.4.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
 violet: VIOLET_V11.0.8.0.PFHCNXM
