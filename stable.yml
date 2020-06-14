@@ -41,7 +41,7 @@ grus_eea_global: GRUSEEAGlobal_V11.0.2.0.QFBEUXM
 grus_global: GRUSGlobal_V11.0.2.0.QFBMIXM
 jason: MINote3_V11.0.4.0.PCHCNXM
 jason_global: MINote3Global_V11.0.5.0.PCHMIXM
-joyeuse_eea_global: JOYEUSEEEAGlobal_V11.0.3.0.QJZEUXM
+joyeuse_eea_global: JOYEUSEEEAGlobal_V11.0.1.0.QJZEUXM
 joyeuse_global: JOYEUSEGlobal_V11.0.2.0.QJZMIXM
 laurus: LAURUS_V11.0.4.0.PFMCNXM
 lavender: LAVENDER_V11.0.7.0.PFGCNXM
@@ -63,8 +63,8 @@ olive_eea_global: OLIVEEEAGlobal_V11.0.7.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.11.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.11.0.PCNINXM
 olivelite: OLIVELITE_V11.0.10.0.PCPCNXM
-olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.5.0.PCPEUXM
-olivelite_global: OLIVELITEGlobal_V11.0.7.0.PCPMIXM
+olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.4.0.PCPEUXM
+olivelite_global: OLIVELITEGlobal_V11.0.6.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.8.0.PCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.7.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.9.0.PFFINXM
