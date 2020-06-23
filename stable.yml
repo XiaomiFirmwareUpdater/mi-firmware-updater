@@ -34,7 +34,7 @@ dipper_global: MI8Global_V11.0.4.0.QEAMIXM
 equuleus: MI8UD_V11.0.2.0.QECCNXM
 equuleus_global: MI8UDGlobal_V11.0.5.0.QECMIXM
 excalibur_in_global: EXCALIBURINGlobal_V11.0.2.0.QJXINXM
-ginkgo: GINKGO_V11.0.6.0.PCOCNXM
+ginkgo: GINKGO_V11.0.7.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V11.0.9.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V11.0.5.0.PCOINXM
 grus: GRUS_V11.0.3.0.QFBCNXM
@@ -50,7 +50,7 @@ lavender: LAVENDER_V11.0.2.0.QFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V11.0.8.0.PFGEUXM
 lavender_global: LAVENDERGlobal_V11.0.6.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.9.0.PFGINXM
-lmi: LMI_V11.0.16.0.QJKCNXM
+lmi: LMI_V12.0.1.0.QJKCNXM
 lmi_eea_global: LMIEEAGlobal_V11.0.6.0.QJKEUXM
 lmi_global: LMIGlobal_V11.0.2.0.QJKMIXM
 lotus: MIPLAY_V11.0.6.0.OFICNXM
@@ -71,7 +71,7 @@ olivelite_global: OLIVELITEGlobal_V11.0.7.0.PCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.9.0.PCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.7.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.9.0.PFFINXM
-onclite: ONCLITE_V11.0.4.0.PFLCNXM
+onclite: ONCLITE_V11.0.1.0.QFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V11.0.6.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V11.0.5.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V11.0.6.0.PFLINXM
@@ -95,7 +95,7 @@ pyxis_eea_global: PYXISEEAGlobal_V11.0.1.0.QFCEUXM
 pyxis_global: PYXISGlobal_V11.0.1.0.QFCMIXM
 raphael: RAPHAEL_V11.0.8.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.6.0.QFKEUXM
-raphael_global: RAPHAELGlobal_V11.0.4.0.QFKMIXM
+raphael_global: RAPHAELGlobal_V12.0.1.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V11.0.6.0.QFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
 riva: HM5A_V11.0.6.0.OCKCNXM
@@ -115,7 +115,7 @@ tucana_eea_global: TUCANAEEAGlobal_V11.1.1.0.QFDEUXM
 tucana_global: TUCANAGlobal_V11.1.2.0.QFDMIXM
 tulip_global: HMNote6ProGlobal_V11.0.4.0.PEKMIXM
 umi: UMI_V12.0.1.0.QJBCNXM
-umi_eea_global: UMIEEAGlobal_V11.0.13.0.QJBEUXM
+umi_eea_global: UMIEEAGlobal_V11.0.14.0.QJBEUXM
 umi_global: UMIGlobal_V11.0.2.0.QJBMIXM
 umi_in_global: UMIINGlobal_V11.0.5.0.QJBINXM
 ursa: MI8Explorer_V11.0.3.0.QEHCNXM
