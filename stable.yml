@@ -5,7 +5,7 @@ atom: ATOM_V11.0.5.0.QJHCNXM
 begonia: BEGONIA_V11.0.3.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.4.0.QGGMIXM
-begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.PGGINXM
+begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.8.0.QEJMIXM
 bomb: BOMB_V11.0.3.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
@@ -26,7 +26,7 @@ curtana_eea_global: CURTANAEEAGlobal_V11.0.3.0.QJWEUXM
 curtana_global: CURTANAGlobal_V11.0.8.0.QJWMIXM
 curtana_in_global: CURTANAINGlobal_V11.0.7.0.QJWINXM
 davinci: DAVINCI_V11.0.6.0.QFJCNXM
-davinci_eea_global: DAVINCIEEAGlobal_V11.0.5.0.QFJEUXM
+davinci_eea_global: DAVINCIEEAGlobal_V11.0.6.0.QFJEUXM
 davinci_global: DAVINCIGlobal_V11.0.5.0.QFJMIXM
 davinciin_in_global: DAVINCIININGlobal_V11.0.3.0.QFJINXM
 dipper: MI8_V11.0.8.0.QEACNXM
@@ -58,7 +58,7 @@ lotus_global: MIPLAYGlobal_V11.0.6.0.OFIMIXM
 merlin: MERLIN_V11.0.6.0.QJOCNXM
 merlin_eea_global: MERLINEEAGlobal_V11.0.4.0.QJOEUXM
 merlin_global: MERLINGlobal_V11.0.5.0.QJOMIXM
-monet_eea_global: MONETEEAGlobal_V11.0.10.0.QJIEUXM
+monet_eea_global: MONETEEAGlobal_V11.0.11.0.QJIEUXM
 nitrogen: MIMAX3_V11.0.4.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.2.0.QEDMIXM
 olive: OLIVE_V11.0.11.0.PCNCNXM
@@ -81,7 +81,7 @@ perseus: MIMIX3_V11.0.3.0.QEECNXM
 perseus_global: MIMIX3Global_V11.0.4.0.QEEMIXM
 phoenix: PHOENIX_V11.0.15.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.10.0.QGHINXM
-picasso: PICASSO_V11.1.25.0.QGICNXM
+picasso: PICASSO_V12.0.2.0.QGICNXM
 pine: PINE_V11.0.1.0.QCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.7.0.PCMMIXM
@@ -119,7 +119,7 @@ umi_eea_global: UMIEEAGlobal_V11.0.14.0.QJBEUXM
 umi_global: UMIGlobal_V11.0.2.0.QJBMIXM
 umi_in_global: UMIINGlobal_V11.0.5.0.QJBINXM
 ursa: MI8Explorer_V11.0.3.0.QEHCNXM
-vangogh: VANGOGH_V11.0.10.0.QJVCNXM
+vangogh: VANGOGH_V12.0.3.0.QJVCNXM
 vela: VELA_V11.0.4.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
