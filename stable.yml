@@ -27,8 +27,8 @@ curtana_global: CURTANAGlobal_V11.0.8.0.QJWMIXM
 curtana_in_global: CURTANAINGlobal_V11.0.7.0.QJWINXM
 davinci: DAVINCI_V11.0.6.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.6.0.QFJEUXM
-davinci_global: DAVINCIGlobal_V11.0.5.0.QFJMIXM
-davinciin_in_global: DAVINCIININGlobal_V11.0.3.0.QFJINXM
+davinci_global: DAVINCIGlobal_V11.0.6.0.QFJMIXM
+davinciin_in_global: DAVINCIININGlobal_V11.0.4.0.QFJINXM
 dipper: MI8_V11.0.8.0.QEACNXM
 dipper_global: MI8Global_V11.0.4.0.QEAMIXM
 equuleus: MI8UD_V11.0.2.0.QECCNXM
@@ -46,7 +46,7 @@ joyeuse_eea_global: JOYEUSEEEAGlobal_V11.0.3.0.QJZEUXM
 joyeuse_global: JOYEUSEGlobal_V11.0.2.0.QJZMIXM
 lancelot_eea_global: LANCELOTEEAGlobal_V11.0.2.0.QJCEUXM
 laurus: LAURUS_V11.0.6.0.PFMCNXM
-lavender: LAVENDER_V11.0.7.0.PFGCNXM
+lavender: LAVENDER_V11.0.2.0.QFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V11.0.8.0.PFGEUXM
 lavender_global: LAVENDERGlobal_V11.0.6.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.9.0.PFGINXM
@@ -72,7 +72,7 @@ olivelite_in_global: OLIVELITEINGlobal_V11.0.9.0.PCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.7.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.9.0.PFFINXM
 onclite: ONCLITE_V11.0.4.0.PFLCNXM
-onclite_eea_global: ONCLITEEEAGlobal_V11.0.6.0.PFLEUXM
+onclite_eea_global: ONCLITEEEAGlobal_V11.0.7.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V11.0.5.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V11.0.6.0.PFLINXM
 oxygen: MIMAX2_V11.0.2.0.NDDCNXM
@@ -123,7 +123,7 @@ vangogh: VANGOGH_V12.0.3.0.QJVCNXM
 vela: VELA_V11.0.4.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
-violet: VIOLET_V11.0.8.0.PFHCNXM
+violet: VIOLET_V11.0.1.0.QFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.9.0.PFHINXM
 wayne: MI6X_V11.0.6.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
