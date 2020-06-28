@@ -18,7 +18,7 @@ cereus_global: HM6Global_V11.0.4.0.PCGMIXM
 chiron: MIMIX2_V11.0.5.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.6.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-cmi: CMI_V11.0.18.0.QJACNXM
+cmi: CMI_V12.0.1.0.QJACNXM
 cmi_eea_global: CMIEEAGlobal_V11.0.11.0.QJAEUXM
 cmi_global: CMIGlobal_V11.0.4.0.QJAMIXM
 crux: CRUX_V12.0.2.0.QFXCNXM
@@ -28,7 +28,7 @@ curtana_in_global: CURTANAINGlobal_V11.0.7.0.QJWINXM
 davinci: DAVINCI_V12.0.3.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.5.0.QFJEUXM
 davinci_global: DAVINCIGlobal_V11.0.5.0.QFJMIXM
-davinciin_in_global: DAVINCIININGlobal_V11.0.3.0.QFJINXM
+davinciin_in_global: DAVINCIININGlobal_V12.0.1.0.QFJINXM
 dipper: MI8_V11.0.8.0.QEACNXM
 dipper_global: MI8Global_V11.0.4.0.QEAMIXM
 equuleus: MI8UD_V11.0.2.0.QECCNXM
@@ -51,7 +51,7 @@ lavender: LAVENDER_V11.0.7.0.PFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V11.0.8.0.PFGEUXM
 lavender_global: LAVENDERGlobal_V11.0.6.0.PFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.9.0.PFGINXM
-lmi: LMI_V11.0.16.0.QJKCNXM
+lmi: LMI_V12.0.1.0.QJKCNXM
 lmi_eea_global: LMIEEAGlobal_V11.0.6.0.QJKEUXM
 lmi_global: LMIGlobal_V11.0.2.0.QJKMIXM
 lotus: MIPLAY_V11.0.6.0.OFICNXM
@@ -106,7 +106,7 @@ rosy: HM5_V11.0.4.0.ODACNXM
 rosy_global: HM5Global_V11.0.2.0.ODAMIXM
 sagit: MI6_V11.0.5.0.PCACNXM
 sagit_global: MI6Global_V11.0.6.0.PCAMIXM
-sakura: HM6Pro_V11.0.6.0.PDICNXM
+sakura: HM6Pro_V11.0.5.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.7.0.PDMMIXM
 sirius: MI8SE_V11.0.3.0.QEBCNXM
 toco_eea_global: TOCOEEAGlobal_V11.0.8.0.QFNEUXM
@@ -115,7 +115,7 @@ tucana: TUCANA_V11.1.2.0.QFDCNXM
 tucana_eea_global: TUCANAEEAGlobal_V11.1.1.0.QFDEUXM
 tucana_global: TUCANAGlobal_V11.1.2.0.QFDMIXM
 tulip_global: HMNote6ProGlobal_V11.0.4.0.PEKMIXM
-umi: UMI_V11.0.25.0.QJBCNXM
+umi: UMI_V12.0.1.0.QJBCNXM
 umi_eea_global: UMIEEAGlobal_V11.0.14.0.QJBEUXM
 umi_global: UMIGlobal_V11.0.2.0.QJBMIXM
 umi_in_global: UMIINGlobal_V11.0.5.0.QJBINXM
