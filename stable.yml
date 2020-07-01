@@ -1,7 +1,7 @@
 andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
-atom: ATOM_V11.0.6.0.QJHCNXM
+atom: ATOM_V11.0.5.0.QJHCNXM
 begonia: BEGONIA_V11.0.3.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.5.0.QGGMIXM
@@ -18,7 +18,7 @@ cereus_global: HM6Global_V11.0.4.0.PCGMIXM
 chiron: MIMIX2_V11.0.5.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.6.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-cmi: CMI_V12.0.2.0.QJACNXM
+cmi: CMI_V12.0.1.0.QJACNXM
 cmi_eea_global: CMIEEAGlobal_V11.0.12.0.QJAEUXM
 cmi_global: CMIGlobal_V11.0.4.0.QJAMIXM
 crux: CRUX_V12.0.2.0.QFXCNXM
@@ -38,7 +38,7 @@ ginkgo: GINKGO_V11.0.7.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V11.0.9.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V11.0.5.0.PCOINXM
 grus: GRUS_V11.0.3.0.QFBCNXM
-grus_eea_global: GRUSEEAGlobal_V11.0.2.0.QFBEUXM
+grus_eea_global: GRUSEEAGlobal_V11.0.6.0.QFBEUXM
 grus_global: GRUSGlobal_V11.0.2.0.QFBMIXM
 jason: MINote3_V11.0.4.0.PCHCNXM
 jason_global: MINote3Global_V11.0.5.0.PCHMIXM
@@ -56,7 +56,7 @@ lmi_eea_global: LMIEEAGlobal_V11.0.6.0.QJKEUXM
 lmi_global: LMIGlobal_V11.0.2.0.QJKMIXM
 lotus: MIPLAY_V11.0.6.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.6.0.OFIMIXM
-merlin: MERLIN_V12.0.1.0.QJOCNXM
+merlin: MERLIN_V11.0.6.0.QJOCNXM
 merlin_eea_global: MERLINEEAGlobal_V11.0.4.0.QJOEUXM
 merlin_global: MERLINGlobal_V11.0.5.0.QJOMIXM
 monet_eea_global: MONETEEAGlobal_V11.0.11.0.QJIEUXM
@@ -95,7 +95,7 @@ polaris: MIMIX2S_V11.0.3.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V11.0.5.0.QDGMIXM
 pyxis: PYXIS_V11.0.4.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.0.1.0.QFCEUXM
-pyxis_global: PYXISGlobal_V11.0.1.0.QFCMIXM
+pyxis_global: PYXISGlobal_V11.0.3.0.QFCMIXM
 raphael: RAPHAEL_V12.0.2.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.6.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V12.0.1.0.QFKMIXM
@@ -107,7 +107,7 @@ rosy: HM5_V11.0.4.0.ODACNXM
 rosy_global: HM5Global_V11.0.2.0.ODAMIXM
 sagit: MI6_V11.0.5.0.PCACNXM
 sagit_global: MI6Global_V11.0.6.0.PCAMIXM
-sakura: HM6Pro_V11.0.5.0.PDICNXM
+sakura: HM6Pro_V11.0.6.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.7.0.PDMMIXM
 sirius: MI8SE_V11.0.3.0.QEBCNXM
 toco_eea_global: TOCOEEAGlobal_V11.0.8.0.QFNEUXM
