@@ -1,7 +1,7 @@
 andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
-atom: ATOM_V11.0.5.0.QJHCNXM
+atom: ATOM_V11.0.6.0.QJHCNXM
 begonia: BEGONIA_V11.0.3.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.5.0.QGGMIXM
@@ -18,7 +18,7 @@ cereus_global: HM6Global_V11.0.4.0.PCGMIXM
 chiron: MIMIX2_V11.0.5.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.6.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-cmi: CMI_V12.0.1.0.QJACNXM
+cmi: CMI_V12.0.2.0.QJACNXM
 cmi_eea_global: CMIEEAGlobal_V11.0.12.0.QJAEUXM
 cmi_global: CMIGlobal_V11.0.4.0.QJAMIXM
 crux: CRUX_V12.0.2.0.QFXCNXM
@@ -44,8 +44,8 @@ jason: MINote3_V11.0.4.0.PCHCNXM
 jason_global: MINote3Global_V11.0.5.0.PCHMIXM
 joyeuse_eea_global: JOYEUSEEEAGlobal_V11.0.3.0.QJZEUXM
 joyeuse_global: JOYEUSEGlobal_V11.0.2.0.QJZMIXM
-lancelot: LANCELOT_V11.0.1.0.QJCCNXM
-lancelot_eea_global: LANCELOTEEAGlobal_V11.0.2.0.QJCEUXM
+lancelot: LANCELOT_V11.0.2.0.QJCCNXM
+lancelot_eea_global: LANCELOTEEAGlobal_V11.0.3.0.QJCEUXM
 laurus: LAURUS_V11.0.6.0.PFMCNXM
 lavender: LAVENDER_V11.0.2.0.QFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V11.0.8.0.PFGEUXM
@@ -86,7 +86,7 @@ phoenixin_in_global: PHOENIXININGlobal_V11.0.10.0.QGHINXM
 picasso: PICASSO_V12.0.2.0.QGICNXM
 picasso_48m: PICASSO48M_V11.1.27.0.QGICMXM
 pine: PINE_V11.0.1.0.QCMCNXM
-pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
+pine_eea_global: PINEEEAGlobal_V11.0.2.0.QCMEUXM
 pine_global: PINEGlobal_V11.0.7.0.PCMMIXM
 pine_in_global: PINEINGlobal_V11.0.5.0.PCMINXM
 platina: MI8Lite_V11.0.2.0.QDTCNXM
@@ -99,7 +99,7 @@ pyxis_global: PYXISGlobal_V11.0.3.0.QFCMIXM
 raphael: RAPHAEL_V12.0.2.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.6.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V12.0.1.0.QFKMIXM
-raphaelin_in_global: RAPHAELININGlobal_V11.0.6.0.QFKINXM
+raphaelin_in_global: RAPHAELININGlobal_V12.0.1.0.QFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
 riva: HM5A_V11.0.6.0.OCKCNXM
 riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
