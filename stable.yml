@@ -7,7 +7,7 @@ begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.5.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.8.0.QEJMIXM
-bomb: BOMB_V11.0.5.0.QJLCNXM
+bomb: BOMB_V11.0.3.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
 cepheus: CEPHEUS_V12.0.2.0.QFACNXM
@@ -39,7 +39,7 @@ ginkgo_global: GINKGOGlobal_V11.0.9.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V11.0.5.0.PCOINXM
 grus: GRUS_V11.0.3.0.QFBCNXM
 grus_eea_global: GRUSEEAGlobal_V11.0.6.0.QFBEUXM
-grus_global: GRUSGlobal_V11.0.2.0.QFBMIXM
+grus_global: GRUSGlobal_V11.0.4.0.QFBMIXM
 jason: MINote3_V11.0.4.0.PCHCNXM
 jason_global: MINote3Global_V11.0.5.0.PCHMIXM
 joyeuse_eea_global: JOYEUSEEEAGlobal_V11.0.3.0.QJZEUXM
@@ -86,9 +86,9 @@ phoenixin_in_global: PHOENIXININGlobal_V11.0.10.0.QGHINXM
 picasso: PICASSO_V12.0.2.0.QGICNXM
 picasso_48m: PICASSO48M_V11.1.27.0.QGICMXM
 pine: PINE_V11.0.1.0.QCMCNXM
-pine_eea_global: PINEEEAGlobal_V11.0.2.0.QCMEUXM
+pine_eea_global: PINEEEAGlobal_V11.0.18.0.PCMEUXM
 pine_global: PINEGlobal_V11.0.7.0.PCMMIXM
-pine_in_global: PINEINGlobal_V11.0.1.0.QCMINXM
+pine_in_global: PINEINGlobal_V11.0.5.0.PCMINXM
 platina: MI8Lite_V11.0.2.0.QDTCNXM
 platina_global: MI8LiteGlobal_V11.0.2.0.QDTMIXM
 polaris: MIMIX2S_V11.0.3.0.QDGCNXM
