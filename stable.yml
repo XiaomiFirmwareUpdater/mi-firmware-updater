@@ -12,7 +12,7 @@ cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
 cepheus: CEPHEUS_V12.0.2.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.1.0.QFAEUXM
-cepheus_global: CEPHEUSGlobal_V11.0.6.0.QFAMIXM
+cepheus_global: CEPHEUSGlobal_V12.0.1.0.QFAMIXM
 cereus: HM6_V11.0.4.0.PCGCNXM
 cereus_global: HM6Global_V11.0.4.0.PCGMIXM
 chiron: MIMIX2_V11.0.5.0.PDECNXM
@@ -63,7 +63,7 @@ monet_eea_global: MONETEEAGlobal_V11.0.11.0.QJIEUXM
 monet_global: MONETGlobal_V11.0.4.0.QJIMIXM
 nitrogen: MIMAX3_V11.0.4.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.2.0.QEDMIXM
-olive: OLIVE_V11.0.11.0.PCNCNXM
+olive: OLIVE_V11.0.1.0.QCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.7.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.11.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.12.0.PCNINXM
@@ -97,7 +97,7 @@ pyxis: PYXIS_V11.0.4.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.0.3.0.QFCEUXM
 pyxis_global: PYXISGlobal_V11.0.3.0.QFCMIXM
 raphael: RAPHAEL_V12.0.2.0.QFKCNXM
-raphael_eea_global: RAPHAELEEAGlobal_V11.0.6.0.QFKEUXM
+raphael_eea_global: RAPHAELEEAGlobal_V12.0.1.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V12.0.1.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V11.0.6.0.QFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
@@ -110,7 +110,7 @@ sagit_global: MI6Global_V11.0.6.0.PCAMIXM
 sakura: HM6Pro_V11.0.6.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.7.0.PDMMIXM
 sirius: MI8SE_V11.0.3.0.QEBCNXM
-toco_eea_global: TOCOEEAGlobal_V11.0.8.0.QFNEUXM
+toco_eea_global: TOCOEEAGlobal_V11.0.10.0.QFNEUXM
 toco_global: TOCOGlobal_V11.0.5.0.QFNMIXM
 tucana: TUCANA_V11.1.2.0.QFDCNXM
 tucana_eea_global: TUCANAEEAGlobal_V11.1.1.0.QFDEUXM
@@ -119,7 +119,7 @@ tulip_global: HMNote6ProGlobal_V11.0.4.0.PEKMIXM
 umi: UMI_V12.0.1.0.QJBCNXM
 umi_eea_global: UMIEEAGlobal_V11.0.15.0.QJBEUXM
 umi_global: UMIGlobal_V11.0.5.0.QJBMIXM
-umi_in_global: UMIINGlobal_V11.0.5.0.QJBINXM
+umi_in_global: UMIINGlobal_V11.0.7.0.QJBINXM
 ursa: MI8Explorer_V11.0.3.0.QEHCNXM
 vangogh: VANGOGH_V12.0.3.0.QJVCNXM
 vela: VELA_V11.0.4.0.QFECNXM
