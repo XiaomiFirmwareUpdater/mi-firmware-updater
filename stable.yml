@@ -7,7 +7,7 @@ begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.5.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.8.0.QEJMIXM
-bomb: BOMB_V11.0.3.0.QJLCNXM
+bomb: BOMB_V11.0.5.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
 cepheus: CEPHEUS_V12.0.2.0.QFACNXM
@@ -63,7 +63,7 @@ monet_eea_global: MONETEEAGlobal_V11.0.11.0.QJIEUXM
 monet_global: MONETGlobal_V11.0.4.0.QJIMIXM
 nitrogen: MIMAX3_V11.0.4.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.2.0.QEDMIXM
-olive: OLIVE_V11.0.1.0.QCNCNXM
+olive: OLIVE_V11.0.11.0.PCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.7.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.11.0.PCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.12.0.PCNINXM
@@ -94,12 +94,12 @@ platina_global: MI8LiteGlobal_V11.0.2.0.QDTMIXM
 polaris: MIMIX2S_V11.0.3.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V11.0.5.0.QDGMIXM
 pyxis: PYXIS_V11.0.4.0.QFCCNXM
-pyxis_eea_global: PYXISEEAGlobal_V11.0.1.0.QFCEUXM
+pyxis_eea_global: PYXISEEAGlobal_V11.0.3.0.QFCEUXM
 pyxis_global: PYXISGlobal_V11.0.3.0.QFCMIXM
 raphael: RAPHAEL_V12.0.2.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V11.0.6.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V12.0.1.0.QFKMIXM
-raphaelin_in_global: RAPHAELININGlobal_V12.0.1.0.QFKINXM
+raphaelin_in_global: RAPHAELININGlobal_V11.0.6.0.QFKINXM
 raphaels: RAPHAEL_V11.0.2.0.QFKCNXM
 riva: HM5A_V11.0.6.0.OCKCNXM
 riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
@@ -119,7 +119,7 @@ tulip_global: HMNote6ProGlobal_V11.0.4.0.PEKMIXM
 umi: UMI_V12.0.1.0.QJBCNXM
 umi_eea_global: UMIEEAGlobal_V11.0.15.0.QJBEUXM
 umi_global: UMIGlobal_V11.0.5.0.QJBMIXM
-umi_in_global: UMIINGlobal_V11.0.7.0.QJBINXM
+umi_in_global: UMIINGlobal_V11.0.5.0.QJBINXM
 ursa: MI8Explorer_V11.0.3.0.QEHCNXM
 vangogh: VANGOGH_V12.0.3.0.QJVCNXM
 vela: VELA_V11.0.4.0.QFECNXM
