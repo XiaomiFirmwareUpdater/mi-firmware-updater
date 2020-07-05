@@ -1,13 +1,13 @@
 andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
-atom: ATOM_V11.0.6.0.QJHCNXM
+atom: ATOM_V11.0.5.0.QJHCNXM
 begonia: BEGONIA_V11.0.3.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V11.0.5.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.8.0.QEJMIXM
-bomb: BOMB_V11.0.5.0.QJLCNXM
+bomb: BOMB_V11.0.3.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
 cepheus: CEPHEUS_V12.0.2.0.QFACNXM
@@ -28,7 +28,7 @@ curtana_in_global: CURTANAINGlobal_V11.0.7.0.QJWINXM
 davinci: DAVINCI_V12.0.3.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V11.0.5.0.QFJEUXM
 davinci_global: DAVINCIGlobal_V11.0.5.0.QFJMIXM
-davinciin_in_global: DAVINCIININGlobal_V12.0.2.0.QFJINXM
+davinciin_in_global: DAVINCIININGlobal_V11.0.3.0.QFJINXM
 dipper: MI8_V11.0.8.0.QEACNXM
 dipper_global: MI8Global_V11.0.4.0.QEAMIXM
 equuleus: MI8UD_V11.0.2.0.QECCNXM
@@ -57,7 +57,7 @@ lmi_global: LMIGlobal_V11.0.2.0.QJKMIXM
 lotus: MIPLAY_V11.0.6.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.6.0.OFIMIXM
 merlin: MERLIN_V11.0.6.0.QJOCNXM
-merlin_eea_global: MERLINEEAGlobal_V11.0.5.0.QJOEUXM
+merlin_eea_global: MERLINEEAGlobal_V11.0.4.0.QJOEUXM
 merlin_global: MERLINGlobal_V11.0.5.0.QJOMIXM
 monet_eea_global: MONETEEAGlobal_V11.0.11.0.QJIEUXM
 monet_global: MONETGlobal_V11.0.4.0.QJIMIXM
@@ -113,8 +113,8 @@ sirius: MI8SE_V11.0.3.0.QEBCNXM
 toco_eea_global: TOCOEEAGlobal_V11.0.10.0.QFNEUXM
 toco_global: TOCOGlobal_V11.0.5.0.QFNMIXM
 tucana: TUCANA_V11.1.2.0.QFDCNXM
-tucana_eea_global: TUCANAEEAGlobal_V11.1.2.0.QFDEUXM
-tucana_global: TUCANAGlobal_V11.1.3.0.QFDMIXM
+tucana_eea_global: TUCANAEEAGlobal_V11.1.1.0.QFDEUXM
+tucana_global: TUCANAGlobal_V11.1.2.0.QFDMIXM
 tulip_global: HMNote6ProGlobal_V11.0.4.0.PEKMIXM
 umi: UMI_V12.0.1.0.QJBCNXM
 umi_eea_global: UMIEEAGlobal_V11.0.15.0.QJBEUXM
