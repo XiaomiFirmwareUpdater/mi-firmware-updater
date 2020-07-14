@@ -32,13 +32,15 @@ def initialize():
     Initial loading and preparing
     """
     remove("create_flashable_firmware.py")
-    axel("https://raw.githubusercontent.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/py/xiaomi_flashable_firmware_creator/create_flashable_firmware.py")
+    axel(
+        "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/py/xiaomi_flashable_firmware_creator/create_flashable_firmware.py")
     with open('devices/stable_devices.yml', 'r') as stable_json:
         stable_devices = yaml.load(stable_json, Loader=yaml.CLoader)
     open('log', 'w').close()
-    all_stable = yaml.load(get(
-        "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/" +
-        "stable_recovery/stable_recovery.yml").text, Loader=yaml.CLoader)
+    latest = yaml.load(get(
+        "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/V3/data/latest.yml").text,
+                       Loader=yaml.CLoader)
+    all_stable = [i for i in latest if i['branch'] == 'Stable' and i['method'] == "Recovery"]
     names = yaml.load(get(
         "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/" +
         "devices/names.yml").text, Loader=yaml.CLoader)
@@ -185,11 +187,12 @@ def main():
         #     devices = weekly_devices
         #     branch = WEEKLY
         for i in devices_all:
-            codename = str(i["codename"])
+            codename = i["codename"]
+            filename = i['link'].split('/')[-1]
             if codename in devices:
                 try:
-                    branch.update({codename: str(i["filename"]).split('_')[1] + '_'
-                                             + str(i["filename"]).split('_')[2]})
+                    branch.update({codename: filename.split('_')[1] + '_'
+                                             + filename.split('_')[2]})
                 except IndexError:
                     continue
         with open(variant + '.yml', 'w') as output:
@@ -207,7 +210,7 @@ def main():
         links = {}
         for codename in to_update:
             try:
-                links.update({codename: [i["download"] for i in devices_all
+                links.update({codename: [i["link"] for i in devices_all
                                          if i["codename"] == codename][0]})
             except IndexError:
                 continue
