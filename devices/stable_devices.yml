@@ -37,6 +37,7 @@
 - ginkgo
 - ginkgo_global
 - ginkgo_in_global
+- gram_in_global
 - grus
 - grus_global
 - grus_eea_global
@@ -60,6 +61,7 @@
 - merlin
 - merlin_global
 - merlin_eea_global
+- merlin_in_global
 - monet_eea_global
 - monet_global
 - nitrogen
