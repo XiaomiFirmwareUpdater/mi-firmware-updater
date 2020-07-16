@@ -267,7 +267,6 @@ def main():
             for file in glob("*.zip"):
                 remove(file)
     git_commit_push()
-    update_site()
     post_updates(names)
 
 
