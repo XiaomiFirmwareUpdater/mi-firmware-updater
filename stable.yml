@@ -65,7 +65,7 @@ merlin_in_global: MERLININGlobal_V11.0.2.0.QJOINXM
 monet_eea_global: MONETEEAGlobal_V11.0.11.0.QJIEUXM
 monet_global: MONETGlobal_V11.0.4.0.QJIMIXM
 nitrogen: MIMAX3_V11.0.4.0.QEDCNXM
-nitrogen_global: MIMAX3Global_V11.0.2.0.QEDMIXM
+nitrogen_global: MIMAX3Global_V11.0.4.0.QEDMIXM
 olive: OLIVE_V11.0.1.0.QCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.7.0.PCNEUXM
 olive_global: OLIVEGlobal_V11.0.11.0.PCNMIXM
@@ -93,7 +93,7 @@ pine_eea_global: PINEEEAGlobal_V11.0.2.0.QCMEUXM
 pine_global: PINEGlobal_V11.0.2.0.QCMMIXM
 pine_in_global: PINEINGlobal_V11.0.1.0.QCMINXM
 platina: MI8Lite_V11.0.2.0.QDTCNXM
-platina_global: MI8LiteGlobal_V11.0.2.0.QDTMIXM
+platina_global: MI8LiteGlobal_V11.0.3.0.QDTMIXM
 polaris: MIMIX2S_V11.0.3.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V11.0.5.0.QDGMIXM
 pyxis: PYXIS_V11.0.4.0.QFCCNXM
