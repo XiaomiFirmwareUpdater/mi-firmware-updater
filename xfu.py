@@ -38,7 +38,7 @@ def initialize():
         stable_devices = yaml.load(stable_json, Loader=yaml.CLoader)
     open('log', 'w').close()
     latest = yaml.load(get(
-        "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/V3/data/latest.yml").text,
+        "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/data/latest.yml").text,
                        Loader=yaml.CLoader)
     all_stable = [i for i in latest if i['branch'] == 'Stable' and i['method'] == "Recovery"]
     names = yaml.load(get(
