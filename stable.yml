@@ -62,7 +62,7 @@ merlin: MERLIN_V12.0.1.0.QJOCNXM
 merlin_eea_global: MERLINEEAGlobal_V11.0.5.0.QJOEUXM
 merlin_global: MERLINGlobal_V11.0.5.0.QJOMIXM
 merlin_in_global: MERLININGlobal_V11.0.2.0.QJOINXM
-monet_eea_global: MONETEEAGlobal_V11.0.11.0.QJIEUXM
+monet_eea_global: MONETEEAGlobal_V12.0.1.0.QJIEUXM
 monet_global: MONETGlobal_V11.0.4.0.QJIMIXM
 nitrogen: MIMAX3_V11.0.4.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.4.0.QEDMIXM
@@ -102,7 +102,7 @@ pyxis_global: PYXISGlobal_V11.0.3.0.QFCMIXM
 raphael: RAPHAEL_V12.0.1.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V12.0.1.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V12.0.1.0.QFKMIXM
-raphaelin_in_global: RAPHAELININGlobal_V12.0.1.0.QFKINXM
+raphaelin_in_global: RAPHAELININGlobal_V12.0.2.0.QFKINXM
 raphaels: RAPHAELS_V10.4.2.0.PFKCNXM
 riva: HM5A_V11.0.6.0.OCKCNXM
 riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
@@ -125,7 +125,7 @@ umi_eea_global: UMIEEAGlobal_V11.0.15.0.QJBEUXM
 umi_global: UMIGlobal_V11.0.5.0.QJBMIXM
 umi_in_global: UMIINGlobal_V11.0.7.0.QJBINXM
 ursa: MI8Explorer_V11.0.3.0.QEHCNXM
-vangogh: VANGOGH_V12.0.3.0.QJVCNXM
+vangogh: VANGOGH_V12.0.4.0.QJVCNXM
 vela: VELA_V11.0.4.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
