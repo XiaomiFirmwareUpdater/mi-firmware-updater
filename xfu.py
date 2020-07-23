@@ -43,7 +43,7 @@ def initialize():
     all_stable = [i for i in latest if i['branch'] == 'Stable' and i['method'] == "Recovery"]
     names = yaml.load(get(
         "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/" +
-        "devices/names.yml").text, Loader=yaml.CLoader)
+        "data/devices.yml").text, Loader=yaml.CLoader)
     return stable_devices, all_stable, names
 
 
