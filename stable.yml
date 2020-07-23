@@ -10,7 +10,7 @@ beryllium_global: POCOF1Global_V11.0.9.0.QEJMIXM
 bomb: BOMB_V12.0.2.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
-cepheus: CEPHEUS_V12.0.2.0.QFACNXM
+cepheus: CEPHEUS_V12.0.3.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.1.0.QFAEUXM
 cepheus_global: CEPHEUSGlobal_V12.0.1.0.QFAMIXM
 cereus: HM6_V11.0.4.0.PCGCNXM
@@ -23,7 +23,7 @@ cmi_eea_global: CMIEEAGlobal_V11.0.12.0.QJAEUXM
 cmi_global: CMIGlobal_V11.0.4.0.QJAMIXM
 crux: CRUX_V12.0.3.0.QFXCNXM
 curtana_eea_global: CURTANAEEAGlobal_V11.0.4.0.QJWEUXM
-curtana_global: CURTANAGlobal_V11.0.9.0.QJWMIXM
+curtana_global: CURTANAGlobal_V11.0.10.0.QJWMIXM
 curtana_in_global: CURTANAINGlobal_V11.0.8.0.QJWINXM
 davinci: DAVINCI_V12.0.3.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V12.0.2.0.QFJEUXM
@@ -38,7 +38,7 @@ ginkgo: GINKGO_V11.0.7.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V11.0.9.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V11.0.5.0.PCOINXM
 gram_in_global: GRAMINGlobal_V11.0.3.0.QJPINXM
-grus: GRUS_V11.0.3.0.QFBCNXM
+grus: GRUS_V12.0.1.0.QFBCNXM
 grus_eea_global: GRUSEEAGlobal_V11.0.6.0.QFBEUXM
 grus_global: GRUSGlobal_V11.0.4.0.QFBMIXM
 jason: MINote3_V11.0.4.0.PCHCNXM
@@ -116,7 +116,7 @@ sirius: MI8SE_V11.0.3.0.QEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 toco_eea_global: TOCOEEAGlobal_V11.0.10.0.QFNEUXM
 toco_global: TOCOGlobal_V11.0.7.0.QFNMIXM
-tucana: TUCANA_V11.1.2.0.QFDCNXM
+tucana: TUCANA_V12.0.1.0.QFDCNXM
 tucana_eea_global: TUCANAEEAGlobal_V11.1.2.0.QFDEUXM
 tucana_global: TUCANAGlobal_V11.1.3.0.QFDMIXM
 tulip_global: HMNote6ProGlobal_V11.0.4.0.PEKMIXM
