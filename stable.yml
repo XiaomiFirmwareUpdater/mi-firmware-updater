@@ -4,7 +4,7 @@ andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 atom: ATOM_V12.0.2.0.QJHCNXM
 begonia: BEGONIA_V12.0.2.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
-begonia_global: BEGONIAGlobal_V12.0.0.4.QGGMIXM
+begonia_global: BEGONIAGlobal_V12.0.2.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V11.0.4.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.9.0.QEJMIXM
 bomb: BOMB_V12.0.2.0.QJLCNXM
@@ -20,7 +20,7 @@ chiron_global: MIMIX2Global_V11.0.6.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
 cmi: CMI_V12.0.2.0.QJACNXM
 cmi_eea_global: CMIEEAGlobal_V11.0.12.0.QJAEUXM
-cmi_global: CMIGlobal_V11.0.4.0.QJAMIXM
+cmi_global: CMIGlobal_V12.0.1.0.QJAMIXM
 crux: CRUX_V12.0.3.0.QFXCNXM
 curtana_eea_global: CURTANAEEAGlobal_V11.0.4.0.QJWEUXM
 curtana_global: CURTANAGlobal_V11.0.10.0.QJWMIXM
@@ -90,7 +90,7 @@ picasso: PICASSO_V12.0.2.0.QGICNXM
 picasso_48m: PICASSO48M_V12.0.3.0.QGICMXM
 pine: PINE_V11.0.1.0.QCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.2.0.QCMEUXM
-pine_global: PINEGlobal_V11.0.2.0.QCMMIXM
+pine_global: PINEGlobal_V11.0.3.0.QCMMIXM
 pine_in_global: PINEINGlobal_V11.0.1.0.QCMINXM
 platina: MI8Lite_V11.0.2.0.QDTCNXM
 platina_global: MI8LiteGlobal_V11.0.3.0.QDTMIXM
