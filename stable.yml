@@ -29,7 +29,7 @@ davinci: DAVINCI_V12.0.3.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V12.0.2.0.QFJEUXM
 davinci_global: DAVINCIGlobal_V12.0.2.0.QFJMIXM
 davinciin_in_global: DAVINCIININGlobal_V12.0.3.0.QFJINXM
-dipper: MI8_V11.0.8.0.QEACNXM
+dipper: MI8_V12.0.1.0.QEACNXM
 dipper_global: MI8Global_V11.0.5.0.QEAMIXM
 equuleus: MI8UD_V11.0.2.0.QECCNXM
 equuleus_global: MI8UDGlobal_V11.0.7.0.QECMIXM
@@ -53,7 +53,7 @@ lavender: LAVENDER_V12.0.1.0.QFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V11.0.1.0.QFGEUXM
 lavender_global: LAVENDERGlobal_V11.0.1.0.QFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.2.0.QFGINXM
-lmi: LMI_V12.0.2.0.QJKCNXM
+lmi: LMI_V12.0.5.0.QJKCNXM
 lmi_eea_global: LMIEEAGlobal_V12.0.1.0.QJKEUXM
 lmi_global: LMIGlobal_V12.0.1.0.QJKMIXM
 lotus: MIPLAY_V11.0.6.0.OFICNXM
