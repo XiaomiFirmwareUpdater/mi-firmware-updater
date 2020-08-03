@@ -27,7 +27,7 @@ curtana_global: CURTANAGlobal_V11.0.10.0.QJWMIXM
 curtana_in_global: CURTANAINGlobal_V11.0.8.0.QJWINXM
 davinci: DAVINCI_V12.0.3.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V12.0.2.0.QFJEUXM
-davinci_global: DAVINCIGlobal_V12.0.2.0.QFJMIXM
+davinci_global: DAVINCIGlobal_V12.0.3.0.QFJMIXM
 davinciin_in_global: DAVINCIININGlobal_V12.0.3.0.QFJINXM
 dipper: MI8_V12.0.1.0.QEACNXM
 dipper_global: MI8Global_V11.0.5.0.QEAMIXM
@@ -86,7 +86,7 @@ perseus: MIMIX3_V11.0.3.0.QEECNXM
 perseus_global: MIMIX3Global_V11.0.5.0.QEEMIXM
 phoenix: PHOENIX_V12.0.3.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.11.0.QGHINXM
-picasso: PICASSO_V12.0.2.0.QGICNXM
+picasso: PICASSO_V12.0.5.0.QGICNXM
 picasso_48m: PICASSO48M_V12.0.3.0.QGICMXM
 pine: PINE_V11.0.1.0.QCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.2.0.QCMEUXM
