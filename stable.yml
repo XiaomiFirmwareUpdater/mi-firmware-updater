@@ -1,7 +1,7 @@
 andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.23.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
-atom: ATOM_V12.0.2.0.QJHCNXM
+atom: ATOM_V12.0.4.0.QJHCNXM
 begonia: BEGONIA_V12.0.2.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V12.0.2.0.QGGMIXM
@@ -68,11 +68,11 @@ nitrogen: MIMAX3_V11.0.4.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.4.0.QEDMIXM
 olive: OLIVE_V11.0.1.0.QCNCNXM
 olive_eea_global: OLIVEEEAGlobal_V11.0.7.0.PCNEUXM
-olive_global: OLIVEGlobal_V11.0.11.0.PCNMIXM
+olive_global: OLIVEGlobal_V11.0.2.0.QCNMIXM
 olive_in_global: OLIVEINGlobal_V11.0.12.0.PCNINXM
 olivelite: OLIVELITE_V11.0.2.0.QCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.5.0.PCPEUXM
-olivelite_global: OLIVELITEGlobal_V11.0.7.0.PCPMIXM
+olivelite_global: OLIVELITEGlobal_V11.0.1.0.QCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.9.0.PCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.8.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.9.0.PFFINXM
@@ -84,7 +84,7 @@ oxygen: MIMAX2_V11.0.2.0.NDDCNXM
 oxygen_global: MIMAX2Global_V11.0.2.0.NDDMIXM
 perseus: MIMIX3_V11.0.3.0.QEECNXM
 perseus_global: MIMIX3Global_V11.0.5.0.QEEMIXM
-phoenix: PHOENIX_V12.0.3.0.QGHCNXM
+phoenix: PHOENIX_V12.0.4.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V11.0.11.0.QGHINXM
 picasso: PICASSO_V12.0.5.0.QGICNXM
 picasso_48m: PICASSO48M_V12.0.3.0.QGICMXM
