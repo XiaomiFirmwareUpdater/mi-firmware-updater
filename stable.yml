@@ -56,7 +56,7 @@ lavender_eea_global: LAVENDEREEAGlobal_V11.0.1.0.QFGEUXM
 lavender_global: LAVENDERGlobal_V11.0.1.0.QFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.2.0.QFGINXM
 lmi: LMI_V12.0.5.0.QJKCNXM
-lmi_eea_global: LMIEEAGlobal_V12.0.1.0.QJKEUXM
+lmi_eea_global: LMIEEAGlobal_V12.0.2.0.QJKEUXM
 lmi_global: LMIGlobal_V12.0.1.0.QJKMIXM
 lotus: MIPLAY_V11.0.6.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.6.0.OFIMIXM
@@ -91,7 +91,7 @@ phoenixin_in_global: PHOENIXININGlobal_V11.0.11.0.QGHINXM
 picasso: PICASSO_V12.0.5.0.QGICNXM
 picasso_48m: PICASSO48M_V12.0.3.0.QGICMXM
 pine: PINE_V11.0.1.0.QCMCNXM
-pine_eea_global: PINEEEAGlobal_V11.0.2.0.QCMEUXM
+pine_eea_global: PINEEEAGlobal_V11.0.3.0.QCMEUXM
 pine_global: PINEGlobal_V11.0.3.0.QCMMIXM
 pine_in_global: PINEINGlobal_V11.0.1.0.QCMINXM
 platina: MI8Lite_V11.0.2.0.QDTCNXM
@@ -138,5 +138,5 @@ whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
 willow_eea_global: WILLOWEEAGlobal_V11.0.10.0.PCXEUXM
 willow_global: WILLOWGlobal_V11.0.4.0.PCXMIXM
-ysl: HMS2_V11.0.3.0.PEFCNXM
+ysl: HMS2_V12.0.4.0.PEFCNXM
 ysl_global: HMS2Global_V11.0.5.0.PEFMIXM
