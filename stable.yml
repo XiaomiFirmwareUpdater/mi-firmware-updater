@@ -4,7 +4,7 @@ andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 atom: ATOM_V12.0.4.0.QJHCNXM
 begonia: BEGONIA_V12.0.2.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
-begonia_global: BEGONIAGlobal_V12.0.2.0.QGGMIXM
+begonia_global: BEGONIAGlobal_V12.0.0.4.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V12.0.1.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.9.0.QEJMIXM
 bomb: BOMB_V12.0.5.0.QJLCNXM
@@ -28,7 +28,7 @@ curtana_eea_global: CURTANAEEAGlobal_V11.0.4.0.QJWEUXM
 curtana_global: CURTANAGlobal_V11.0.10.0.QJWMIXM
 curtana_in_global: CURTANAINGlobal_V11.0.8.0.QJWINXM
 dandelion: DANDELION_V12.0.2.0.QCDCNXM
-dandelion_eea_global: DANDELIONEEAGlobal_V12.0.4.0.QCDEUXM
+dandelion_eea_global: DANDELIONEEAGlobal_V12.0.6.0.QCDEUXM
 dandelion_global: DANDELIONGlobal_V12.0.3.0.QCDMIXM
 davinci: DAVINCI_V12.0.4.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V12.0.2.0.QFJEUXM
@@ -66,7 +66,7 @@ lotus_global: MIPLAYGlobal_V11.0.6.0.OFIMIXM
 merlin: MERLIN_V12.0.5.0.QJOCNXM
 merlin_eea_global: MERLINEEAGlobal_V12.0.1.0.QJOEUXM
 merlin_global: MERLINGlobal_V12.0.2.0.QJOMIXM
-merlin_in_global: MERLININGlobal_V11.0.5.0.QJOINXM
+merlin_in_global: MERLININGlobal_V12.0.2.0.QJOINXM
 monet_eea_global: MONETEEAGlobal_V12.0.1.0.QJIEUXM
 monet_global: MONETGlobal_V11.0.4.0.QJIMIXM
 nitrogen: MIMAX3_V12.0.1.0.QEDCNXM
@@ -78,7 +78,7 @@ olive_in_global: OLIVEINGlobal_V11.0.1.0.QCNINXM
 olivelite: OLIVELITE_V11.0.2.0.QCPCNXM
 olivelite_eea_global: OLIVELITEEEAGlobal_V11.0.1.0.QCPEUXM
 olivelite_global: OLIVELITEGlobal_V11.0.1.0.QCPMIXM
-olivelite_in_global: OLIVELITEINGlobal_V11.0.9.0.PCPINXM
+olivelite_in_global: OLIVELITEINGlobal_V11.0.1.0.QCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.8.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.9.0.PFFINXM
 onclite: ONCLITE_V11.0.2.0.QFLCNXM
@@ -101,7 +101,7 @@ platina: MI8Lite_V12.0.1.0.QDTCNXM
 platina_global: MI8LiteGlobal_V11.0.3.0.QDTMIXM
 polaris: MIMIX2S_V12.0.1.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V11.0.5.0.QDGMIXM
-pyxis: PYXIS_V11.0.4.0.QFCCNXM
+pyxis: PYXIS_V12.0.2.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.0.3.0.QFCEUXM
 pyxis_global: PYXISGlobal_V11.0.3.0.QFCMIXM
 raphael: RAPHAEL_V12.0.3.0.QFKCNXM
@@ -124,12 +124,12 @@ toco_global: TOCOGlobal_V11.0.6.0.QFNMIXM
 tucana: TUCANA_V12.0.1.0.QFDCNXM
 tucana_eea_global: TUCANAEEAGlobal_V11.1.2.0.QFDEUXM
 tucana_global: TUCANAGlobal_V12.0.1.0.QFDMIXM
-tulip_global: HMNote6ProGlobal_V11.0.4.0.PEKMIXM
+tulip_global: HMNote6ProGlobal_V11.0.5.0.PEKMIXM
 umi: UMI_V12.0.7.0.QJBCNXM
 umi_eea_global: UMIEEAGlobal_V12.0.1.0.QJBEUXM
 umi_global: UMIGlobal_V12.0.1.0.QJBMIXM
 umi_in_global: UMIINGlobal_V11.0.7.0.QJBINXM
-ursa: MI8Explorer_V11.0.3.0.QEHCNXM
+ursa: MI8Explorer_V12.0.2.0.QEHCNXM
 vangogh: VANGOGH_V12.0.5.0.QJVCNXM
 vela: VELA_V11.0.4.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
