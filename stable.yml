@@ -3,7 +3,7 @@ andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.25.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 atom: ATOM_V12.0.4.0.QJHCNXM
 begonia: BEGONIA_V12.0.2.0.QGGCNXM
-begonia_eea_global: BEGONIAEEAGlobal_V11.0.3.0.QGGEUXM
+begonia_eea_global: BEGONIAEEAGlobal_V12.0.1.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V12.0.2.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V12.0.1.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.9.0.QEJMIXM
@@ -13,7 +13,7 @@ cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
 cas: CAS_V12.0.8.0.QJJCNXM
 cepheus: CEPHEUS_V12.0.3.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.1.0.QFAEUXM
-cepheus_global: CEPHEUSGlobal_V12.0.1.0.QFAMIXM
+cepheus_global: CEPHEUSGlobal_V12.0.2.0.QFAMIXM
 cereus: HM6_V11.0.4.0.PCGCNXM
 cereus_global: HM6Global_V11.0.4.0.PCGMIXM
 cezanne: CEZANNE_V12.0.8.0.QJNCNXM
@@ -131,7 +131,7 @@ umi_global: UMIGlobal_V12.0.1.0.QJBMIXM
 umi_in_global: UMIINGlobal_V12.0.2.0.QJBINXM
 ursa: MI8Explorer_V12.0.2.0.QEHCNXM
 vangogh: VANGOGH_V12.0.5.0.QJVCNXM
-vela: VELA_V11.0.4.0.QFECNXM
+vela: VELA_V12.0.2.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
 violet: VIOLET_V12.0.2.0.QFHCNXM
