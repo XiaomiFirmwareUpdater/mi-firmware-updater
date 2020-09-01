@@ -1,6 +1,8 @@
 andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V10.3.25.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
+angelica_eea_global: ANGELICAEEAGlobal_V12.0.3.0.QCREUXM
+angelica_global: ANGELICAGlobal_V12.0.4.0.QCRMIXM
 atom: ATOM_V12.0.4.0.QJHCNXM
 begonia: BEGONIA_V12.0.2.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V12.0.1.0.QGGEUXM
