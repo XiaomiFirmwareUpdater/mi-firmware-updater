@@ -6,7 +6,7 @@ angelica_global: ANGELICAGlobal_V12.0.4.0.QCRMIXM
 atom: ATOM_V12.0.4.0.QJHCNXM
 begonia: BEGONIA_V12.0.2.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V12.0.1.0.QGGEUXM
-begonia_global: BEGONIAGlobal_V12.0.0.4.QGGMIXM
+begonia_global: BEGONIAGlobal_V12.0.2.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V12.0.1.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.9.0.QEJMIXM
 bomb: BOMB_V12.0.5.0.QJLCNXM
@@ -102,7 +102,7 @@ pine_in_global: PINEINGlobal_V11.0.2.0.QCMINXM
 platina: MI8Lite_V12.0.1.0.QDTCNXM
 platina_global: MI8LiteGlobal_V11.0.3.0.QDTMIXM
 polaris: MIMIX2S_V12.0.1.0.QDGCNXM
-polaris_global: MIMIX2SGlobal_V11.0.5.0.QDGMIXM
+polaris_global: MIMIX2SGlobal_V12.0.1.0.QDGMIXM
 pyxis: PYXIS_V12.0.2.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.0.3.0.QFCEUXM
 pyxis_global: PYXISGlobal_V11.0.3.0.QFCMIXM
@@ -137,7 +137,7 @@ vela: VELA_V12.0.2.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
 violet: VIOLET_V12.0.2.0.QFHCNXM
-violet_in_global: VIOLETINGlobal_V11.0.10.0.PFHINXM
+violet_in_global: VIOLETINGlobal_V11.0.2.0.QFHINXM
 wayne: MI6X_V11.0.6.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
