@@ -5,3 +5,4 @@ create_flashable_firmware.py
 *__pycache__*
 *tmp*
 .idea
+*env*
