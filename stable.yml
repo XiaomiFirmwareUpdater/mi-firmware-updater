@@ -14,7 +14,7 @@ cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
 cas: CAS_V12.0.8.0.QJJCNXM
 cepheus: CEPHEUS_V12.0.3.0.QFACNXM
-cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.1.0.QFAEUXM
+cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.2.0.QFAEUXM
 cepheus_global: CEPHEUSGlobal_V12.0.2.0.QFAMIXM
 cereus: HM6_V11.0.4.0.PCGCNXM
 cereus_global: HM6Global_V11.0.4.0.PCGMIXM
@@ -70,7 +70,7 @@ merlin: MERLIN_V12.0.5.0.QJOCNXM
 merlin_eea_global: MERLINEEAGlobal_V12.0.2.0.QJOEUXM
 merlin_global: MERLINGlobal_V12.0.2.0.QJOMIXM
 merlin_in_global: MERLININGlobal_V12.0.2.0.QJOINXM
-monet_eea_global: MONETEEAGlobal_V12.0.1.0.QJIEUXM
+monet_eea_global: MONETEEAGlobal_V12.0.2.0.QJIEUXM
 monet_global: MONETGlobal_V11.0.4.0.QJIMIXM
 nitrogen: MIMAX3_V12.0.1.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.4.0.QEDMIXM
@@ -129,7 +129,7 @@ tucana_eea_global: TUCANAEEAGlobal_V11.1.2.0.QFDEUXM
 tucana_global: TUCANAGlobal_V12.0.2.0.QFDMIXM
 tulip_global: HMNote6ProGlobal_V11.0.5.0.PEKMIXM
 umi: UMI_V12.0.7.0.QJBCNXM
-umi_eea_global: UMIEEAGlobal_V12.0.1.0.QJBEUXM
+umi_eea_global: UMIEEAGlobal_V12.0.2.0.QJBEUXM
 umi_global: UMIGlobal_V12.0.1.0.QJBMIXM
 umi_in_global: UMIINGlobal_V12.0.2.0.QJBINXM
 ursa: MI8Explorer_V12.0.2.0.QEHCNXM
