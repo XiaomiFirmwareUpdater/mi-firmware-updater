@@ -20,7 +20,7 @@ cepheus_global: CEPHEUSGlobal_V12.0.2.0.QFAMIXM
 cereus: HM6_V11.0.4.0.PCGCNXM
 cereus_global: HM6Global_V11.0.4.0.PCGMIXM
 cezanne: CEZANNE_V12.0.11.0.QJNCNXM
-chiron: MIMIX2_V11.0.5.0.PDECNXM
+chiron: MIMIX2_V12.0.1.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.6.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
 cmi: CMI_V12.0.3.0.QJACNXM
@@ -72,7 +72,7 @@ merlin_eea_global: MERLINEEAGlobal_V12.0.2.0.QJOEUXM
 merlin_global: MERLINGlobal_V12.0.2.0.QJOMIXM
 merlin_in_global: MERLININGlobal_V12.0.2.0.QJOINXM
 monet_eea_global: MONETEEAGlobal_V12.0.2.0.QJIEUXM
-monet_global: MONETGlobal_V11.0.4.0.QJIMIXM
+monet_global: MONETGlobal_V12.0.1.0.QJIMIXM
 nitrogen: MIMAX3_V12.0.1.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.4.0.QEDMIXM
 olive: OLIVE_V11.0.1.0.QCNCNXM
@@ -86,9 +86,9 @@ olivelite_in_global: OLIVELITEINGlobal_V11.0.1.0.QCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.8.0.PCQINXM
 onc_in_global: ONCINGlobal_V11.0.10.0.PFFINXM
 onclite: ONCLITE_V11.0.2.0.QFLCNXM
-onclite_eea_global: ONCLITEEEAGlobal_V11.0.7.0.PFLEUXM
+onclite_eea_global: ONCLITEEEAGlobal_V11.0.10.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V11.0.6.0.PFLMIXM
-onclite_in_global: ONCLITEINGlobal_V11.0.6.0.PFLINXM
+onclite_in_global: ONCLITEINGlobal_V11.0.7.0.PFLINXM
 oxygen: MIMAX2_V11.0.2.0.NDDCNXM
 oxygen_global: MIMAX2Global_V11.0.2.0.NDDMIXM
 perseus: MIMIX3_V12.0.1.0.QEECNXM
