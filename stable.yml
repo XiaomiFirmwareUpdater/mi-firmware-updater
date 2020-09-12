@@ -12,7 +12,7 @@ beryllium_global: POCOF1Global_V11.0.9.0.QEJMIXM
 bomb: BOMB_V12.0.5.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
-cas: CAS_V12.0.8.0.QJJCNXM
+cas: CAS_V12.0.10.0.QJJCNXM
 cattail_in_global: CATTAILINGlobal_V12.0.1.0.QCTINXM
 cepheus: CEPHEUS_V12.0.3.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.2.0.QFAEUXM
@@ -114,7 +114,7 @@ raphael_eea_global: RAPHAELEEAGlobal_V12.0.2.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V12.0.2.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V12.0.2.0.QFKINXM
 raphaels: RAPHAELS_V10.4.2.0.PFKCNXM
-riva: HM5A_V11.0.6.0.OCKCNXM
+riva: HM5A_V11.0.2.0.OCKCNXM
 riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
 rosy: HM5_V11.0.4.0.ODACNXM
 rosy_global: HM5Global_V11.0.2.0.ODAMIXM
