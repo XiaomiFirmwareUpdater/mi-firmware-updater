@@ -104,7 +104,7 @@ pine_global: PINEGlobal_V11.0.3.0.QCMMIXM
 pine_in_global: PINEINGlobal_V11.0.2.0.QCMINXM
 platina: MI8Lite_V12.0.1.0.QDTCNXM
 platina_global: MI8LiteGlobal_V11.0.3.0.QDTMIXM
-polaris: MIMIX2S_V11.0.3.0.QDGCNXM
+polaris: MIMIX2S_V12.0.1.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V12.0.1.0.QDGMIXM
 pyxis: PYXIS_V12.0.2.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.0.3.0.QFCEUXM
@@ -122,7 +122,7 @@ sagit: MI6_V11.0.5.0.PCACNXM
 sagit_global: MI6Global_V11.0.6.0.PCAMIXM
 sakura: HM6Pro_V12.0.1.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.7.0.PDMMIXM
-sirius: MI8SE_V11.0.2.0.QEBCNXM
+sirius: MI8SE_V11.0.3.0.QEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 toco_eea_global: TOCOEEAGlobal_V11.0.11.0.QFNEUXM
 toco_global: TOCOGlobal_V11.0.6.0.QFNMIXM
