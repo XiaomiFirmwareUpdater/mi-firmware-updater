@@ -6,7 +6,7 @@ angelica_global: ANGELICAGlobal_V12.0.4.0.QCRMIXM
 atom: ATOM_V12.0.4.0.QJHCNXM
 begonia: BEGONIA_V12.0.2.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V12.0.1.0.QGGEUXM
-begonia_global: BEGONIAGlobal_V12.0.2.0.QGGMIXM
+begonia_global: BEGONIAGlobal_V12.0.3.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V12.0.1.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.9.0.QEJMIXM
 bomb: BOMB_V12.0.5.0.QJLCNXM
@@ -72,7 +72,7 @@ merlin: MERLIN_V12.0.5.0.QJOCNXM
 merlin_eea_global: MERLINEEAGlobal_V12.0.2.0.QJOEUXM
 merlin_global: MERLINGlobal_V12.0.2.0.QJOMIXM
 merlin_in_global: MERLININGlobal_V12.0.2.0.QJOINXM
-monet_eea_global: MONETEEAGlobal_V12.0.1.0.QJIEUXM
+monet_eea_global: MONETEEAGlobal_V12.0.2.0.QJIEUXM
 monet_global: MONETGlobal_V12.0.1.0.QJIMIXM
 nitrogen: MIMAX3_V12.0.1.0.QEDCNXM
 nitrogen_global: MIMAX3Global_V11.0.4.0.QEDMIXM
@@ -106,7 +106,7 @@ platina: MI8Lite_V12.0.1.0.QDTCNXM
 platina_global: MI8LiteGlobal_V11.0.3.0.QDTMIXM
 polaris: MIMIX2S_V12.0.1.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V12.0.1.0.QDGMIXM
-pyxis: PYXIS_V11.0.4.0.QFCCNXM
+pyxis: PYXIS_V12.0.2.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V11.0.3.0.QFCEUXM
 pyxis_global: PYXISGlobal_V12.0.3.0.QFCMIXM
 raphael: RAPHAEL_V12.0.3.0.QFKCNXM
@@ -114,7 +114,7 @@ raphael_eea_global: RAPHAELEEAGlobal_V12.0.2.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V12.0.2.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V12.0.2.0.QFKINXM
 raphaels: RAPHAELS_V10.4.2.0.PFKCNXM
-riva: HM5A_V11.0.6.0.OCKCNXM
+riva: HM5A_V11.0.2.0.OCKCNXM
 riva_global: HM5AGlobal_V11.0.2.0.OCKMIXM
 rosy: HM5_V11.0.4.0.ODACNXM
 rosy_global: HM5Global_V11.0.2.0.ODAMIXM
@@ -124,7 +124,7 @@ sakura: HM6Pro_V12.0.1.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.7.0.PDMMIXM
 sirius: MI8SE_V11.0.3.0.QEBCNXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
-toco_eea_global: TOCOEEAGlobal_V11.0.11.0.QFNEUXM
+toco_eea_global: TOCOEEAGlobal_V12.0.1.0.QFNEUXM
 toco_global: TOCOGlobal_V11.0.6.0.QFNMIXM
 tucana: TUCANA_V12.0.1.0.QFDCNXM
 tucana_eea_global: TUCANAEEAGlobal_V12.0.1.0.QFDEUXM
