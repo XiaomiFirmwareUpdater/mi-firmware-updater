@@ -3,6 +3,7 @@ andromeda_eea_global: ANDROMEDAEEAGlobal_V12.0.1.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
 angelica_eea_global: ANGELICAEEAGlobal_V12.0.3.0.QCREUXM
 angelica_global: ANGELICAGlobal_V12.0.4.0.QCRMIXM
+angelican_eea_global: ANGELICANEEAGlobal_V12.0.3.0.QCSEUXM
 atom: ATOM_V12.0.4.0.QJHCNXM
 begonia: BEGONIA_V12.0.2.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V12.0.1.0.QGGEUXM
@@ -16,8 +17,8 @@ cas: CAS_V12.0.10.0.QJJCNXM
 cattail_in_global: CATTAILINGlobal_V12.0.1.0.QCTINXM
 cepheus: CEPHEUS_V12.0.3.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.2.0.QFAEUXM
-cepheus_global: CEPHEUSGlobal_V12.0.1.0.QFAMIXM
-cereus: HM6_V11.0.4.0.PCGCNXM
+cepheus_global: CEPHEUSGlobal_V12.0.2.0.QFAMIXM
+cereus: HM6_V11.0.3.0.PCGCNXM
 cereus_global: HM6Global_V11.0.4.0.PCGMIXM
 cezanne: CEZANNE_V12.0.11.0.QJNCNXM
 chiron: MIMIX2_V12.0.1.0.PDECNXM
@@ -66,7 +67,7 @@ lavender_in_global: LAVENDERINGlobal_V11.0.2.0.QFGINXM
 lmi: LMI_V12.0.9.0.QJKCNXM
 lmi_eea_global: LMIEEAGlobal_V12.0.2.0.QJKEUXM
 lmi_global: LMIGlobal_V12.0.3.0.QJKMIXM
-lotus: MIPLAY_V11.0.7.0.OFICNXM
+lotus: MIPLAY_V11.0.6.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.8.0.OFIMIXM
 merlin: MERLIN_V12.0.5.0.QJOCNXM
 merlin_eea_global: MERLINEEAGlobal_V12.0.2.0.QJOEUXM
@@ -107,7 +108,7 @@ platina_global: MI8LiteGlobal_V11.0.3.0.QDTMIXM
 polaris: MIMIX2S_V12.0.1.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V12.0.1.0.QDGMIXM
 pyxis: PYXIS_V12.0.2.0.QFCCNXM
-pyxis_eea_global: PYXISEEAGlobal_V11.0.3.0.QFCEUXM
+pyxis_eea_global: PYXISEEAGlobal_V11.0.2.0.QFCEUXM
 pyxis_global: PYXISGlobal_V12.0.3.0.QFCMIXM
 raphael: RAPHAEL_V12.0.3.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V12.0.2.0.QFKEUXM
@@ -143,7 +144,7 @@ violet: VIOLET_V12.0.2.0.QFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.2.0.QFHINXM
 wayne: MI6X_V11.0.6.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
-whyred_global: HMNote5Global_V11.0.2.0.PEIMIXM
+whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
 willow_eea_global: WILLOWEEAGlobal_V11.0.11.0.PCXEUXM
 willow_global: WILLOWGlobal_V11.0.5.0.PCXMIXM
 ysl: HMS2_V12.0.4.0.PEFCNXM
