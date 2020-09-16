@@ -16,7 +16,7 @@ cas: CAS_V12.0.10.0.QJJCNXM
 cattail_in_global: CATTAILINGlobal_V12.0.1.0.QCTINXM
 cepheus: CEPHEUS_V12.0.3.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.2.0.QFAEUXM
-cepheus_global: CEPHEUSGlobal_V12.0.2.0.QFAMIXM
+cepheus_global: CEPHEUSGlobal_V12.0.1.0.QFAMIXM
 cereus: HM6_V11.0.4.0.PCGCNXM
 cereus_global: HM6Global_V11.0.4.0.PCGMIXM
 cezanne: CEZANNE_V12.0.11.0.QJNCNXM
@@ -30,7 +30,7 @@ crux: CRUX_V12.0.3.0.QFXCNXM
 curtana_eea_global: CURTANAEEAGlobal_V11.0.4.0.QJWEUXM
 curtana_global: CURTANAGlobal_V11.0.11.0.QJWMIXM
 curtana_in_global: CURTANAINGlobal_V11.0.8.0.QJWINXM
-dandelion: DANDELION_V12.0.2.0.QCDCNXM
+dandelion: DANDELION_V12.0.3.0.QCDCNXM
 dandelion_eea_global: DANDELIONEEAGlobal_V12.0.6.0.QCDEUXM
 dandelion_global: DANDELIONGlobal_V12.0.5.0.QCDMIXM
 dandelion_in_global: DANDELIONINGlobal_V12.0.3.0.QCDINXM
@@ -57,7 +57,7 @@ joyeuse_global: JOYEUSEGlobal_V11.0.5.0.QJZMIXM
 lancelot: LANCELOT_V11.0.5.0.QJCCNXM
 lancelot_eea_global: LANCELOTEEAGlobal_V11.0.5.0.QJCEUXM
 lancelot_global: LANCELOTGlobal_V11.0.5.0.QJCMIXM
-lancelot_in_global: LANCELOTINGlobal_V11.0.2.0.QJCINXM
+lancelot_in_global: LANCELOTINGlobal_V11.0.4.0.QJCINXM
 laurus: LAURUS_V11.0.6.0.PFMCNXM
 lavender: LAVENDER_V12.0.1.0.QFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V11.0.1.0.QFGEUXM
@@ -143,7 +143,7 @@ violet: VIOLET_V12.0.2.0.QFHCNXM
 violet_in_global: VIOLETINGlobal_V11.0.2.0.QFHINXM
 wayne: MI6X_V11.0.6.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
-whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
+whyred_global: HMNote5Global_V11.0.2.0.PEIMIXM
 willow_eea_global: WILLOWEEAGlobal_V11.0.11.0.PCXEUXM
 willow_global: WILLOWGlobal_V11.0.5.0.PCXMIXM
 ysl: HMS2_V12.0.4.0.PEFCNXM
