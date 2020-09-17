@@ -108,7 +108,7 @@ platina_global: MI8LiteGlobal_V11.0.3.0.QDTMIXM
 polaris: MIMIX2S_V12.0.1.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V12.0.1.0.QDGMIXM
 pyxis: PYXIS_V12.0.2.0.QFCCNXM
-pyxis_eea_global: PYXISEEAGlobal_V11.0.3.0.QFCEUXM
+pyxis_eea_global: PYXISEEAGlobal_V12.0.3.0.QFCEUXM
 pyxis_global: PYXISGlobal_V12.0.3.0.QFCMIXM
 raphael: RAPHAEL_V12.0.3.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V12.0.2.0.QFKEUXM
