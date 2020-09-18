@@ -24,13 +24,13 @@ cezanne: CEZANNE_V12.0.11.0.QJNCNXM
 chiron: MIMIX2_V12.0.1.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.6.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
-cmi: CMI_V12.0.3.0.QJACNXM
+cmi: CMI_V12.0.6.0.QJACNXM
 cmi_eea_global: CMIEEAGlobal_V12.0.2.0.QJAEUXM
 cmi_global: CMIGlobal_V12.0.1.0.QJAMIXM
 crux: CRUX_V12.0.3.0.QFXCNXM
 curtana_eea_global: CURTANAEEAGlobal_V11.0.4.0.QJWEUXM
 curtana_global: CURTANAGlobal_V11.0.11.0.QJWMIXM
-curtana_in_global: CURTANAINGlobal_V11.0.8.0.QJWINXM
+curtana_in_global: CURTANAINGlobal_V12.0.1.0.QJWINXM
 dandelion: DANDELION_V12.0.3.0.QCDCNXM
 dandelion_eea_global: DANDELIONEEAGlobal_V12.0.6.0.QCDEUXM
 dandelion_global: DANDELIONGlobal_V12.0.5.0.QCDMIXM
@@ -45,8 +45,8 @@ equuleus: MI8UD_V12.0.2.0.QECCNXM
 equuleus_global: MI8UDGlobal_V11.0.9.0.QECMIXM
 excalibur_in_global: EXCALIBURINGlobal_V11.0.4.0.QJXINXM
 ginkgo: GINKGO_V11.0.7.0.PCOCNXM
-ginkgo_global: GINKGOGlobal_V11.0.9.0.PCOMIXM
-ginkgo_in_global: GINKGOINGlobal_V11.0.5.0.PCOINXM
+ginkgo_global: GINKGOGlobal_V11.0.10.0.PCOMIXM
+ginkgo_in_global: GINKGOINGlobal_V11.0.6.0.PCOINXM
 gram_in_global: GRAMINGlobal_V11.0.3.0.QJPINXM
 grus: GRUS_V12.0.2.0.QFBCNXM
 grus_eea_global: GRUSEEAGlobal_V12.0.1.0.QFBEUXM
@@ -54,7 +54,7 @@ grus_global: GRUSGlobal_V12.0.1.0.QFBMIXM
 jason: MINote3_V12.0.1.0.PCHCNXM
 jason_global: MINote3Global_V11.0.5.0.PCHMIXM
 joyeuse_eea_global: JOYEUSEEEAGlobal_V11.0.4.0.QJZEUXM
-joyeuse_global: JOYEUSEGlobal_V11.0.5.0.QJZMIXM
+joyeuse_global: JOYEUSEGlobal_V11.0.7.0.QJZMIXM
 lancelot: LANCELOT_V11.0.5.0.QJCCNXM
 lancelot_eea_global: LANCELOTEEAGlobal_V11.0.5.0.QJCEUXM
 lancelot_global: LANCELOTGlobal_V11.0.5.0.QJCMIXM
@@ -70,7 +70,7 @@ lmi_global: LMIGlobal_V12.0.3.0.QJKMIXM
 lotus: MIPLAY_V11.0.7.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.8.0.OFIMIXM
 merlin: MERLIN_V12.0.5.0.QJOCNXM
-merlin_eea_global: MERLINEEAGlobal_V12.0.2.0.QJOEUXM
+merlin_eea_global: MERLINEEAGlobal_V12.0.3.0.QJOEUXM
 merlin_global: MERLINGlobal_V12.0.2.0.QJOMIXM
 merlin_in_global: MERLININGlobal_V12.0.2.0.QJOINXM
 monet_eea_global: MONETEEAGlobal_V12.0.2.0.QJIEUXM
@@ -100,7 +100,7 @@ phoenixin_in_global: PHOENIXININGlobal_V12.0.1.0.QGHINXM
 picasso: PICASSO_V12.0.5.0.QGICNXM
 picasso_48m: PICASSO48M_V12.0.3.0.QGICMXM
 pine: PINE_V11.0.1.0.QCMCNXM
-pine_eea_global: PINEEEAGlobal_V11.0.3.0.QCMEUXM
+pine_eea_global: PINEEEAGlobal_V11.0.4.0.QCMEUXM
 pine_global: PINEGlobal_V11.0.3.0.QCMMIXM
 pine_in_global: PINEINGlobal_V11.0.2.0.QCMINXM
 platina: MI8Lite_V12.0.1.0.QDTCNXM
