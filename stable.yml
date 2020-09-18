@@ -14,7 +14,7 @@ bomb: BOMB_V12.0.5.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
 cas: CAS_V12.0.10.0.QJJCNXM
-cattail_in_global: CATTAILINGlobal_V12.0.1.0.QCTINXM
+cattail_in_global: CATTAILINGlobal_V12.0.2.0.QCTINXM
 cepheus: CEPHEUS_V12.0.3.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.2.0.QFAEUXM
 cepheus_global: CEPHEUSGlobal_V12.0.2.0.QFAMIXM
@@ -123,7 +123,11 @@ sagit: MI6_V11.0.5.0.PCACNXM
 sagit_global: MI6Global_V11.0.6.0.PCAMIXM
 sakura: HM6Pro_V12.0.1.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.7.0.PDMMIXM
+shiva_in_global: SHIVAINGlobal_V11.0.4.0.QJRINXM
 sirius: MI8SE_V11.0.3.0.QEBCNXM
+surya_eea_global: SURYAEEAGlobal_V12.0.2.0.QJGEUXM
+surya_global: SURYAGlobal_V12.0.2.0.QJGMIXM
+surya_in_global: SURYAINGlobal_V12.0.2.0.QJGINXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
 toco_eea_global: TOCOEEAGlobal_V12.0.1.0.QFNEUXM
 toco_global: TOCOGlobal_V11.0.6.0.QFNMIXM
