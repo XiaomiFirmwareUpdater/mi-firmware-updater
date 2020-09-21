@@ -104,7 +104,7 @@ pine_eea_global: PINEEEAGlobal_V11.0.4.0.QCMEUXM
 pine_global: PINEGlobal_V11.0.3.0.QCMMIXM
 pine_in_global: PINEINGlobal_V11.0.2.0.QCMINXM
 platina: MI8Lite_V12.0.1.0.QDTCNXM
-platina_global: MI8LiteGlobal_V11.0.3.0.QDTMIXM
+platina_global: MI8LiteGlobal_V12.0.3.0.QDTMIXM
 polaris: MIMIX2S_V12.0.1.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V12.0.1.0.QDGMIXM
 pyxis: PYXIS_V12.0.2.0.QFCCNXM
@@ -145,7 +145,7 @@ vela: VELA_V12.0.2.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
 violet: VIOLET_V12.0.2.0.QFHCNXM
-violet_in_global: VIOLETINGlobal_V11.0.2.0.QFHINXM
+violet_in_global: VIOLETINGlobal_V12.0.1.0.QFHINXM
 wayne: MI6X_V11.0.6.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
 whyred_global: HMNote5Global_V11.0.3.0.PEIMIXM
