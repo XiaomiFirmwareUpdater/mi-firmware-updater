@@ -1,6 +1,6 @@
 andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V12.0.1.0.PEMEUXM
-andromeda_global: ANDROMEDAGlobal_V10.3.20.0.PEMMIXM
+andromeda_global: ANDROMEDAGlobal_V12.0.1.0.PEMMIXM
 angelica_eea_global: ANGELICAEEAGlobal_V12.0.4.0.QCREUXM
 angelica_global: ANGELICAGlobal_V12.0.5.0.QCRMIXM
 angelican_eea_global: ANGELICANEEAGlobal_V12.0.3.0.QCSEUXM
@@ -12,7 +12,7 @@ begoniain_in_global: BEGONIAININGlobal_V12.0.1.0.QGGINXM
 beryllium_global: POCOF1Global_V11.0.9.0.QEJMIXM
 bomb: BOMB_V12.0.5.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
-cactus_global: HM6AGlobal_V11.0.8.0.PCBMIXM
+cactus_global: HM6AGlobal_V11.0.9.0.PCBMIXM
 cas: CAS_V12.0.10.0.QJJCNXM
 cattail_in_global: CATTAILINGlobal_V12.0.2.0.QCTINXM
 cepheus: CEPHEUS_V12.0.3.0.QFACNXM
@@ -20,7 +20,7 @@ cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.2.0.QFAEUXM
 cepheus_global: CEPHEUSGlobal_V12.0.2.0.QFAMIXM
 cereus: HM6_V11.0.4.0.PCGCNXM
 cereus_global: HM6Global_V11.0.4.0.PCGMIXM
-cezanne: CEZANNE_V12.0.11.0.QJNCNXM
+cezanne: CEZANNE_V12.0.12.0.QJNCNXM
 chiron: MIMIX2_V12.0.1.0.PDECNXM
 chiron_global: MIMIX2Global_V11.0.6.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
@@ -87,7 +87,7 @@ olivelite_global: OLIVELITEGlobal_V11.0.1.0.QCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.1.0.QCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.1.0.QCQINXM
 onc_in_global: ONCINGlobal_V11.0.10.0.PFFINXM
-onclite: ONCLITE_V11.0.2.0.QFLCNXM
+onclite: ONCLITE_V11.0.5.0.PFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V11.0.10.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V11.0.6.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V11.0.7.0.PFLINXM
