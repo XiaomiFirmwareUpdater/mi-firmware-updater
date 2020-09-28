@@ -6,7 +6,7 @@ angelica_global: ANGELICAGlobal_V12.0.5.0.QCRMIXM
 angelican_eea_global: ANGELICANEEAGlobal_V12.0.3.0.QCSEUXM
 angelican_global: ANGELICANGlobal_V12.0.2.0.QCSMIXM
 atom: ATOM_V12.0.4.0.QJHCNXM
-begonia: BEGONIA_V12.0.2.0.QGGCNXM
+begonia: BEGONIA_V12.0.3.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V12.0.1.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V12.0.3.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V12.0.2.0.QGGINXM
@@ -28,7 +28,7 @@ clover: MIPAD4_V10.3.2.0.ODJCNXM
 cmi: CMI_V12.0.3.0.QJACNXM
 cmi_eea_global: CMIEEAGlobal_V12.0.2.0.QJAEUXM
 cmi_global: CMIGlobal_V12.0.1.0.QJAMIXM
-crux: CRUX_V12.0.3.0.QFXCNXM
+crux: CRUX_V12.0.4.0.QFXCNXM
 curtana_eea_global: CURTANAEEAGlobal_V11.0.4.0.QJWEUXM
 curtana_global: CURTANAGlobal_V11.0.11.0.QJWMIXM
 curtana_in_global: CURTANAINGlobal_V12.0.1.0.QJWINXM
