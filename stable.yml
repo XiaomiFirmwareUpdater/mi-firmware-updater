@@ -48,7 +48,7 @@ excalibur_in_global: EXCALIBURINGlobal_V11.0.4.0.QJXINXM
 ginkgo: GINKGO_V11.0.7.0.PCOCNXM
 ginkgo_global: GINKGOGlobal_V11.0.10.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V11.0.6.0.PCOINXM
-gram_in_global: GRAMINGlobal_V11.0.3.0.QJPINXM
+gram_in_global: GRAMINGlobal_V12.0.1.0.QJPINXM
 grus: GRUS_V12.0.2.0.QFBCNXM
 grus_eea_global: GRUSEEAGlobal_V12.0.1.0.QFBEUXM
 grus_global: GRUSGlobal_V12.0.1.0.QFBMIXM
@@ -65,9 +65,9 @@ lavender: LAVENDER_V12.0.1.0.QFGCNXM
 lavender_eea_global: LAVENDEREEAGlobal_V11.0.1.0.QFGEUXM
 lavender_global: LAVENDERGlobal_V11.0.1.0.QFGMIXM
 lavender_in_global: LAVENDERINGlobal_V11.0.4.0.QFGINXM
-lmi: LMI_V12.0.9.0.QJKCNXM
+lmi: LMI_V12.0.5.0.QJKCNXM
 lmi_eea_global: LMIEEAGlobal_V12.0.2.0.QJKEUXM
-lmi_global: LMIGlobal_V12.0.3.0.QJKMIXM
+lmi_global: LMIGlobal_V12.0.4.0.QJKMIXM
 lotus: MIPLAY_V11.0.7.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.8.0.OFIMIXM
 merlin: MERLIN_V12.0.5.0.QJOCNXM
@@ -88,7 +88,7 @@ olivelite_global: OLIVELITEGlobal_V11.0.1.0.QCPMIXM
 olivelite_in_global: OLIVELITEINGlobal_V11.0.1.0.QCPINXM
 olivewood_in_global: OLIVEWOODINGlobal_V11.0.1.0.QCQINXM
 onc_in_global: ONCINGlobal_V11.0.10.0.PFFINXM
-onclite: ONCLITE_V11.0.5.0.PFLCNXM
+onclite: ONCLITE_V11.0.2.0.QFLCNXM
 onclite_eea_global: ONCLITEEEAGlobal_V11.0.10.0.PFLEUXM
 onclite_global: ONCLITEGlobal_V11.0.6.0.PFLMIXM
 onclite_in_global: ONCLITEINGlobal_V11.0.7.0.PFLINXM
