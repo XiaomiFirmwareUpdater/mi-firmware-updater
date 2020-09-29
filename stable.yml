@@ -16,7 +16,7 @@ cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.9.0.PCBMIXM
 cas: CAS_V12.0.10.0.QJJCNXM
 cattail_in_global: CATTAILINGlobal_V12.0.2.0.QCTINXM
-cepheus: CEPHEUS_V12.0.3.0.QFACNXM
+cepheus: CEPHEUS_V12.0.4.0.QFACNXM
 cepheus_eea_global: CEPHEUSEEAGlobal_V12.0.2.0.QFAEUXM
 cepheus_global: CEPHEUSGlobal_V12.0.2.0.QFAMIXM
 cereus: HM6_V11.0.4.0.PCGCNXM
@@ -111,7 +111,7 @@ polaris_global: MIMIX2SGlobal_V12.0.1.0.QDGMIXM
 pyxis: PYXIS_V12.0.2.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V12.0.3.0.QFCEUXM
 pyxis_global: PYXISGlobal_V12.0.3.0.QFCMIXM
-raphael: RAPHAEL_V12.0.3.0.QFKCNXM
+raphael: RAPHAEL_V12.0.4.0.QFKCNXM
 raphael_eea_global: RAPHAELEEAGlobal_V12.0.2.0.QFKEUXM
 raphael_global: RAPHAELGlobal_V12.0.2.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V12.0.3.0.QFKINXM
