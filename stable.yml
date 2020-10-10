@@ -34,13 +34,13 @@ curtana_global: CURTANAGlobal_V11.0.11.0.QJWMIXM
 curtana_in_global: CURTANAINGlobal_V12.0.1.0.QJWINXM
 dandelion: DANDELION_V12.0.3.0.QCDCNXM
 dandelion_eea_global: DANDELIONEEAGlobal_V12.0.6.0.QCDEUXM
-dandelion_global: DANDELIONGlobal_V12.0.5.0.QCDMIXM
+dandelion_global: DANDELIONGlobal_V12.0.6.0.QCDMIXM
 dandelion_in_global: DANDELIONINGlobal_V12.0.4.0.QCDINXM
 davinci: DAVINCI_V12.0.4.0.QFJCNXM
 davinci_eea_global: DAVINCIEEAGlobal_V12.0.2.0.QFJEUXM
 davinci_global: DAVINCIGlobal_V12.0.3.0.QFJMIXM
 davinciin_in_global: DAVINCIININGlobal_V12.0.3.0.QFJINXM
-dipper: MI8_V12.0.1.0.QEACNXM
+dipper: MI8_V12.0.2.0.QEACNXM
 dipper_global: MI8Global_V11.0.5.0.QEAMIXM
 equuleus: MI8UD_V12.0.2.0.QECCNXM
 equuleus_global: MI8UDGlobal_V11.0.11.0.QECMIXM
@@ -73,7 +73,7 @@ lotus: MIPLAY_V11.0.7.0.OFICNXM
 lotus_global: MIPLAYGlobal_V11.0.8.0.OFIMIXM
 merlin: MERLIN_V12.0.5.0.QJOCNXM
 merlin_eea_global: MERLINEEAGlobal_V12.0.3.0.QJOEUXM
-merlin_global: MERLINGlobal_V12.0.4.0.QJOMIXM
+merlin_global: MERLINGlobal_V12.0.2.0.QJOMIXM
 merlin_in_global: MERLININGlobal_V12.0.4.0.QJOINXM
 monet_eea_global: MONETEEAGlobal_V12.0.2.0.QJIEUXM
 monet_global: MONETGlobal_V12.0.1.0.QJIMIXM
@@ -127,7 +127,7 @@ sakura: HM6Pro_V12.0.1.0.PDICNXM
 sakura_india_global: HM6ProINGlobal_V11.0.7.0.PDMMIXM
 shiva_in_global: SHIVAINGlobal_V11.0.4.0.QJRINXM
 sirius: MI8SE_V12.0.2.0.QEBCNXM
-surya_eea_global: SURYAEEAGlobal_V12.0.2.0.QJGEUXM
+surya_eea_global: SURYAEEAGlobal_V12.0.3.0.QJGEUXM
 surya_global: SURYAGlobal_V12.0.3.0.QJGMIXM
 surya_in_global: SURYAINGlobal_V12.0.2.0.QJGINXM
 tiffany: MI5X_V11.0.3.0.ODBCNXM
@@ -145,7 +145,7 @@ vangogh: VANGOGH_V12.0.6.0.QJVCNXM
 vela: VELA_V12.0.2.0.QFECNXM
 vince: HM5Plus_V11.0.3.0.OEGCNXM
 vince_global: HM5PlusGlobal_V11.0.2.0.OEGMIXM
-violet: VIOLET_V12.0.2.0.QFHCNXM
+violet: VIOLET_V12.0.3.0.QFHCNXM
 violet_in_global: VIOLETINGlobal_V12.0.1.0.QFHINXM
 wayne: MI6X_V11.0.6.0.PDCCNXM
 whyred: HMNote5_V11.0.2.0.PEICNXM
