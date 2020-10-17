@@ -5,17 +5,16 @@
 import subprocess
 from datetime import datetime, date
 from glob import glob
-from hashlib import md5
 from os import remove, system, environ, path, getcwd, chdir, rename
-from urllib.error import HTTPError
 
 import yaml
 from github3 import GitHub, exceptions
-from helpers import set_region, set_version, md5_check, set_folder
 from hurry.filesize import size, alternative
-from post_updates import post_updates
-from axel import axel
 from requests import get
+from xiaomi_flashable_firmware_creator.firmware_creator import FlashableFirmwareCreator
+
+from helpers import set_region, set_version, md5_check, set_folder
+from post_updates import post_updates
 
 GIT_OAUTH_TOKEN = environ['XFU']
 GIT = GitHub(token=GIT_OAUTH_TOKEN)
@@ -31,15 +30,12 @@ def initialize():
     """
     Initial loading and preparing
     """
-    remove("create_flashable_firmware.py")
-    axel(
-        "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/xiaomi-flashable-firmware-creator.py/py/xiaomi_flashable_firmware_creator/create_flashable_firmware.py")
     with open('devices/stable_devices.yml', 'r') as stable_json:
         stable_devices = yaml.load(stable_json, Loader=yaml.CLoader)
     open('log', 'w').close()
     latest = yaml.load(get(
-        "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/miui-updates-tracker/master/data/latest.yml").text,
-                       Loader=yaml.CLoader)
+        "https://raw.githubusercontent.com/XiaomiFirmwareUpdater/"
+        "miui-updates-tracker/master/data/latest.yml").text, Loader=yaml.CLoader)
     all_stable = []
     added_devices = []
     for update in latest:
@@ -248,13 +244,12 @@ def main():
                 continue
             # start working
             print("Starting download " + file)
-            axel(url.replace("bigota", "airtel.bigota"), WORK_DIR, num_connections=128)
+            download_url = url.replace("bigota", "airtel.bigota")
             if codename in ARB_DEVICES:
-                subprocess.call(['python3', 'create_flashable_firmware.py', '-F', file])
-                subprocess.call(['python3', 'create_flashable_firmware.py', '-N', file])
-            else:
-                subprocess.call(['python3', 'create_flashable_firmware.py', '-F', file])
-            remove(file)
+                firmware_creator = FlashableFirmwareCreator(download_url, 'nonarb', WORK_DIR)
+                firmware_creator.auto()
+            firmware_creator = FlashableFirmwareCreator(download_url, 'firmware', WORK_DIR)
+            firmware_creator.auto()
             # upload to OSDN/GitHub
             today = str(date.today().strftime('%d.%m.%Y'))
             for file in glob("fw_*.zip"):
