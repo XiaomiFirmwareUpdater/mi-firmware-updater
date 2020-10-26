@@ -14,7 +14,7 @@ begonia: BEGONIA_V12.0.3.0.QGGCNXM
 begonia_eea_global: BEGONIAEEAGlobal_V12.0.2.0.QGGEUXM
 begonia_global: BEGONIAGlobal_V12.0.3.0.QGGMIXM
 begoniain_in_global: BEGONIAININGlobal_V12.0.2.0.QGGINXM
-beryllium_global: POCOF1Global_V12.0.2.0.QEJMIXM
+beryllium_global: POCOF1Global_V12.0.1.0.QEJMIXM
 bomb: BOMB_V12.0.5.0.QJLCNXM
 cactus: HM6A_V11.0.5.0.PCBCNXM
 cactus_global: HM6AGlobal_V11.0.9.0.PCBMIXM
@@ -31,7 +31,7 @@ chiron_global: MIMIX2Global_V12.0.1.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
 cmi: CMI_V12.1.3.0.RJACNXM
 cmi_eea_global: CMIEEAGlobal_V12.0.2.0.QJAEUXM
-cmi_global: CMIGlobal_V12.1.2.0.RJAMIXM
+cmi_global: CMIGlobal_V12.0.5.0.QJAMIXM
 crux: CRUX_V12.0.4.0.QFXCNXM
 curtana_eea_global: CURTANAEEAGlobal_V12.0.1.0.QJWEUXM
 curtana_global: CURTANAGlobal_V11.0.11.0.QJWMIXM
@@ -55,7 +55,7 @@ ginkgo_global: GINKGOGlobal_V11.0.11.0.PCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V11.0.6.0.PCOINXM
 gram_in_global: GRAMINGlobal_V12.0.1.0.QJPINXM
 grus: GRUS_V12.0.2.0.QFBCNXM
-grus_eea_global: GRUSEEAGlobal_V12.0.1.0.QFBEUXM
+grus_eea_global: GRUSEEAGlobal_V12.0.2.0.QFBEUXM
 grus_global: GRUSGlobal_V12.0.2.0.QFBMIXM
 jason: MINote3_V12.0.1.0.PCHCNXM
 jason_global: MINote3Global_V12.0.1.0.PCHMIXM
@@ -103,7 +103,7 @@ perseus: MIMIX3_V12.0.1.0.QEECNXM
 perseus_global: MIMIX3Global_V12.0.1.0.QEEMIXM
 phoenix: PHOENIX_V12.0.5.0.QGHCNXM
 phoenixin_in_global: PHOENIXININGlobal_V12.0.2.0.QGHINXM
-picasso: PICASSO_V12.0.6.0.QGICNXM
+picasso: PICASSO_V12.0.7.0.QGICNXM
 picasso_48m: PICASSO48M_V12.0.3.0.QGICMXM
 pine: PINE_V11.0.2.0.QCMCNXM
 pine_eea_global: PINEEEAGlobal_V11.0.4.0.QCMEUXM
@@ -115,10 +115,10 @@ polaris: MIMIX2S_V12.0.1.0.QDGCNXM
 polaris_global: MIMIX2SGlobal_V12.0.1.0.QDGMIXM
 pyxis: PYXIS_V12.0.2.0.QFCCNXM
 pyxis_eea_global: PYXISEEAGlobal_V12.0.3.0.QFCEUXM
-pyxis_global: PYXISGlobal_V12.0.3.0.QFCMIXM
+pyxis_global: PYXISGlobal_V12.0.4.0.QFCMIXM
 raphael: RAPHAEL_V12.0.5.0.QFKCNXM
-raphael_eea_global: RAPHAELEEAGlobal_V12.0.2.0.QFKEUXM
-raphael_global: RAPHAELGlobal_V12.0.2.0.QFKMIXM
+raphael_eea_global: RAPHAELEEAGlobal_V12.0.3.0.QFKEUXM
+raphael_global: RAPHAELGlobal_V12.0.3.0.QFKMIXM
 raphaelin_in_global: RAPHAELININGlobal_V12.0.3.0.QFKINXM
 raphaels: RAPHAELS_V10.4.2.0.PFKCNXM
 riva: HM5A_V11.0.6.0.OCKCNXM
