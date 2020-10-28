@@ -2,7 +2,7 @@ andromeda: ANDROMEDA_V10.3.18.0.PEMCNXM
 andromeda_eea_global: ANDROMEDAEEAGlobal_V12.0.1.0.PEMEUXM
 andromeda_global: ANDROMEDAGlobal_V12.0.1.0.PEMMIXM
 angelica_eea_global: ANGELICAEEAGlobal_V12.0.4.0.QCREUXM
-angelica_global: ANGELICAGlobal_V12.0.5.0.QCRMIXM
+angelica_global: ANGELICAGlobal_V12.0.7.0.QCRMIXM
 angelicain_in_global: ANGELICAININGlobal_V12.0.2.0.QCRINXM
 angelican_eea_global: ANGELICANEEAGlobal_V12.0.3.0.QCSEUXM
 angelican_global: ANGELICANGlobal_V12.0.2.0.QCSMIXM
@@ -52,7 +52,7 @@ equuleus_global: MI8UDGlobal_V11.0.9.0.QECMIXM
 excalibur_in_global: EXCALIBURINGlobal_V12.0.1.0.QJXINXM
 gauguin_eea_global: GAUGUINEEAGlobal_V12.0.1.0.QJSEUXM
 ginkgo: GINKGO_V11.0.8.0.PCOCNXM
-ginkgo_global: GINKGOGlobal_V11.0.11.0.PCOMIXM
+ginkgo_global: GINKGOGlobal_V12.0.1.0.QCOMIXM
 ginkgo_in_global: GINKGOINGlobal_V11.0.6.0.PCOINXM
 gram_in_global: GRAMINGlobal_V12.0.1.0.QJPINXM
 grus: GRUS_V12.0.2.0.QFBCNXM
