@@ -31,7 +31,7 @@ chiron: MIMIX2_V12.0.1.0.PDECNXM
 chiron_global: MIMIX2Global_V12.0.1.0.PDEMIXM
 clover: MIPAD4_V10.3.2.0.ODJCNXM
 cmi: CMI_V12.0.9.0.QJACNXM
-cmi_eea_global: CMIEEAGlobal_V12.0.5.0.QJAEUXM
+cmi_eea_global: CMIEEAGlobal_V12.0.2.0.QJAEUXM
 cmi_global: CMIGlobal_V12.1.2.0.RJAMIXM
 crux: CRUX_V12.0.4.0.QFXCNXM
 curtana_eea_global: CURTANAEEAGlobal_V12.0.1.0.QJWEUXM
