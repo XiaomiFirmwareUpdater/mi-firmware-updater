@@ -1,8 +1,0 @@
-requests
-axel-wrapper
-PyYAML
-hurry.filesize
-github3.py==1.3.0
-python-telegram-bot==12.4.2
-selenium
-xiaomi_flashable_firmware_creator

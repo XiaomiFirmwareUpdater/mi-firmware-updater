@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "xiaomi-firmware-updater"
+version = "6.0.0"
+description = ""
+authors = ["yshalsager <ysh-alsager@hotmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.24.0"
+PyYAML = "^5.3.1"
+"github3.py" = "^1.3.0"
+python-telegram-bot = "12.4.2"
+xiaomi_flashable_firmware_creator = "^2.0.1"
+humanize = "^3.1.0"
+
+[tool.poetry.dev-dependencies]
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

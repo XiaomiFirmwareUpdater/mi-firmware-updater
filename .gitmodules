@@ -1,3 +1,6 @@
-[submodule "xda_poster"]
-	path = xda_poster
-	url = https://github.com/yshalsager/XDA-Poster
+[submodule "xiaomi_firmware_updater/social/xda_poster"]
+	path = xiaomi_firmware_updater/social/xda_poster
+	url = https://github.com/yshalsager/XDA-Poster.git
+[submodule "xiaomi_firmware_updater/common/database"]
+	path = xiaomi_firmware_updater/common/database
+	url = https://github.com/XiaomiFirmwareUpdater/database.git
