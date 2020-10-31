@@ -2,6 +2,7 @@
 Xiaomi Firmware Updater main module
 This module is the entry point for the tracker script and contains the controller part
 """
+import pickle
 import logging
 from os import remove
 from pathlib import Path
@@ -80,6 +81,8 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
             if uploaded:
                 new_update = add_to_database(rom, file)
                 new_updates.append(new_update)
+                with open('new_updates', 'wb') as f:
+                    pickle.dump(new_updates, f)
             remove(file)
 
     if new_updates:
