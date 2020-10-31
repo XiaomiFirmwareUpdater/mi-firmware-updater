@@ -3,9 +3,9 @@ Xiaomi Firmware Updater main module
 This module is the entry point for the tracker script and contains the controller part
 """
 import logging
-from glob import glob
 from os import remove
 from pathlib import Path
+from typing import Optional
 
 from github3 import GitHub
 from requests import head
@@ -14,6 +14,7 @@ from xiaomi_flashable_firmware_creator.firmware_creator import FlashableFirmware
 from xiaomi_firmware_updater import WORK_DIR, GIT_OAUTH_TOKEN
 from xiaomi_firmware_updater.common.database import session, latest_updates, latest_firmware
 from xiaomi_firmware_updater.common.database.firmware import get_current_devices, update_in_db
+from xiaomi_firmware_updater.rom import MiuiRom
 from xiaomi_firmware_updater.social.post_updates import post_updates
 from xiaomi_firmware_updater.utils.db import add_to_database
 from xiaomi_firmware_updater.utils.upload import upload_non_arb, upload_fw
@@ -23,7 +24,7 @@ GIT = GitHub(token=GIT_OAUTH_TOKEN)
 ARB_DEVICES = ['nitrogen', 'nitrogen_global', 'sakura', 'sakura_india_global', 'wayne']
 
 
-def main(mode: str):
+def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] = None):
     """Main function"""
     new_updates: list = []
     if mode == 'auto':
@@ -33,12 +34,11 @@ def main(mode: str):
         latest_firmware_files: set = {'_'.join(i.filename.split('_')[2:]) for i in session.query(latest_firmware)}
         new_roms = [i for i in latest_roms if i.filename in latest_files.difference(latest_firmware_files)]
     elif mode == 'manual':
-        with open(Path(mode).absolute(), 'r') as _links:
-            links = _links.read().splitlines()
-        new_roms = []  # TODO: This should be a rom object or another way should be implemented
+        links = links_file.read_text().splitlines()
+        new_roms = [MiuiRom(link) for link in links]
     elif mode == 'offline':
-        roms = glob("miui_*.zip")
-        new_roms = []
+        roms = roms_dir.glob("miui_*.zip")
+        new_roms = [MiuiRom(rom.name) for rom in roms]
     else:
         new_roms = []
     for rom in new_roms:
@@ -52,14 +52,17 @@ def main(mode: str):
             # Skip 404 links.
             continue
         logger.info(f"Starting download {rom.filename}...")
-        download_url = rom.link.replace("bigota", "airtel.bigota")
+        if hasattr(rom, 'path'):
+            input_file = rom.path
+        else:
+            input_file = rom.link.replace("bigota", "airtel.bigota")
         out_files = []
         if rom.codename in ARB_DEVICES:
-            firmware_creator = FlashableFirmwareCreator(download_url, 'nonarb', WORK_DIR)
+            firmware_creator = FlashableFirmwareCreator(input_file, 'nonarb', WORK_DIR)
             out = firmware_creator.auto()
             if out:
                 out_files.append(out)
-        firmware_creator = FlashableFirmwareCreator(download_url, 'firmware', WORK_DIR)
+        firmware_creator = FlashableFirmwareCreator(input_file, 'firmware', WORK_DIR)
         out = firmware_creator.auto()
         logger.info(f'Created firmware file {out}')
         if out:
