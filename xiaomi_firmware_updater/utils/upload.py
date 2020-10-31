@@ -2,6 +2,7 @@ import subprocess
 from datetime import date
 
 from github3.exceptions import NotFoundError, UnprocessableEntity
+from requests.exceptions import ConnectionError
 
 
 def set_version(file: str) -> str:
@@ -52,6 +53,9 @@ def upload_fw(git, file, codename):
         print(f'Uploaded {asset.name} Successfully to release {release.name}')
     except UnprocessableEntity:
         print(f'{file} is already uploaded')
+    except ConnectionError:
+        return False
+    return True
 
 
 def upload_non_arb(file, codename):

@@ -69,15 +69,17 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
             out_files.append(out)
         # upload to OSDN/GitHub
         for file in out_files:
+            uploaded = None
             codename = rom.codename.split("_")[0]
             if file.startswith("fw-non-arb_"):
                 logger.info("Uploading non-arb firmware...")
                 upload_non_arb(file, codename)
             else:
                 logger.info("Uploading firmware...")
-                upload_fw(GIT, file, codename)
-            new_update = add_to_database(rom, file)
-            new_updates.append(new_update)
+                uploaded = upload_fw(GIT, file, codename)
+            if uploaded:
+                new_update = add_to_database(rom, file)
+                new_updates.append(new_update)
             remove(file)
 
     if new_updates:
