@@ -81,7 +81,7 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
             if uploaded:
                 new_update = add_to_database(rom, file)
                 new_updates.append(new_update)
-                with open('new_updates', 'wb') as f:
+                with open(f'{WORK_DIR}/new_updates', 'wb') as f:
                     pickle.dump(new_updates, f)
             remove(file)
 
