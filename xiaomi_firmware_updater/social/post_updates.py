@@ -1,14 +1,13 @@
 """ XiaomiFirmwareUpdater updates posting script"""
 # pylint: disable=too-many-locals
-
+import logging
 from os import environ
 from time import sleep
 from typing import List
 
 import yaml
-from requests import get
 from humanize import naturalsize
-from telegram import Bot
+from requests import get
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater
 
@@ -25,6 +24,8 @@ XDA_PASSWORD = environ['XDA_PASSWORD']
 UPDATER = Updater(token=BOT_TOKEN, use_context=True)
 
 SITE = 'https://xiaomifirmwareupdater.com'
+
+logger = logging.getLogger(__name__)
 
 
 class Message:
@@ -73,8 +74,8 @@ class Message:
             .replace('$process', self.process.capitalize()) \
             .replace('$version', self.update.version).replace('$android', self.update.android) \
             .replace('$region', self.device_info.region) \
-            .replace('$zip_name', self.update.filename).replace('$zip_size', naturalsize(self.update.size)) \
-            .replace('$md5_hash', self.update.size) \
+            .replace('$zip_name', self.update.filename).replace('$zip_size', str(naturalsize(self.update.size))) \
+            .replace('$md5_hash', self.update.md5) \
             .replace('$link', f"{SITE}/firmware/{self.codename}")
 
 
@@ -111,7 +112,7 @@ def post_updates(updates: List[Update]):
         UPDATER.bot.send_message(chat_id=TG_CHAT, text=telegram_message,
                                  parse_mode='Markdown', disable_web_page_preview='yes',
                                  reply_markup=reply_markup)
-        sleep(1)
+        sleep(3)
         # post to XDA
         try:
             if isinstance(xda, XDAPoster):
@@ -122,5 +123,5 @@ def post_updates(updates: List[Update]):
                 xda_post = message.generate_xda_message(xda.template)
                 xda.post(xda_post_id, xda_post)
                 sleep(15)
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(e)
