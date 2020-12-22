@@ -7,7 +7,6 @@ from typing import List
 
 import yaml
 from humanize import naturalsize
-from requests import get
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater
 
@@ -18,8 +17,7 @@ from ..common.database.models.firmware_update import Update
 
 BOT_TOKEN = environ['bottoken']
 TG_CHAT = "@XiaomiFirmwareUpdater"
-XDA_USERNAME = environ['XDA_USERNAME']
-XDA_PASSWORD = environ['XDA_PASSWORD']
+XDA_KEY = environ['XDA_KEY']
 
 UPDATER = Updater(token=BOT_TOKEN, use_context=True)
 
@@ -82,29 +80,19 @@ class Message:
 class XDAPoster(XDA):
     """XDA API client"""
 
-    def __init__(self):
+    def __init__(self, api_key):
         with open(f'{WORK_DIR}/xda_threads.yml', 'r') as file:
             self.threads = yaml.load(file, Loader=yaml.CLoader)
         with open(f'{WORK_DIR}/xda_template.txt', 'r') as template:
             self.template = template.read()
-        super().__init__()
-
-    def get_post_id(self, codename):
-        """Get post ID from xda thread"""
-        return get("https://api.xda-developers.com/v3/posts",
-                   params={"threadid": self.threads[codename]}
-                   ).json()["results"][0]["postid"]
+        super().__init__(api_key)
 
 
 def post_updates(updates: List[Update]):
     """
     Post updates to telegram and xda
     """
-    xda = None
-    try:
-        xda = XDAPoster()
-    except Exception:
-        pass
+    xda = XDAPoster(XDA_KEY)
     for update in updates:
         message = Message(update)
         # post to tg
@@ -119,9 +107,8 @@ def post_updates(updates: List[Update]):
                 codename = update.codename.split('_')[0]
                 if codename not in xda.threads.keys():
                     continue
-                xda_post_id = xda.get_post_id(codename)
                 xda_post = message.generate_xda_message(xda.template)
-                xda.post(xda_post_id, xda_post)
+                xda.post(xda.threads[codename], xda_post)
                 sleep(15)
         except Exception as e:
             logger.warning(e)
