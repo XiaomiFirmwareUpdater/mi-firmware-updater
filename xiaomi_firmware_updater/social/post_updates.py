@@ -2,6 +2,7 @@
 # pylint: disable=too-many-locals
 import logging
 from os import environ
+from string import Template
 from time import sleep
 from typing import List
 
@@ -68,13 +69,13 @@ class Message:
 
     def generate_xda_message(self, xda_template):
         """Generates XDA message from update info"""
-        return xda_template.replace('$branch', self.update.branch) \
-            .replace('$process', self.process.capitalize()) \
-            .replace('$version', self.update.version).replace('$android', self.update.android) \
-            .replace('$region', self.device_info.region) \
-            .replace('$zip_name', self.update.filename).replace('$zip_size', str(naturalsize(self.update.size))) \
-            .replace('$md5_hash', self.update.md5) \
-            .replace('$link', f"{SITE}/firmware/{self.codename}")
+        return xda_template.substitute(
+            codename=self.codename, branch=self.update.branch,
+            process=self.process.capitalize(),
+            version=self.update.version, android=self.update.android,
+            region=self.device_info.region, zip_name=self.update.filename,
+            zip_size=str(naturalsize(self.update.size)), md5_hash=self.update.md5,
+            link=f"{SITE}/firmware/{self.codename}")
 
 
 class XDAPoster(XDA):
@@ -84,7 +85,7 @@ class XDAPoster(XDA):
         with open(f'{WORK_DIR}/xda_threads.yml', 'r') as file:
             self.threads = yaml.load(file, Loader=yaml.CLoader)
         with open(f'{WORK_DIR}/xda_template.txt', 'r') as template:
-            self.template = template.read()
+            self.template = Template(template.read())
         super().__init__(api_key)
 
 
