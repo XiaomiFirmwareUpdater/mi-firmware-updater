@@ -39,7 +39,7 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
         new_roms = [MiuiRom(link) for link in links]
     elif mode == 'offline':
         roms = roms_dir.glob("miui_*.zip")
-        new_roms = [MiuiRom(rom.name) for rom in roms]
+        new_roms = [MiuiRom(rom) for rom in roms]
     else:
         new_roms = []
     for rom in new_roms:
@@ -54,7 +54,7 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
             continue
         logger.info(f"Starting download {rom.filename}...")
         if hasattr(rom, 'path'):
-            input_file = rom.path
+            input_file = str(rom.path)
         else:
             input_file = rom.link.replace("bigota", "airtel.bigota")
         out_files = []
