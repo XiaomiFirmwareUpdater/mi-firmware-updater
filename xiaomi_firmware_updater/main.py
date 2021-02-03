@@ -63,28 +63,31 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
             out = firmware_creator.auto()
             if out:
                 out_files.append(out)
-        firmware_creator = FlashableFirmwareCreator(input_file, 'firmware', WORK_DIR)
-        out = firmware_creator.auto()
-        logger.info(f'Created firmware file {out}')
-        if out:
-            out_files.append(out)
-        # upload to OSDN/GitHub
-        for file in out_files:
-            uploaded = None
-            codename = rom.codename.split("_")[0]
-            if file.startswith("fw-non-arb_"):
-                logger.info("Uploading non-arb firmware...")
-                upload_non_arb(file, codename)
-            else:
-                logger.info("Uploading firmware...")
-                uploaded = upload_fw(GIT, file, codename)
-            if uploaded:
-                new_update = add_to_database(rom, file)
-                new_updates.append(new_update)
-                with open(f'{WORK_DIR}/new_updates', 'wb') as f:
-                    pickle.dump(new_updates, f)
-            remove(file)
-
+        try:
+            logger.info(f"Creating firmware from {input_file} MIUI ROM...")
+            firmware_creator = FlashableFirmwareCreator(input_file, 'firmware', WORK_DIR)
+            out = firmware_creator.auto()
+            logger.info(f'Created firmware file {out}')
+            if out:
+                out_files.append(out)
+            # upload to OSDN/GitHub
+            for file in out_files:
+                uploaded = None
+                codename = rom.codename.split("_")[0]
+                if file.startswith("fw-non-arb_"):
+                    logger.info("Uploading non-arb firmware...")
+                    upload_non_arb(file, codename)
+                else:
+                    logger.info("Uploading firmware...")
+                    uploaded = upload_fw(GIT, file, codename)
+                if uploaded:
+                    new_update = add_to_database(rom, file)
+                    new_updates.append(new_update)
+                    with open(f'{WORK_DIR}/new_updates', 'wb') as f:
+                        pickle.dump(new_updates, f)
+                remove(file)
+        except KeyError as e:
+            logger.error(f"Unable to create firmware for file {input_file}! Error: {e}")
     if new_updates:
         logger.info(f"New updates: {new_updates}")
         post_updates(new_updates)
