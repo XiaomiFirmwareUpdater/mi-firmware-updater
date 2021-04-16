@@ -11,7 +11,7 @@ PyYAML = "^5.3.1"
 "github3.py" = "^1.3.0"
 python-telegram-bot = "12.4.2"
 xiaomi_flashable_firmware_creator = "^2.1.0"
-humanize = "^3.1.0"
+humanize = "^3.4.1"
 
 [tool.poetry.dev-dependencies]
 
