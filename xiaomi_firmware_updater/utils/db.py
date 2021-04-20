@@ -30,7 +30,7 @@ def add_to_database(rom, file):
         branch=rom_branch,
         size=str(zip_size),
         md5=md5_hash,
-        github_link=f"https://github.com/XiaomiFirmwareUpdater/firmware_xiaomi_{codename}/releases/"
+        github_link=f"https://github.com/XiaomiFirmwareUpdaterReleases/firmware_xiaomi_{codename}/releases/"
                     f"download/{branch}-{date.today().strftime('%d.%m.%Y')}/{filename}",
         osdn_link=f"https://osdn.net/projects/xiaomifirmwareupdater/storage/"
                   f"{set_folder(filename)}/{set_version(filename)}/{codename}/{filename}",
