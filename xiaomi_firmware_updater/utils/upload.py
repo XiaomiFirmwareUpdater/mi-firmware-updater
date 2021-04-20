@@ -36,7 +36,7 @@ def upload_fw(git, file, codename):
     folder = set_folder(filename)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/'
                      + folder + '/' + version + '/' + codename + '/', '-v'])
-    repository = git.repository('XiaomiFirmwareUpdater', f'firmware_xiaomi_{codename}')
+    repository = git.repository('XiaomiFirmwareUpdaterReleases', f'firmware_xiaomi_{codename}')
     tag = f'{variant}-{today}'
     try:
         release = repository.release_from_tag(tag)  # release exist already
