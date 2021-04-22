@@ -22,6 +22,10 @@ def set_folder(file: str) -> str:
     return "Stable" if "_V1" in file else "Developer"
 
 
+def get_copy_path(file: str, codename: str) -> str:
+    return f"{set_folder(file)}/{set_version(file)}/{codename}/"
+
+
 def upload_fw(git, file, codename):
     """
     Upload files to GitHub releases

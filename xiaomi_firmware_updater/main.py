@@ -6,19 +6,20 @@ import pickle
 import logging
 from os import remove
 from pathlib import Path
+from shutil import copy
 from typing import Optional
 
 from github3 import GitHub
 from requests import head
 from xiaomi_flashable_firmware_creator.firmware_creator import FlashableFirmwareCreator
 
-from xiaomi_firmware_updater import WORK_DIR, GIT_OAUTH_TOKEN
+from xiaomi_firmware_updater import WORK_DIR, GIT_OAUTH_TOKEN, LOCAL_STORAGE
 from xiaomi_firmware_updater.common.database import session, latest_updates, latest_firmware
 from xiaomi_firmware_updater.common.database.firmware import get_current_devices, update_in_db
 from xiaomi_firmware_updater.rom import MiuiRom
 from xiaomi_firmware_updater.social.post_updates import post_updates
 from xiaomi_firmware_updater.utils.db import add_to_database
-from xiaomi_firmware_updater.utils.upload import upload_non_arb, upload_fw
+from xiaomi_firmware_updater.utils.upload import upload_non_arb, upload_fw, get_copy_path
 
 logger = logging.getLogger(__name__)
 GIT = GitHub(token=GIT_OAUTH_TOKEN)
@@ -77,10 +78,16 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
                 if file.startswith("fw-non-arb_"):
                     logger.info("Uploading non-arb firmware...")
                     upload_non_arb(file, codename)
+                    if LOCAL_STORAGE:
+                        copied = copy(file, f"{LOCAL_STORAGE}/{get_copy_path(file, codename)}")
+                        logger.info(f"Copied firmware file {copied} to local storage.")
                 else:
                     logger.info("Uploading firmware...")
                     uploaded = upload_fw(GIT, file, codename)
                 if uploaded:
+                    if LOCAL_STORAGE:
+                        copied = copy(file, f"{LOCAL_STORAGE}/{get_copy_path(file, codename)}")
+                        logger.info(f"Copied firmware file {copied} to local storage.")
                     new_update = add_to_database(rom, file)
                     new_updates.append(new_update)
                     with open(f'{WORK_DIR}/new_updates', 'wb') as f:

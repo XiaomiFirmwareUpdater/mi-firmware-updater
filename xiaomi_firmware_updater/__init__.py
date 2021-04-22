@@ -9,6 +9,7 @@ from sys import stderr
 # from sys import stdout
 
 GIT_OAUTH_TOKEN = environ['XFU']
+LOCAL_STORAGE = environ.get("XFU_LOCAL_STORAGE")
 
 WORK_DIR = Path(__file__).parent
 CONF_DIR = Path(__file__).parent.parent
