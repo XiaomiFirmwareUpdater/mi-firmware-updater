@@ -6,7 +6,6 @@ import pickle
 import logging
 from os import remove
 from pathlib import Path
-from shutil import copy
 from typing import Optional
 
 from github3 import GitHub
@@ -19,7 +18,7 @@ from xiaomi_firmware_updater.common.database.firmware import get_current_devices
 from xiaomi_firmware_updater.rom import MiuiRom
 from xiaomi_firmware_updater.social.post_updates import post_updates
 from xiaomi_firmware_updater.utils.db import add_to_database
-from xiaomi_firmware_updater.utils.upload import upload_non_arb, upload_fw, get_copy_path
+from xiaomi_firmware_updater.utils.upload import upload_non_arb, upload_fw, copy_to_local
 
 logger = logging.getLogger(__name__)
 GIT = GitHub(token=GIT_OAUTH_TOKEN)
@@ -79,15 +78,13 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
                     logger.info("Uploading non-arb firmware...")
                     upload_non_arb(file, codename)
                     if LOCAL_STORAGE:
-                        copied = copy(file, f"{LOCAL_STORAGE}/{get_copy_path(file, codename)}")
-                        logger.info(f"Copied firmware file {copied} to local storage.")
+                        copy_to_local(file, codename)
                 else:
                     logger.info("Uploading firmware...")
                     uploaded = upload_fw(GIT, file, codename)
                 if uploaded:
                     if LOCAL_STORAGE:
-                        copied = copy(file, f"{LOCAL_STORAGE}/{get_copy_path(file, codename)}")
-                        logger.info(f"Copied firmware file {copied} to local storage.")
+                        copy_to_local(file, codename)
                     new_update = add_to_database(rom, file)
                     new_updates.append(new_update)
                     with open(f'{WORK_DIR}/new_updates', 'wb') as f:

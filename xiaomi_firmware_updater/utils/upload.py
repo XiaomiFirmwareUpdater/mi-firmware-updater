@@ -1,7 +1,14 @@
+import logging
 import subprocess
 from datetime import date
+from pathlib import Path
+from shutil import copy
 
 from github3.exceptions import NotFoundError, UnprocessableEntity, ConnectionError
+
+from xiaomi_firmware_updater import LOCAL_STORAGE
+
+logger = logging.getLogger(__name__)
 
 
 def set_version(file: str) -> str:
@@ -78,3 +85,11 @@ def upload_non_arb(file, codename):
     subprocess.call(['rclone', 'copy', file,
                      'sf:/home/frs/project/xiaomi-firmware-updater/non-arb/'
                      + folder + '/' + version + '/' + codename + '/', '-v'])
+
+
+def copy_to_local(file, codename):
+    dest = f"{LOCAL_STORAGE}/{get_copy_path(file, codename)}"
+    if not Path(dest).exists():
+        Path(dest).mkdir(parents=True)
+    copied = copy(file, dest)
+    logger.info(f"Copied firmware file {copied} to local storage.")
