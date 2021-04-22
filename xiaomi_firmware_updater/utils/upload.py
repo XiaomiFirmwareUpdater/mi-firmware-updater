@@ -8,6 +8,8 @@ def set_version(file: str) -> str:
     """
     Sets miui version based on zip file name
     """
+    if "/" in file:
+        file = file.split("/")[-1]
     if "_V1" in file:
         version = file.split("_")[4].split(".")[0]
     else:
@@ -19,6 +21,8 @@ def set_folder(file: str) -> str:
     """
     Sets upload folder based on zip file name
     """
+    if "/" in file:
+        file = file.split("/")[-1]
     return "Stable" if "_V1" in file else "Developer"
 
 
