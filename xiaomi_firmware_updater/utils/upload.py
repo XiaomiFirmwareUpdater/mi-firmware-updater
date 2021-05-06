@@ -49,7 +49,7 @@ def upload_fw(git, file, codename):
     variant = 'stable' if version.startswith('V') else 'weekly'
     today = date.today().strftime('%d.%m.%Y')
     folder = set_folder(filename)
-    subprocess.call(['rclone', 'copy', file, 'sf:/home/frs/project/xiaomi-firmware-updater/'
+    subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/'
                      + folder + '/' + version + '/' + codename + '/', '-v'])
     repository = git.repository('XiaomiFirmwareUpdaterReleases', f'firmware_xiaomi_{codename}')
     tag = f'{variant}-{today}'
@@ -83,7 +83,7 @@ def upload_non_arb(file, codename):
     if "-" in codename:
         codename = codename.split('-')[0]
     subprocess.call(['rclone', 'copy', file,
-                     'sf:/home/frs/project/xiaomi-firmware-updater/non-arb/'
+                     'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/non-arb/'
                      + folder + '/' + version + '/' + codename + '/', '-v'])
 
 
