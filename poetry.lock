@@ -174,7 +174,7 @@ six = ">=1.5"
 
 [[package]]
 name = "python-telegram-bot"
-version = "13.6"
+version = "13.7"
 description = "We have made you a wrapper you can't refuse"
 category = "main"
 optional = false
@@ -320,7 +320,7 @@ remotezip = ">=0.9.2,<0.10.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "053eb6bdd9f1364b5e3e8e0f1db2dce197d15e1ef4964b7a51ad7546b2a6f283"
+content-hash = "00616704d0580343fdb912a6392168e62b950c84897fc9b27912e85fe88c8ed0"
 
 [metadata.files]
 apscheduler = [
@@ -458,8 +458,8 @@ python-dateutil = [
     {file = "python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"},
 ]
 python-telegram-bot = [
-    {file = "python-telegram-bot-13.6.tar.gz", hash = "sha256:37cfe8faba16fb68a8b5ab41a10e787c385f6296200c84256cc54d7c16334643"},
-    {file = "python_telegram_bot-13.6-py3-none-any.whl", hash = "sha256:d4b3a8fd6a927bc6dc498fa00e8d6388570d089f5c015418c3b2b954e0719a7a"},
+    {file = "python-telegram-bot-13.7.tar.gz", hash = "sha256:24df75459e335b96baffa6991679f844bd426978af5a69ca419a0ac43a40602c"},
+    {file = "python_telegram_bot-13.7-py3-none-any.whl", hash = "sha256:3bf210862744068aa789d5110f8e3a00d98912ce50863384836440a18abf76b5"},
 ]
 pytz = [
     {file = "pytz-2021.1-py2.py3-none-any.whl", hash = "sha256:eb10ce3e7736052ed3623d49975ce333bcd712c7bb19a58b9e2089d4057d0798"},
