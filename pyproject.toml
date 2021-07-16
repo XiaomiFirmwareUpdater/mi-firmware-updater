@@ -6,7 +6,7 @@ authors = ["yshalsager <ysh-alsager@hotmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
-requests = "^2.24.0"
+requests = "^2.26.0"
 PyYAML = "^5.4.1"
 "github3.py" = "^1.3.0"
 python-telegram-bot = "13.7"
