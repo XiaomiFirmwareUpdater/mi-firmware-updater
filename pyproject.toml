@@ -10,7 +10,7 @@ requests = "^2.26.0"
 PyYAML = "^5.4.1"
 "github3.py" = "^1.3.0"
 python-telegram-bot = "13.7"
-xiaomi_flashable_firmware_creator = "^2.2.2"
+xiaomi_flashable_firmware_creator = "^2.2.3"
 humanize = "^3.10.0"
 
 [tool.poetry.dev-dependencies]
