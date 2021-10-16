@@ -36,7 +36,3 @@ For issue reports and feature requests, report on XDA Forums thread.
 
 ### XDA Support Thread:
 [Go here](https://forum.xda-developers.com/android/software-hacking/devices-xiaomi-firmware-updater-t3741446)
-
-#### XiaomiFirmwareUpdater is Supported By:
-
-<a href='https://metal.equinix.com/' target="_blank"><img alt='Equinix Metal' src='https://metal.equinix.com/metal/images/logo/equinix-metal-full.svg' width='250px' /></a>
