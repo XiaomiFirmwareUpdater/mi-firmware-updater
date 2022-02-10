@@ -66,7 +66,13 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
         try:
             logger.info(f"Creating firmware from {input_file} MIUI ROM...")
             firmware_creator = FlashableFirmwareCreator(input_file, 'firmware', WORK_DIR)
-            out = firmware_creator.auto()
+            try:
+                out = firmware_creator.auto()
+            except RuntimeError as err:
+                if err == "Nothing found to extract!":
+                    logger.warning(f"Unable to extract firmware from {input_file}! [{err}]")
+                    continue
+                raise err
             logger.info(f'Created firmware file {out}')
             if out:
                 out_files.append(out)
