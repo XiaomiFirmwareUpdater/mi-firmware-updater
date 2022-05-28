@@ -9,7 +9,7 @@ python = "^3.6"
 requests = "^2.27.1"
 PyYAML = "^6.0"
 "github3.py" = "^1.3.0"
-python-telegram-bot = "13.11"
+python-telegram-bot = "13.12"
 xiaomi_flashable_firmware_creator = "^2.2.5"
 humanize = "^3.14.0"
 
