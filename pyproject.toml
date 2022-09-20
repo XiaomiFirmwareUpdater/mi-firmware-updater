@@ -5,7 +5,7 @@ description = ""
 authors = ["yshalsager <ysh-alsager@hotmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.10"
 requests = "^2.28.1"
 PyYAML = "^6.0"
 "github3.py" = "^3.2.0"
