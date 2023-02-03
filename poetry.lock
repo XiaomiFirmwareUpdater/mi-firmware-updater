@@ -214,14 +214,14 @@ uritemplate = ">=3.0.0"
 
 [[package]]
 name = "humanize"
-version = "4.4.0"
+version = "4.5.0"
 description = "Python humanize utilities"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "humanize-4.4.0-py3-none-any.whl", hash = "sha256:8830ebf2d65d0395c1bd4c79189ad71e023f277c2c7ae00f263124432e6f2ffa"},
-    {file = "humanize-4.4.0.tar.gz", hash = "sha256:efb2584565cc86b7ea87a977a15066de34cdedaf341b11c851cfcfd2b964779c"},
+    {file = "humanize-4.5.0-py3-none-any.whl", hash = "sha256:127e333677183070b82e90e0faef9440f9a16dab92143e52f4523afb08ca9290"},
+    {file = "humanize-4.5.0.tar.gz", hash = "sha256:d6ed00ed4dc59a66df71012e3d69cf655d7d21b02112d435871998969e8aedc8"},
 ]
 
 [package.extras]
@@ -645,4 +645,4 @@ remotezip = ">=0.9.2,<0.11.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "cb5fd76fa9162048a18c0af997cc0b5b0afa6cb6b415be77518a48c223dee1e0"
+content-hash = "01245f265a9cfcc2137e8bc8a524e0c8358965fd8546ac9afaec0ca9acc86b13"
