@@ -3,13 +3,14 @@
 import logging
 from os import environ
 from string import Template
-from time import sleep
+from asyncio import sleep
 from typing import List
 
 import yaml
 from humanize import naturalsize
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater
+from telegram.constants import ParseMode
+from telegram.ext import Application
 
 from .xda_poster.xda import XDA
 from .. import WORK_DIR
@@ -20,7 +21,7 @@ BOT_TOKEN = environ['bottoken']
 TG_CHAT = "@XiaomiFirmwareUpdater"
 XDA_KEY = environ['XDA_KEY']
 
-UPDATER = Updater(token=BOT_TOKEN, use_context=True)
+APPLICATION = Application.builder().token(BOT_TOKEN).build()
 
 SITE = 'https://xiaomifirmwareupdater.com'
 
@@ -89,7 +90,7 @@ class XDAPoster(XDA):
         super().__init__(api_key)
 
 
-def post_updates(updates: List[Update]):
+async def post_updates(updates: List[Update]):
     """
     Post updates to telegram and xda
     """
@@ -98,18 +99,17 @@ def post_updates(updates: List[Update]):
         message = Message(update)
         # post to tg
         telegram_message, reply_markup = message.generate_telegram_message()
-        UPDATER.bot.send_message(chat_id=TG_CHAT, text=telegram_message,
-                                 parse_mode='Markdown', disable_web_page_preview='yes',
+        await APPLICATION.bot.send_message(chat_id=TG_CHAT, text=telegram_message,
+                                 parse_mode=ParseMode.MARKDOWN, disable_web_page_preview='yes',
                                  reply_markup=reply_markup)
-        sleep(3)
+        await sleep(3)
         # post to XDA
         try:
-            if isinstance(xda, XDAPoster):
-                codename = update.codename.split('_')[0]
-                if codename not in xda.threads.keys():
-                    continue
-                xda_post = message.generate_xda_message(xda.template)
-                xda.post(xda.threads[codename], xda_post)
-                sleep(15)
+            codename = update.codename.split('_')[0]
+            if codename not in xda.threads.keys():
+                continue
+            xda_post = message.generate_xda_message(xda.template)
+            await xda.post_async(xda.threads[codename], xda_post)
+            await sleep(15)
         except Exception as e:
             logger.warning(e)

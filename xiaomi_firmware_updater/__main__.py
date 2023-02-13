@@ -1,5 +1,6 @@
 """Xiaomi Firmware Updater entry point"""
 from argparse import ArgumentParser
+from asyncio import run
 from pathlib import Path
 
 from xiaomi_firmware_updater.common.database import close_db
@@ -26,6 +27,6 @@ if args.auto:
     mode = 'auto'
 
 if __name__ == '__main__':
-    main(mode, links_file=links_file, roms_dir=roms_dir)
+    run(main(mode, links_file=links_file, roms_dir=roms_dir))
     # git_commit_push()
     close_db()
