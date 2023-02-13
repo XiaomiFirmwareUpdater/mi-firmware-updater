@@ -25,7 +25,7 @@ GIT = GitHub(token=GIT_OAUTH_TOKEN)
 ARB_DEVICES = ['nitrogen', 'nitrogen_global', 'sakura', 'sakura_india_global', 'wayne']
 
 
-def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] = None):
+async def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] = None):
     """Main function"""
     new_updates: list = []
     if mode == 'auto':
@@ -100,4 +100,4 @@ def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[Path] 
             logger.error(f"Unable to create firmware for file {input_file}! Error: {e}")
     if new_updates:
         logger.info(f"New updates: {new_updates}")
-        post_updates(new_updates)
+        await post_updates(new_updates)
