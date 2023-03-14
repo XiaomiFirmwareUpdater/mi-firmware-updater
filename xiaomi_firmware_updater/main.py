@@ -69,7 +69,7 @@ async def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[
             try:
                 out = firmware_creator.auto()
             except RuntimeError as err:
-                if err == "Nothing found to extract!":
+                if "Nothing found to extract!" in str(err):
                     logger.warning(f"Unable to extract firmware from {input_file}! [{err}]")
                     continue
                 raise err
