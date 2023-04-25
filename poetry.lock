@@ -621,14 +621,14 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 
 [[package]]
 name = "xiaomi-flashable-firmware-creator"
-version = "2.2.11"
+version = "2.2.12"
 description = "Create flashable firmware zip from MIUI Recovery ROMs!"
 category = "main"
 optional = false
 python-versions = ">=3.10,<4.0"
 files = [
-    {file = "xiaomi_flashable_firmware_creator-2.2.11-py3-none-any.whl", hash = "sha256:d865938104aea953cb9bb99cca44ab49ac73468772b0eb0f1091c7f79a01801c"},
-    {file = "xiaomi_flashable_firmware_creator-2.2.11.tar.gz", hash = "sha256:ea6cf142d08c425a5f0c66784e5e9f2bf4a8a92ce917d6504099b50d2cc665b9"},
+    {file = "xiaomi_flashable_firmware_creator-2.2.12-py3-none-any.whl", hash = "sha256:35d52f2dea1ddc44f063fb942b3077d9f1e9e8a6d7b2771f47f3caa92271b92d"},
+    {file = "xiaomi_flashable_firmware_creator-2.2.12.tar.gz", hash = "sha256:c16bcd14b4df0a346be2b11e6486357f79d99a6d3cf0e0aff92ce4fca7712b5e"},
 ]
 
 [package.dependencies]
