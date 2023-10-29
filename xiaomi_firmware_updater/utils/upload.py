@@ -46,7 +46,8 @@ def upload_fw(git, file, codename):
     if "-" in codename:
         codename = codename.split('-')[0]
     version = set_version(filename)
-    variant = 'stable' if version.startswith('V') else 'weekly'
+    variant = 'stable' if version[0].isalpha() else 'weekly'
+    os_name = "HyperOS" if version.startswith("OS") else "MIUI"
     today = date.today().strftime('%d.%m.%Y')
     folder = set_folder(filename)
     subprocess.call(['rclone', 'copy', file, 'osdn:/storage/groups/x/xi/xiaomifirmwareupdater/'
@@ -59,7 +60,7 @@ def upload_fw(git, file, codename):
         # create new release
         release = repository.create_release(tag, name=tag,
                                             body=
-                                            f"Extracted Firmware from MIUI {filename.split('_')[4]}",
+                                            f"Extracted Firmware from {os_name} {filename.split('_')[4]}",
                                             draft=False, prerelease=False)
     try:
         asset = release.upload_asset(content_type='application/binary',

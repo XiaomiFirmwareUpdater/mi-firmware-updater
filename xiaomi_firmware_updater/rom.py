@@ -25,4 +25,4 @@ class MiuiRom:
         self.android = self.filename.split("_")[-1].split(".zip")[0]
         if not self.link:
             self.link = f"https://bigota.d.miui.com/{self.version}/{self.filename}"
-        self.branch = 'Stable' if self.version.startswith('V') else 'Weekly'
+        self.branch = 'Stable' if self.version[0].isalpha() else 'Weekly'

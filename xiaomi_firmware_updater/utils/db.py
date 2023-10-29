@@ -18,7 +18,7 @@ def add_to_database(rom, file):
     Writes new changes to log file
     """
     codename = rom.codename.split("_")[0]
-    branch = 'stable' if rom.version.startswith('V') else 'weekly'
+    branch = 'stable' if rom.version[0].isalpha() else 'weekly'
     zip_size = Path(file).stat().st_size
     md5_hash = md5_check(file)
     filename = file.split("/")[-1]
