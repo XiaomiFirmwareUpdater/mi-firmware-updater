@@ -56,7 +56,7 @@ async def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[
         if hasattr(rom, 'path'):
             input_file = str(rom.path)
         else:
-            input_file = rom.link.replace("bigota", "airtel.bigota")
+            input_file = rom.link.replace("bigota.d.miui.com", "cdn-ota.azureedge.net")
         out_files = []
         if rom.codename in ARB_DEVICES:
             firmware_creator = FlashableFirmwareCreator(input_file, 'nonarb', WORK_DIR)
