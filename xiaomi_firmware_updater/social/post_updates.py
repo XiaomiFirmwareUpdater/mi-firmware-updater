@@ -57,7 +57,7 @@ class Message:
                            f"_MD5:_ `{self.update.md5}`"
         download = InlineKeyboardButton(f"{self.update.version} | {self.update.android}",
                                         f"{SITE}/firmware/{self.codename}")
-        archive = InlineKeyboardButton(f"Firmware Archive",
+        archive = InlineKeyboardButton("Firmware Archive",
                                        f"{SITE}/archive/firmware/{self.codename}/")
         xfu_channel = InlineKeyboardButton("XiaomiFirmwareUpdater",
                                            url="https://t.me/XiaomiFirmwareUpdater")
@@ -100,8 +100,8 @@ async def post_updates(updates: List[Update]):
         # post to tg
         telegram_message, reply_markup = message.generate_telegram_message()
         await APPLICATION.bot.send_message(chat_id=TG_CHAT, text=telegram_message,
-                                 parse_mode=ParseMode.MARKDOWN, disable_web_page_preview='yes',
-                                 reply_markup=reply_markup)
+                                           parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,
+                                           reply_markup=reply_markup)
         await sleep(3)
         # post to XDA
         try:
