@@ -9,4 +9,4 @@
 [*][B][COLOR="DarkOrange"]Download: [/COLOR][/B][URL="$link"]Here[/URL]
 [/LIST]
 
-[B]Note:[/B] Older releases are available [URL="https://xiaomifirmwareupdater.com/archive/firmware/$codename"]Here[/URL]
+[B]Note:[/B] Older releases are available [URL="https://xmfirmwareupdater.com/archive/firmware/$codename"]Here[/URL]

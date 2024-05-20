@@ -23,7 +23,7 @@ XDA_KEY = environ['XDA_KEY']
 
 APPLICATION = Application.builder().token(BOT_TOKEN).build()
 
-SITE = 'https://xiaomifirmwareupdater.com'
+SITE = 'https://xmfirmwareupdater.com'
 
 logger = logging.getLogger(__name__)
 

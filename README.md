@@ -1,4 +1,4 @@
-[![Download](https://img.shields.io/badge/Downloads-Here-orange.svg)](https://xiaomifirmwareupdater.com)
+[![Download](https://img.shields.io/badge/Downloads-Here-orange.svg)](https://xmfirmwareupdater.com)
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
@@ -32,7 +32,7 @@ For issue reports and feature requests, report on XDA Forums thread.
 [Join here](https://t.me/XiaomiFirmwareUpdater)
 
 ### Supported Devices:
-[Go here](https://xiaomifirmwareupdater.com/supported/firmware/)
+[Go here](https://xmfirmwareupdater.com/supported/firmware/)
 
 ### XDA Support Thread:
 [Go here](https://forum.xda-developers.com/android/software-hacking/devices-xiaomi-firmware-updater-t3741446)
