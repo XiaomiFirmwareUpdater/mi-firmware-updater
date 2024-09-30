@@ -56,7 +56,7 @@ async def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[
         if hasattr(rom, 'path'):
             input_file = str(rom.path)
         else:
-            input_file = rom.link.replace("bigota.d.miui.com", "cdnorg.d.miui.com")
+            input_file = rom.link.replace("bigota.d.miui.com", "bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com")
         out_files = []
         if rom.codename in ARB_DEVICES:
             firmware_creator = FlashableFirmwareCreator(input_file, 'nonarb', WORK_DIR)
