@@ -197,11 +197,16 @@ wheels = [
 
 [[package]]
 name = "protobuf"
-version = "3.20.3"
+version = "5.28.3"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/55/5b/e3d951e34f8356e5feecacd12a8e3b258a1da6d9a03ad1770f28925f29bc/protobuf-3.20.3.tar.gz", hash = "sha256:2e3427429c9cffebf259491be0af70189607f365c2f41c7c3764af6f337105f2", size = 216768 }
+sdist = { url = "https://files.pythonhosted.org/packages/74/6e/e69eb906fddcb38f8530a12f4b410699972ab7ced4e21524ece9d546ac27/protobuf-5.28.3.tar.gz", hash = "sha256:64badbc49180a5e401f373f9ce7ab1d18b63f7dd4a9cdc43c92b9f0b481cef7b", size = 422479 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/8d/14/619e24a4c70df2901e1f4dbc50a6291eb63a759172558df326347dce1f0d/protobuf-3.20.3-py2.py3-none-any.whl", hash = "sha256:a7ca6d488aa8ff7f329d4c545b2dbad8ac31464f1d8b1c87ad1346717731e4db", size = 162128 },
+    { url = "https://files.pythonhosted.org/packages/d1/c5/05163fad52d7c43e124a545f1372d18266db36036377ad29de4271134a6a/protobuf-5.28.3-cp310-abi3-win32.whl", hash = "sha256:0c4eec6f987338617072592b97943fdbe30d019c56126493111cf24344c1cc24", size = 419624 },
+    { url = "https://files.pythonhosted.org/packages/9c/4c/4563ebe001ff30dca9d7ed12e471fa098d9759712980cde1fd03a3a44fb7/protobuf-5.28.3-cp310-abi3-win_amd64.whl", hash = "sha256:91fba8f445723fcf400fdbe9ca796b19d3b1242cd873907979b9ed71e4afe868", size = 431464 },
+    { url = "https://files.pythonhosted.org/packages/1c/f2/baf397f3dd1d3e4af7e3f5a0382b868d25ac068eefe1ebde05132333436c/protobuf-5.28.3-cp38-abi3-macosx_10_9_universal2.whl", hash = "sha256:a3f6857551e53ce35e60b403b8a27b0295f7d6eb63d10484f12bc6879c715687", size = 414743 },
+    { url = "https://files.pythonhosted.org/packages/85/50/cd61a358ba1601f40e7d38bcfba22e053f40ef2c50d55b55926aecc8fec7/protobuf-5.28.3-cp38-abi3-manylinux2014_aarch64.whl", hash = "sha256:3fa2de6b8b29d12c61911505d893afe7320ce7ccba4df913e2971461fa36d584", size = 316511 },
+    { url = "https://files.pythonhosted.org/packages/5d/ae/3257b09328c0b4e59535e497b0c7537d4954038bdd53a2f0d2f49d15a7c4/protobuf-5.28.3-cp38-abi3-manylinux2014_x86_64.whl", hash = "sha256:712319fbdddb46f21abb66cd33cb9e491a5763b2febd8f228251add221981135", size = 316624 },
+    { url = "https://files.pythonhosted.org/packages/ad/c3/2377c159e28ea89a91cf1ca223f827ae8deccb2c9c401e5ca233cd73002f/protobuf-5.28.3-py3-none-any.whl", hash = "sha256:cee1757663fa32a1ee673434fcf3bf24dd54763c79690201208bafec62f19eed", size = 169511 },
 ]
 
 [[package]]
@@ -390,7 +395,7 @@ requires-dist = [
     { name = "python-telegram-bot", specifier = ">=21.6" },
     { name = "pyyaml", specifier = ">=6.0.2" },
     { name = "requests", specifier = ">=2.32.3" },
-    { name = "xiaomi-flashable-firmware-creator", specifier = ">=2.2.13" },
+    { name = "xiaomi-flashable-firmware-creator", specifier = ">=2.2.14" },
 ]
 
 [package.metadata.requires-dev]
@@ -398,13 +403,13 @@ dev = [{ name = "ruff", specifier = ">=0.7.1" }]
 
 [[package]]
 name = "xiaomi-flashable-firmware-creator"
-version = "2.2.13"
+version = "2.2.14"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "protobuf" },
     { name = "remotezip" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/46/9e/369188f8174ae28cf1f8ad9c61b469a869bfdfe0e14ca672c67cdf8ee87d/xiaomi_flashable_firmware_creator-2.2.13.tar.gz", hash = "sha256:447e87d8d1d374c39018489986e1c7a4403234aad46e44f4dd8eba51a1377836", size = 174003 }
+sdist = { url = "https://files.pythonhosted.org/packages/e5/9c/cdaf4b4ab2f193f84aae5ca7fd0210e1185721954e867b5a25cb1c3cfa23/xiaomi_flashable_firmware_creator-2.2.14.tar.gz", hash = "sha256:d8088fea0630804ad105108bb3cd619fede7b5dadf9b3ff4da90b73394889917", size = 175106 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/99/13/9ad259d38ee2052daff250da4106e404521d3db600c8db671d43fd142068/xiaomi_flashable_firmware_creator-2.2.13-py3-none-any.whl", hash = "sha256:54ee7ad95801ab5dfd55ce5f4703f95c769d07b9d8dc539503cb2033b87c4b49", size = 166957 },
+    { url = "https://files.pythonhosted.org/packages/ce/29/abc1e5e65e6cef942d353ca9809ca5e9ed72e793cc515673fd9e80dc3f56/xiaomi_flashable_firmware_creator-2.2.14-py3-none-any.whl", hash = "sha256:1e37d3371f4a126abee4cc40124c403dad7d1f726e5acafc581fcfd06b8a8b62", size = 191112 },
 ]

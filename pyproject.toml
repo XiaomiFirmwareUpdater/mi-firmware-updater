@@ -12,7 +12,7 @@ dependencies = [
     "python-telegram-bot>=21.6",
     "pyyaml>=6.0.2",
     "requests>=2.32.3",
-    "xiaomi-flashable-firmware-creator>=2.2.13",
+    "xiaomi-flashable-firmware-creator>=2.2.14",
 ]
 
 [dependency-groups]
