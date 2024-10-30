@@ -17,7 +17,9 @@ def set_version(file: str) -> str:
     """
     if '/' in file:
         file = file.split('/')[-1]
-    if '_V1' in file:
+    if '-OS2.' in file:
+        version = f'OS2.{file.split("-OS2.")[1].split("-")[0]}'
+    elif '_V1' in file:
         version = file.split('_')[4].split('.')[0]
     else:
         version = file.split('_')[4]
@@ -61,7 +63,7 @@ def upload_fw(git, file, codename):
         release = repository.create_release(
             tag,
             name=tag,
-            body=f"Extracted Firmware from {os_name} {filename.split('_')[4]}",
+            body=f"Extracted Firmware from {os_name} {version}",
             draft=False,
             prerelease=False,
         )
