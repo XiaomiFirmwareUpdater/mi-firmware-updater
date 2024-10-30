@@ -1,4 +1,5 @@
 """Xiaomi Firmware Updater entry point"""
+
 from argparse import ArgumentParser
 from asyncio import run
 from pathlib import Path
@@ -9,9 +10,9 @@ from xiaomi_firmware_updater.main import main
 # from xiaomi_firmware_updater.utils.git import git_commit_push
 
 parser = ArgumentParser(prog='python3 -m xiaomi_firmware_updater')
-parser.add_argument("-A", "--auto", help="run auto update mode", action="store_true")
-parser.add_argument("-O", "--offline", help="run offline update mode", type=str)
-parser.add_argument("-M", "--manual", help="run manual update mode", type=str)
+parser.add_argument('-A', '--auto', help='run auto update mode', action='store_true')
+parser.add_argument('-O', '--offline', help='run offline update mode', type=str)
+parser.add_argument('-M', '--manual', help='run manual update mode', type=str)
 
 args = parser.parse_args()
 mode = 'auto'

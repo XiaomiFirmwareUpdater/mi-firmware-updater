@@ -1,5 +1,5 @@
-""" XiaomiFirmwareUpdater updates posting script"""
-# pylint: disable=too-many-locals
+"""XiaomiFirmwareUpdater updates posting script"""
+
 import logging
 from os import environ
 from string import Template
@@ -18,7 +18,7 @@ from ..common.database.database import get_device_info
 from ..common.database.models.firmware_update import Update
 
 BOT_TOKEN = environ['bottoken']
-TG_CHAT = "@XiaomiFirmwareUpdater"
+TG_CHAT = '@XiaomiFirmwareUpdater'
 XDA_KEY = environ['XDA_KEY']
 
 APPLICATION = Application.builder().token(BOT_TOKEN).build()
@@ -40,9 +40,9 @@ class Message:
         self.process = self.get_process_name()
 
     def get_process_name(self):
-        if self.update.filename.split("_")[0] == 'fw':
+        if self.update.filename.split('_')[0] == 'fw':
             var = 'firmware'
-        elif self.update.filename.split("_")[0] == 'fw-non-arb':
+        elif self.update.filename.split('_')[0] == 'fw-non-arb':
             var = 'non-arb firmware'
         else:
             var = 'other'
@@ -50,33 +50,42 @@ class Message:
 
     def generate_telegram_message(self):
         """Generates a Telegram message from update info"""
-        telegram_message = f"*New {self.update.branch} {self.process} " \
-                           f"update available!*\n" \
-                           f"_Device:_ {self.device_info.name} (#{self.codename})\n" \
-                           f"_Size:_ {naturalsize(self.update.size)}\n" \
-                           f"_MD5:_ `{self.update.md5}`"
-        download = InlineKeyboardButton(f"{self.update.version} | {self.update.android}",
-                                        f"{SITE}/firmware/{self.codename}")
-        archive = InlineKeyboardButton("Firmware Archive",
-                                       f"{SITE}/archive/firmware/{self.codename}/")
-        xfu_channel = InlineKeyboardButton("XiaomiFirmwareUpdater",
-                                           url="https://t.me/XiaomiFirmwareUpdater")
-        mut_channel = InlineKeyboardButton("MIUIUpdatesTracker",
-                                           url="https://t.me/MIUIUpdatesTracker")
-        reply_markup = InlineKeyboardMarkup(
-            [[download, archive], [xfu_channel, mut_channel]]
+        telegram_message = (
+            f'*New {self.update.branch} {self.process} '
+            f'update available!*\n'
+            f'_Device:_ {self.device_info.name} (#{self.codename})\n'
+            f'_Size:_ {naturalsize(self.update.size)}\n'
+            f'_MD5:_ `{self.update.md5}`'
         )
+        download = InlineKeyboardButton(
+            f'{self.update.version} | {self.update.android}', f'{SITE}/firmware/{self.codename}'
+        )
+        archive = InlineKeyboardButton(
+            'Firmware Archive', f'{SITE}/archive/firmware/{self.codename}/'
+        )
+        xfu_channel = InlineKeyboardButton(
+            'XiaomiFirmwareUpdater', url='https://t.me/XiaomiFirmwareUpdater'
+        )
+        mut_channel = InlineKeyboardButton(
+            'MIUIUpdatesTracker', url='https://t.me/MIUIUpdatesTracker'
+        )
+        reply_markup = InlineKeyboardMarkup([[download, archive], [xfu_channel, mut_channel]])
         return telegram_message, reply_markup
 
     def generate_xda_message(self, xda_template):
         """Generates XDA message from update info"""
         return xda_template.substitute(
-            codename=self.codename, branch=self.update.branch,
+            codename=self.codename,
+            branch=self.update.branch,
             process=self.process.capitalize(),
-            version=self.update.version, android=self.update.android,
-            region=self.device_info.region, zip_name=self.update.filename,
-            zip_size=str(naturalsize(self.update.size)), md5_hash=self.update.md5,
-            link=f"{SITE}/firmware/{self.codename}")
+            version=self.update.version,
+            android=self.update.android,
+            region=self.device_info.region,
+            zip_name=self.update.filename,
+            zip_size=str(naturalsize(self.update.size)),
+            md5_hash=self.update.md5,
+            link=f'{SITE}/firmware/{self.codename}',
+        )
 
 
 class XDAPoster(XDA):
@@ -99,9 +108,13 @@ async def post_updates(updates: List[Update]):
         message = Message(update)
         # post to tg
         telegram_message, reply_markup = message.generate_telegram_message()
-        await APPLICATION.bot.send_message(chat_id=TG_CHAT, text=telegram_message,
-                                           parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,
-                                           reply_markup=reply_markup)
+        await APPLICATION.bot.send_message(
+            chat_id=TG_CHAT,
+            text=telegram_message,
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+        )
         await sleep(3)
         # post to XDA
         try:

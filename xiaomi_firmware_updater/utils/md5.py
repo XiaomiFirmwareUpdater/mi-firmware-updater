@@ -7,7 +7,7 @@ def md5_check(zip_file):
     https://www.quickprogrammingtips.com/python/how-to-calculate-md5-hash-of-a-file-in-python.html
     """
     md5_hash = md5()
-    with open(zip_file, "rb") as file:
-        for byte_block in iter(lambda: file.read(4096), b""):
+    with open(zip_file, 'rb') as file:
+        for byte_block in iter(lambda: file.read(4096), b''):
             md5_hash.update(byte_block)
         return md5_hash.hexdigest()
