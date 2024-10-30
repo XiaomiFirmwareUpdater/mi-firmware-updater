@@ -1,21 +1,32 @@
-[tool.poetry]
+[project]
 name = "xiaomi-firmware-updater"
 version = "6.0.0"
-description = ""
-authors = ["yshalsager <ysh-alsager@hotmail.com>"]
+description = "Auto generates Xiaomi firmware flashable zip files every MIUI / Hyper OS new update."
+authors = [{ name = "yshalsager", email = "contact@yshalsager.com" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
 
-[tool.poetry.dependencies]
-python = "^3.10"
-requests = "^2.32.0"
-PyYAML = "^6.0"
-"github3.py" = "^3.2.0"
-python-telegram-bot = "^20.3"
-xiaomi_flashable_firmware_creator = "^2.2.13"
-humanize = "^4.5.0"
+dependencies = [
+    "github3-py>=4.0.1",
+    "humanize>=4.11.0",
+    "python-telegram-bot>=21.6",
+    "pyyaml>=6.0.2",
+    "requests>=2.32.3",
+    "xiaomi-flashable-firmware-creator>=2.2.13",
+]
 
-[tool.poetry.dev-dependencies]
+[dependency-groups]
+dev = [
+    "ruff>=0.7.1",
+]
 
+[tool.ruff]
+fix = true
+src = ["xiaomi_firmware_updater"]
+target-version = "py312"
+line-length = 100
 
-[build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+line-ending = "lf"
