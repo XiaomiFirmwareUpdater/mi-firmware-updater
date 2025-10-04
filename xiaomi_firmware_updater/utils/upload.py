@@ -1,4 +1,5 @@
 import logging
+import re
 import subprocess
 from datetime import date
 from pathlib import Path
@@ -12,18 +13,23 @@ logger = logging.getLogger(__name__)
 
 
 def set_version(file: str) -> str:
-    """
-    Sets miui version based on zip file name
-    """
-    if '/' in file:
-        file = file.split('/')[-1]
-    if '-OS2.' in file:
-        version = f'OS2.{file.split("-OS2.")[1].split("-")[0]}'
-    elif '_V1' in file:
-        version = file.split('_')[4].split('.')[0]
-    else:
-        version = file.split('_')[4]
-    return version
+    """Derive firmware version from the archive name."""
+    filename = file.split('/')[-1]
+    stem = filename.rsplit('.', 1)[0]
+    tokens = [token for token in re.split(r'[_-]', stem) if token]
+    version_patterns = (
+        re.compile(r'OS\d+\.\d+\.\d+\.\d+\.[A-Z0-9]+'),
+        re.compile(r'A\d+\.\d+\.\d+\.\d+\.[A-Z0-9]+'),
+        re.compile(r'V\d+\.\d+\.\d+\.\d+\.[A-Z0-9]+'),
+        re.compile(r'\d+\.\d+\.\d+'),
+    )
+
+    for token in tokens:
+        for pattern in version_patterns:
+            if pattern.fullmatch(token):
+                return token
+
+    raise ValueError(f'Unable to determine firmware version from filename: {filename}')
 
 
 def set_folder(file: str) -> str:
