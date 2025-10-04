@@ -5,4 +5,7 @@
 *tmp*
 .idea
 venv/
+.venv/
 *.egg-info/
+.vscode/settings.json
+mise.local.toml
