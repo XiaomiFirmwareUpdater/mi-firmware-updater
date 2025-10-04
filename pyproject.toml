@@ -16,7 +16,10 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = ["ruff>=0.13.3"]
+dev = [
+    "pytest>=8.3.3",
+    "ruff>=0.13.3",
+]
 
 [tool.ruff]
 fix = true
