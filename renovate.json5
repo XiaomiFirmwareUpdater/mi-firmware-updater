@@ -4,6 +4,7 @@
     'config:recommended',
     ':enablePreCommit',
     ':rebaseStalePrs',
+    'group:allNonMajor',
   ],
   labels: [
     'dependencies',
