@@ -20,6 +20,10 @@ SAMPLE_FILENAMES = {
         "fw_air_global_air_global-ota_full-OS2.0.202.0.VGQMIXM-user-15.0-146d53e026.zip",
         "OS2.0.202.0.VGQMIXM",
     ),
+    "hyperos-4": (
+        "fw_pudding_global-ota_full-OS4.0.1.0.XPCCNXM-user-17.0-deadbeef.zip",
+        "OS4.0.1.0.XPCCNXM",
+    ),
     "stable-v": (
         "fw_andromeda_miui_ANDROMEDAGlobal_V12.0.4.0.PEMMIXM_9ac8cec738_9.0.zip",
         "V12.0.4.0.PEMMIXM",

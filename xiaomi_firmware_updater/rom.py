@@ -26,10 +26,10 @@ class MiuiRom:
         if rom.startswith('http'):
             self.link = rom
             self.filename = rom.split('/')[-1]
-        elif (rom.startswith('miui_') or 'OS2.' in rom) and rom.endswith('.zip'):
+        elif (rom.startswith('miui_') or re.search(r'OS\d+\.', rom)) and rom.endswith('.zip'):
             self.filename = rom
         # miui/hyperos1 miui_miuiname_version_md5part_android.zip
-        # hyperos2 codename-ota_full-version-user-android-md5part.zip
+        # HyperOS codename-ota_full-version-user-android-md5part.zip
         match = miui_zip_pattern.search(rom) or hos2_zip_pattern.search(rom)
         groups = match.groupdict()
         self.codename = groups.get('codename') or get_codename(groups.get('miui_name'))
