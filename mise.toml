@@ -1,3 +1,4 @@
 [tools]
 python = '3.13'
 uv = "0.9.9"
+"github:ssut/payload-dumper-go" = "2.0.2"
