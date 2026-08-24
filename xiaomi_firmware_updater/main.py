@@ -57,8 +57,12 @@ async def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[
         if update_in_db(rom.codename, rom.version):
             # Skip already extracted ROMs
             continue
-        if not head(rom.link).ok:
-            # Skip 404 links.
+        try:
+            if not head(rom.link, timeout=(30, 300)).ok:
+                # Skip 404 links.
+                continue
+        except Exception:
+            logger.exception(f'Unable to check ROM link {rom.link}')
             continue
         logger.info(f'Starting download {rom.filename}...')
         if hasattr(rom, 'path'):
@@ -69,12 +73,12 @@ async def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[
                 'bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com',
             )
         out_files = []
-        if rom.codename in ARB_DEVICES:
-            firmware_creator = FlashableFirmwareCreator(input_file, 'nonarb', WORK_DIR)
-            out = firmware_creator.auto()
-            if out:
-                out_files.append(out)
         try:
+            if rom.codename in ARB_DEVICES:
+                firmware_creator = FlashableFirmwareCreator(input_file, 'nonarb', WORK_DIR)
+                out = firmware_creator.auto()
+                if out:
+                    out_files.append(out)
             logger.info(f'Creating firmware from {input_file} ROM...')
             firmware_creator = FlashableFirmwareCreator(input_file, 'firmware', WORK_DIR)
             try:
@@ -106,9 +110,8 @@ async def main(mode: str, links_file: Optional[Path] = None, roms_dir: Optional[
                     new_updates.append(new_update)
                     with open(f'{WORK_DIR}/new_updates', 'wb') as f:
                         pickle.dump(new_updates, f)
+                    logger.info(f'New update: {new_update}')
+                    await post_updates([new_update])
                 remove(file)
-        except KeyError as e:
-            logger.error(f'Unable to create firmware for file {input_file}! Error: {e}')
-    if new_updates:
-        logger.info(f'New updates: {new_updates}')
-        await post_updates(new_updates)
+        except Exception:
+            logger.exception(f'Unable to create firmware for file {input_file}')

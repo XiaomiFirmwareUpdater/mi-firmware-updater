@@ -485,7 +485,7 @@ requires-dist = [
     { name = "python-telegram-bot", specifier = ">=22.5" },
     { name = "pyyaml", specifier = ">=6.0.2" },
     { name = "requests", specifier = ">=2.32.5" },
-    { name = "xiaomi-flashable-firmware-creator", specifier = ">=2.3.1" },
+    { name = "xiaomi-flashable-firmware-creator", specifier = ">=2.3.2" },
 ]
 
 [package.metadata.requires-dev]
@@ -496,12 +496,12 @@ dev = [
 
 [[package]]
 name = "xiaomi-flashable-firmware-creator"
-version = "2.3.1"
+version = "2.3.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "remotezip" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e9/21/5411daddc87891a53eb062c0498a5b127bcfe04f3cafb9762d3c644a195b/xiaomi_flashable_firmware_creator-2.3.1.tar.gz", hash = "sha256:a1257bb4ccc735c828061cc176ccbe38c53135a8216e36425a6863a248fac751", size = 260344, upload-time = "2025-10-04T15:31:57.167Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/9c/6743c42f2dfa4dade3c0796d253dcac4d8abe26b470248ef2d7c6c4d214c/xiaomi_flashable_firmware_creator-2.3.2.tar.gz", hash = "sha256:2a8d4ad3e0be18bd38052b3603643ab95214873303aa5a20b4898429575fccc5", size = 260640, upload-time = "2026-08-24T01:34:36.661Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7f/a8/bb180ca1061c9debeea5668d24e5ecc13e86443c70ac07ad69497337fa74/xiaomi_flashable_firmware_creator-2.3.1-py3-none-any.whl", hash = "sha256:880f6c0b3a38f14f778ace5f579bc21fb57cf7f327121595276a3e4a5363cfd0", size = 280853, upload-time = "2025-10-04T15:31:56.15Z" },
+    { url = "https://files.pythonhosted.org/packages/99/b5/8a74c3b83f5a7491a78f91f93ebb08e422081170ebb8bfd15e77491a7fda/xiaomi_flashable_firmware_creator-2.3.2-py3-none-any.whl", hash = "sha256:f0136f96740f4e7c6049be9e044dd2e6058902d54de5415b3f8f12a28ef035e8", size = 281039, upload-time = "2026-08-24T01:34:35.169Z" },
 ]
