@@ -1,4 +1,4 @@
 [tools]
-python = '3.13'
-uv = "0.9.9"
+python = '3.14.7'
+uv = "0.12.10"
 "github:ssut/payload-dumper-go" = "2.0.2"
