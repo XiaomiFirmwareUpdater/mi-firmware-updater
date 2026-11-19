@@ -8,6 +8,7 @@ from shutil import copy
 from github3.exceptions import NotFoundError, UnprocessableEntity, ConnectionError
 
 from xiaomi_firmware_updater import LOCAL_STORAGE
+from xiaomi_firmware_updater.utils.backlinks import firmware_link_line
 
 logger = logging.getLogger(__name__)
 
@@ -69,7 +70,7 @@ def upload_fw(git, file, codename):
         release = repository.create_release(
             tag,
             name=tag,
-            body=f"Extracted Firmware from {os_name} {version}",
+            body=f'Extracted Firmware from {os_name} {version}\n\n{firmware_link_line(codename)}',
             draft=False,
             prerelease=False,
         )

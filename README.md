@@ -28,6 +28,16 @@ If you appreciate these projects, please consider donating via [Paypal](http://p
 
 For issue reports and feature requests, report on XDA Forums thread.
 
+### Release backlink maintenance
+
+From the project root with `XFU` configured, preview the backfill with
+`uv run python -m scripts.backlink_releases --limit 3`. The script is read-only unless
+`--apply` is passed. Repositories are processed by name; use `--from firmware_xiaomi_<codename>`
+to resume at that repository, inclusive.
+
+Refresh `xiaomi_firmware_updater/utils/firmware_codenames.yml` from the website's
+`data/firmware_codenames.yml` when new device pages go live.
+
 ### Telegram Channel:
 [Join here](https://t.me/XiaomiFirmwareUpdater)
 
