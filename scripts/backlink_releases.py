@@ -15,10 +15,13 @@ README_MESSAGE = 'docs: link to the firmware download page'
 
 
 class RateLimitedSession(GitHubSession):
+    # GitHub allows ~500 content-creating requests per hour, shared with the bot's real uploads.
+    write_delay = 9.0
+
     def request(self, method, url, **kwargs):
         for attempt in range(4):
             if method.upper() not in ('GET', 'HEAD'):
-                sleep(1)
+                sleep(self.write_delay)
             response = super().request(method, url, **kwargs)
             retry_after = response.headers.get('Retry-After')
             exhausted = response.headers.get('X-RateLimit-Remaining') == '0'
@@ -87,6 +90,9 @@ def main():
         '--from', dest='start', metavar='REPO', help='resume at this repo (inclusive)'
     )
     parser.add_argument('--limit', type=int, help='maximum number of repos to inspect')
+    parser.add_argument(
+        '--delay', type=float, default=9.0, help='seconds before each write (default: 9)'
+    )
     args = parser.parse_args()
     if args.limit is not None and args.limit < 1:
         parser.error('--limit must be positive')
@@ -100,6 +106,7 @@ def main():
     )
 
     print('Apply mode' if args.apply else 'Dry run (read only)')
+    RateLimitedSession.write_delay = args.delay
     with RateLimitedSession() as session:
         github = GitHub(token=token, session=session)
         try:
